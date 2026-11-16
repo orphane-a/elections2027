@@ -1,7 +1,7 @@
 # 🛒 Pouvoir d'achat : synthèse comparée
 
 Thème : Pouvoir d'achat
-Date de mise à jour : 2026-11-12
+Date de mise à jour : 2026-11-16
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -118,6 +118,10 @@ Non communiqué.
 
 1. Il propose de supprimer les certificats d'économies d'énergie, une charge qu'il estime à 15 centimes par litre de carburant. (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
 2. Il propose d'exonérer de cotisations le temps de travail supplémentaire : à partir de la 36e heure, le salaire brut égale le net. (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
+
+## Teddy Riner (Sans parti)
+
+Non communiqué.
 
 ## Fabien Roussel (Parti communiste français)
 

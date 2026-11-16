@@ -1,7 +1,7 @@
 # 💼 Travail et emploi : synthèse comparée
 
 Thème : Travail et emploi
-Date de mise à jour : 2026-11-12
+Date de mise à jour : 2026-11-16
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -125,6 +125,12 @@ Non communiqué.
 1. Il propose de baisser les charges sur le travail dès la première heure, financé par une allocation sociale unique plafonnée à 70 % du Smic. (Coût annoncé : 30 Md€, financé par l'allocation sociale unique plafonnée à 70 % du Smic.) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
 2. Il propose d'aligner les règles de l'assurance chômage sur « les standards européens ». (Économie annoncée : 30 Md€ sur le quinquennat.) Source : Public Sénat, plan d'économies de près de 200 milliards d'euros, 2026-10-12, https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu (consulté le 2026-11-09)
 3. Il propose une décote pour les départs entre 63 et 65 ans, une part de capitalisation et la fin des derniers régimes spéciaux. (Amélioration annoncée des comptes des retraites : environ 42 Md€, dont 12 Md€ liés à la décote.) Source : Public Sénat, plan d'économies de près de 200 milliards d'euros, 2026-10-12, https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu (consulté le 2026-11-09)
+
+## Teddy Riner (Sans parti)
+
+1. Réformer le système de retraites en gardant la répartition, sans exclure une part de capitalisation. (Mesure non chiffrée par le parti) Source : LCP, Retraites, salaires, sécurité : que propose Teddy Riner, 2026-11-10, https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935 (consulté le 2026-11-16)
+2. Réduire l'écart entre salaire net et salaire brut en allégeant les charges. (Mesure non chiffrée par le parti) Source : LCP, Retraites, salaires, sécurité : que propose Teddy Riner, 2026-11-10, https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935 (consulté le 2026-11-16)
+3. Ne pas remettre en question les 35 heures et laisser gagner plus ceux qui travaillent plus. (Mesure non chiffrée par le parti) Source : LCP, Retraites, salaires, sécurité : que propose Teddy Riner, 2026-11-10, https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935 (consulté le 2026-11-16)
 
 ## Fabien Roussel (Parti communiste français)
 

@@ -1,7 +1,7 @@
 # 🇪🇺 Europe et international : synthèse comparée
 
 Thème : Europe et international
-Date de mise à jour : 2026-11-12
+Date de mise à jour : 2026-11-16
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -121,6 +121,10 @@ Non communiqué.
 ## Bruno Retailleau (Les Républicains)
 
 1. Il propose que la France puisse, dans certains cas, déroger à la primauté du droit européen, notamment en matière d'immigration et de sécurité. (Mesure non chiffrée par le parti) Source : Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle, 2026-09-03, https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-propose-une-revolution-copernicienne-dans-laquelle-la-constitution-ne-serait-plus-le-bouclier-qui-prote (consulté le 2026-11-09)
+
+## Teddy Riner (Sans parti)
+
+Non communiqué.
 
 ## Fabien Roussel (Parti communiste français)
 

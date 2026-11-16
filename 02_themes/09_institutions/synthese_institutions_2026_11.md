@@ -1,7 +1,7 @@
 # 🏛️ Institutions et démocratie : synthèse comparée
 
 Thème : Institutions et démocratie
-Date de mise à jour : 2026-11-12
+Date de mise à jour : 2026-11-16
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -127,6 +127,10 @@ Non communiqué.
 1. Il propose d'élargir le référendum de l'article 11 à l'ensemble du domaine de la loi, dont l'immigration et la politique pénale. (Mesure non chiffrée par le parti) Source : Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle, 2026-09-03, https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle (consulté le 2026-11-09)
 2. Il propose d'abaisser à environ 2,5 millions le nombre de signatures pour un référendum d'initiative partagée, contre environ 5 millions aujourd'hui. (Mesure non chiffrée par le parti) Source : Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle, 2026-09-03, https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle (consulté le 2026-11-09)
 3. Il propose qu'après une censure du Conseil constitutionnel, le président puisse soumettre la loi au référendum ou au Parlement réuni en Congrès. (Mesure non chiffrée par le parti) Source : Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle, 2026-09-03, https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle (consulté le 2026-11-09)
+
+## Teddy Riner (Sans parti)
+
+Non communiqué.
 
 ## Fabien Roussel (Parti communiste français)
 
