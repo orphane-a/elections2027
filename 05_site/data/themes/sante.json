@@ -1,0 +1,62 @@
+{
+  "slug": "sante",
+  "date_maj": "2026-11-09",
+  "en_bref": "La santé touche chacun : trouver un médecin, être soigné à l'hôpital, se faire rembourser. Le débat porte sur le nombre de soignants, leur répartition sur le territoire, les moyens des hôpitaux et la place de la prévention. La fin de vie fait aussi partie des grandes questions du mandat.",
+  "sous_themes": ["Hôpital", "Déserts médicaux", "Médecine de ville", "Fin de vie"],
+  "faits": [
+    {
+      "date": "2023-05",
+      "texte": "La loi Rist du 19 mai 2023 permet de consulter sans passer par un médecin les infirmiers en pratique avancée, les kinésithérapeutes et les orthophonistes, dans certaines structures. Pour les kinés, l'accès direct est limité à 8 séances sans diagnostic médical.",
+      "origine": "parlement",
+      "source": { "titre": "Vie publique, Loi du 19 mai 2023 portant amélioration de l'accès aux soins par la confiance aux professionnels de santé", "url": "https://www.vie-publique.fr/loi/288203-acces-aux-soins-loi-rist-du-19-mai-2023", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-12",
+      "texte": "Depuis le 22 décembre 2024, la consultation de référence chez le médecin généraliste est fixée à 30 €, en application de la convention médicale 2024-2029 signée entre l'Assurance maladie et les syndicats de médecins.",
+      "origine": "gouvernement",
+      "source": { "titre": "Assurance Maladie, communiqué du 5 décembre 2024 : déploiement de la convention médicale dès le 22 décembre", "url": "https://www.assurance-maladie.ameli.fr/presse/2024-12-05-cp-deploiement-convention-medicale", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-12",
+      "texte": "Fin 2024, les hôpitaux et cliniques comptent 367 100 lits d'hospitalisation complète, soit 2 300 de moins en un an (-0,6 %). Les places d'hospitalisation partielle (sans nuit sur place) augmentent de 2 600 (+2,9 %) pour atteindre 91 000.",
+      "origine": "exterieur",
+      "source": { "titre": "DREES, Les établissements de santé en 2024, édition 2026 (publiée le 20 mai 2026)", "url": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/panoramas-de-la-drees/260520-Etablissements-de-sant%C3%A9-en-2024", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2026-01",
+      "texte": "Au 1er janvier 2026, 242 200 médecins sont en activité en France, soit 5 000 de plus qu'un an avant (+2,1 %). Parmi eux, 101 000 sont médecins généralistes, un effectif en hausse de 1,0 % sur un an.",
+      "origine": "exterieur",
+      "source": { "titre": "DREES, 5 000 médecins supplémentaires en activité en France au 1er janvier 2026 (publié le 2 juillet 2026)", "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/260702-medecins-supplementaires-en-activite-en-france-au-1er-janvier-2026", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Proposition de loi Valletoux visant à améliorer l'accès aux soins par l'engagement territorial des professionnels",
+      "phrase": "La loi vise à mieux répartir les soignants sur le territoire et fait participer davantage les établissements de santé, dont les cliniques, à la permanence des soins.",
+      "date": "2023-12-12",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 3206 (texte de la commission mixte paritaire)", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3206" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "abstention", "ECO": "abstention", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": null }
+    },
+    {
+      "titre": "Proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+      "phrase": "Le texte crée un droit à l'aide à mourir, sous les conditions qu'il fixe. Le Conseil constitutionnel a été saisi avant sa promulgation. Vote très partagé dans plusieurs groupes : LIOT 10 pour, 8 contre, 4 abstentions ; Horizons 16 pour, 18 contre, 1 abstention ; Démocrates 20 pour, 16 contre.",
+      "date": "2026-07-15",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 8280", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280" },
+      "positions": { "RN": "contre", "LFI": "pour", "SOC": "pour", "ECO": "pour", "GDR": "pour", "EPR": "pour", "DEM": "pour", "HOR": "contre", "DR": "contre", "LIOT": "partage", "UDR": "contre" }
+    }
+  ],
+  "liens": [
+    { "titre": "DREES, Les établissements de santé en 2024 (édition 2026)", "url": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/panoramas-de-la-drees/260520-Etablissements-de-sant%C3%A9-en-2024", "type": "Site officiel" },
+    { "titre": "DREES, Démographie des médecins au 1er janvier 2026", "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/260702-medecins-supplementaires-en-activite-en-france-au-1er-janvier-2026", "type": "Site officiel" },
+    { "titre": "Vie publique, la loi Rist du 19 mai 2023 expliquée", "url": "https://www.vie-publique.fr/loi/288203-acces-aux-soins-loi-rist-du-19-mai-2023", "type": "Site officiel" },
+    { "titre": "Assurance Maladie, convention médicale 2024-2029", "url": "https://www.assurance-maladie.ameli.fr/presse/2024-12-05-cp-deploiement-convention-medicale", "type": "Site officiel" },
+    { "titre": "Service-public.fr, remboursement d'une consultation médicale", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1069", "type": "Site officiel" },
+    { "titre": "LCP, adoption définitive de la loi sur l'aide à mourir (15 juillet 2026)", "url": "https://lcp.fr/actualites/aide-a-mourir-l-assemblee-a-definitivement-adopte-la-loi-instaurant-ce-nouveau-droit", "type": "Site externe" }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "slug": "institutions",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/519": {
+      "RN": {
+        "texte": "Le groupe indique censurer un budget qui, selon lui, augmente les impôts, après le refus de ses propositions sur pouvoir d'achat, immigration et sécurité.",
+        "orateur": "Marine Le Pen",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, le gouvernement n'a pas de légitimité électorale, n'a retenu aucun vote de l'Assemblée sur le budget et a cherché des compromis avec le RN.",
+        "orateur": "Éric Coquerel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique censurer car le gouvernement n'a retenu aucune de ses propositions sur le budget social et a négocié avec le seul Rassemblement national.",
+        "orateur": "Boris Vallaud",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Selon le groupe, la censure permet de changer de politique après des coupes budgétaires et des concessions faites au Rassemblement national.",
+        "orateur": "Cyrielle Chatelain",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique censurer pour refuser des budgets de l'État et de la sécurité sociale qui, selon lui, affaiblissent l'hôpital et pèsent sur les plus modestes.",
+        "orateur": "Nicolas Sansu",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le gouvernement pour garantir la stabilité du pays, dans un contexte international qu'il décrit comme incertain.",
+        "orateur": "Gabriel Attal",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Selon le groupe, les textes budgétaires sont le fruit d'un compromis, et la censure priverait le pays de mesures pour la santé, l'agriculture et la sécurité.",
+        "orateur": "Marc Fesneau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique ne pas voter la censure en raison de ses effets : budget suspendu, barème de l'impôt non indexé et hausse possible des taux de la dette.",
+        "orateur": "Laurent Marcangeli",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Selon le groupe, la censure ouvrirait une période d'instabilité et supprimerait des mesures pour l'agriculture, la sécurité et la défense.",
+        "orateur": "Laurent Wauquiez",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Selon le groupe, la censure aggraverait la crise démocratique et l'incertitude économique, sans sortie électorale possible avant juillet 2025.",
+        "orateur": "Charles de Courson",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique censurer pour éviter les hausses d'impôts, la désindexation des retraites et la baisse des remboursements de soins prévues par le budget.",
+        "orateur": "Éric Ciotti",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 4 décembre 2024, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N063",
+          "date": "2024-12-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    },
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/3054": {
+      "RN": {
+        "texte": "Le groupe indique refuser la confiance à un gouvernement qui, selon lui, ne gouverne pas, et demande au président de la République de dissoudre l'Assemblée.",
+        "orateur": "Marine Le Pen",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique rejeter le diagnostic du gouvernement et ses remèdes, dont la suppression de deux jours fériés, et une fiscalité favorable aux plus riches.",
+        "orateur": "Mathilde Panot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique refuser la confiance à la politique budgétaire du gouvernement et se dit prêt à gouverner avec la gauche et les écologistes, sans 49.3.",
+        "orateur": "Boris Vallaud",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Selon le groupe, le gouvernement s'appuie sur l'extrême droite et poursuit une politique rejetée en 2024 ; il demande un Premier ministre de gauche.",
+        "orateur": "Cyrielle Chatelain",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Selon le groupe, le projet de budget pour 2026 fait peser l'effort sur les salariés, retraités, chômeurs et malades, et épargne les plus fortunés.",
+        "orateur": "Stéphane Peu",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter la confiance pour la stabilité et pour doter le pays d'un budget avant le 31 décembre, sans approuver pour autant le projet de budget.",
+        "orateur": "Gabriel Attal",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter la confiance pour reconnaître l'urgence de la dette publique, condition selon lui d'un compromis budgétaire entre les groupes.",
+        "orateur": "Marc Fesneau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter la confiance par souci de stabilité, afin de réduire le déficit et de doter le pays d'un budget avant la fin de l'année.",
+        "orateur": "Paul Christophe",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique soutenir le redressement des finances mais rejeter les hausses d'impôts et la suppression de deux jours fériés ; chaque député vote librement.",
+        "orateur": "Laurent Wauquiez",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Selon le groupe, le gouvernement demande la confiance sans débat préalable avec le Parlement et sans reprendre ses propositions pour répartir l'effort.",
+        "orateur": "Laurent Panifous",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique refuser la confiance à la politique d'Emmanuel Macron, qu'il tient pour responsable de la dette, et demande une dissolution ou une démission.",
+        "orateur": "Éric Ciotti",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 8 septembre 2025, débat sur la déclaration de politique générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E2N001",
+          "date": "2025-09-08",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    }
+  }
+}

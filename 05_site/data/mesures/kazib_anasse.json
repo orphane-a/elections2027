@@ -1,0 +1,129 @@
+{
+  "id": "kazib_anasse",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Verser aux étudiants un revenu égal au SMIC, financé par le patronat.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Vivre, et plus survivre »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "S'opposer au Service national universel (SNU) et à la présence de l'armée dans les écoles et les universités.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Créer des comités de travailleurs, de scientifiques et de riverains pour coordonner la dépollution des sols et de l'eau.",
+        "sous_theme": "Pollution",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Face au capitalisme, un horizon communiste »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Porter le SMIC à 2 000 euros nets, augmenter les salaires de 500 euros et indexer salaires et allocations sur l'inflation.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Vivre, et plus survivre »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Exproprier les groupes bancaires, proposer des prêts à taux zéro et supprimer les agios (frais de découvert).",
+        "sous_theme": "Banques",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Vivre, et plus survivre »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Interdire les licenciements.",
+        "sous_theme": "Emploi",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Confisquer le pouvoir aux patrons »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Répartir le travail pour passer à une semaine de 28 heures sans baisse de salaire.",
+        "sous_theme": "Temps de travail",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Confisquer le pouvoir aux patrons »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Fixer la retraite à 60 ans, et à 55 ans pour les métiers pénibles, sans condition de durée de cotisation.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Vivre, et plus survivre »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Rendre l'avortement, la PMA (procréation médicalement assistée) et les transitions de genre libres et gratuits.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Unifier la nouvelle classe ouvrière »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Exproprier les logements vides, plafonner et geler les loyers.",
+        "sous_theme": "Location",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Vivre, et plus survivre »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Abroger les lois sécuritaires et la loi de 2004 sur les signes religieux à l'école.",
+        "sous_theme": "Libertés publiques",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Affronter l'autoritarisme et le racisme d'État »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Amnistier les manifestants, les jeunes de quartiers populaires et les syndicalistes poursuivis.",
+        "sous_theme": "Justice",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Affronter l'autoritarisme et le racisme d'État »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Dissoudre les corps spéciaux de police.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Affronter l'autoritarisme et le racisme d'État »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Régulariser tous les sans-papiers et instaurer la liberté de circulation et d'installation.",
+        "sous_theme": "Régularisation",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Unifier la nouvelle classe ouvrière »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Mettre fin à la Ve République, supprimer le Sénat et la fonction de président de la République.",
+        "sous_theme": "Constitution",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Affronter l'autoritarisme et le racisme d'État »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Ne consacrer aucun budget à la guerre et démanteler l'industrie d'armement française.",
+        "sous_theme": "Défense",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Retirer les troupes françaises stationnées à l'étranger.",
+        "sous_theme": "Défense",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

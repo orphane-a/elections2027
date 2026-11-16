@@ -1,0 +1,145 @@
+{
+  "id": "ruffin_francois",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Remplacer Parcoursup par un système d'orientation présenté comme plus humain.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 8 « Éducation : une école de tous les savoirs »", "url": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/", "date": "2026-10-28", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Augmenter durablement la grille de salaire des enseignants, sans contrepartie, en priorité en milieu de carrière.",
+        "sous_theme": "Enseignants",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 8 « Éducation : une école de tous les savoirs »", "url": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/", "date": "2026-10-28", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Allonger le CAP à 3 ans et le bac professionnel à 4 ans, avec un semestre de cours généraux et un semestre en entreprise.",
+        "sous_theme": "Voie professionnelle",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 8 « Éducation : une école de tous les savoirs »", "url": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/", "date": "2026-10-28", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Multiplier par quatre le budget de l'État consacré à la rénovation énergétique des logements.",
+        "sous_theme": "Rénovation",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 5 « Pour un travaillisme écologique »", "url": "https://nouspresident.fr/travaillisme-ecologique/", "date": "2026-09-09", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Équiper 3 millions d'automobilistes de petites voitures électriques produites en France, par un leasing social commandé par un organisme public.",
+        "sous_theme": "Transports",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 5 « Pour un travaillisme écologique »", "url": "https://nouspresident.fr/travaillisme-ecologique/", "date": "2026-09-09", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Indexer les salaires sur l'inflation, comme jusqu'en 1982.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 1 « Pour les travailleurs essentiels »", "url": "https://nouspresident.fr/statut-travailleurs-essentiels/", "date": "2026-04-13", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Instaurer la taxe Zucman sur les plus grandes fortunes et taxer davantage les grandes successions.",
+        "sous_theme": "Fiscalité",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, Plan de redressement (page Notre programme)", "url": "https://nouspresident.fr/notre-programme/", "date": "2026-10-12", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Accorder automatiquement un trimestre de retraite supplémentaire pour quatre trimestres travaillés dans un métier pénible.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 1 « Pour les travailleurs essentiels »", "url": "https://nouspresident.fr/statut-travailleurs-essentiels/", "date": "2026-04-13", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Payer double les heures travaillées avant 8 h et après 18 h par les travailleurs essentiels.",
+        "sous_theme": "Horaires",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 1 « Pour les travailleurs essentiels »", "url": "https://nouspresident.fr/statut-travailleurs-essentiels/", "date": "2026-04-13", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Mettre fin aux temps partiels subis et sanctionner les entreprises sous la durée minimale de 24 heures par semaine.",
+        "sous_theme": "Temps partiel",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 1 « Pour les travailleurs essentiels »", "url": "https://nouspresident.fr/statut-travailleurs-essentiels/", "date": "2026-04-13", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Créer un pôle public du médicament pour reprendre le contrôle de la production de médicaments stratégiques.",
+        "sous_theme": "Médicaments",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 7 « Pour protéger notre industrie, relocaliser 100 produits stratégiques »", "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/", "date": "2026-10-15", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Étendre l'encadrement des loyers à davantage de villes et encadrer les « compléments de loyer ».",
+        "sous_theme": "Loyers",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 6 « Face à la crise du logement : faire sauter le verrou »", "url": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/", "date": "2026-09-24", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Doubler les montants du prêt à taux zéro pour les ménages modestes et moyens qui achètent leur logement.",
+        "sous_theme": "Accession",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 6 « Face à la crise du logement : faire sauter le verrou »", "url": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/", "date": "2026-09-24", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer 200 000 places de logement pour les étudiants et les jeunes actifs en cinq ans.",
+        "sous_theme": "Jeunes",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 6 « Face à la crise du logement : faire sauter le verrou »", "url": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/", "date": "2026-09-24", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Créer une Haute Autorité à la Probité regroupant les organismes actuels d'éthique de la vie publique.",
+        "sous_theme": "Éthique",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 2 « Pour séparer l'argent de l'État »", "url": "https://nouspresident.fr/separation-argent-etat/", "date": "2026-07-02", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Interdire aux anciens ministres le lobbying et le conseil auprès de l'administration pendant dix ans après leur départ.",
+        "sous_theme": "Éthique",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 2 « Pour séparer l'argent de l'État »", "url": "https://nouspresident.fr/separation-argent-etat/", "date": "2026-07-02", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Organiser des référendums nationaux sur de grandes questions, comme l'intelligence artificielle ou la publicité.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 5 « Pour un travaillisme écologique »", "url": "https://nouspresident.fr/travaillisme-ecologique/", "date": "2026-09-09", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Arrêter les négociations d'accords de libre-échange de l'Union européenne et refuser la ratification du CETA (accord avec le Canada).",
+        "sous_theme": "Commerce",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 7 « Pour protéger notre industrie, relocaliser 100 produits stratégiques »", "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/", "date": "2026-10-15", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Déclencher les mesures de sauvegarde prévues par l'accord commercial entre l'Union européenne et le Mercosur.",
+        "sous_theme": "Commerce",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 7 « Pour protéger notre industrie, relocaliser 100 produits stratégiques »", "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/", "date": "2026-10-15", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Interdire les importations de produits qui ne respectent pas les normes sanitaires françaises.",
+        "sous_theme": "Commerce",
+        "chiffrage": null,
+        "source": { "titre": "Cahier de campagne n° 7 « Pour protéger notre industrie, relocaliser 100 produits stratégiques »", "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/", "date": "2026-10-15", "type": "site", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

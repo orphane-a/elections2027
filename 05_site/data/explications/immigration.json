@@ -1,0 +1,263 @@
+{
+  "slug": "immigration",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/3213": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte, qu'il juge insuffisant, car il reprend ses mesures : prestations sociales, séjour irrégulier, regroupement familial.",
+        "orateur": "Yoann Gillet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, le texte restreint les droits des étrangers (aide médicale, regroupement familial, droit du sol, asile) et reprend des idées du Front national.",
+        "orateur": "Élisa Martin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Selon le groupe, le texte durcit le regroupement familial, l'accès aux prestations et le droit du sol, sans permettre de mieux maîtriser l'immigration.",
+        "orateur": "Boris Vallaud",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Selon le groupe, le texte, qui restreint le droit du sol, le regroupement familial et l'accès aux prestations sociales, va contre les valeurs de la République.",
+        "orateur": "Benjamin Lucas",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Selon le groupe, le texte reprend des mesures du Front national (quotas, caution des étudiants, droit du sol) et va accroître la précarité des étrangers.",
+        "orateur": "Elsa Faucillon",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Selon le groupe, ses lignes rouges sont respectées (régularisation métiers en tension, pas de mineurs en rétention) et le texte allie fermeté et intégration.",
+        "orateur": "Sylvain Maillard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique assumer un texte imparfait, issu de compromis démocratiques, et laisse ses députés libres de leur vote.",
+        "orateur": "Jean-Paul Mattei",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Selon le groupe, le texte facilite l'éloignement d'étrangers auteurs de délits graves et lie l'intégration à la langue, au travail et aux valeurs républicaines.",
+        "orateur": "Philippe Pradal",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Selon le groupe, le texte permet de reprendre le contrôle de l'immigration : quotas, regroupement familial plus encadré, retour du délit de séjour irrégulier.",
+        "orateur": "Olivier Marleix",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique être partagé, ses membres venant d'horizons divers : certains approuvent le texte, d'autres s'y opposent ou s'abstiennent.",
+        "orateur": "Christophe Naegelen",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 19 décembre 2023, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N089",
+          "date": "2023-12-19",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/7405": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte car il prolonge la rétention des étrangers condamnés et dangereux, ce qu'il dit demander depuis plusieurs années.",
+        "orateur": "Michaël Taverne",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, retenir des étrangers jusqu'à 210 jours sur décision administrative est inutile contre le terrorisme et contraire aux valeurs de la République.",
+        "orateur": "Antoine Léaument",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Selon le groupe, allonger la rétention n'aide pas à éloigner, cela dépend des laissez-passer consulaires, et le texte n'a fait l'objet d'aucune étude d'impact.",
+        "orateur": "Céline Hervieu",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Selon le groupe, le texte ne comble aucun vide juridique : allonger la rétention n'accroît pas les éloignements et il confond radicalisation et maladie mentale.",
+        "orateur": "Léa Balage El Mariky",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Selon le groupe, le texte étend surveillance et enfermement au détriment des libertés, avec une rétention jusqu'à 540 jours qui n'améliore pas les éloignements.",
+        "orateur": "Marcellin Nadeau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Selon le groupe, le texte comble des vides juridiques pour prévenir les passages à l'acte, sous contrôle du juge, après avis du Conseil d'État.",
+        "orateur": "Marie Lebec",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique que le compromis trouvé avec le Sénat renforce la sécurité tout en rendant les mesures plus solides face au risque de censure.",
+        "orateur": "Anne Bergantz",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Selon le groupe, un étranger dangereux sous obligation de quitter le territoire doit être placé en rétention jusqu'à son éloignement, et non laissé libre.",
+        "orateur": "Sylvain Berrios",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Selon le groupe, le texte permet de retenir plus longtemps les étrangers dangereux à expulser, le temps d'obtenir les laissez-passer consulaires.",
+        "orateur": "Élisabeth de Maistre",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe, aux sensibilités diverses, indique par son orateur que le texte comble des failles face à la menace terroriste (examen psychiatrique, rétention).",
+        "orateur": "Laurent Mazaury",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique voter le texte, même s'il le juge affaibli, pour protéger les Français face aux étrangers dangereux sous obligation de quitter le territoire.",
+        "orateur": "Matthieu Bloch",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 16 juin 2026, discussion générale sur le texte de la CMP (avant le vote sur l'ensemble)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026O1N272",
+          "date": "2026-06-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "arthaud_nathalie",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Confisquer les profits des grandes entreprises pour les affecter notamment aux écoles où les classes sont surchargées.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "Lutte ouvrière, discours de Nathalie Arthaud au meeting de Paris", "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html", "date": "2026-09-26", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [],
+    "pouvoir_achat": [
+      {
+        "texte": "Porter le SMIC à 2 200 euros nets et indexer salaires, retraites et pensions sur l'inflation.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Dépliant de campagne de Nathalie Arthaud, « Le camp des travailleurs »", "url": "https://www.lutte-ouvriere.org/portail/documents/depliant-campagne-209499.html", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Obliger TotalEnergies à vendre son carburant à prix coûtant.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Lutte ouvrière, discours de Nathalie Arthaud au meeting de Paris", "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html", "date": "2026-09-26", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Interdire les licenciements : en cas de baisse d'activité, personne n'est licencié et les salaires sont maintenus.",
+        "sous_theme": "Emploi",
+        "chiffrage": null,
+        "source": { "titre": "Lutte ouvrière, discours de Nathalie Arthaud au meeting de Paris", "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html", "date": "2026-09-26", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Répartir le travail entre tous en réduisant les horaires, sans perte de salaire.",
+        "sous_theme": "Temps de travail",
+        "chiffrage": null,
+        "source": { "titre": "Dépliant de campagne de Nathalie Arthaud, « Le camp des travailleurs »", "url": "https://www.lutte-ouvriere.org/portail/documents/depliant-campagne-209499.html", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer le secret commercial et bancaire et rendre publiques les comptabilités des entreprises et des fortunes privées.",
+        "sous_theme": "Entreprises",
+        "chiffrage": null,
+        "source": { "titre": "Dépliant de campagne de Nathalie Arthaud, « Le camp des travailleurs »", "url": "https://www.lutte-ouvriere.org/portail/documents/depliant-campagne-209499.html", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Confisquer les profits des grandes entreprises pour les affecter notamment aux hôpitaux qui manquent de soignants.",
+        "sous_theme": "Hôpital",
+        "chiffrage": null,
+        "source": { "titre": "Lutte ouvrière, discours de Nathalie Arthaud au meeting de Paris", "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html", "date": "2026-09-26", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Confisquer les profits des grandes entreprises pour financer notamment la construction de logements.",
+        "sous_theme": "Construction",
+        "chiffrage": null,
+        "source": { "titre": "Lutte ouvrière, discours de Nathalie Arthaud au meeting de Paris", "url": "https://www.lutte-ouvriere.org/portail/brochures/meeting-26-septembre-2026-discours-nathalie-arthaud-197446.html", "date": "2026-09-26", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [],
+    "immigration": [
+      {
+        "texte": "Refuser la « préférence nationale » et défendre les mêmes droits pour tous les travailleurs, quelle que soit leur origine.",
+        "sous_theme": "Droits des étrangers",
+        "chiffrage": null,
+        "source": { "titre": "Dépliant de campagne de Nathalie Arthaud, « Le camp des travailleurs »", "url": "https://www.lutte-ouvriere.org/portail/documents/depliant-campagne-209499.html", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [],
+    "europe": []
+  }
+}

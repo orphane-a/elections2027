@@ -1,0 +1,24 @@
+{
+  "id": "asselineau_francois",
+  "prenom": "François",
+  "nom": "Asselineau",
+  "parti": "Union populaire républicaine",
+  "parti_sigle": "UPR",
+  "groupe_an": null,
+  "groupe_an_note": "L'UPR n'a pas de député à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature citée par LCP, Public Sénat et Sud Radio ; l'UPR appelle les maires à le parrainer (08/11/2026). Date de déclaration non trouvée dans une source de presse : des sites agrégateurs avancent le 21 mars 2026, non confirmé. Le programme 2027 est annoncé « en cours d'élaboration » sur le site de l'UPR.",
+  "a_verifier": false,
+  "date_declaration": null,
+  "site_campagne": "https://www.upr.fr/",
+  "programme": null,
+  "sources": [
+    { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "Sud Radio, Présidentielle 2027 : le point sur toutes les candidatures", "url": "https://www.sudradio.fr/politique/presidentielle-2027-le-point-sur-toutes-les-candidatures", "date": "2026-08-24", "consulte": "2026-11-09" },
+    { "titre": "UPR, Présidentielle 2027 : parrainez François Asselineau", "url": "https://www.upr.fr/actualites/presidentielle-2027-parrainez-francois-asselineau-en-ligne-directe", "date": "2026-11-08", "consulte": "2026-11-09" },
+    { "titre": "UPR, Notre programme (programme 2027 en cours d'élaboration)", "url": "https://www.upr.fr/notre-programme", "date": null, "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

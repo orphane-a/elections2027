@@ -1,0 +1,110 @@
+{
+  "id": "bouamrane_karim",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Permettre à chaque jeune d'accéder à une formation menant à un emploi « choisi et non subi ».",
+        "sous_theme": "Formation",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Rénover les logements des ménages modestes dans le cadre d'une transition écologique « juste ».",
+        "sous_theme": "Rénovation",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Garantir la sécurité alimentaire pour tous.",
+        "sous_theme": "Alimentation",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [],
+    "travail": [
+      {
+        "texte": "Faire en sorte que travailler « paye ».",
+        "sous_theme": "Revenus du travail",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Lutter contre les déserts médicaux pour garantir des soins quels que soient le lieu de résidence et les revenus.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Préparer le système de santé aux maladies chroniques et au vieillissement de la population.",
+        "sous_theme": "Système de santé",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Construire et rénover des logements, et accompagner les familles, les jeunes actifs et les personnes âgées.",
+        "sous_theme": "Construction",
+        "chiffrage": null,
+        "source": { "titre": "Karim Bouamrane 2027, La France humaine et forte (page d'accueil)", "url": "https://www.karimbouamrane2027.org/", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Faire de la protection des enfants et des femmes contre les violences une grande cause nationale.",
+        "sous_theme": "Violences",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Éradiquer le narcotrafic et faire respecter l'autorité de la République.",
+        "sous_theme": "Narcotrafic",
+        "chiffrage": null,
+        "source": { "titre": "Karim Bouamrane 2027, La France humaine et forte (page d'accueil)", "url": "https://www.karimbouamrane2027.org/", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Accueillir dignement les personnes migrantes.",
+        "sous_theme": "Accueil",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Agir sur les causes des migrations dans les pays de départ.",
+        "sous_theme": "Coopération",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Reconduire hors de France les personnes en situation irrégulière.",
+        "sous_theme": "Éloignements",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Réduire les doublons administratifs et alléger les normes.",
+        "sous_theme": "Simplification",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Construire une Europe qui protège.",
+        "sous_theme": "Union européenne",
+        "chiffrage": null,
+        "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

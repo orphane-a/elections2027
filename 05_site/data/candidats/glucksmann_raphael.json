@@ -1,0 +1,22 @@
+{
+  "id": "glucksmann_raphael",
+  "prenom": "Raphaël",
+  "nom": "Glucksmann",
+  "parti": "Place publique",
+  "parti_sigle": "PP",
+  "groupe_an": "SOC",
+  "groupe_an_note": "Candidat commun du Parti socialiste et de Place publique ; les députés de ces deux partis siègent dans le groupe Socialistes et apparentés.",
+  "statut": "Désigné",
+  "statut_detail": "Candidature annoncée sur TF1 le 23 août 2026, puis désigné par la primaire sociale-démocrate (PS et Place publique) le 11 octobre 2026, dès le premier tour, avec 66,17 % des voix.",
+  "a_verifier": false,
+  "date_declaration": "2026-08-23",
+  "site_campagne": "https://glucks2027.fr/",
+  "programme": null,
+  "sources": [
+    { "titre": "LCP, primaire socialiste : vainqueur dès le 1er tour, Raphaël Glucksmann sera le candidat", "url": "https://lcp.fr/actualites/primaire-socialiste-vainqueur-des-le-1er-tour-raphael-glucksmann-sera-le-candidat-de-la", "date": "2026-10-11", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, fiscalité, école, immigration : ce que propose Raphaël Glucksmann (annonce sur TF1)", "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann", "date": "2026-08-24", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Bon",
+  "date_maj": "2026-11-09"
+}

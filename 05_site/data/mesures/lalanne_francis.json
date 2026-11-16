@@ -1,0 +1,56 @@
+{
+  "id": "lalanne_francis",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [
+      {
+        "texte": "Mettre fin aux obligations médicales.",
+        "sous_theme": "Libertés et santé",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Reconnaître les médecines alternatives.",
+        "sous_theme": "Médecines alternatives",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Créer un référendum d'initiative citoyenne (RIC) « en toutes matières ».",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Abroger les lois Pleven (provocation à la haine raciale), Gayssot (négationnisme) et Avia (haine en ligne).",
+        "sous_theme": "Libertés publiques",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Faire sortir la France de l'Union européenne (« Frexit ») et revenir au franc.",
+        "sous_theme": "Union européenne",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faire sortir la France de l'OTAN.",
+        "sous_theme": "Défense",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "slug": "education",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/2880": {
+      "RN": {
+        "texte": "Le groupe indique juger le texte insuffisant, mais le voter comme un premier pas contre l'antisémitisme dans les universités.",
+        "orateur": "Roger Chudeau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, le texte vise les mobilisations étudiantes, sans mesure de prévention ni moyens, et sépare l'antisémitisme des autres racismes.",
+        "orateur": "Marie Mesmeur",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique avoir obtenu des garanties sur les sanctions disciplinaires et estime que le texte vise toutes les formes de haine.",
+        "orateur": "Romain Eskenazi",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": null,
+      "GDR": {
+        "texte": "Selon le groupe, séparer l'antisémitisme des autres racismes crée une hiérarchie et les règles disciplinaires menacent la liberté de manifester.",
+        "orateur": "Nicolas Sansu",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique que le texte donne aux universités des outils concrets : référents, formations, sanctions et suivi des victimes.",
+        "orateur": "Céline Calvez",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique soutenir la sensibilisation, les missions « égalité et diversité » dans chaque établissement et des procédures disciplinaires renforcées.",
+        "orateur": "Géraldine Bannier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Selon le groupe, l'université doit rester un lieu où nul ne craint pour sa sécurité ; le texte prévoit formation, référents et sanctions.",
+        "orateur": "Pierre Henriet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique soutenir le texte pour la procédure disciplinaire qu'il crée afin de sanctionner les actes antisémites et racistes.",
+        "orateur": "Alexandre Portier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Selon le groupe, le texte reconnaît la spécificité de l'antisémitisme dans une lutte contre toutes les discriminations et sera un outil utile.",
+        "orateur": "Joël Bruneau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique que le texte oblige les établissements à agir vite contre l'antisémitisme et élargit les sanctions disciplinaires.",
+        "orateur": "Olivier Fayssat",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 2 juillet 2025, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025E1N003",
+          "date": "2025-07-02",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    },
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431": {
+      "RN": {
+        "texte": "Le groupe indique partager l'objectif, mais s'abstient car la vérification de l'âge, non précisée par le texte, pose un risque pour les libertés.",
+        "orateur": "Laure Lavalette",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, la vérification de l'âge met fin à l'anonymat en ligne, l'interdiction sera contournée et les plateformes ne sont pas régulées.",
+        "orateur": "Arnaud Saint-Martin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": null,
+      "ECO": {
+        "texte": "Le groupe indique soutenir majoritairement l'âge minimum de 15 ans, demandé par les parents, tout en réclamant une régulation des plateformes.",
+        "orateur": "Lisa Belluco",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Selon le groupe, le texte se limite à des mesures symboliques qui ne protègent pas assez les mineurs, d'où trois positions de vote différentes.",
+        "orateur": "Soumya Bourouaha",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique que le texte protège les enfants face aux plateformes et l'attention des élèves avec l'interdiction du téléphone au lycée.",
+        "orateur": "Anne Genetet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter le texte parce qu'il va dans le bon sens et qu'il est urgent de protéger les enfants face aux contenus en ligne.",
+        "orateur": "Laurent Croizier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Selon le groupe, le texte fixe une règle claire, pas de réseaux sociaux avant 15 ans, et interdit le téléphone de l'école au lycée.",
+        "orateur": "Laurent Marcangeli",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte pour protéger les enfants des effets des réseaux sociaux et des écrans sur la concentration en classe.",
+        "orateur": "Lionel Duparay",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique soutenir l'utilité de tous les articles, tout en s'interrogeant sur l'application concrète de l'interdiction avant 15 ans.",
+        "orateur": "Joël Bruneau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Selon le groupe, qui laisse la liberté de vote, l'interdiction avant 15 ans présente un risque pour la liberté et l'anonymat, d'où des votes divers.",
+        "orateur": "Olivier Fayssat",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 21 juillet 2026, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N023",
+          "date": "2026-07-21",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    }
+  }
+}

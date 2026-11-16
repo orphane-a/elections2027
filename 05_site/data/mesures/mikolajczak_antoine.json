@@ -1,0 +1,106 @@
+{
+  "id": "mikolajczak_antoine",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Faire commencer les cours à 9 heures au collège et au lycée.",
+        "sous_theme": "Rythmes scolaires",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, nos réponses aux revendications lycéennes", "url": "https://parti-equinoxe.fr/nos-reponses-aux-revendications-lyceennes/", "date": "2026-10-20", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Garantir une place dans l'enseignement supérieur à tous les bacheliers.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, nos réponses aux revendications lycéennes", "url": "https://parti-equinoxe.fr/nos-reponses-aux-revendications-lyceennes/", "date": "2026-10-20", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Lancer un plan d'urgence de rénovation des bâtiments scolaires, en commençant par les sanitaires.",
+        "sous_theme": "Bâtiments scolaires",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, nos réponses aux revendications lycéennes", "url": "https://parti-equinoxe.fr/nos-reponses-aux-revendications-lyceennes/", "date": "2026-10-20", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Fixer un prix du carbone d'au moins 100 euros par tonne en 2030, dont 80 % reversés aux ménages en revenu carbone mensuel.",
+        "sous_theme": "Climat",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer une Chambre citoyenne pour l'écologie de 150 personnes tirées au sort, avec un droit de veto sur les lois contraires.",
+        "sous_theme": "Gouvernance écologique",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [
+      {
+        "texte": "Créer un bilan de prévention santé entièrement pris en charge.",
+        "sous_theme": "Prévention",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Conditionner l'installation des médecins aux besoins prioritaires des territoires.",
+        "sous_theme": "Déserts médicaux",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre le Nutri-Score obligatoire et taxer les produits gras, salés, sucrés, alcoolisés et ultra-transformés.",
+        "sous_theme": "Alimentation",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [],
+    "securite": [
+      {
+        "texte": "Rendre l'IGPN (inspection de la police) indépendante et enquêter sur chaque cas signalé de violence policière.",
+        "sous_theme": "Contrôle de la police",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, rompre avec la spirale de la violence", "url": "https://parti-equinoxe.fr/rompre-avec-la-spirale-de-la-violence/", "date": "2026-10-19", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre obligatoires les caméras-piétons pour les policiers, avec sanctions en cas de caméra masquée ou d'absence d'identification.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, rompre avec la spirale de la violence", "url": "https://parti-equinoxe.fr/rompre-avec-la-spirale-de-la-violence/", "date": "2026-10-19", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Sanctionner les dégradations en manifestation par des amendes et des travaux d'intérêt général de réparation.",
+        "sous_theme": "Justice",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, notre plan pour sortir de la violence", "url": "https://parti-equinoxe.fr/notre-plan-pour-sortir-de-la-violence/", "date": "2026-10-15", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Élire les députés à la proportionnelle, tirer au sort le Sénat parmi les élus locaux et compter le vote blanc.",
+        "sous_theme": "Modes de scrutin",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Remplacer départements et intercommunalités par 350 « Pays de France », un échelon local de proximité.",
+        "sous_theme": "Collectivités",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Limiter à deux mandats une même fonction élective, sauf pour les maires des petites communes.",
+        "sous_theme": "Mandats",
+        "chiffrage": null,
+        "source": { "titre": "Parti Équinoxe, Notre programme 2027", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": []
+  }
+}

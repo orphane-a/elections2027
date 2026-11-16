@@ -1,0 +1,24 @@
+{
+  "id": "bertrand_xavier",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [
+      {
+        "texte": "Il défend la retraite par capitalisation.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "LCP, entretien de Xavier Bertrand au Figaro", "url": "https://lcp.fr/actualites/presidentielle-xavier-bertrand-indique-tester-ses-idees-et-envisager-de-concourir-en", "date": "2026-08-03", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [],
+    "europe": []
+  }
+}

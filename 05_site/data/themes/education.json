@@ -1,0 +1,61 @@
+{
+  "slug": "education",
+  "date_maj": "2026-11-09",
+  "en_bref": "L'Éducation nationale est le premier budget de l'État. Le thème couvre l'école, le collège et le lycée, le métier et la formation des enseignants, l'accueil des élèves en situation de handicap et l'enseignement supérieur, dans un contexte de baisse du nombre d'élèves.",
+  "sous_themes": ["École", "Enseignants", "Élèves en situation de handicap", "Enseignement supérieur"],
+  "faits": [
+    {
+      "date": "2023-09",
+      "texte": "Le « Pacte enseignant », qui rémunère des missions en plus des cours, a représenté plus de 700 M€ en 2023-2024, près de 600 M€ en 2024-2025 et 500 M€ prévus en 2025-2026.",
+      "origine": "gouvernement",
+      "source": { "titre": "Assemblée nationale, rapport spécial sur le PLF 2026, annexe 23 « Enseignement scolaire », 23 octobre 2025", "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1996-tiii-a23_rapport-fond.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-09",
+      "texte": "Les écoles publiques (premier degré) comptent 5 410 427 élèves à la rentrée 2024, soit 76 033 de moins qu'en 2023 (-1,39 %). Le ministère prévoit 5 231 938 élèves à la rentrée 2026.",
+      "origine": "exterieur",
+      "source": { "titre": "Assemblée nationale, rapport spécial sur le PLF 2026, annexe 23 « Enseignement scolaire », 23 octobre 2025", "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1996-tiii-a23_rapport-fond.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-10",
+      "texte": "Le projet de budget 2026 prévoit 89,64 Md€ de crédits de paiement pour la mission « Enseignement scolaire », soit +1,1 % par rapport à 2025.",
+      "origine": "gouvernement",
+      "source": { "titre": "Assemblée nationale, rapport spécial sur le PLF 2026, annexe 23 « Enseignement scolaire », 23 octobre 2025", "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1996-tiii-a23_rapport-fond.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-10",
+      "texte": "Le même projet prévoit 1 200 postes d'accompagnants d'élèves handicapés (AESH) et 7 938 enseignants stagiaires en plus, liés à la formation recrutée dès bac + 3, et 4 018 postes d'enseignants titulaires en moins.",
+      "origine": "gouvernement",
+      "source": { "titre": "Assemblée nationale, rapport spécial sur le PLF 2026, annexe 23 « Enseignement scolaire », 23 octobre 2025", "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1996-tiii-a23_rapport-fond.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Loi relative à la lutte contre l'antisémitisme dans l'enseignement supérieur (2025)",
+      "phrase": "La loi renforce la prévention et les sanctions des actes antisémites, racistes et discriminatoires dans les universités. Groupe Écologiste et social divisé : 4 pour, 11 contre, 7 abstentions.",
+      "date": "2025-07-02",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 2880", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2880" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "pour", "ECO": "partage", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": "pour" }
+    },
+    {
+      "titre": "Loi visant à protéger les mineurs des risques auxquels les expose l'utilisation des réseaux sociaux (2026)",
+      "phrase": "La loi étend aux lycées l'interdiction du téléphone portable déjà en vigueur à l'école et au collège. Son article 1er, qui interdisait les réseaux sociaux aux moins de 15 ans, a été censuré par le Conseil constitutionnel. Groupes divisés : GDR 6 pour, 3 contre, 5 abstentions ; UDR 8 pour, 5 contre, 4 abstentions.",
+      "date": "2026-07-21",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 8431", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431" },
+      "positions": { "RN": "abstention", "LFI": "contre", "SOC": "pour", "ECO": "pour", "GDR": "partage", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": "partage" }
+    }
+  ],
+  "liens": [
+    { "titre": "Assemblée nationale, rapport spécial « Enseignement scolaire » sur le budget 2026", "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1996-tiii-a23_rapport-fond.pdf", "type": "PDF" },
+    { "titre": "Assemblée nationale, scrutin final de la loi contre l'antisémitisme dans l'enseignement supérieur", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2880", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin final de la loi sur les mineurs et les réseaux sociaux", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8431", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin sur la proposition de loi « parcours inclusif » des élèves à besoins éducatifs particuliers (nouvelle lecture, mai 2026)", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/6512", "type": "Site officiel" },
+    { "titre": "LCP, ce que contient la loi sur les réseaux sociaux et les mineurs", "url": "https://lcp.fr/actualites/interdiction-des-reseaux-sociaux-aux-moins-de-15-ans-ce-que-contient-la-loi-qui-vient-d", "type": "Site externe" }
+  ]
+}

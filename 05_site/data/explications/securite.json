@@ -1,0 +1,241 @@
+{
+  "slug": "securite",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/671": {
+      "RN": {
+        "texte": "Le groupe indique voter pour, le texte étant une avancée pour les forces de l'ordre, et demande une réponse pénale et une politique migratoire plus fermes.",
+        "orateur": "Jordan Guitton",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre, estimant que le texte ne repense pas les missions de la police et que l'extension des amendes forfaitaires accroît la défiance.",
+        "orateur": "Élisa Martin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique s'abstenir : il relève des moyens et un comité de déontologie, mais garde des désaccords sur la police judiciaire et les amendes forfaitaires.",
+        "orateur": "Roger Vicot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter contre, jugeant que le texte se limite à une mise à jour des moyens et n'apporte pas de soutien psychologique aux agents.",
+        "orateur": "Sandra Regol",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter contre, préférant une police de proximité aux renforts de maintien de l'ordre et refusant l'extension des amendes forfaitaires.",
+        "orateur": "Davy Rimane",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le texte pour ses 15 milliards d'euros sur cinq ans, ses 8 500 postes et ses mesures sur la cybercriminalité et la réponse pénale.",
+        "orateur": "Marie Lebec",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter pour, le texte modernisant les forces de sécurité, renforçant la lutte contre la cybercriminalité et préservant la police judiciaire.",
+        "orateur": "Erwan Balanant",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour, estimant que le texte donne aux agents les moyens d'assurer la sécurité et alourdit les sanctions contre les cyberattaques.",
+        "orateur": "Philippe Pradal",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte, jugé nécessaire pour les moyens et effectifs des forces de l'ordre, et demande une justice plus rapide et plus sévère.",
+        "orateur": "Ian Boucard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique voter pour en majorité, soutenant la programmation sur cinq ans, la revalorisation de policiers et l'extension des amendes forfaitaires.",
+        "orateur": "Christophe Naegelen",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 7 décembre 2022, discussion générale (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N087",
+          "date": "2022-12-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/2719": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte pour ses recrutements, ses places de prison et ses techniques d'enquête, tout en regrettant la place des peines alternatives.",
+        "orateur": "Pascale Bordes",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre, jugeant que le texte réduit les libertés et retire au juge les saisies sur salaire, sans traiter la surpopulation carcérale.",
+        "orateur": "Andrée Taurinya",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique s'abstenir : il approuve la hausse du budget de la justice, mais conteste certaines mesures du texte et regrette le sort des greffiers.",
+        "orateur": "Cécile Untermaier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter contre, jugeant que les moyens nouveaux s'accompagnent de mesures qui réduisent les droits, comme l'activation à distance des appareils.",
+        "orateur": "Jérémie Iordanoff",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique ne pas voter le texte, jugeant les moyens humains insuffisants et regrettant l'absence de régulation carcérale.",
+        "orateur": "Emeline K/Bidi",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le texte, qui porte le budget de la justice à près de 11 milliards d'euros en 2027 et modernise l'institution judiciaire.",
+        "orateur": "Sarah Tanzilli",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter pour, saluant un compromis entre efficacité pénale et libertés publiques et le recrutement rapide de magistrats.",
+        "orateur": "Emmanuel Mandon",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour, citant la hausse du budget, 10 000 recrutements, la lutte contre le terrorisme et la simplification des procédures.",
+        "orateur": "Naïma Moutchou",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter pour, saluant la hausse du budget, les recrutements et 3 000 places de prison en plus, et dit rester vigilant sur leur financement.",
+        "orateur": "Philippe Gosselin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 10 octobre 2023, discussion générale commune (textes de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N012",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": null,
+      "UDR": null
+    }
+  }
+}

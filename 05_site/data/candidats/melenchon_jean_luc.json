@@ -1,0 +1,23 @@
+{
+  "id": "melenchon_jean_luc",
+  "prenom": "Jean-Luc",
+  "nom": "Mélenchon",
+  "parti": "La France insoumise",
+  "parti_sigle": "LFI",
+  "groupe_an": "LFI",
+  "groupe_an_note": null,
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée le 3 mai 2026 au 20 heures de TF1, quatrième candidature après 2012, 2017 et 2022. La liste LCP du 14 octobre 2026 parle de « fin mai » : date divergente.",
+  "a_verifier": false,
+  "date_declaration": "2026-05-03",
+  "site_campagne": "https://melenchon2027.fr/",
+  "programme": { "titre": "L'Avenir en commun, le programme de la Nouvelle France (édition 2027)", "url": "https://melenchon2027.fr/programme/livre/", "date": "2026-11-06", "type": "page web" },
+  "sources": [
+    { "titre": "LCP, Présidentielle : Jean-Luc Mélenchon officialise sa candidature pour 2027", "url": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851", "date": "2026-05-03", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Bon",
+  "date_maj": "2026-11-09"
+}

@@ -1,0 +1,263 @@
+{
+  "slug": "logement",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/1361": {
+      "RN": {
+        "texte": "Le groupe indique voter pour afin de protéger le droit de propriété et d'abréger les procédures subies par les propriétaires victimes de squat.",
+        "orateur": "Michaël Taverne",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre car le texte accélère les expulsions locatives et expose à la prison des personnes sans abri occupant des locaux vides.",
+        "orateur": "François Piquemal",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter contre car le texte vise surtout des locataires en difficulté de paiement et sanctionne sans traiter les causes du mal-logement.",
+        "orateur": "Inaki Echaniz",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter contre car le texte alourdit les peines contre les occupants et accélère les expulsions au lieu de répondre au mal-logement.",
+        "orateur": "Aurélien Taché",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter contre car le texte vise les locataires en difficulté et rompt l'équilibre entre droits des propriétaires et des locataires.",
+        "orateur": "Stéphane Peu",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter pour afin de protéger les petits propriétaires contre le squat, les locataires de bonne foi restant protégés par le droit.",
+        "orateur": "Paul Midy",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter pour car la navette a distingué le squatteur du locataire en difficulté et donné des outils aux propriétaires.",
+        "orateur": "Éric Martineau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour car le texte renforce les sanctions contre le squat et sécurise les propriétaires face aux loyers impayés.",
+        "orateur": "Luc Lamirault",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter pour car le texte renforce la répression du squat et facilite l'expulsion des squatteurs, des mesures qu'il a défendues.",
+        "orateur": "Annie Genevard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique qu'une majorité vote pour afin de protéger les petits propriétaires, d'autres membres s'abstenant par crainte pour les locataires.",
+        "orateur": "Paul Molac",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 4 avril 2023, explications de vote",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N202",
+          "date": "2023-04-04",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/289": {
+      "RN": {
+        "texte": "Le groupe indique voter contre car la hausse de la fiscalité et les règles énergétiques pénalisent les petits propriétaires et réduiront l'offre de logements.",
+        "orateur": "Alexis Jolly",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter pour car le texte permet aux communes de réguler les meublés de tourisme, notamment par des quotas, pour que les habitants se logent.",
+        "orateur": "François Piquemal",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter pour car le texte donne aux maires des outils pour réguler les meublés de tourisme et réduit leur avantage fiscal.",
+        "orateur": "Laurent Lhardit",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter pour car le texte donne à l'État et aux maires des moyens d'agir face à la hausse du nombre de meublés de tourisme.",
+        "orateur": "Damien Girard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter pour car le texte donne des outils aux maires face aux meublés de tourisme et réduit leur avantage fiscal.",
+        "orateur": "Stéphane Peu",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter pour car le texte adapte la régulation des meublés de tourisme à chaque commune et corrige leur avantage fiscal.",
+        "orateur": "David Amiel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter pour car le texte donne aux communes des outils pour limiter les meublés de tourisme et aligne leur fiscalité sur la location longue.",
+        "orateur": "Olivier Falorni",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour car le texte corrige l'avantage fiscal des meublés de tourisme et vise à remettre des logements en location à l'année.",
+        "orateur": "Christophe Plassard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter pour car le texte renforce les outils des maires et prévoit, à sa demande, une révision modérée de la fiscalité des meublés classés.",
+        "orateur": "Vincent Rolland",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique voter pour car le texte donne des outils aux maires tout en prévoyant des seuils pour ne pas pénaliser les petits propriétaires.",
+        "orateur": "Paul Molac",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique voter contre car le texte alourdit les normes et la fiscalité des meublés de tourisme, au détriment des propriétaires et du marché.",
+        "orateur": "Alexandre Allegret-Pilot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 7 novembre 2024, discussion générale du texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2025O1N039",
+          "date": "2024-11-07",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    }
+  }
+}

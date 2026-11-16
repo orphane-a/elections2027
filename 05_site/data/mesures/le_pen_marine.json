@@ -1,0 +1,176 @@
+{
+  "id": "le_pen_marine",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Supprimer la contribution vie étudiante et de campus (CVEC), un frais de 105 euros payé avant l'inscription à l'université.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes", "url": "https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Supprimer l'objectif « zéro artificialisation nette » des sols.",
+        "sous_theme": "Sols et urbanisme",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faire du diagnostic de performance énergétique (DPE) des logements un simple élément indicatif.",
+        "sous_theme": "Rénovation énergétique",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Arrêter le Pacte vert européen (Green Deal).",
+        "sous_theme": "Climat",
+        "chiffrage": null,
+        "source": { "titre": "Euronews, Moins de fonds pour l'Ukraine et budget de l'UE en baisse : que changerait une victoire de Le Pen", "url": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-", "date": "2026-10-17", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Baisser la TVA sur l'essence, le gazole, l'électricité et le gaz de 20 % à 5,5 %.",
+        "sous_theme": "Énergie",
+        "chiffrage": "Coût annoncé par le RN : 12 Md€, financé par la fin d'aides aux étrangers et la baisse de la contribution à l'UE.",
+        "source": { "titre": "Orange Actualités (6Medias), Carburants : la baisse de la TVA réclamée par Marine Le Pen", "url": "https://actu.orange.fr/question-du-jour-2026-09-21-CNT000002s0few.html", "date": "2026-09-21", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Exonérer d'impôt sur le revenu les moins de 30 ans, jusqu'à quatre fois le Smic.",
+        "sous_theme": "Impôts",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes", "url": "https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Accorder une part fiscale pleine dès le deuxième enfant, au lieu d'une demi-part pour chacun des deux premiers.",
+        "sous_theme": "Familles",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes", "url": "https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Revenir à un âge légal de départ à la retraite de 62 ans, ou 60 ans pour ceux qui ont commencé à travailler avant 20 ans.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Présidentielle : que proposent les candidats à l'Élysée sur les retraites ?", "url": "https://lcp.fr/actualites/presidentielle-que-proposent-les-candidats-a-l-elysee-sur-les-retraites-441751", "date": "2026-09-16", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer un pilier de retraite par capitalisation, en plus du système actuel.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen", "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer une « prime d'activité étudiante » pour les étudiants qui travaillent.",
+        "sous_theme": "Emploi des jeunes",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes", "url": "https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [],
+    "logement": [
+      {
+        "texte": "Donner aux Français la priorité d'accès au logement social.",
+        "sous_theme": "Logement social",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Vendre une partie des logements HLM aux Français.",
+        "sous_theme": "Logement social",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Abroger la loi SRU, qui impose aux communes un quota de logements sociaux.",
+        "sous_theme": "Construction",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Organiser un référendum sur les « idéologies islamistes » : financements, mosquées radicales, imams, et interdiction des Frères musulmans.",
+        "sous_theme": "Islamisme",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Interdiction du voile : Le Pen veut le faire de manière progressive", "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-le-pen-veut-le-faire-de-maniere-progressive", "date": "2026-09-16", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Interdire le voile islamique par décret après ce référendum, d'abord dans les universités, les sorties scolaires, les fédérations sportives et les bâtiments publics.",
+        "sous_theme": "Laïcité",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Interdiction du voile : Le Pen veut le faire de manière progressive", "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-le-pen-veut-le-faire-de-maniere-progressive", "date": "2026-09-16", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Expulser des logements sociaux les familles délinquantes.",
+        "sous_theme": "Délinquance",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Organiser dès l'arrivée à l'Élysée un référendum pour réviser la Constitution et appliquer son programme sur l'immigration.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), Interdiction du voile : Le Pen veut le faire de manière progressive", "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-le-pen-veut-le-faire-de-maniere-progressive", "date": "2026-09-16", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réserver les aides personnalisées au logement (APL) aux Français, au nom de la « priorité nationale ».",
+        "sous_theme": "Priorité nationale",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages", "url": "https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages", "date": "2026-09-13", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réduire les dépenses publiques liées à l'immigration.",
+        "sous_theme": "Dépenses publiques",
+        "chiffrage": "Économie annoncée : 15 Md€ en 2027 et 29 Md€ en année pleine.",
+        "source": { "titre": "Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen", "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Inscrire dans la Constitution, par référendum dans les douze mois suivant l'élection, une « règle d'or » qui plafonne le déficit public.",
+        "sous_theme": "Finances publiques",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen", "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer les intercommunalités (EPCI) et les métropoles.",
+        "sous_theme": "Collectivités locales",
+        "chiffrage": "Économie annoncée : 250 M€.",
+        "source": { "titre": "Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen", "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer la quasi-totalité des agences de l'État.",
+        "sous_theme": "Organisation de l'État",
+        "chiffrage": "Économie annoncée : 3,4 Md€ en 2027.",
+        "source": { "titre": "Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen", "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Plafonner la contribution nette de la France au budget de l'Union européenne à 5 milliards d'euros par an.",
+        "sous_theme": "Budget européen",
+        "chiffrage": null,
+        "source": { "titre": "Euronews, Moins de fonds pour l'Ukraine et budget de l'UE en baisse : que changerait une victoire de Le Pen", "url": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-", "date": "2026-10-17", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Maintenir l'aide financière à l'Ukraine six mois après l'élection, puis l'arrêter.",
+        "sous_theme": "Ukraine",
+        "chiffrage": null,
+        "source": { "titre": "Paris Match Belgique, Marine Le Pen promet de couper l'aide à l'Ukraine (interview VRT)", "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/", "date": "2026-10-15", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Conclure le budget européen 2028-2034 seulement après les élections en France, Italie, Pologne et Espagne, sans hausse de la contribution française.",
+        "sous_theme": "Budget européen",
+        "chiffrage": null,
+        "source": { "titre": "Paris Match Belgique, Marine Le Pen promet de couper l'aide à l'Ukraine (interview VRT)", "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/", "date": "2026-10-15", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

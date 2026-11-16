@@ -1,0 +1,23 @@
+{
+  "id": "mathieu_benoit",
+  "prenom": "Benoît",
+  "nom": "Mathieu",
+  "parti": "Sans étiquette (démarche « Cap 500 signatures »)",
+  "parti_sigle": "SE",
+  "groupe_an": null,
+  "groupe_an_note": "Candidat indépendant, sans parti ni député.",
+  "statut": "Déclaré",
+  "statut_detail": "Enseignant de 27 ans, candidat indépendant. Il parcourt la France à vélo depuis le 30 mars 2026 pour réunir les 500 parrainages d'élus. Aucune date précise de déclaration trouvée.",
+  "a_verifier": false,
+  "date_declaration": null,
+  "site_campagne": "https://benoitmathieu2027.fr/",
+  "programme": { "titre": "Programme (limité à la démocratie : RIC et nouvelle Constitution, sans programme sur les autres sujets)", "url": "https://benoitmathieu2027.fr/programme", "date": null, "type": "page web" },
+  "sources": [
+    { "titre": "Sud Radio, Présidentielle 2027 : un professeur sillonne la France à vélo en quête des 500 parrainages", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages", "date": "2026-05-06", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "Benoît Mathieu 2027, site de campagne", "url": "https://benoitmathieu2027.fr/", "date": null, "consulte": "2026-11-09" },
+    { "titre": "Solution Démocratique, Benoît Mathieu 2027 : démocratie directe et analyse du programme", "url": "https://solutiondemocratique.fr/benoit-mathieu-programme-2027/", "date": "2026-04-27", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

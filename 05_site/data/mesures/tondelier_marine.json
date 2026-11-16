@@ -1,0 +1,195 @@
+{
+  "id": "tondelier_marine",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Réduire la taille des classes de primaire à 19 élèves en 2032, et à 12 élèves en éducation prioritaire (REP et REP+).",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 23 « Viser la réussite de tous les élèves »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Augmenter le salaire des enseignants de 15 % en cinq ans.",
+        "sous_theme": "Enseignants",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 23", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Remplacer Parcoursup et MonMaster par une plateforme d'orientation sans lettre de motivation ni mention du lycée d'origine.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 24 « Démocratiser l'enseignement supérieur »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Doter le Plan national d'adaptation au changement climatique de 7 milliards d'euros par an d'ici 2032.",
+        "sous_theme": "Climat",
+        "chiffrage": "Montant annoncé : 7 Md€ par an d'ici 2032",
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 4 « Adapter la France à +4° »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Porter les énergies renouvelables à 44 % de la consommation d'électricité en 2030, dans une loi de programmation énergie-climat.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 1 « Gagner la bataille du climat »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Décréter un moratoire sur tous les projets de mégabassines (grandes réserves d'eau pour l'irrigation).",
+        "sous_theme": "Eau",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), partie I « Garantir un monde habitable »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Porter le salaire minimum à 2 000 € brut par mois dès 2027.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 13 « Assurer des rémunérations dignes »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Encadrer les prix d'un panier de biens essentiels : logement, énergie, eau, transport, alimentation et biens culturels.",
+        "sous_theme": "Prix",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 16 « Changer les règles du marché »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rétablir l'impôt sur la fortune avec une composante climatique et créer une taxe de 2 % sur les patrimoines au-delà de 100 millions d'euros.",
+        "sous_theme": "Fiscalité",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 17 « Refonder le pacte fiscal »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Abroger le départ à 64 ans, revenir à 62 ans et viser 60 ans pour les personnes ayant travaillé tôt ou dans des métiers pénibles.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 31 « Adopter une autre réforme des retraites »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Passer aux 32 heures sans perte de salaire dans les métiers pénibles ou de nuit.",
+        "sous_theme": "Temps de travail",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 14 « Travailler mieux »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer un congé climatique de 5 jours par an en cas de températures extrêmes ou de catastrophe climatique.",
+        "sous_theme": "Conditions de travail",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 14 « Travailler mieux »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Créer 2 000 centres de santé d'ici 2030, notamment dans les zones rurales et les quartiers prioritaires.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 30 « Rendre accessible une offre de soin de qualité »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Conditionner le remboursement public des soins en clinique privée à leur participation à la permanence des soins.",
+        "sous_theme": "Hôpital et cliniques",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 30", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Généraliser et rendre permanent l'encadrement des loyers, dont toutes les villes universitaires.",
+        "sous_theme": "Loyers",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 2 « Pouvoir se loger décemment »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Imposer un objectif de 30 % de logements sociaux d'ici 2035 dans les communes aux marchés immobiliers les plus tendus.",
+        "sous_theme": "Logement social",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 2", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Augmenter les aides personnalisées au logement (APL) de 10 %, avec un mécanisme empêchant leur report sur les loyers.",
+        "sous_theme": "Aides au logement",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 32 « Lutter contre la pauvreté »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Créer une police nationale de proximité, en lien quotidien avec la population.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 50 « Refonder une police républicaine »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Limiter le nombre de détenus à 100 % des places de chaque prison (numerus clausus).",
+        "sous_theme": "Prisons",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 53 « Humaniser la prison »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer une juridiction spécialisée contre le crime organisé (JIRS) dans chaque cour d'appel pour lutter contre le narcotrafic.",
+        "sous_theme": "Narcotrafic",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 58 « Lutter contre le narcotrafic »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Régulariser les travailleurs, étudiants et parents d'enfants scolarisés sans papiers, selon des critères objectifs comme la durée de résidence.",
+        "sous_theme": "Régularisation",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 56 « Garantir les libertés de migration »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Appliquer le droit du sol aux enfants nés en France, quelle que soit la situation des parents, y compris à Mayotte.",
+        "sous_theme": "Nationalité",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 56", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Abroger les lois asile et immigration adoptées depuis 2017 et garantir aux exilés l'accès aux soins, à l'école et à l'hébergement.",
+        "sous_theme": "Droits des étrangers",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 56", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Instaurer la proportionnelle intégrale aux élections législatives, sur des circonscriptions régionales.",
+        "sous_theme": "Mode de scrutin",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 49 « Démocratiser la République »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Établir un septennat présidentiel unique et supprimer les pouvoirs exceptionnels de l'article 16.",
+        "sous_theme": "Présidence",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 48 « Passer à la Première République Écologique et citoyenne »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer un référendum d'initiative citoyenne (RIC) pour proposer ou abroger une loi, après contrôle de constitutionnalité.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 48", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Remplacer le droit de veto national par la majorité qualifiée sur les droits fondamentaux, la fiscalité, la protection sociale et la politique étrangère.",
+        "sous_theme": "Institutions européennes",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 60 « Avancer vers une Europe fédérale »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Arrêter immédiatement les importations de gaz, d'uranium et d'engrais russes et biélorusses.",
+        "sous_theme": "Ukraine",
+        "chiffrage": null,
+        "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 62 « Soutenir l'Ukraine face à la Russie »", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

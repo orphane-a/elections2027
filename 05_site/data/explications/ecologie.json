@@ -1,0 +1,364 @@
+{
+  "slug": "ecologie",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/897": {
+      "RN": {
+        "texte": "Le groupe indique voter contre car, selon lui, l'éolien et le solaire, intermittents, fragilisent un modèle électrique fondé sur le nucléaire et l'hydraulique.",
+        "orateur": "Nicolas Meizonnet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre car la CMP a maintenu un droit de veto des communes et des dérogations au droit de l'environnement, sans réforme du marché.",
+        "orateur": "Maxime Laisney",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique soutenir le texte, auquel il a apporté des mesures sur le partage des sols et de la valeur, tout en demandant une clause de revoyure.",
+        "orateur": "Dominique Potier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique s'abstenir car la CMP n'a pas levé ses désaccords, notamment sur la planification et les dérogations pour les espèces protégées.",
+        "orateur": "Charles Fournier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter contre car le texte ne remet pas en cause le marché de l'énergie et ne fixe pas de seuils de saturation pour les territoires.",
+        "orateur": "Sébastien Jumel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le texte, qui doit selon lui accélérer les renouvelables pour renforcer la souveraineté énergétique et réduire les émissions.",
+        "orateur": "Éric Bothorel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique soutenir le texte pour diversifier le mix énergétique à côté du nucléaire et sortir des énergies fossiles importées.",
+        "orateur": "Aude Luquet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour car le développement rapide des renouvelables est selon lui nécessaire pour sortir des énergies fossiles, avec le nucléaire.",
+        "orateur": "Luc Lamirault",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter contre, estimant que le texte ne répond pas au coût de l'électricité et ne fixe pas de distance minimale entre éoliennes et habitations.",
+        "orateur": "Jérôme Nury",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique voter majoritairement pour car le texte ouvre la planification aux plus petites communes, malgré des regrets sur sa date d'entrée en vigueur.",
+        "orateur": "Jean-Louis Bricout",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 31 janvier 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N128",
+          "date": "2023-01-31",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/1533": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte car il va dans le sens d'une relance du nucléaire, tout en estimant insuffisant le nombre de réacteurs prévus.",
+        "orateur": "Jean-Philippe Tanguy",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique s'opposer à la relance du nucléaire en raison des risques d'accident et des déchets, et estime possible un mix 100 % renouvelable en 2050.",
+        "orateur": "Aymeric Caron",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique s'abstenir car, selon lui, la relance du nucléaire devait être débattue dans la future loi de programmation sur l'énergie et le climat.",
+        "orateur": "Marie-Noëlle Battistel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique s'opposer au texte car, selon lui, de nouveaux réacteurs ne seront pas en service assez tôt pour réduire les émissions à court terme.",
+        "orateur": "Julie Laernoes",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter majoritairement pour car il juge urgent de relancer la filière nucléaire pour l'indépendance énergétique et la sortie des fossiles.",
+        "orateur": "Sébastien Jumel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le texte pour relancer la filière nucléaire, qu'il juge nécessaire à un mix électrique pilotable et décarboné.",
+        "orateur": "Stéphane Travert",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique soutenir le texte qui, selon lui, simplifie la construction de réacteurs pour décarboner le mix et viser la neutralité carbone en 2050.",
+        "orateur": "Louise Morel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter le texte, qui doit selon lui faire gagner deux ans sur la construction d'un réacteur et aider à sortir des énergies fossiles.",
+        "orateur": "Xavier Albertini",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte, qui selon lui relance le nucléaire, tout en regrettant qu'il précède la programmation pluriannuelle de l'énergie.",
+        "orateur": "Olivier Marleix",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique approuver largement le texte car il défend un mix énergétique équilibré et décarboné, tout en restant attentif à la future programmation.",
+        "orateur": "Benjamin Saint-Huile",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 1re séance du 16 mai 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N234",
+          "date": "2023-05-16",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/2721": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte pour ses mesures d'accélération des projets industriels et de remise en état des friches, tout en le jugeant peu ambitieux.",
+        "orateur": "Pierre Meurin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique s'opposer au texte, qui ne prévoit selon lui ni planification, ni capital public, ni protection commerciale, ni place pour les salariés.",
+        "orateur": "Matthias Tavel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique s'abstenir car il juge le texte insuffisant sur le financement et la formation, malgré une avancée sur la commande publique.",
+        "orateur": "Gérard Leseul",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique s'opposer au texte, aucun de ses amendements n'ayant été retenu, et défend une industrie tenant compte de l'eau, des ressources et des sols.",
+        "orateur": "Charles Fournier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique s'abstenir car le texte ne prévoit ni planification industrielle, ni décarbonation des industries existantes, ni contreparties aux aides.",
+        "orateur": "Sébastien Jumel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le texte, qui doit selon lui diviser par deux les délais d'implantation d'usines et mobiliser l'épargne pour la transition.",
+        "orateur": "Alexis Izard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique soutenir le texte pour accélérer la réindustrialisation et décarboner l'industrie, qui représente 18 % des émissions de la France.",
+        "orateur": "Frédéric Zgainski",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter le texte, qui doit selon lui réduire les délais d'implantation des sites industriels de dix-sept à neuf mois en moyenne.",
+        "orateur": "Vincent Thiébaut",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte, qui réduit selon lui les délais d'implantation, verdit la commande publique et associe les collectivités locales.",
+        "orateur": "Virginie Duby-Muller",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la 2e séance du 10 octobre 2023, discussion générale sur le texte de la CMP (valant explications de vote)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N013",
+          "date": "2023-10-10",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": null,
+      "UDR": null
+    }
+  }
+}

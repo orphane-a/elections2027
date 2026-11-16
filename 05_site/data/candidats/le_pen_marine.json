@@ -1,0 +1,24 @@
+{
+  "id": "le_pen_marine",
+  "prenom": "Marine",
+  "nom": "Le Pen",
+  "parti": "Rassemblement national",
+  "parti_sigle": "RN",
+  "groupe_an": "RN",
+  "groupe_an_note": null,
+  "statut": "Déclarée",
+  "statut_detail": "Candidature annoncée le 7 juillet 2026. Le même jour, la cour d'appel de Paris l'a condamnée (assistants parlementaires du FN) à 3 ans de prison dont 2 avec sursis et 45 mois d'inéligibilité dont 30 avec sursis ; les 15 mois fermes sont déjà exécutés. Elle s'est pourvue en cassation. Audience fixée au 16 décembre 2026 selon le Club des juristes (28/10/2026). L'effet du pourvoi sur son éligibilité fait débat entre juristes.",
+  "a_verifier": false,
+  "date_declaration": "2026-07-07",
+  "site_campagne": null,
+  "programme": null,
+  "sources": [
+    { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "Euronews, Marine Le Pen condamnée à 45 mois d'inéligibilité dont 30 mois assortis de sursis", "url": "https://fr.euronews.com/2026/07/07/marine-le-pen-condamnee-a-45-mois-dineligibilite-dont-30-mois-assortis-de-sursis", "date": "2026-07-07", "consulte": "2026-11-09" },
+    { "titre": "LCP, Pourvoi en cassation de Marine Le Pen : les clés pour comprendre", "url": "https://lcp.fr/actualites/pourvoi-en-cassation-de-marine-le-pen-les-cles-pour-comprendre-les-consequences-de-cette", "date": "2026-07-08", "consulte": "2026-11-09" },
+    { "titre": "Le Club des juristes, la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation", "url": "https://www.leclubdesjuristes.com/?p=18085", "date": "2026-10-28", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Bon",
+  "date_maj": "2026-11-09"
+}

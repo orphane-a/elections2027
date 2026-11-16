@@ -1,0 +1,387 @@
+{
+  "photos": {
+    "arthaud_nathalie": {
+      "fichier": "Nathalie Arthaud (LO) 19-05-2024.jpg",
+      "auteur": "Kokluts",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Nathalie_Arthaud_(LO)_19-05-2024.jpg",
+      "date": "2024-05-19 16:12:33"
+    },
+    "asselineau_francois": {
+      "fichier": "François ASSELINEAU.jpg",
+      "auteur": "Union Populaire Républicaine",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_ASSELINEAU.jpg",
+      "date": "2014-01-01"
+    },
+    "attal_gabriel": {
+      "fichier": "Gabriel Attal 2025 (close crop).jpg",
+      "auteur": "Ismail Aissoub",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Gabriel_Attal_2025_(close_crop).jpg",
+      "date": "2025-03-03"
+    },
+    "batho_delphine": {
+      "fichier": "Delphine Batho (cropped).png",
+      "auteur": "DeuxSevres79",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Delphine_Batho_(cropped).png",
+      "date": "2018-09-08"
+    },
+    "becht_olivier": {
+      "fichier": "Olivier BECHT.jpg",
+      "auteur": "Werner STEINKE",
+      "licence": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Olivier_BECHT.jpg",
+      "date": "11 January 2011, 20:17:50 (according to "
+    },
+    "bertrand_xavier": {
+      "fichier": "Xavier Bertrand - 2025 (cropped).jpg",
+      "auteur": "Claudio Centonze / European Union, 2025 / EC - Audiovisual Service",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Xavier_Bertrand_-_2025_(cropped).jpg",
+      "date": "2025-04-08"
+    },
+    "bouamrane_karim": {
+      "fichier": "Karim Bouamrane en 2026.jpg",
+      "auteur": "Oumma",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Karim_Bouamrane_en_2026.jpg",
+      "date": "2026-07-02"
+    },
+    "branco_juan": {
+      "fichier": "Juan Branco Pick.jpg",
+      "auteur": "UPOP Marseille",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Juan_Branco_Pick.jpg",
+      "date": "2024-09-12"
+    },
+    "dupont_aignan_nicolas": {
+      "fichier": "Nicolas Dupont-Aignan, homme politique français.jpg",
+      "auteur": "Debout la France",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Nicolas_Dupont-Aignan,_homme_politique_fran%C3%A7ais.jpg",
+      "date": "2019-03-01"
+    },
+    "egger_clara": {
+      "fichier": "ClaraEgger 2021-12-29 18-16-03.jpg",
+      "auteur": "Thomas Binet",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:ClaraEgger_2021-12-29_18-16-03.jpg",
+      "date": "2021-11-02"
+    },
+    "glucksmann_raphael": {
+      "fichier": "2024-03-03 - Congrès du PSE- 105 - Raphael Glucksmann.jpg",
+      "auteur": "Mathieu Delmestre",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:2024-03-03_-_Congr%C3%A8s_du_PSE-_105_-_Raphael_Glucksmann.jpg",
+      "date": "2024-03-03"
+    },
+    "kazib_anasse": {
+      "fichier": "Anasse Kazib, décembre 2021.jpg",
+      "auteur": "PabloMorao27",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Anasse_Kazib,_d%C3%A9cembre_2021.jpg",
+      "date": "2021-12-01"
+    },
+    "lalanne_francis": {
+      "fichier": "Francis Lalanne.png",
+      "auteur": "Olivier Roller, In Libro Veritas",
+      "licence": "FAL",
+      "page": "https://commons.wikimedia.org/wiki/File:Francis_Lalanne.png",
+      "date": "2011-08-09"
+    },
+    "le_pen_marine": {
+      "fichier": "Марин Ле Пен (28-01-2022).jpg",
+      "auteur": "VOX España",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%80%D0%B8%D0%BD_%D0%9B%D0%B5_%D0%9F%D0%B5%D0%BD_(28-01-2022).jpg",
+      "date": "2022-01-28 19:36:13"
+    },
+    "lisnard_david": {
+      "fichier": "David Lisnard en 2026.jpg",
+      "auteur": "Grégor Sauvagère",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:David_Lisnard_en_2026.jpg",
+      "date": "2026-10-08"
+    },
+    "massard_lydie": {
+      "fichier": "Lydie Massard 02-2024.jpg",
+      "auteur": "EuropeEcologie",
+      "licence": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Lydie_Massard_02-2024.jpg",
+      "date": "2024-02-06 14:19:22"
+    },
+    "melenchon_jean_luc": {
+      "fichier": "Mélenchon 2027 - 55262255527 (cropped 3-4).png",
+      "auteur": "jlm2017.fr",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9lenchon_2027_-_55262255527_(cropped_3-4).png",
+      "date": "2026-05-11 07:16:49"
+    },
+    "philippe_edouard": {
+      "fichier": "Édouard Philippe 2019 (cropped).jpg",
+      "auteur": "Jacques Paquier",
+      "licence": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%89douard_Philippe_2019_(cropped).jpg",
+      "date": "2019-04-01 15:47:54"
+    },
+    "philippot_florian": {
+      "fichier": "Florian Philippot.jpg",
+      "auteur": "Films et documetnaires",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Florian_Philippot.jpg",
+      "date": "2024-09-12"
+    },
+    "polony_natacha": {
+      "fichier": "Natacha Polony Cannes 2015.jpg",
+      "auteur": "Georges Biard",
+      "licence": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Natacha_Polony_Cannes_2015.jpg",
+      "date": "2015-05"
+    },
+    "retailleau_bruno": {
+      "fichier": "Bruno Retailleau - Ministre de l'Intérieur français (cropped).jpg",
+      "auteur": "Anthonymontardyfr",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_(cropped).jpg",
+      "date": "2025-06-05 16:19:39"
+    },
+    "roussel_fabien": {
+      "fichier": "Roussel Fabien 1.jpg",
+      "auteur": "Zouhair NAKARA",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Roussel_Fabien_1.jpg",
+      "date": "2018-11-25 15:14:52"
+    },
+    "ruffin_francois": {
+      "fichier": "François Ruffin (cropped).jpg",
+      "auteur": "Thinkerview",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Ruffin_(cropped).jpg",
+      "date": "2022-10-06"
+    },
+    "tondelier_marine": {
+      "fichier": "Huma2023MarineTondelier.jpg",
+      "auteur": "Selbymay",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Huma2023MarineTondelier.jpg",
+      "date": "2023-09-17 12:25:37"
+    },
+    "zemmour_eric": {
+      "fichier": "Portrait d'Éric Zemmour, avril 2022.jpg",
+      "auteur": "Anh De France",
+      "licence": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Portrait_d%27%C3%89ric_Zemmour,_avril_2022.jpg",
+      "date": "2022-04-25 16:06:00"
+    }
+  },
+  "logos": {
+    "LO": {
+      "fichier": "Logo Lutte Ouvrière.svg",
+      "auteur": "Probably Édouard Taubé (Mody)",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_Lutte_Ouvri%C3%A8re.svg",
+      "date": "presumably 4 November 1969",
+      "candidats": [
+        "arthaud_nathalie"
+      ]
+    },
+    "UPR": {
+      "fichier": "Logo Union Populaire Républicaine.svg",
+      "auteur": "Union populaire républicaine",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_Union_Populaire_R%C3%A9publicaine.svg",
+      "date": "2019-04-22",
+      "candidats": [
+        "asselineau_francois"
+      ]
+    },
+    "RE": {
+      "fichier": "Renaissance parti logo.svg",
+      "auteur": "Renaissance",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Renaissance_parti_logo.svg",
+      "date": "2022",
+      "candidats": [
+        "attal_gabriel"
+      ]
+    },
+    "DLF": {
+      "fichier": "Debout la France logo (2017).svg",
+      "auteur": "Debout la France",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Debout_la_France_logo_(2017).svg",
+      "date": "2017-05-21",
+      "candidats": [
+        "dupont_aignan_nicolas"
+      ]
+    },
+    "SD": {
+      "fichier": "Logo du parti politique français Solution Démocratique.png",
+      "auteur": "NDrbs",
+      "licence": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_du_parti_politique_fran%C3%A7ais_Solution_D%C3%A9mocratique.png",
+      "date": "2024",
+      "candidats": [
+        "egger_clara"
+      ]
+    },
+    "PP": {
+      "fichier": "Logo Place publique.svg",
+      "auteur": "Place publique",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_Place_publique.svg",
+      "date": "2018-11-06",
+      "candidats": [
+        "glucksmann_raphael"
+      ]
+    },
+    "RP": {
+      "fichier": "Révolution Permenente.png",
+      "auteur": "https://www.revolutionpermanente.fr/",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:R%C3%A9volution_Permenente.png",
+      "date": "2015-06-09",
+      "candidats": [
+        "kazib_anasse"
+      ]
+    },
+    "NPA-R": {
+      "fichier": "Logo-NPA Revo.svg",
+      "auteur": "NPA Révolutionnaires",
+      "licence": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo-NPA_Revo.svg",
+      "date": "2024-04-30",
+      "candidats": [
+        "labib_selma"
+      ]
+    },
+    "RN": {
+      "fichier": "Logo Rassemblement National.svg",
+      "auteur": "Rassemblement national",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_Rassemblement_National.svg",
+      "date": "2018-06-01",
+      "candidats": [
+        "le_pen_marine"
+      ]
+    },
+    "LFI": {
+      "fichier": "LFI Logo 2024.svg",
+      "auteur": "GlowstoneUnknown",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:LFI_Logo_2024.svg",
+      "date": "2024-07-16",
+      "candidats": [
+        "melenchon_jean_luc"
+      ]
+    },
+    "EQ": {
+      "fichier": "Équinoxe Logo.png",
+      "auteur": "NS24FR",
+      "licence": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%89quinoxe_Logo.png",
+      "date": "2021-06-03",
+      "candidats": [
+        "mikolajczak_antoine"
+      ]
+    },
+    "HOR": {
+      "fichier": "Logo Horizons.svg",
+      "auteur": "Horizons",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_Horizons.svg",
+      "date": "2021-10-01",
+      "candidats": [
+        "philippe_edouard"
+      ]
+    },
+    "LR": {
+      "fichier": "Les Républicains - logo (France, 2023).svg",
+      "auteur": "Les Républicains",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Les_R%C3%A9publicains_-_logo_(France,_2023).svg",
+      "date": "2023",
+      "candidats": [
+        "retailleau_bruno"
+      ]
+    },
+    "PCF": {
+      "fichier": "PCF LOGO.svg",
+      "auteur": "Unknown authorUnknown author",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:PCF_LOGO.svg",
+      "date": "2018-11-24",
+      "candidats": [
+        "roussel_fabien"
+      ]
+    },
+    "DEBOUT": {
+      "fichier": "Logo-Debout!-rouge.png",
+      "auteur": "Unknown authorUnknown author",
+      "licence": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo-Debout!-rouge.png",
+      "date": "2025-06-28",
+      "candidats": [
+        "ruffin_francois"
+      ]
+    },
+    "LE": {
+      "fichier": "Logo Les Écologistes (France).png",
+      "auteur": "AliFatehi",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_Les_%C3%89cologistes_(France).png",
+      "date": "2023-10-15",
+      "candidats": [
+        "tondelier_marine"
+      ]
+    },
+    "REC": {
+      "fichier": "Logo du parti Reconquête.svg",
+      "auteur": "Reconquête",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Logo_du_parti_Reconqu%C3%AAte.svg",
+      "date": "2021-11",
+      "candidats": [
+        "zemmour_eric"
+      ]
+    },
+    "PS": {
+      "fichier": "Le Parti socialiste wordmark.svg",
+      "auteur": "Le Parti socialiste",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Le_Parti_socialiste_wordmark.svg",
+      "date": "2024-01-01",
+      "candidats": [
+        "bouamrane_karim"
+      ]
+    },
+    "NE": {
+      "fichier": "Nouvelle Energie.png",
+      "auteur": "Nouvelle Energie",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Nouvelle_Energie.png",
+      "date": "2021-06-09",
+      "candidats": [
+        "lisnard_david"
+      ]
+    },
+    "MODEM": {
+      "fichier": "MoDem logo 2019 - Cropped.svg",
+      "auteur": "Mouvement Démocrate",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:MoDem_logo_2019_-_Cropped.svg",
+      "date": "2019",
+      "candidats": []
+    },
+    "UDR": {
+      "fichier": "UDR logo.svg",
+      "auteur": "Union des droites pour la République",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:UDR_logo.svg",
+      "date": "2024-08-31",
+      "candidats": []
+    }
+  }
+}

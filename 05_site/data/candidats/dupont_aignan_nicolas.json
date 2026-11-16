@@ -1,0 +1,24 @@
+{
+  "id": "dupont_aignan_nicolas",
+  "prenom": "Nicolas",
+  "nom": "Dupont-Aignan",
+  "parti": "Debout la France",
+  "parti_sigle": "DLF",
+  "groupe_an": null,
+  "groupe_an_note": "Debout la France n'a pas de groupe à l'Assemblée nationale (non représenté).",
+  "statut": "Déclaré",
+  "statut_detail": "Candidat pour la quatrième fois ; son site affiche « Candidat à l'élection présidentielle 2027 ». La date de déclaration diverge selon les sources (8 mars 2025 à Yerres, 15 novembre 2025, message sur X du 23 avril 2026).",
+  "a_verifier": false,
+  "date_declaration": null,
+  "site_campagne": "https://www.dupontaignan.fr",
+  "programme": null,
+  "sources": [
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats déjà sur la ligne de départ", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "Brut, Dupont-Aignan annonce sa candidature à la présidentielle", "url": "https://www.brut.media/fr/articles/dupont-aignan-annonce-sa-candidature-a-la-presidentielle", "date": "2025-11-17", "consulte": "2026-11-09" },
+    { "titre": "Site de campagne de Nicolas Dupont-Aignan", "url": "https://www.dupontaignan.fr", "date": "2026-11-08", "consulte": "2026-11-09" },
+    { "titre": "Debout la France, page « Notre projet » (actualisation du programme 2027 en cours)", "url": "https://www.debout-la-france.fr/notre-projet/", "date": null, "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

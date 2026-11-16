@@ -1,0 +1,22 @@
+{
+  "id": "roussel_fabien",
+  "prenom": "Fabien",
+  "nom": "Roussel",
+  "parti": "Parti communiste français",
+  "parti_sigle": "PCF",
+  "groupe_an": "GDR",
+  "groupe_an_note": null,
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée le 6 septembre 2026 au JT de TF1, après un vote des militants du PCF (72,06 % pour).",
+  "a_verifier": false,
+  "date_declaration": "2026-09-06",
+  "site_campagne": "https://www.fabienroussel2027.fr/",
+  "programme": null,
+  "sources": [
+    { "titre": "France 24, Fabien Roussel officialise sa candidature avec le PCF", "url": "https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf", "date": "2026-09-06", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Bon",
+  "date_maj": "2026-11-09"
+}

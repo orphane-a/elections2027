@@ -1,0 +1,33 @@
+# PROD : https://elections2027.orphane.fr, servie par Nginx derrière le Traefik de Coolify.
+# Sur le serveur : /srv/elections2027-prod (docker-compose.yml, nginx.conf, site/)
+services:
+  site:
+    image: nginx:1.29-alpine
+    container_name: elections2027-prod
+    restart: unless-stopped
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - coolify
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=coolify
+      - traefik.http.services.elections2027-prod.loadbalancer.server.port=80
+      # HTTP vers HTTPS
+      - traefik.http.routers.elections2027-prod-http.entryPoints=http
+      - traefik.http.routers.elections2027-prod-http.rule=Host(`elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-prod-http.middlewares=elections2027-prod-https
+      - traefik.http.middlewares.elections2027-prod-https.redirectscheme.scheme=https
+      - traefik.http.middlewares.elections2027-prod-https.redirectscheme.permanent=true
+      # HTTPS
+      - traefik.http.routers.elections2027-prod.entryPoints=https
+      - traefik.http.routers.elections2027-prod.rule=Host(`elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-prod.tls=true
+      - traefik.http.routers.elections2027-prod.tls.certresolver=letsencrypt
+      - traefik.http.routers.elections2027-prod.middlewares=elections2027-prod-gzip
+      - traefik.http.middlewares.elections2027-prod-gzip.compress=true
+
+networks:
+  coolify:
+    external: true

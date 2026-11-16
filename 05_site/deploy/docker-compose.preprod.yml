@@ -1,0 +1,33 @@
+# PRÉPROD : https://preprod.elections2027.orphane.fr, accès libre, non indexée.
+# Sur le serveur : /srv/elections2027-preprod (docker-compose.yml, nginx.conf, site/)
+services:
+  site:
+    image: nginx:1.29-alpine
+    container_name: elections2027-preprod
+    restart: unless-stopped
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - coolify
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=coolify
+      - traefik.http.services.elections2027-preprod.loadbalancer.server.port=80
+      # HTTP vers HTTPS
+      - traefik.http.routers.elections2027-preprod-http.entryPoints=http
+      - traefik.http.routers.elections2027-preprod-http.rule=Host(`preprod.elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-preprod-http.middlewares=elections2027-preprod-https
+      - traefik.http.middlewares.elections2027-preprod-https.redirectscheme.scheme=https
+      - traefik.http.middlewares.elections2027-preprod-https.redirectscheme.permanent=true
+      # HTTPS
+      - traefik.http.routers.elections2027-preprod.entryPoints=https
+      - traefik.http.routers.elections2027-preprod.rule=Host(`preprod.elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-preprod.tls=true
+      - traefik.http.routers.elections2027-preprod.tls.certresolver=letsencrypt
+      - traefik.http.routers.elections2027-preprod.middlewares=elections2027-preprod-gzip
+      - traefik.http.middlewares.elections2027-preprod-gzip.compress=true
+
+networks:
+  coolify:
+    external: true

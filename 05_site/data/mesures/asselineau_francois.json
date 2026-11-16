@@ -1,0 +1,36 @@
+{
+  "id": "asselineau_francois",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [],
+    "europe": [
+      {
+        "texte": "Faire sortir la France de l'Union européenne, de l'euro et de l'OTAN.",
+        "sous_theme": "Souveraineté",
+        "chiffrage": null,
+        "source": { "titre": "Stéphane Larue, Sam Zirah reçoit François Asselineau pour lancer « Le Meilleur Candidat »", "url": "https://stephanelarue.com/video-sam-zirah-recoit-francois-asselineau-pour-lancer-le-meilleur-candidat/", "date": "2026-11-02", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réduire d'abord les dépenses envoyées à l'étranger : contribution à l'Union européenne, aide à l'Ukraine et aide au développement.",
+        "sous_theme": "Budget",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio, François Asselineau : « Je suis plus courageux que Mélenchon et Le Pen »", "url": "https://www.sudradio.fr/sud-radio/francois-asselineau-je-suis-plus-courageux-que-melenchon-et-le-pen-qui-sont-des-laches", "date": "2026-10-30", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rétablir le contrôle des mouvements de capitaux.",
+        "sous_theme": "Économie",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio, Asselineau : « Nous ne sommes pas des souverainistes »", "url": "https://www.sudradio.fr/sud-radio/asselineau-nous-ne-sommes-pas-des-souverainistes", "date": "2025-09-18", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

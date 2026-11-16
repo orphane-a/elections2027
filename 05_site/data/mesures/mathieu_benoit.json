@@ -1,0 +1,36 @@
+{
+  "id": "mathieu_benoit",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Créer une assemblée de 500 citoyens tirés au sort pour réécrire la Constitution, soumise ensuite à référendum.",
+        "sous_theme": "Constitution",
+        "chiffrage": null,
+        "source": { "titre": "benoitmathieu2027.fr, Programme", "url": "https://benoitmathieu2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Instaurer le référendum d'initiative citoyenne (RIC), qui permet aux citoyens de proposer et voter directement une loi.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "benoitmathieu2027.fr, Programme", "url": "https://benoitmathieu2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Organiser davantage de conventions citoyennes de 150 personnes tirées au sort, appelées à prendre des décisions.",
+        "sous_theme": "Démocratie participative",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio, Présidentielle 2027 : un professeur sillonne la France à vélo en quête des 500 parrainages", "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-un-professeur-sillonne-la-france-a-velo-en-quete-des-500-parrainages", "date": "2026-05-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": []
+  }
+}

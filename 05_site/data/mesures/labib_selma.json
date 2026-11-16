@@ -1,0 +1,63 @@
+{
+  "id": "labib_selma",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [
+      {
+        "texte": "Augmenter les salaires et les pensions de 400 euros par mois, avec aucun revenu inférieur à 2 000 euros nets.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, intervention de Selma Labib à la fête de l'Humanité 2026", "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer la TVA et les taxes sur les carburants, remplacées par un impôt progressif sur les revenus et les bénéfices des grandes entreprises.",
+        "sous_theme": "Fiscalité",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, réponse de Selma Labib à Philippe Juvin, rapporteur général de la commission des Finances", "url": "https://npa-revolutionnaires.org/articles/reponse-de-selma-labib-a-philippe-juvin-rapporteur-general-de-la-commission-des-finances", "date": "2026-10-26", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Interdire les licenciements.",
+        "sous_theme": "Emploi",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, intervention de Selma Labib à la fête de l'Humanité 2026", "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Partager le travail entre tous, sans perte de salaire, sous le contrôle des salariés.",
+        "sous_theme": "Temps de travail",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, intervention de Selma Labib à la fête de l'Humanité 2026", "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Socialiser les grandes entreprises et les banques, sans indemnité ni rachat.",
+        "sous_theme": "Entreprises",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, réponse de Selma Labib à Philippe Juvin, rapporteur général de la commission des Finances", "url": "https://npa-revolutionnaires.org/articles/reponse-de-selma-labib-a-philippe-juvin-rapporteur-general-de-la-commission-des-finances", "date": "2026-10-26", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [
+      {
+        "texte": "Régulariser tous les sans-papiers et instaurer la liberté de circulation et d'installation.",
+        "sous_theme": "Régularisation",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, intervention de Selma Labib à la fête de l'Humanité 2026", "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [],
+    "europe": [
+      {
+        "texte": "Ne consacrer aucun moyen humain ni financier aux guerres qualifiées d'impérialistes par la candidate.",
+        "sous_theme": "Défense",
+        "chiffrage": null,
+        "source": { "titre": "NPA-Révolutionnaires, intervention de Selma Labib à la fête de l'Humanité 2026", "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

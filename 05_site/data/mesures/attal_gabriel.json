@@ -1,0 +1,195 @@
+{
+  "id": "attal_gabriel",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Augmenter le salaire des enseignants de 200 euros nets par mois, jusqu'à 500 euros en milieu de carrière, dès la rentrée 2027.",
+        "sous_theme": "Enseignants",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, 200 à 500 euros nets de plus par mois pour les enseignants", "url": "https://attalpresident.fr/programme/mesures/revalorisation-salaires-professeurs", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rétablir le redoublement comme décision pédagogique ordinaire, avec des dispositifs de rattrapage, notamment au CP.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Rétablir le redoublement", "url": "https://attalpresident.fr/programme/mesures/retablir-redoublement", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rétablir les groupes de niveau au collège.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Mes chantiers capitaux (mesure n° 61)", "url": "https://attalpresident.fr/programme", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Ramener la part des énergies fossiles de près de 60 % à 30 % en 2035, grâce à 14 réacteurs EPR et aux renouvelables.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Réduire notre dépendance énergétique (plan Messmer II)", "url": "https://attalpresident.fr/programme/mesures/plan-messmer-2", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.",
+        "sous_theme": "Eau",
+        "chiffrage": "Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau",
+        "source": { "titre": "attalpresident.fr, Réparer les cinq cents réseaux d'eau les plus vétustes", "url": "https://attalpresident.fr/programme/mesures/reparer-cinq-cents-reseaux-eau", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Dépister automatiquement les polluants éternels (PFAS, substances chimiques très persistantes) dans les captages d'eau potable.",
+        "sous_theme": "Eau",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Mes chantiers capitaux (mesure n° 22)", "url": "https://attalpresident.fr/programme", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Supprimer des cotisations sur le travail pour augmenter le salaire net, soit environ 250 euros nets de plus par mois au salaire médian.",
+        "sous_theme": "Salaires",
+        "chiffrage": "Coût total non indiqué ; financement annoncé par des économies sur l'assurance chômage et les indemnités journalières",
+        "source": { "titre": "attalpresident.fr, Droit au brut : un treizième mois pour les classes moyennes", "url": "https://attalpresident.fr/programme/mesures/droit-au-brut", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Garantir la stabilité des prix de l'électricité pendant cinq ans.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Garantir la stabilité des prix de l'électricité sur cinq ans", "url": "https://attalpresident.fr/programme/mesures/stabilite-prix-electricite", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Instaurer un bouclier tarifaire pour maintenir bas le prix de l'eau nécessaire au quotidien.",
+        "sous_theme": "Eau",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Instaurer un bouclier tarifaire sur le prix de l'eau", "url": "https://attalpresident.fr/programme/mesures/bouclier-tarifaire-eau", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Remplacer le Code du travail par une « Constitution du travail » d'environ cinquante pages, le reste relevant de la négociation de branche et d'entreprise.",
+        "sous_theme": "Droit du travail",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Remplacer le Code du travail par une Constitution du travail", "url": "https://attalpresident.fr/programme/mesures/constitution-du-travail", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réformer l'assurance chômage dès le début du mandat, pour environ 5 milliards d'euros d'économies affectées à la baisse des cotisations.",
+        "sous_theme": "Chômage",
+        "chiffrage": "Économies annoncées : environ 5 Md€",
+        "source": { "titre": "attalpresident.fr, Réformer l'assurance chômage et réaliser cinq milliards d'économies", "url": "https://attalpresident.fr/programme/mesures/reforme-assurance-chomage-cinq-milliards", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer un statut « Auto-TPE » qui allège les formalités pour embaucher un premier salarié dans une très petite entreprise.",
+        "sous_theme": "Entreprises",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Un statut Auto-TPE pour embaucher son premier salarié", "url": "https://attalpresident.fr/programme/mesures/statut-auto-tpe", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Mettre à disposition de chaque Français un assistant médical utilisant l'intelligence artificielle, pour un premier conseil et l'orientation dans le parcours de soins.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Un assistant médical IA pour chaque Français", "url": "https://attalpresident.fr/programme/mesures/assistant-medical-ia", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Faire voter dès l'été 2027 une loi de programmation du logement qui allège les règles d'urbanisme et assouplit l'objectif « zéro artificialisation nette ».",
+        "sous_theme": "Construction",
+        "chiffrage": null,
+        "source": { "titre": "SeLoger, Immobilier : les propositions de Gabriel Attal pour la présidentielle 2027 (annonce au salon Batimat, 28 septembre 2026)", "url": "https://edito.seloger.com/actualites/presidentielles/immobilier-propositions-de-gabriel-attal-presidentielle-2027-article", "date": "2026-11-05", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer une garantie universelle des loyers pour les étudiants et les jeunes actifs sans garant.",
+        "sous_theme": "Location",
+        "chiffrage": null,
+        "source": { "titre": "SeLoger, Immobilier : les propositions de Gabriel Attal pour la présidentielle 2027 (déplacements à Blois et Bourges, début octobre 2026)", "url": "https://edito.seloger.com/actualites/presidentielles/immobilier-propositions-de-gabriel-attal-presidentielle-2027-article", "date": "2026-11-05", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Proposer une garantie publique ou un prêt à taux zéro aux primo-accédants solvables qui se voient refuser un crédit.",
+        "sous_theme": "Accession à la propriété",
+        "chiffrage": null,
+        "source": { "titre": "SeLoger, Immobilier : les propositions de Gabriel Attal pour la présidentielle 2027 (annonce au salon Batimat, 28 septembre 2026)", "url": "https://edito.seloger.com/actualites/presidentielles/immobilier-propositions-de-gabriel-attal-presidentielle-2027-article", "date": "2026-11-05", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Ouvrir la comparution immédiate aux mineurs récidivistes, avec une révision de la Constitution si nécessaire.",
+        "sous_theme": "Justice des mineurs",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Instaurer la comparution immédiate pour les mineurs", "url": "https://attalpresident.fr/programme/mesures/comparution-immediate-mineurs", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Recruter 3 000 magistrats et greffiers supplémentaires pour raccourcir les délais de jugement.",
+        "sous_theme": "Justice",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Recruter 3 000 magistrats et greffiers", "url": "https://attalpresident.fr/programme/mesures/trois-mille-magistrats-greffiers", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Punir systématiquement les dégradations, y compris lorsqu'elles sont commises par des mineurs.",
+        "sous_theme": "Délinquance",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Mes chantiers capitaux (mesure n° 9)", "url": "https://attalpresident.fr/programme", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Instaurer un système à points pour le séjour, fondé sur l'emploi, le logement, la maîtrise du français et le respect des valeurs.",
+        "sous_theme": "Immigration légale",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Instaurer un système à points pour l'immigration (meeting de Paris, 30 mai 2026)", "url": "https://attalpresident.fr/programme/mesures/immigration-systeme-a-points", "date": "2026-05-30", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faire voter par le Parlement, tous les deux ans, des quotas d'immigration par métier, zone géographique et nationalité.",
+        "sous_theme": "Immigration légale",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Définir des quotas migratoires révisés tous les deux ans", "url": "https://attalpresident.fr/programme/mesures/quotas-migratoires-revises", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Durcir le regroupement familial : ressources plus élevées, logement adapté et durée de résidence plus longue exigés.",
+        "sous_theme": "Regroupement familial",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Durcir les règles du regroupement familial", "url": "https://attalpresident.fr/programme/mesures/durcir-regroupement-familial", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Organiser chaque année, à date fixe, une journée référendaire avec plusieurs questions sur les grandes orientations du pays.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Instaurer une journée référendaire par an", "url": "https://attalpresident.fr/programme/mesures/journee-referendaire-annuelle", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer un échelon de collectivité locale pour que chaque compétence relève d'un seul niveau.",
+        "sous_theme": "Collectivités",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Supprimer un échelon de collectivité", "url": "https://attalpresident.fr/programme/mesures/big-bang-territorial", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faire du maire l'élu disposant du plus de pouvoirs en France.",
+        "sous_theme": "Collectivités",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Mes chantiers capitaux (mesure n° 95)", "url": "https://attalpresident.fr/programme", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Créer avec des pays volontaires un « dôme de fer » européen pour intercepter missiles et drones.",
+        "sous_theme": "Défense européenne",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Créer un dôme de fer européen contre les missiles et les drones", "url": "https://attalpresident.fr/programme/mesures/dome-de-fer-europeen", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Augmenter la part des achats de défense français confiée à des fournisseurs européens, dès le premier budget.",
+        "sous_theme": "Défense européenne",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Une préférence européenne dans la commande publique de défense", "url": "https://attalpresident.fr/programme/mesures/preference-europeenne-defense", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Refuser le traité Mercosur en l'état et exiger des clauses miroir (mêmes normes pour les produits importés) dans tous les accords commerciaux.",
+        "sous_theme": "Commerce",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Refuser le traité Mercosur", "url": "https://attalpresident.fr/programme/mesures/refuser-mercosur", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

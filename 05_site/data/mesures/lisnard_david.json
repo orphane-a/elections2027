@@ -1,0 +1,183 @@
+{
+  "id": "lisnard_david",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Supprimer la carte scolaire et instaurer progressivement un chèque-éducation pour le libre choix de l'école.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Éducation", "url": "https://www.unenouvelleenergie.fr/notre-programme/education/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer un certificat de fin de primaire dont la réussite conditionne l'entrée au collège.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Éducation", "url": "https://www.unenouvelleenergie.fr/notre-programme/education/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Augmenter de 20 % la rémunération des enseignants en cinq ans, en échange de plus d'autonomie et de présence dans l'établissement.",
+        "sous_theme": "Enseignants",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Éducation", "url": "https://www.unenouvelleenergie.fr/notre-programme/education/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Miser sur le nucléaire, soumettre les projets d'énergies renouvelables au droit commun et réinvestir dans les nouvelles technologies nucléaires.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 3 « Générer un renouveau civique »", "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faire payer la pollution par un prix du carbone et une fiscalité verte.",
+        "sous_theme": "Climat",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 3 « Générer un renouveau civique »", "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Baisser la CSG sur les revenus du travail de 9,2 % à 6,6 % pour augmenter le salaire net.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/", "date": "2026-10-27", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre aux Français 60 % des économies publiques, soit 200 à 400 € net mensuels de plus pour un salaire de 2 200 € net.",
+        "sous_theme": "Revenus",
+        "chiffrage": "Financement annoncé : 80 Md€ d'économies dès la première année, 200 Md€ d'ici 2032",
+        "source": { "titre": "Interview de David Lisnard sur BFMTV, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/toc-toc-on-arrive-david-lisnard-annonce-plus-de-100-000-adherents-a-nouvelle-energie-sur-bfmtv/", "date": "2026-11-03", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Porter l'âge légal de départ à la retraite à 65 ans.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française »", "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Garder une pension de base par répartition dès 65 ans et faire évoluer les autres régimes vers la capitalisation (épargne placée).",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française »", "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Porter le minimum vieillesse à 1 000 € par mois.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française »", "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Mieux rembourser les actes médicaux dans les zones manquant de médecins que dans les zones bien dotées.",
+        "sous_theme": "Déserts médicaux",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Santé", "url": "https://www.unenouvelleenergie.fr/notre-programme/sante/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer les agences régionales de santé (ARS) et confier leurs missions aux préfets et aux élus.",
+        "sous_theme": "Organisation",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Santé", "url": "https://www.unenouvelleenergie.fr/notre-programme/sante/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Doubler le nombre d'étudiants en médecine d'ici 2030.",
+        "sous_theme": "Formation",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Santé", "url": "https://www.unenouvelleenergie.fr/notre-programme/sante/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Supprimer l'article 55 de la loi SRU, qui impose aux communes un quota de 20 à 25 % de logements sociaux.",
+        "sous_theme": "Logement social",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française »", "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Abaisser la majorité pénale à 16 ans et créer des établissements disciplinaires fermés pour mineurs.",
+        "sous_theme": "Mineurs",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/", "date": "2026-10-27", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rétablir les peines planchers pour les récidivistes et supprimer les réductions de peine automatiques.",
+        "sous_theme": "Justice",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Sécurité", "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Permettre aux communes volontaires d'armer leur police municipale et lui donner accès aux fichiers.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, page Sécurité", "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Limiter l'immigration légale à 80 000 entrées par an, visas étudiants compris.",
+        "sous_theme": "Immigration légale",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/", "date": "2026-10-27", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Dénoncer l'accord franco-algérien de 1968 sur l'entrée et le séjour des Algériens en France.",
+        "sous_theme": "Accords internationaux",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/", "date": "2026-10-27", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer l'aide médicale d'État (AME) et la remplacer par une aide limitée aux soins d'urgence.",
+        "sous_theme": "Prestations",
+        "chiffrage": "Économie annoncée : 700 M€",
+        "source": { "titre": "Nouvelle Énergie, programme, page Immigration", "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Réduire d'environ 12 % les effectifs publics : plus de 400 000 postes supprimés et 200 000 à 300 000 agents redéployés sur le terrain.",
+        "sous_theme": "Réforme de l'État",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/", "date": "2026-10-27", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Élargir le recours au référendum, y compris pour trancher certaines censures du Conseil constitutionnel.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/", "date": "2026-10-27", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Inscrire une « règle d'or » qui limite les déficits publics dans les institutions.",
+        "sous_theme": "Finances publiques",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 1 « Être maître de notre destin »", "url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Négocier un traité de démocratisation de l'Europe qui revoit les pouvoirs de la Commission, de la Cour de justice et de la Banque centrale européenne.",
+        "sous_theme": "Institutions européennes",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 1 « Être maître de notre destin »", "url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Permettre aux citoyens de trancher par référendum quand une règle européenne bloque une décision nationale.",
+        "sous_theme": "Souveraineté",
+        "chiffrage": null,
+        "source": { "titre": "Nouvelle Énergie, programme, axe 1 « Être maître de notre destin »", "url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Interdire les surtranspositions, c'est-à-dire l'ajout de règles françaises plus strictes que les normes européennes.",
+        "sous_theme": "Normes",
+        "chiffrage": null,
+        "source": { "titre": "Interview de David Lisnard sur BFMTV, compte rendu sur le site du parti", "url": "https://www.unenouvelleenergie.fr/toc-toc-on-arrive-david-lisnard-annonce-plus-de-100-000-adherents-a-nouvelle-energie-sur-bfmtv/", "date": "2026-11-03", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

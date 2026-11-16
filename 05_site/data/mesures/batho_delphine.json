@@ -1,0 +1,88 @@
+{
+  "id": "batho_delphine",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Garantir à chaque enfant une éducation à la nature et à la culture, avec des classes vertes.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La beauté pour vivre mieux »", "url": "https://www.delphinebatho.fr/priorites/la-beaute-pour-vivre-mieux/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Retirer immédiatement les pesticides cancérigènes et perturbateurs endocriniens, et réserver les aides agricoles au bio et à l'agroécologie d'ici 2032.",
+        "sous_theme": "Agriculture",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La pleine santé »", "url": "https://www.delphinebatho.fr/priorites/la-pleine-sante/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Lancer un plan d'urgence pour l'eau et créer des conseils citoyens de l'eau dans les territoires.",
+        "sous_theme": "Eau",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La pleine santé »", "url": "https://www.delphinebatho.fr/priorites/la-pleine-sante/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer une sécurité sociale climatique pour couvrir les dommages des catastrophes, et développer la géothermie.",
+        "sous_theme": "Adaptation",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La sécurité climatique et la paix »", "url": "https://www.delphinebatho.fr/priorites/la-securite-climatique-et-la-paix/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [
+      {
+        "texte": "Réguler l'installation des médecins et créer des centres de santé pour mettre fin aux déserts médicaux.",
+        "sous_theme": "Déserts médicaux",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La pleine santé »", "url": "https://www.delphinebatho.fr/priorites/la-pleine-sante/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre le Nutri-Score obligatoire et interdire la publicité pour les produits alimentaires nocifs.",
+        "sous_theme": "Alimentation",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La pleine santé »", "url": "https://www.delphinebatho.fr/priorites/la-pleine-sante/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer un Défenseur de la santé humaine et animale, doté de pouvoirs d'enquête et saisissable par les citoyens.",
+        "sous_theme": "Santé environnementale",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La pleine santé »", "url": "https://www.delphinebatho.fr/priorites/la-pleine-sante/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [],
+    "securite": [
+      {
+        "texte": "Créer un ministère de la sécurité civile et voter une loi de programmation budgétaire pour les pompiers.",
+        "sous_theme": "Sécurité civile",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La sécurité climatique et la paix »", "url": "https://www.delphinebatho.fr/priorites/la-securite-climatique-et-la-paix/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Soumettre au Parlement une loi de séparation des lobbies et de l'État.",
+        "sous_theme": "Éthique",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La République terrestre »", "url": "https://www.delphinebatho.fr/priorites/la-republique-terrestre/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Inscrire la pleine santé et le principe d'habitabilité de la planète dans la Constitution.",
+        "sous_theme": "Constitution",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La pleine santé »", "url": "https://www.delphinebatho.fr/priorites/la-pleine-sante/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Voter des budgets sur plusieurs années pour la sortie des énergies fossiles et l'adaptation au changement climatique.",
+        "sous_theme": "Budget",
+        "chiffrage": null,
+        "source": { "titre": "Site de campagne, priorité « La République terrestre »", "url": "https://www.delphinebatho.fr/priorites/la-republique-terrestre/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "massard_lydie",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Construire une République fédérale, avec un pouvoir plus proche des citoyens.",
+        "sous_theme": "Organisation de l'État",
+        "chiffrage": null,
+        "source": { "titre": "UDB, Lydie Massard candidate aux primaires de la gauche", "url": "https://www.udb.bzh/non-classifiee/lydie-massard-candidate-aux-primaires-de-la-gauche/", "date": "2026-04-07", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Donner aux territoires la capacité de voter des lois dans certains domaines.",
+        "sous_theme": "Décentralisation",
+        "chiffrage": null,
+        "source": { "titre": "UDB, Lydie Massard candidate aux primaires de la gauche", "url": "https://www.udb.bzh/non-classifiee/lydie-massard-candidate-aux-primaires-de-la-gauche/", "date": "2026-04-07", "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Doter les territoires de ressources fiscales adaptées.",
+        "sous_theme": "Finances locales",
+        "chiffrage": null,
+        "source": { "titre": "UDB, Lydie Massard candidate aux primaires de la gauche", "url": "https://www.udb.bzh/non-classifiee/lydie-massard-candidate-aux-primaires-de-la-gauche/", "date": "2026-04-07", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": []
+  }
+}

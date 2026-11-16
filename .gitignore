@@ -1,0 +1,10 @@
+# Librairies installées automatiquement (se réinstallent avec npm install)
+node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers locaux de Claude Code
+.claude/settings.local.json

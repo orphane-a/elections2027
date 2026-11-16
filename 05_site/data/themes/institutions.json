@@ -1,0 +1,71 @@
+{
+  "slug": "institutions",
+  "date_maj": "2026-11-09",
+  "en_bref": "Ce thème porte sur le fonctionnement de la démocratie : la façon d'élire les députés, la place du référendum, les rapports entre le gouvernement et l'Assemblée nationale, et le partage des pouvoirs entre l'État et les collectivités locales. Depuis 2022, aucun groupe ne dispose seul de la majorité absolue à l'Assemblée.",
+  "sous_themes": ["Mode de scrutin", "Référendum", "Gouvernement et Parlement", "Décentralisation"],
+  "faits": [
+    {
+      "date": "2023-12",
+      "texte": "Sous la XVIe législature (2022-2024), le gouvernement utilise 23 fois l'article 49.3. Cet article permet d'adopter un texte sans vote, sauf si une motion de censure renverse le gouvernement.",
+      "origine": "gouvernement",
+      "source": { "titre": "Assemblée nationale, fiche de synthèse n° 64 : la mise en cause de la responsabilité du Gouvernement", "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-03",
+      "texte": "Le 4 mars 2024, le Parlement réuni en Congrès inscrit dans la Constitution la liberté de recourir à l'IVG, par 780 voix pour et 72 contre (512 voix requises).",
+      "origine": "parlement",
+      "source": { "titre": "LCP, Après le vote du Congrès, la France inscrit l'IVG dans sa Constitution, 4 mars 2024", "url": "https://lcp.fr/actualites/apres-le-vote-du-congres-la-france-devient-le-premier-pays-au-monde-a-inscrire-l-ivg", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-06",
+      "texte": "Le 9 juin 2024, le président de la République dissout l'Assemblée nationale. Des élections législatives anticipées ont lieu les 30 juin et 7 juillet 2024.",
+      "origine": "gouvernement",
+      "source": { "titre": "Légifrance, décret n° 2024-527 du 9 juin 2024 portant convocation des électeurs", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049689654", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-12",
+      "texte": "Le 4 décembre 2024, l'Assemblée adopte une motion de censure par 331 voix. Le gouvernement de Michel Barnier démissionne. Depuis 1958, une seule autre motion de censure avait été adoptée, en 1962.",
+      "origine": "parlement",
+      "source": { "titre": "Assemblée nationale, scrutin public n° 519 du 4 décembre 2024", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/519", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-09",
+      "texte": "Le 8 septembre 2025, l'Assemblée refuse la confiance au gouvernement de François Bayrou par 364 voix contre 194. Le gouvernement démissionne.",
+      "origine": "parlement",
+      "source": { "titre": "Assemblée nationale, scrutin public n° 3054 du 8 septembre 2025", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3054", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Motion de censure du gouvernement de Michel Barnier (article 49, alinéa 3, sur le budget de la sécurité sociale pour 2025)",
+      "phrase": "La motion adoptée renverse le gouvernement. Pour une motion de censure, seuls les votes « pour » sont comptés : « contre » signifie ici que le groupe n'a pas voté la censure.",
+      "date": "2024-12-04",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 519", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/519" },
+      "positions": { "RN": "pour", "LFI": "pour", "SOC": "pour", "ECO": "pour", "GDR": "pour", "EPR": "contre", "DEM": "contre", "HOR": "contre", "DR": "contre", "LIOT": "contre", "UDR": "pour" }
+    },
+    {
+      "titre": "Vote de confiance demandé par le gouvernement de François Bayrou (article 49, alinéa 1)",
+      "phrase": "Le Premier ministre demande à l'Assemblée d'approuver sa déclaration de politique générale. Le refus entraîne la démission du gouvernement. « Pour » signifie ici voter la confiance.",
+      "date": "2025-09-08",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 3054", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3054" },
+      "positions": { "RN": "contre", "LFI": "contre", "SOC": "contre", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "contre", "UDR": "contre" }
+    }
+  ],
+  "liens": [
+    { "titre": "Assemblée nationale, fiche n° 64 : la mise en cause de la responsabilité du Gouvernement", "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, liste des motions de censure de la XVIIe législature", "url": "https://www.assemblee-nationale.fr/dyn/engagements_responsabilite-motions_censures/motions-de-censure", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin n° 519 (censure du gouvernement Barnier)", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/519", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin n° 3054 (confiance au gouvernement Bayrou)", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3054", "type": "Site officiel" },
+    { "titre": "Légifrance, décret n° 2024-527 du 9 juin 2024 (élections législatives anticipées)", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049689654", "type": "Site officiel" },
+    { "titre": "Conseil constitutionnel, loi constitutionnelle n° 2024-200 du 8 mars 2024 (IVG)", "url": "https://www.conseil-constitutionnel.fr/loi-constitutionnelle-n-2024-200-du-8-mars-2024", "type": "Site officiel" },
+    { "titre": "LCP, vote du Congrès sur l'IVG, 4 mars 2024", "url": "https://lcp.fr/actualites/apres-le-vote-du-congres-la-france-devient-le-premier-pays-au-monde-a-inscrire-l-ivg", "type": "Site externe" },
+    { "titre": "LCP, chute du gouvernement Bayrou : le vote de chaque député", "url": "https://lcp.fr/actualites/chute-du-gouvernement-bayrou-qu-a-vote-votre-depute-395500", "type": "Site externe" }
+  ]
+}

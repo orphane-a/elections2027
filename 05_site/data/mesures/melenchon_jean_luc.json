@@ -1,0 +1,207 @@
+{
+  "id": "melenchon_jean_luc",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Réduire le nombre d'élèves par classe sous la moyenne européenne de 19, en priorité en maternelle et en éducation prioritaire.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 4, chapitre 2", "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre gratuits la cantine, le transport scolaire, le périscolaire, les manuels et les fournitures à l'école publique.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 4, chapitre 2", "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre l'école obligatoire jusqu'à 18 ans.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 4, chapitre 2", "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Baisser de 65 % les émissions de gaz à effet de serre d'ici 2033.",
+        "sous_theme": "Climat",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Sortir du nucléaire et des énergies fossiles pour atteindre 100 % d'énergies renouvelables au plus tard en 2060.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, avec la Nouvelle France, Mélenchon fait de l'écologie la clé de voûte de son programme", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Inscrire dans la Constitution une « règle verte » : ne pas prélever sur la nature plus qu'elle ne peut reconstituer.",
+        "sous_theme": "Biodiversité",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, avec la Nouvelle France, Mélenchon fait de l'écologie la clé de voûte de son programme", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Porter le Smic à 1 700 euros net par mois dès l'arrivée au pouvoir.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Encadrer le prix des produits alimentaires de première nécessité et interdire la réduflation (moins de produit pour le même prix).",
+        "sous_theme": "Prix",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Garantir à chaque personne un revenu au niveau du seuil de pauvreté, soit 1 337 euros par mois pour une personne seule.",
+        "sous_theme": "Minima sociaux",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Abroger le départ à 64 ans, puis revenir à la retraite à 60 ans à taux plein avec 40 années de cotisation.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rétablir la durée légale de 35 heures, avec des heures supplémentaires majorées de 25 % pour les quatre premières, puis de 50 %.",
+        "sous_theme": "Temps de travail",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Limiter les contrats précaires à 10 % des emplois dans les PME et à 5 % dans les grandes entreprises.",
+        "sous_theme": "Contrats de travail",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Rouvrir progressivement urgences, maternités et Ehpad publics pour qu'un service soit accessible à moins de 30 minutes de chaque Français.",
+        "sous_theme": "Hôpital",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 4, chapitre 4", "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réguler l'installation des médecins et créer un réseau de centres de santé publics avec des médecins salariés.",
+        "sous_theme": "Déserts médicaux",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 4, chapitre 4", "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rembourser les séances de psychothérapie pour les moins de 26 ans.",
+        "sous_theme": "Santé mentale",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Produire 400 000 logements abordables par an pendant cinq ans, dont 200 000 logements publics.",
+        "sous_theme": "Construction",
+        "chiffrage": null,
+        "source": { "titre": "Mélenchon 2027, plan thématique BTP et logement", "url": "https://melenchon2027.fr/?p=24103", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réquisitionner les logements vides, taxer la vacance et limiter les locations type Airbnb pour remettre environ 150 000 logements par an sur le marché.",
+        "sous_theme": "Logements vacants",
+        "chiffrage": null,
+        "source": { "titre": "Mélenchon 2027, plan thématique BTP et logement", "url": "https://melenchon2027.fr/?p=24103", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Augmenter de 10 % les aides personnalisées au logement (APL).",
+        "sous_theme": "Aides au logement",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Interdire tasers, grenades de désencerclement et lanceurs de balles de défense (LBD) pour la police du quotidien et le maintien de l'ordre.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 5, chapitre 2", "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Remplacer l'IGPN et l'IGGN (inspections internes de la police et de la gendarmerie) par une autorité indépendante rattachée au Défenseur des droits.",
+        "sous_theme": "Contrôle de la police",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 5, chapitre 2", "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Doubler les moyens de la police scientifique et les effectifs affectés à la lutte contre la délinquance financière.",
+        "sous_theme": "Enquêtes",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 5, chapitre 2", "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Rétablir le droit du sol intégral pour les enfants nés en France, sur tout le territoire national.",
+        "sous_theme": "Nationalité",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 4", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faciliter l'accès à la nationalité française.",
+        "sous_theme": "Nationalité",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 4", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Accorder aux étrangers le droit de vote aux élections locales.",
+        "sous_theme": "Droits des étrangers",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 3, chapitre 4", "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Convoquer par référendum une assemblée constituante pour passer à une 6e République.",
+        "sous_theme": "Constitution",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, avec la Nouvelle France, Mélenchon fait de l'écologie la clé de voûte de son programme", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Élire l'Assemblée nationale à la proportionnelle.",
+        "sous_theme": "Mode de scrutin",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer l'article 49.3, qui permet d'adopter une loi sans vote des députés.",
+        "sous_theme": "Parlement",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Suspendre les accords de libre-échange et utiliser le droit de veto de la France sur ces accords.",
+        "sous_theme": "Commerce",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 6, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Suspendre pour tous les États européens la règle des 3 % de déficit public.",
+        "sous_theme": "Règles budgétaires",
+        "chiffrage": null,
+        "source": { "titre": "L'Avenir en commun 2027, partie 6, chapitre 1", "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1", "date": "2026-11-06", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Quitter immédiatement le commandement intégré de l'OTAN, puis l'organisation elle-même par étapes.",
+        "sous_theme": "Défense",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841", "date": "2026-11-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "id": "branco_juan",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Rendre les études universitaires réellement gratuites pour tout résident français.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Supprimer Parcoursup.",
+        "sous_theme": "Orientation",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Augmenter de 30 % les budgets de l'université et de la recherche publique, financés par la suppression du crédit d'impôt recherche (CIR).",
+        "sous_theme": "Recherche",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Construire 14 réacteurs nucléaires EPR2.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Sortir la France du marché européen de l'électricité.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Supprimer les zones à faibles émissions (ZFE).",
+        "sous_theme": "Transports",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Porter le salaire minimum national à 1 500 euros net.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Rétablir l'impôt sur la fortune (ISF).",
+        "sous_theme": "Impôts",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Supprimer les droits de succession et de donation pour 90 % des foyers fiscaux.",
+        "sous_theme": "Impôts",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Rendre les allocations chômage dégressives dès la première année.",
+        "sous_theme": "Chômage",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Rendre l'adhésion à un syndicat obligatoire pour tout travailleur.",
+        "sous_theme": "Dialogue social",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Fixer les taux de retraite selon l'espérance de vie de chaque catégorie sociale et professionnelle.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Supprimer les complémentaires santé et mutuelles, publiques et privées.",
+        "sous_theme": "Assurance maladie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Organiser un référendum sur la suppression des dépassements d'honoraires des médecins.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Lancer un plan d'urgence pour supprimer les déserts médicaux.",
+        "sous_theme": "Déserts médicaux",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Créer une surtaxe visant les 3 % de Français qui possèdent plusieurs logements.",
+        "sous_theme": "Fiscalité du logement",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Obliger les propriétaires à déclarer les logements inoccupés depuis plus de douze mois.",
+        "sous_theme": "Logements vacants",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Créer une garantie universelle des loyers.",
+        "sous_theme": "Location",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Confier la police nationale aux communes, sauf la police judiciaire et les unités de maintien de l'ordre.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Limiter les gardes à vue à 24 heures et à 200 000 par an.",
+        "sous_theme": "Justice",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Dissoudre les brigades motorisées BRAV-M.",
+        "sous_theme": "Police",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Mettre des conditions au regroupement familial.",
+        "sous_theme": "Regroupement familial",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Traiter les demandes d'asile au niveau des consulats.",
+        "sous_theme": "Asile",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Créer un référendum d'initiative citoyenne (RIC) en toutes matières.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Instaurer le principe du mandat révocable des élus.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Convoquer une assemblée constituante avec un mandat de douze mois et supprimer l'article 49.3.",
+        "sous_theme": "Constitution",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Organiser des référendums sur l'appartenance à l'Union européenne et à l'euro, et sur la sortie de l'OTAN.",
+        "sous_theme": "Souveraineté",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Arrêter les livraisons d'armes à l'Ukraine.",
+        "sous_theme": "Ukraine",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Faire entrer la France dans les BRICS.",
+        "sous_theme": "Relations internationales",
+        "chiffrage": null,
+        "source": {
+          "titre": "Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure",
+          "url": "https://ruches.org/le-projet",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ]
+  }
+}

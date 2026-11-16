@@ -1,0 +1,130 @@
+{
+  "id": "egger_clara",
+  "date_verif": "2026-11-09",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Créer une commission de spécialistes français et étrangers chargée de proposer des réformes de l'enseignement supérieur.",
+        "sous_theme": "Enseignement supérieur",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Consulter les élus locaux sur le partage des compétences entre territoires, avec l'éducation comme sujet prioritaire.",
+        "sous_theme": "Organisation",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Soumettre systématiquement à référendum les grandes politiques et les traités environnementaux.",
+        "sous_theme": "Démocratie environnementale",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "pouvoir_achat": [],
+    "travail": [
+      {
+        "texte": "Commander une étude sur les régimes spéciaux de retraite, en particulier ceux des hauts fonctionnaires et des élus.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Réviser par référendum l'article 89 de la Constitution pour ouvrir la voie au référendum d'initiative citoyenne (RIC).",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Instaurer un référendum obligatoire et un référendum de veto sur les décisions importantes.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Soumettre chaque année la loi de finances à référendum ; aucun déficit sans accord explicite des électeurs.",
+        "sous_theme": "Budget de l'État",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Négocier des clauses de retrait pour les engagements européens rejetés par les électeurs.",
+        "sous_theme": "Traités européens",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      },
+      {
+        "texte": "Négocier la sortie de l'Union européenne si les électeurs la choisissent par vote.",
+        "sous_theme": "Appartenance à l'UE",
+        "chiffrage": null,
+        "source": {
+          "titre": "Solution démocratique, communiqué de lancement du programme présidentiel 2027",
+          "url": "https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/",
+          "date": "2026-11-05",
+          "type": "programme",
+          "consulte": "2026-11-09"
+        }
+      }
+    ]
+  }
+}

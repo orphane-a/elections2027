@@ -1,0 +1,64 @@
+{
+  "slug": "europe",
+  "date_maj": "2026-11-09",
+  "en_bref": "Ce thème couvre la défense du pays et le budget des armées, la place de la France dans l'Union européenne et ses relations avec les autres pays. Depuis février 2022, la guerre en Ukraine pèse sur les choix de défense et sur les débats européens.",
+  "sous_themes": ["Défense", "Union européenne", "Diplomatie"],
+  "faits": [
+    {
+      "date": "2023-08",
+      "texte": "La loi de programmation militaire du 1er août 2023 prévoit 400 milliards d'euros de crédits pour les armées sur 2024-2030 (413,3 milliards de besoins). Le budget annuel passe de 47,2 milliards en 2024 à 67,4 milliards en 2030.",
+      "origine": "parlement",
+      "source": { "titre": "Légifrance, loi n° 2023-703 du 1er août 2023, article 4", "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000047915000", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-02",
+      "texte": "Le 16 février 2024, la France et l'Ukraine signent un accord de sécurité pour 10 ans. La France annonce jusqu'à 3 milliards d'euros d'aide militaire supplémentaire pour 2024.",
+      "origine": "gouvernement",
+      "source": { "titre": "Élysée, visite de Volodymyr Zelensky, 16 février 2024", "url": "https://www.elysee.fr/emmanuel-macron/2024/02/16/visite-de-volodymyr-zelensky-president-de-lukraine", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024-03",
+      "texte": "Le 21 mars 2024, le Sénat rejette par 211 voix contre 44 l'article qui autorise la ratification du CETA, l'accord de commerce entre l'Union européenne et le Canada.",
+      "origine": "parlement",
+      "source": { "titre": "Public Sénat, CETA : récit de la journée du vote au Sénat, 21 mars 2024", "url": "https://www.publicsenat.fr/actualites/politique/ceta-recit-dune-folle-journee-qui-a-vu-le-senat-rejeter-laccord-de-libre-echange-entre-la-france-et-le-canada", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2026-08",
+      "texte": "La loi du 16 août 2026 actualise la programmation militaire : les crédits 2024-2030 passent à 435,7 milliards d'euros, avec 75,7 milliards prévus pour l'année 2030.",
+      "origine": "parlement",
+      "source": { "titre": "Légifrance, loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire pour les années 2024 à 2030", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Loi du 1er août 2023 relative à la programmation militaire pour les années 2024 à 2030",
+      "phrase": "La loi fixe le budget des armées pour sept ans, soit 400 milliards d'euros de crédits (vote sur le texte de la commission mixte paritaire).",
+      "date": "2023-07-12",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 2256", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2256" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "pour", "ECO": "abstention", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": null }
+    },
+    {
+      "titre": "Loi du 16 août 2026 actualisant la programmation militaire pour les années 2024 à 2030",
+      "phrase": "La loi ajoute environ 36 milliards d'euros au budget des armées d'ici 2030 (vote sur le texte de la commission mixte paritaire).",
+      "date": "2026-07-01",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 7905", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7905" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "pour", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": "pour" }
+    }
+  ],
+  "liens": [
+    { "titre": "Légifrance, loi n° 2023-703 du 1er août 2023 (programmation militaire 2024-2030)", "url": "https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000047915000", "type": "Site officiel" },
+    { "titre": "Légifrance, loi n° 2026-791 du 16 août 2026 (actualisation de la programmation militaire)", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, dossier législatif de l'actualisation de la programmation militaire", "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/PJL_actualisation_loi_programmation_militaire_annees_2024_2030_diverses_dispositions_defense", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin n° 2256 (programmation militaire, 12 juillet 2023)", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2256", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin n° 7905 (actualisation de la programmation militaire, 1er juillet 2026)", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7905", "type": "Site officiel" },
+    { "titre": "Élysée, accord de sécurité entre la France et l'Ukraine, 16 février 2024", "url": "https://www.elysee.fr/emmanuel-macron/2024/02/16/visite-de-volodymyr-zelensky-president-de-lukraine", "type": "Site officiel" },
+    { "titre": "LCP, adoption définitive de la programmation militaire, juillet 2023", "url": "https://lcp.fr/actualites/la-loi-de-programmation-militaire-definitivement-adoptee-par-le-parlement-203997", "type": "Site externe" },
+    { "titre": "Public Sénat, rejet du CETA par le Sénat, 21 mars 2024", "url": "https://www.publicsenat.fr/actualites/politique/ceta-recit-dune-folle-journee-qui-a-vu-le-senat-rejeter-laccord-de-libre-echange-entre-la-france-et-le-canada", "type": "Site externe" }
+  ]
+}

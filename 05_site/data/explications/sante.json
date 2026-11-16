@@ -1,0 +1,262 @@
+{
+  "slug": "sante",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/3206": {
+      "RN": {
+        "texte": "Selon le groupe, le texte final améliore l'offre de soins et abandonne les mesures contraignantes pour l'installation des médecins.",
+        "orateur": "Thierry Frappé",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre car des mesures votées à l'Assemblée, comme la participation de tous les médecins aux gardes, ont été supprimées au Sénat.",
+        "orateur": "Mathilde Hignet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique s'abstenir car le texte final a retiré des mesures qu'il soutenait, dont la participation obligatoire des généralistes aux gardes.",
+        "orateur": "Guillaume Garot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique s'abstenir car le texte final ne rend pas obligatoire la participation des généralistes aux gardes et ne régule pas leur installation.",
+        "orateur": "Sébastien Peytavie",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique ne pas soutenir le texte car il écarte la régulation de l'installation des médecins et n'a ni étude d'impact ni budget.",
+        "orateur": "Yannick Monnet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter un texte de compromis qui mobilise les établissements pour les gardes et crée l'infirmier référent, sans contraindre les soignants.",
+        "orateur": "Jean-François Rousset",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Selon le groupe, le texte contient plusieurs mesures qui améliorent l'accès aux soins, comme la participation renforcée des hôpitaux aux gardes.",
+        "orateur": "Nicolas Turquois",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Selon le groupe, le texte organise les soins à l'échelle de chaque territoire et renforce la coopération entre les professionnels de santé.",
+        "orateur": "François Gernigon",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter pour car le texte final tient compte du terrain et écarte la contrainte, qui aurait réduit l'attractivité des métiers du soin.",
+        "orateur": "Yannick Neuder",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique ne pas s'opposer au texte, qui contient des avancées, tout en demandant une réforme plus large du système de santé.",
+        "orateur": "Laurent Panifous",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la deuxième séance du 12 décembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N083",
+          "date": "2023-12-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    },
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280": {
+      "RN": {
+        "texte": "Le groupe indique voter contre car, selon lui, des personnes sans accès aux soins risquent de demander la mort par défaut ; il privilégie les soins palliatifs.",
+        "orateur": "Christophe Bentz",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique soutenir un texte qui crée un droit de disposer de soi sous conditions cumulatives, sans obliger les malades à partir mourir à l'étranger.",
+        "orateur": "Karen Erodi",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter majoritairement pour, au nom de la dignité et de la liberté des malades arrivés au bout de leur parcours de soins.",
+        "orateur": "Océane Godard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter majoritairement pour un texte qui donne un cadre légal, avec des conditions cumulatives, aux patients, aux soignants et aux proches.",
+        "orateur": "Sandrine Rousseau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique que tous les votes seront représentés en son sein sur ce texte, sans donner de motif commun au nom du groupe.",
+        "orateur": "Yannick Monnet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter pour car le texte laisse au malade le choix de sa fin de vie, selon cinq critères cumulatifs, avec une clause de conscience.",
+        "orateur": "Nicole Dubré-Chirat",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique laisser la liberté de vote, la fin de vie relevant selon lui de la conscience de chacun et d'aucune discipline de groupe.",
+        "orateur": "Sabine Gervais",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique ne donner aucune consigne de vote sur ce sujet intime, chaque député se prononçant selon sa conscience et son expérience.",
+        "orateur": "Agnès Firmin Le Bodo",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter contre car, selon lui, le texte manque de garanties, notamment contre les pressions, sans assurer partout l'accès aux soins.",
+        "orateur": "Justine Gruet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Selon le groupe, ses députés contre craignent un recul de l'aide aux plus vulnérables ; ceux qui s'abstiennent veulent d'abord des soins palliatifs pour tous.",
+        "orateur": "Yannick Favennec-Bécot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique voter contre car, selon lui, la procédure n'est pas assez sécurisée : un seul médecin décide et le délai de réflexion est de deux jours.",
+        "orateur": "Olivier Fayssat",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 juillet 2026, discussion générale valant explications de vote (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N014",
+          "date": "2026-07-15",
+          "type": "explication_vote",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    }
+  }
+}

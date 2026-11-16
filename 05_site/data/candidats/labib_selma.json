@@ -1,0 +1,23 @@
+{
+  "id": "labib_selma",
+  "prenom": "Selma",
+  "nom": "Labib",
+  "parti": "NPA-Révolutionnaires",
+  "parti_sigle": "NPA-R",
+  "groupe_an": null,
+  "groupe_an_note": "Le NPA-Révolutionnaires n'a pas de député à l'Assemblée nationale.",
+  "statut": "Déclarée",
+  "statut_detail": "Candidature décidée par le comité politique national du NPA-Révolutionnaires les 6 et 7 juin 2026 et annoncée par communiqué le 17 juin 2026. Le NPA (parti distinct, dont le NPA-R est issu par scission) ne présente pas de candidat. Pas de programme détaillé publié.",
+  "a_verifier": false,
+  "date_declaration": "2026-06-17",
+  "site_campagne": "https://npa-revolutionnaires.org/campagnes-presidentielles",
+  "programme": null,
+  "sources": [
+    { "titre": "NPA-Révolutionnaires, Communiqué : Selma Labib, une candidature ouvrière et révolutionnaire", "url": "https://npa-revolutionnaires.org/articles/communique-presidentielle-2027-selma-labib-une-candidature-ouvriere-et-revolutionnaire-soutenue-par-gael-quirante", "date": "2026-06-17", "consulte": "2026-11-09" },
+    { "titre": "LCP, Philippe Poutou renonce à se présenter et se range derrière Jean-Luc Mélenchon", "url": "https://lcp.fr/actualites/presidentielle-2027-philippe-poutou-renonce-a-se-presenter-et-se-range-derriere-jean-luc", "date": "2026-06-29", "consulte": "2026-11-09" },
+    { "titre": "Speak Out Socialists, 2027 Presidential Election: Selma Labib", "url": "https://speakoutsocialists.org/?p=31844", "date": "2026-06-21", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

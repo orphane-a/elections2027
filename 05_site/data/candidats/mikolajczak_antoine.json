@@ -1,0 +1,23 @@
+{
+  "id": "mikolajczak_antoine",
+  "prenom": "Antoine",
+  "nom": "Mikolajczak",
+  "parti": "Équinoxe",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Le parti Équinoxe n'a pas de député à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Désigné candidat par un vote des adhérents d'Équinoxe au jugement majoritaire (date non publiée). Lancement de campagne le 27 juin 2026 à Saint-Père-sur-Loire, selon le parti.",
+  "a_verifier": false,
+  "date_declaration": null,
+  "site_campagne": "https://parti-equinoxe.fr/",
+  "programme": { "titre": "Notre programme, L'essentiel (programme synthétique, partiel : 3 thèmes publiés)", "url": "https://parti-equinoxe.fr/programme-2027/", "date": null, "type": "page web" },
+  "sources": [
+    { "titre": "Parti Équinoxe, qui est Antoine Mikolajczak ?", "url": "https://parti-equinoxe.fr/qui-est-antoine-mikolajczak/", "date": null, "consulte": "2026-11-09" },
+    { "titre": "Parti Équinoxe, retour sur le lancement de campagne", "url": "https://parti-equinoxe.fr/retour-sur-le-lancement-de-campagne-dequinoxe/", "date": "2026-07-02", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

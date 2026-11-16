@@ -1,0 +1,23 @@
+{
+  "id": "lalanne_francis",
+  "prenom": "Francis",
+  "nom": "Lalanne",
+  "parti": "France Libre (mouvement citoyen)",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Le mouvement France Libre n'a pas de député à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée le 19 août 2026 par un communiqué relayé par Le Parisien et l'AFP. Le site de campagne cité par l'AFP (lalanne2027.com) affiche une page de nom de domaine à vendre au 2026-11-09.",
+  "a_verifier": false,
+  "date_declaration": "2026-08-19",
+  "site_campagne": null,
+  "programme": null,
+  "sources": [
+    { "titre": "La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne", "url": "https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne", "date": "2026-08-19", "consulte": "2026-11-09" },
+    { "titre": "La Libre Belgique, Francis Lalanne officiellement candidat à la présidentielle 2027", "url": "https://www.lalibre.be/international/europe/2026/08/19/francis-lalanne-officiellement-candidat-a-la-presidentielle-2027-IYHINYS4IJG43AHUFIS2XZVX54/", "date": "2026-08-19", "consulte": "2026-11-09" },
+    { "titre": "Paris Match Belgique, Francis Lalanne se porte officiellement candidat", "url": "https://www.parismatch.be/actualites/monde/2026/08/20/presidentielle-2027-en-france-francis-lalanne-se-porte-officiellement-candidat-MPG3IRWASFFBDB6PSNEI32JVZA/", "date": "2026-08-20", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

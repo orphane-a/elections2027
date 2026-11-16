@@ -1,0 +1,171 @@
+{
+  "id": "retailleau_bruno",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Il propose un examen d'entrée en sixième, qui répartit ensuite les élèves en groupes de niveau revus régulièrement.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "LCP, interview de Bruno Retailleau sur BFMTV (3 novembre 2026)", "url": "https://lcp.fr/actualites/presidentielle-bruno-retailleau-veut-un-examen-pour-entrer-en-sixieme-et-des-groupes-de", "date": "2026-11-04", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de créer 1 000 établissements publics « libres », sur la base du volontariat, qui adaptent programmes, rythmes et calendrier.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, présentation du projet éducatif à Boulogne-Billancourt", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux", "date": "2026-08-31", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose d'augmenter le salaire des enseignants pour le rapprocher de la moyenne européenne.",
+        "sous_theme": "Enseignants",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, présentation du projet éducatif à Boulogne-Billancourt", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux", "date": "2026-08-31", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Il propose de mettre fin aux subventions publiques pour l'éolien et le photovoltaïque.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose d'abroger la troisième programmation pluriannuelle de l'énergie (PPE3, le plan énergie de l'État jusqu'en 2035).",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Il propose de supprimer les certificats d'économies d'énergie, une charge qu'il estime à 15 centimes par litre de carburant.",
+        "sous_theme": "Carburants",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose d'exonérer de cotisations le temps de travail supplémentaire : à partir de la 36e heure, le salaire brut égale le net.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Il propose de baisser les charges sur le travail dès la première heure, financé par une allocation sociale unique plafonnée à 70 % du Smic.",
+        "sous_theme": "Coût du travail",
+        "chiffrage": "Coût annoncé : 30 Md€, financé par l'allocation sociale unique plafonnée à 70 % du Smic.",
+        "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose d'aligner les règles de l'assurance chômage sur « les standards européens ».",
+        "sous_theme": "Chômage",
+        "chiffrage": "Économie annoncée : 30 Md€ sur le quinquennat.",
+        "source": { "titre": "Public Sénat, plan d'économies de près de 200 milliards d'euros", "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu", "date": "2026-10-12", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose une décote pour les départs entre 63 et 65 ans, une part de capitalisation et la fin des derniers régimes spéciaux.",
+        "sous_theme": "Retraites",
+        "chiffrage": "Amélioration annoncée des comptes des retraites : environ 42 Md€, dont 12 Md€ liés à la décote.",
+        "source": { "titre": "Public Sénat, plan d'économies de près de 200 milliards d'euros", "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu", "date": "2026-10-12", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Il propose un jour de carence obligatoire dans le privé et des réexamens périodiques des arrêts maladie.",
+        "sous_theme": "Arrêts maladie",
+        "chiffrage": "Économie annoncée : 4 Md€.",
+        "source": { "titre": "Public Sénat, plan d'économies de près de 200 milliards d'euros", "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu", "date": "2026-10-12", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Il propose de déduire de l'impôt les intérêts d'emprunt immobilier : 50 % avec un enfant, 75 % avec deux, 100 % dès trois.",
+        "sous_theme": "Accession à la propriété",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, logement : Bruno Retailleau propose de déduire de l'impôt les intérêts d'emprunt", "url": "https://www.publicsenat.fr/actualites/politique/logement-bruno-retailleau-propose-de-deduire-de-l-imot-les-interets-d-emprunt-pour-un-pret-immobilier-en-fonction-du-nombre-d-enfants", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de relancer le prêt à taux zéro pour les personnes qui achètent leur premier logement.",
+        "sous_theme": "Accession à la propriété",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, logement : Bruno Retailleau propose de déduire de l'impôt les intérêts d'emprunt", "url": "https://www.publicsenat.fr/actualites/politique/logement-bruno-retailleau-propose-de-deduire-de-l-imot-les-interets-d-emprunt-pour-un-pret-immobilier-en-fonction-du-nombre-d-enfants", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de supprimer le ZAN (objectif de zéro artificialisation des sols) et le DPE (diagnostic de performance énergétique).",
+        "sous_theme": "Normes",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, logement : Bruno Retailleau propose de déduire de l'impôt les intérêts d'emprunt", "url": "https://www.publicsenat.fr/actualites/politique/logement-bruno-retailleau-propose-de-deduire-de-l-imot-les-interets-d-emprunt-pour-un-pret-immobilier-en-fonction-du-nombre-d-enfants", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Il propose des peines minimales obligatoires pour certaines infractions graves, inscrites dans une « Charte de l'ordre républicain ».",
+        "sous_theme": "Justice pénale",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-propose-une-revolution-copernicienne-dans-laquelle-la-constitution-ne-serait-plus-le-bouclier-qui-prote", "date": "2026-09-03", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de supprimer le juge d'application des peines.",
+        "sous_theme": "Justice pénale",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, meeting de Bruno Retailleau au parc Floral", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jirai-jusquau-bout-de-lelection-pour-remettre-la-france-a-lendroit-clame-bruno-retailleau-a-son-premier-grand-meeting", "date": "2026-06-20", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose une castration chimique des pédocriminels, sans leur consentement.",
+        "sous_theme": "Justice pénale",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, meeting de Bruno Retailleau au parc Floral", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jirai-jusquau-bout-de-lelection-pour-remettre-la-france-a-lendroit-clame-bruno-retailleau-a-son-premier-grand-meeting", "date": "2026-06-20", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Il propose de supprimer le droit du sol par référendum.",
+        "sous_theme": "Nationalité",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), déclaration sur CNews et Europe 1", "url": "https://www.lagazettefrance.fr/article/retailleau-veut-supprimer-le-droit-du-sol-par-referendum", "date": "2026-09-09", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de soumettre aux Français, par référendum, une loi visant à « réduire l'immigration ».",
+        "sous_theme": "Flux migratoires",
+        "chiffrage": null,
+        "source": { "titre": "La Gazette France (AFP), déclaration sur CNews et Europe 1", "url": "https://www.lagazettefrance.fr/article/retailleau-veut-supprimer-le-droit-du-sol-par-referendum", "date": "2026-09-09", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose d'exiger cinq ans de séjour et de travail pour les prestations non contributives, et d'examiner l'asile hors des frontières.",
+        "sous_theme": "Droits sociaux et asile",
+        "chiffrage": "Économie annoncée : 4,5 Md€, sous réserve d'une révision constitutionnelle par référendum.",
+        "source": { "titre": "Public Sénat, plan d'économies de près de 200 milliards d'euros", "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu", "date": "2026-10-12", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Il propose d'élargir le référendum de l'article 11 à l'ensemble du domaine de la loi, dont l'immigration et la politique pénale.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle", "date": "2026-09-03", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose d'abaisser à environ 2,5 millions le nombre de signatures pour un référendum d'initiative partagée, contre environ 5 millions aujourd'hui.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle", "date": "2026-09-03", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose qu'après une censure du Conseil constitutionnel, le président puisse soumettre la loi au référendum ou au Parlement réuni en Congrès.",
+        "sous_theme": "Conseil constitutionnel",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-renverser-la-table-avec-une-profonde-reforme-constitutionnelle", "date": "2026-09-03", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Il propose que la France puisse, dans certains cas, déroger à la primauté du droit européen, notamment en matière d'immigration et de sécurité.",
+        "sous_theme": "Droit européen",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-propose-une-revolution-copernicienne-dans-laquelle-la-constitution-ne-serait-plus-le-bouclier-qui-prote", "date": "2026-09-03", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

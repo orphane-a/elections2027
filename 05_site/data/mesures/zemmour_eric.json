@@ -1,0 +1,56 @@
+{
+  "id": "zemmour_eric",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Rétablir un examen d'entrée en sixième et en seconde, et un baccalauréat plus exigeant.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "CNews, Éric Zemmour invité de CNews (13 octobre 2026)", "url": "https://www.cnews.fr/france/2026-10-13/niveau-scolaire-francais-que-propose-eric-zemmour-pour-retablir-la-meilleure", "date": "2026-10-13", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Faire du français et des mathématiques les matières principales, avec davantage d'heures.",
+        "sous_theme": "Programmes",
+        "chiffrage": null,
+        "source": { "titre": "CNews, Éric Zemmour invité de CNews (13 octobre 2026)", "url": "https://www.cnews.fr/france/2026-10-13/niveau-scolaire-francais-que-propose-eric-zemmour-pour-retablir-la-meilleure", "date": "2026-10-13", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Donner aux chefs d'établissement le pouvoir de sanctionner, d'exclure les élèves violents et de choisir leurs professeurs.",
+        "sous_theme": "Discipline",
+        "chiffrage": null,
+        "source": { "titre": "CNews, Éric Zemmour invité de CNews (13 octobre 2026)", "url": "https://www.cnews.fr/france/2026-10-13/niveau-scolaire-francais-que-propose-eric-zemmour-pour-retablir-la-meilleure", "date": "2026-10-13", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [
+      {
+        "texte": "Investir dans l'automatisation et la robotique pour remplacer la main-d'œuvre immigrée dans certains métiers.",
+        "sous_theme": "Emploi",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026)", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [
+      {
+        "texte": "Expulser un étranger en situation régulière après un an de chômage.",
+        "sous_theme": "Expulsions",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026)", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Expulser les étrangers détenus, en situation irrégulière, condamnés ou vivant uniquement d'aides sociales.",
+        "sous_theme": "Expulsions",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026)", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [],
+    "europe": []
+  }
+}

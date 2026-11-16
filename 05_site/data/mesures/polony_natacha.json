@@ -1,0 +1,50 @@
+{
+  "id": "polony_natacha",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [
+      {
+        "texte": "Augmenter les salaires de 20 à 30 %.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Natacha Polony annonce sa candidature (entretien sur France Inter)", "url": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808", "date": "2026-10-14", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Donner la priorité à la production française dans la commande publique.",
+        "sous_theme": "Industrie",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Natacha Polony annonce sa candidature (entretien sur France Inter)", "url": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808", "date": "2026-10-14", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer les aides publiques aux entreprises qui ne sont pas conditionnées à une production en France.",
+        "sous_theme": "Industrie",
+        "chiffrage": null,
+        "source": { "titre": "LCP, Natacha Polony annonce sa candidature (entretien sur France Inter)", "url": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808", "date": "2026-10-14", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Consulter régulièrement le peuple par référendum et respecter le résultat.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "natachapolony2027.fr, Mes principes", "url": "https://natachapolony2027.fr/natacha-polony/mes-principes", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Protéger les lanceurs d'alerte et lutter contre les conflits d'intérêts entre hauts postes publics et intérêts privés.",
+        "sous_theme": "Éthique publique",
+        "chiffrage": null,
+        "source": { "titre": "natachapolony2027.fr, Ma vision pour la France", "url": "https://natachapolony2027.fr/natacha-polony/ma-vision", "date": null, "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": []
+  }
+}

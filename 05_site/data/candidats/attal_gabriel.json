@@ -1,0 +1,23 @@
+{
+  "id": "attal_gabriel",
+  "prenom": "Gabriel",
+  "nom": "Attal",
+  "parti": "Renaissance",
+  "parti_sigle": "RE",
+  "groupe_an": "EPR",
+  "groupe_an_note": null,
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée le 22 mai 2026 lors d'un déplacement à Mur-de-Barrez (Aveyron). Fin octobre 2026, il appelle à une « grande primaire » entre plusieurs candidats, sans retrait de sa candidature.",
+  "a_verifier": false,
+  "date_declaration": "2026-05-22",
+  "site_campagne": "https://attalpresident.fr/",
+  "programme": { "titre": "Mes chantiers capitaux (liste de 96 premières mesures annoncées, sans date affichée)", "url": "https://attalpresident.fr/programme", "date": null, "type": "page web" },
+  "sources": [
+    { "titre": "LCP, Présidentielle 2027 : Gabriel Attal officialise sa candidature", "url": "https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721", "date": "2026-05-22", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "attalpresident.fr, Mes chantiers capitaux", "url": "https://attalpresident.fr/programme", "date": null, "consulte": "2026-11-09" }
+  ],
+  "confiance": "Bon",
+  "date_maj": "2026-11-09"
+}

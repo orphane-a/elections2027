@@ -1,0 +1,70 @@
+{
+  "slug": "immigration",
+  "date_maj": "2026-11-09",
+  "en_bref": "Ce thème couvre l'accueil des personnes qui demandent une protection (l'asile), les règles pour obtenir un titre de séjour, les départs forcés des personnes en situation irrégulière et l'intégration des étrangers installés en France. Une partie de ces règles est fixée par la loi française, une autre par l'Union européenne.",
+  "sous_themes": ["Asile", "Titres de séjour", "Éloignements", "Intégration"],
+  "faits": [
+    {
+      "date": "2024-01",
+      "texte": "Le 25 janvier 2024, le Conseil constitutionnel censure 35 articles de la loi immigration, sur 86 : 32 pour un défaut de lien avec le texte initial, 3 sur le fond. La loi est promulguée le 26 janvier 2024.",
+      "origine": "exterieur",
+      "source": { "titre": "Conseil constitutionnel, communiqué sur la décision n° 2023-863 DC du 25 janvier 2024", "url": "https://www.conseil-constitutionnel.fr/actualites/communique/decision-n-2023-863-dc-du-25-janvier-2024-communique-de-presse", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-12",
+      "texte": "En 2025, 384 230 premiers titres de séjour sont délivrés, soit 11,2 % de plus qu'en 2024.",
+      "origine": "gouvernement",
+      "source": { "titre": "Ministère de l'Intérieur (DGEF), Les étrangers en France 2025, rapport au Parlement, synthèse", "url": "https://www.immigration.interieur.gouv.fr/sites/dgef/files/medias/documents/2026-10/INTV2623196X_Rapport%20au_Parlement_2025_28sept2026.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-12",
+      "texte": "En 2025, 116 476 premières demandes d'asile sont enregistrées, soit 10,3 % de moins qu'en 2024. C'est la deuxième année de baisse.",
+      "origine": "exterieur",
+      "source": { "titre": "Ministère de l'Intérieur (DGEF), Les étrangers en France 2025, rapport au Parlement, chapitre asile", "url": "https://www.immigration.interieur.gouv.fr/sites/dgef/files/medias/documents/2026-10/INTV2623196X_Rapport%20au_Parlement_2025_28sept2026.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-12",
+      "texte": "En 2025, 156 180 mesures d'éloignement sont prononcées (+7,6 %) et 15 253 éloignements forcés sont exécutés (+20,7 %).",
+      "origine": "gouvernement",
+      "source": { "titre": "Ministère de l'Intérieur (DGEF), Les étrangers en France 2025, rapport au Parlement, synthèse", "url": "https://www.immigration.interieur.gouv.fr/sites/dgef/files/medias/documents/2026-10/INTV2623196X_Rapport%20au_Parlement_2025_28sept2026.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2026-07",
+      "texte": "Le Parlement adopte en juin 2026 une loi qui porte de 90 à 210 jours la durée maximale de rétention de certains étrangers sous obligation de quitter le territoire jugés dangereux. Le Conseil constitutionnel la valide le 23 juillet 2026.",
+      "origine": "parlement",
+      "source": { "titre": "LCP, Loi Philippine : le Conseil constitutionnel valide l'allongement de la rétention, 23 juillet 2026", "url": "https://www.lcp.fr/actualites/loi-philippine-le-conseil-constitutionnel-valide-l-allongement-de-la-retention", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Loi du 26 janvier 2024 pour contrôler l'immigration, améliorer l'intégration",
+      "phrase": "La loi modifie les règles de séjour, d'éloignement et d'intégration des étrangers (vote sur le texte de la commission mixte paritaire). Groupe LIOT : 8 pour, 8 contre, 5 abstentions, sans position majoritaire.",
+      "date": "2023-12-19",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 3213", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3213" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "contre", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "partage", "UDR": null }
+    },
+    {
+      "titre": "Loi visant à renforcer la sécurité, la rétention administrative et la prévention des risques d'attentat (dite « loi Philippine »)",
+      "phrase": "La loi porte à 210 jours la durée maximale de rétention de certains étrangers sous obligation de quitter le territoire jugés dangereux (vote sur le texte de la commission mixte paritaire).",
+      "date": "2026-06-16",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 7405", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7405" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "contre", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": "pour" }
+    }
+  ],
+  "liens": [
+    { "titre": "Ministère de l'Intérieur (DGEF), Les étrangers en France 2025, rapport au Parlement", "url": "https://www.immigration.interieur.gouv.fr/sites/dgef/files/medias/documents/2026-10/INTV2623196X_Rapport%20au_Parlement_2025_28sept2026.pdf", "type": "PDF" },
+    { "titre": "Conseil constitutionnel, décision n° 2023-863 DC sur la loi immigration", "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm", "type": "Site officiel" },
+    { "titre": "Conseil constitutionnel, communiqué sur la décision n° 2023-863 DC", "url": "https://www.conseil-constitutionnel.fr/actualites/communique/decision-n-2023-863-dc-du-25-janvier-2024-communique-de-presse", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin n° 3213 (loi immigration, 19 décembre 2023)", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3213", "type": "Site officiel" },
+    { "titre": "Assemblée nationale, scrutin n° 7405 (loi Philippine, 16 juin 2026)", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7405", "type": "Site officiel" },
+    { "titre": "LCP, adoption définitive de la loi Philippine, 16 juin 2026", "url": "https://lcp.fr/actualites/loi-philippine-les-deputes-allongent-la-duree-de-retention-des-etrangers-en-situation", "type": "Site externe" },
+    { "titre": "LCP, décision du Conseil constitutionnel sur la loi Philippine, 23 juillet 2026", "url": "https://www.lcp.fr/actualites/loi-philippine-le-conseil-constitutionnel-valide-l-allongement-de-la-retention", "type": "Site externe" }
+  ]
+}

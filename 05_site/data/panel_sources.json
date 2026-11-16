@@ -1,0 +1,31 @@
+{
+  "date_maj": "2026-11-10",
+  "statut": "Liste proposée, à valider avant publication en prod.",
+  "institutions": [
+    { "id": "hcfp", "nom": "Haut Conseil des finances publiques", "niveau": 1, "utile": "Cohérence des trajectoires macro et budgétaires", "vigilance": "Il juge des prévisions, pas des programmes de candidats" },
+    { "id": "cour_comptes", "nom": "Cour des comptes", "niveau": 1, "utile": "Coût des politiques publiques existantes, finances publiques", "vigilance": "Seuls ses rapports chiffrés et factuels sont retenus, pas ses prises de position" },
+    { "id": "ipp", "nom": "Institut des politiques publiques (IPP)", "niveau": 1, "utile": "Impact des mesures fiscales et sociales, par microsimulation", "vigilance": "Travaille par thème, pas sur un programme entier" },
+    { "id": "ofce", "nom": "OFCE", "niveau": 1, "utile": "Effets macro, emploi, croissance", "vigilance": "Méthode publique, courant d'analyse identifié" },
+    { "id": "insee", "nom": "INSEE", "niveau": 1, "utile": "Données de base et prévisions de référence", "vigilance": "Ne chiffre pas les promesses" },
+    { "id": "banque_de_france", "nom": "Banque de France", "niveau": 1, "utile": "Données de base et prévisions de référence", "vigilance": "Ne chiffre pas les promesses" },
+    { "id": "cor", "nom": "Conseil d'orientation des retraites", "niveau": 1, "utile": "Retraites uniquement", "vigilance": "Thème unique" },
+    { "id": "cae", "nom": "Conseil d'analyse économique", "niveau": 1, "utile": "Analyses thématiques", "vigilance": "Rattaché à l'exécutif, à manier avec prudence" },
+    { "id": "france_strategie", "nom": "France Stratégie", "niveau": 1, "utile": "Analyses thématiques", "vigilance": "Rattaché à l'exécutif, à manier avec prudence" },
+    { "id": "fipeco", "nom": "FIPECO", "niveau": 1, "utile": "Finances publiques, pédagogie des chiffrages", "vigilance": "Petite structure, une seule équipe" },
+    { "id": "commission_europeenne", "nom": "Commission européenne", "niveau": 2, "utile": "Trajectoire globale des finances publiques", "vigilance": "Rarement une mesure précise, jamais source unique" },
+    { "id": "ocde", "nom": "OCDE", "niveau": 2, "utile": "Trajectoire globale et comparaisons internationales", "vigilance": "Rarement une mesure précise, jamais source unique" },
+    { "id": "fmi", "nom": "FMI", "niveau": 2, "utile": "Trajectoire globale des finances publiques", "vigilance": "Rarement une mesure précise, jamais source unique" },
+    { "id": "institut_montaigne", "nom": "Institut Montaigne", "niveau": 3, "utile": "Chiffrage des programmes annoncé pour le premier trimestre 2027", "vigilance": "Think tank qui assume une orientation : affiché, jamais compté" },
+    { "id": "ifrap", "nom": "Fondation iFRAP", "niveau": 3, "utile": "A chiffré des programmes lors d'une précédente présidentielle", "vigilance": "Think tank qui assume une orientation : affiché, jamais compté" },
+    { "id": "institut_la_boetie", "nom": "Institut La Boétie", "niveau": 3, "utile": "Analyses publiées", "vigilance": "Proche de La France insoumise : affiché, jamais compté" }
+  ],
+  "paires_non_cumulables": [["cour_comptes", "hcfp"]],
+  "hors_minimum": ["cour_comptes", "hcfp"],
+  "themes_reference": [
+    ["Finances publiques", "Cour des comptes, Haut Conseil des finances publiques, FIPECO"],
+    ["Fiscalité et prestations", "IPP"],
+    ["Macroéconomie", "OFCE, INSEE, Commission européenne"],
+    ["Retraites", "Conseil d'orientation des retraites, IPP"]
+  ],
+  "historique": []
+}

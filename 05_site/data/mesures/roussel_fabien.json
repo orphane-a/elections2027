@@ -1,0 +1,100 @@
+{
+  "id": "roussel_fabien",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [
+      {
+        "texte": "Installer 2 millions de pompes à chaleur par an dans les logements.",
+        "sous_theme": "Rénovation",
+        "chiffrage": null,
+        "source": { "titre": "Discours de Fabien Roussel à l'université d'été du PCF", "url": "https://www.pcf.fr/ue_26_discours_fr", "date": "2026-08-26", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Vendre un million de voitures électriques à moins de 10 000 €, produites en France, aux classes populaires et moyennes.",
+        "sous_theme": "Transports",
+        "chiffrage": null,
+        "source": { "titre": "Discours de Fabien Roussel à l'université d'été du PCF", "url": "https://www.pcf.fr/ue_26_discours_fr", "date": "2026-08-26", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Doubler la production d'électricité nucléaire, renouvelable et hydraulique.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "France 24, déclaration de candidature de Fabien Roussel sur TF1", "url": "https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf", "date": "2026-09-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Porter le SMIC à 2 200 € brut par mois, soit environ 1 700 € net.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Le « 8h30 franceinfo » de Fabien Roussel", "url": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/mobilisations-sociales-colere-des-lyceens-presidentielle-le-8h30-franceinfo-de-fabien-roussel_8244898.html", "date": "2026-11-03", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Indexer tous les salaires sur l'inflation en rétablissant l'échelle mobile des salaires.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "franceinfo, Fabien Roussel souhaite « l'augmentation généralisée des salaires »", "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/avant-le-20h/revalorisation-du-smic-fabien-roussel-souhaite-l-augmentation-generalisee-des-salaires_8273774.html", "date": "2026-11-08", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Exonérer de droits de succession les héritages de moins de 200 000 € et taxer davantage les héritages les plus élevés.",
+        "sous_theme": "Fiscalité",
+        "chiffrage": null,
+        "source": { "titre": "Discours de Fabien Roussel à la Fête de l'Humanité 2026", "url": "https://www.pcf.fr/fete_de_lhumanite_2026_discours_de_fabien_roussel", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Augmenter les pensions pour qu'aucune retraite ne soit inférieure au SMIC.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Discours de Fabien Roussel à l'université d'été du PCF", "url": "https://www.pcf.fr/ue_26_discours_fr", "date": "2026-08-26", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer des cotisations sur les revenus financiers et les dividendes pour financer la Sécurité sociale et les retraites par répartition.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Discours de Fabien Roussel à la Fête de l'Humanité 2026", "url": "https://www.pcf.fr/fete_de_lhumanite_2026_discours_de_fabien_roussel", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Doubler la part de l'industrie dans le produit intérieur brut (PIB).",
+        "sous_theme": "Industrie",
+        "chiffrage": null,
+        "source": { "titre": "France 24, déclaration de candidature de Fabien Roussel sur TF1", "url": "https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf", "date": "2026-09-06", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [],
+    "logement": [
+      {
+        "texte": "Construire un million de logements sociaux en cinq ans, soit 200 000 par an.",
+        "sous_theme": "Logement social",
+        "chiffrage": "Coût annoncé : 15 Md€ par an d'aides à la pierre",
+        "source": { "titre": "Journal de l'Agence, les propositions de Fabien Roussel pour relancer le logement (congrès HLM du 22 septembre 2026)", "url": "https://www.journaldelagence.com/1414457-presidentielle-2027-les-propositions-de-fabien-roussel-pour-relancer-le-logement", "date": "2026-10-28", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Porter à 30 % l'obligation de logements sociaux dans les zones urbaines (« loi SRU 2 »).",
+        "sous_theme": "Logement social",
+        "chiffrage": null,
+        "source": { "titre": "Journal de l'Agence, citant le communiqué du PCF du 26 septembre 2026", "url": "https://www.journaldelagence.com/1414457-presidentielle-2027-les-propositions-de-fabien-roussel-pour-relancer-le-logement", "date": "2026-10-28", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Limiter à 20 % des revenus du foyer la dépense de logement, une fois les aides déduites.",
+        "sous_theme": "Loyers",
+        "chiffrage": null,
+        "source": { "titre": "Journal de l'Agence, propositions de septembre 2026", "url": "https://www.journaldelagence.com/1414457-presidentielle-2027-les-propositions-de-fabien-roussel-pour-relancer-le-logement", "date": "2026-10-28", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Obliger les partis à présenter 50 % d'ouvriers et d'employés aux élections législatives (« parité sociale »).",
+        "sous_theme": "Représentation",
+        "chiffrage": null,
+        "source": { "titre": "Discours de Fabien Roussel à la Fête de l'Humanité 2026", "url": "https://www.pcf.fr/fete_de_lhumanite_2026_discours_de_fabien_roussel", "date": "2026-09-15", "type": "declaration", "consulte": "2026-11-09" }
+      }
+    ],
+    "europe": []
+  }
+}

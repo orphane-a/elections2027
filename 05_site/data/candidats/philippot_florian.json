@@ -1,0 +1,23 @@
+{
+  "id": "philippot_florian",
+  "prenom": "Florian",
+  "nom": "Philippot",
+  "parti": "Les Patriotes",
+  "parti_sigle": "LP",
+  "groupe_an": null,
+  "groupe_an_note": "Les Patriotes n'ont pas de groupe à l'Assemblée nationale (non représenté).",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée sur France 2 le 9 mai 2026. Il a dit qu'il se retirerait si Philippe de Villiers se présentait ; aucune décision de ce dernier trouvée à date.",
+  "a_verifier": false,
+  "date_declaration": "2026-05-09",
+  "site_campagne": null,
+  "programme": { "titre": "Grandes orientations pour un projet patriote + Le Frexit en 10 questions, édition 2026-2027", "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf", "date": null, "type": "PDF" },
+  "sources": [
+    { "titre": "Sud Radio, « Je suis candidat » : Florian Philippot se lance pour la présidentielle de 2027", "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027", "date": "2026-05-09", "consulte": "2026-11-09" },
+    { "titre": "info.fr, Philippot candidat en 2027", "url": "https://info.fr/philippot-candidat-presidentielle-2027-parrainages-villiers/", "date": "2026-05-10", "consulte": "2026-11-09" },
+    { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Les Patriotes, page « Projet pour la France » (bouton « Je soutiens ce projet pour 2027 »)", "url": "https://les-patriotes.fr/projetpourlafrance/", "date": null, "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

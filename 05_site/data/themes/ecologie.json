@@ -1,0 +1,70 @@
+{
+  "slug": "ecologie",
+  "date_maj": "2026-11-09",
+  "en_bref": "La France s'est fixé des objectifs de baisse des émissions de gaz à effet de serre pour 2030 et la neutralité carbone en 2050. Le thème couvre la production d'énergie (nucléaire, renouvelables), les transports, l'industrie et la biodiversité, et le rythme de baisse des émissions.",
+  "sous_themes": ["Climat", "Énergie", "Transports", "Biodiversité"],
+  "faits": [
+    {
+      "date": "2023-03",
+      "texte": "La loi du 10 mars 2023 crée des « zones d'accélération » des énergies renouvelables choisies par les communes. Elle impose des ombrières sur au moins la moitié des parkings extérieurs de plus de 1 500 m².",
+      "origine": "parlement",
+      "source": { "titre": "Légifrance, loi n° 2023-175 du 10 mars 2023 relative à l'accélération de la production d'énergies renouvelables, articles 15 et 40", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047294244", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2024",
+      "texte": "Hors puits de carbone, les émissions de gaz à effet de serre de la France atteignent 367 Mt CO2e en 2024, en baisse de 3,0 % sur un an, après -6,8 % entre 2022 et 2023.",
+      "origine": "exterieur",
+      "source": { "titre": "Citepa, rapport Secten 2026, synthèse et messages clés, juin 2026", "url": "https://www.citepa.org/wp-content/uploads/2026/06/Synthese-et-messages-cles-Secten-2026.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025",
+      "texte": "Les émissions de 2025 sont estimées à 359 Mt CO2e, soit -2,1 % sur un an. Selon le Citepa, des baisses de 5 à 6 % par an sont attendues à partir de 2026 pour respecter le budget carbone 2024-2028 proposé.",
+      "origine": "exterieur",
+      "source": { "titre": "Citepa, rapport Secten 2026, synthèse et messages clés, juin 2026", "url": "https://www.citepa.org/wp-content/uploads/2026/06/Synthese-et-messages-cles-Secten-2026.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2026-02",
+      "texte": "Le décret fixant la troisième programmation pluriannuelle de l'énergie (PPE3), feuille de route énergétique du pays jusqu'en 2035, est publié au Journal officiel le 13 février 2026.",
+      "origine": "gouvernement",
+      "source": { "titre": "Commission de régulation de l'énergie, communiqué de presse du 12 février 2026 sur la PPE3", "url": "https://www.cre.fr/fileadmin/Documents/Communiques_de_presse/2026/260212_CP_CRE_PPE.pdf", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Loi du 10 mars 2023 relative à l'accélération de la production d'énergies renouvelables",
+      "phrase": "La loi simplifie les procédures pour installer du solaire et de l'éolien et crée des zones d'accélération définies avec les communes.",
+      "date": "2023-01-31",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 897", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/897" },
+      "positions": { "RN": "contre", "LFI": "contre", "SOC": "pour", "ECO": "abstention", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "contre", "LIOT": "pour", "UDR": null }
+    },
+    {
+      "titre": "Loi relative à l'accélération des procédures liées à la construction de nouvelles installations nucléaires (2023)",
+      "phrase": "La loi raccourcit les procédures pour construire de nouveaux réacteurs nucléaires à côté des sites existants.",
+      "date": "2023-05-16",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 1533", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/1533" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "abstention", "ECO": "contre", "GDR": "pour", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": null }
+    },
+    {
+      "titre": "Loi relative à l'industrie verte (2023)",
+      "phrase": "La loi accélère l'installation d'usines liées à la transition écologique et oriente l'épargne et la commande publique vers ces activités. Groupe LIOT divisé : 2 pour, 2 abstentions.",
+      "date": "2023-10-10",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 2721", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2721" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "abstention", "ECO": "contre", "GDR": "abstention", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "partage", "UDR": null }
+    }
+  ],
+  "liens": [
+    { "titre": "Haut Conseil pour le climat, rapport annuel 2026", "url": "https://www.hautconseilclimat.fr/publications/dangers-climatiques-la-france-face-a-ses-responsabilites/", "type": "Site officiel" },
+    { "titre": "Citepa, rapport Secten 2026 (synthèse)", "url": "https://www.citepa.org/wp-content/uploads/2026/06/Synthese-et-messages-cles-Secten-2026.pdf", "type": "PDF" },
+    { "titre": "Ministère de la Transition écologique, baromètre Citepa des émissions 2025 (janvier 2026)", "url": "https://www.ecologie.gouv.fr/presse/barometre-citepa-baisse-emissions-gaz-effet-serre-france-se-poursuit-2025-laction-climatique", "type": "Site officiel" },
+    { "titre": "Légifrance, loi n° 2023-175 du 10 mars 2023 (énergies renouvelables)", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047294244", "type": "Site officiel" },
+    { "titre": "CRE, communiqué sur la publication de la PPE3", "url": "https://www.cre.fr/fileadmin/Documents/Communiques_de_presse/2026/260212_CP_CRE_PPE.pdf", "type": "PDF" },
+    { "titre": "Assemblée nationale, scrutin final de la loi industrie verte", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2721", "type": "Site officiel" }
+  ]
+}

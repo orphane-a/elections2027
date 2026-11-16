@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "05_site/serve.mjs"
+      ],
+      "port": 8027
+    },
+    {
+      "name": "site-test",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "05_site/serve.mjs",
+        "8028"
+      ],
+      "port": 8028
+    }
+  ]
+}

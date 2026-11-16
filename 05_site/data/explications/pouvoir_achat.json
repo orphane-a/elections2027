@@ -1,0 +1,375 @@
+{
+  "slug": "pouvoir_achat",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/186": {
+      "RN": {
+        "texte": "Le groupe indique soutenir les avancées du texte, dont des mesures qu'il dit avoir proposées (AAH, épargne salariale, titres-restaurant).",
+        "orateur": "Victor Catteau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, le texte ne bloque pas les prix et privilégie des primes facultatives à la hausse du SMIC, avec des revalorisations sous l'inflation.",
+        "orateur": "Adrien Quatennens",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique ne pas soutenir le texte, qui privilégie selon lui des primes défiscalisées et des revalorisations sous l'inflation à la hausse des salaires.",
+        "orateur": "Gérard Leseul",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Selon le groupe, les minima sociaux ne suivent pas l'inflation, les salaires ne sont pas augmentés et le texte permet de rouvrir des centrales à charbon.",
+        "orateur": "Sandrine Rousseau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique que le texte évite la hausse des salaires et du SMIC, revalorise les retraites sous l'inflation et étend les exonérations de cotisations.",
+        "orateur": "Pierre Dharréville",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir des mesures ciblées et temporaires : prime de partage de la valeur, hausse de 4 % des retraites et prestations, loyers plafonnés.",
+        "orateur": "Christine Le Nabour",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Selon le groupe, le texte répond à court terme à l'inflation pour les actifs, les retraités, les plus modestes et les consommateurs.",
+        "orateur": "Nicolas Turquois",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique soutenir la hausse de 4 % des pensions et minima sociaux, le plafond relevé de la prime et la défiscalisation des heures supplémentaires.",
+        "orateur": "Thomas Mesnier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte pour aider les Français face à l'inflation et soutenir ses ajouts (heures supplémentaires, RTT), qu'il dit insuffisants.",
+        "orateur": "Thibault Bazin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique ne pas s'opposer au texte, qui comporte selon lui des avancées comme l'AAH ; une partie de ses députés vote pour, l'autre s'abstient.",
+        "orateur": "Paul-André Colombani",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la séance du 3 août 2022, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2022E1N030",
+          "date": "2022-08-03",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/2967": {
+      "RN": {
+        "texte": "Le groupe indique s'abstenir car avancer les négociations ne garantit pas selon lui une baisse des prix ; il propose une TVA réduite sur l'énergie.",
+        "orateur": "Hervé de Lépinau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, avancer les négociations accélérera les hausses de prix demandées par les industriels ; il propose d'encadrer les marges.",
+        "orateur": "Aurélie Trouvé",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique que ses propositions (révision des prix, transparence sur le partage de la valeur) ont été rejetées et que la portée du texte est limitée.",
+        "orateur": "Dominique Potier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Selon le groupe, le texte repose sur des engagements volontaires des industriels et n'agit ni sur l'encadrement des marges ni sur les salaires.",
+        "orateur": "Delphine Batho",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique que le texte s'écarte de la construction du prix à partir des coûts agricoles (lois Egalim) et n'encadre pas les marges.",
+        "orateur": "André Chassaigne",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir l'avancée des négociations commerciales pour que les consommateurs bénéficient plus vite de la baisse de certains coûts.",
+        "orateur": "Pierre Cazeneuve",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Selon le groupe, avancer les négociations doit accélérer la baisse des prix en rayon, et des dates distinctes protègent les PME face aux grands groupes.",
+        "orateur": "Anne-Laure Babault",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique suivre le Gouvernement pour que les consommateurs profitent au plus vite de la baisse attendue des cours des matières premières.",
+        "orateur": "Thierry Benoit",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique s'abstenir : la portée du texte est selon lui limitée, sans mesure sur carburants et fioul, mais il approuve la date distincte pour les PME.",
+        "orateur": "Jérôme Nury",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Selon le groupe, le texte complexifie les relations commerciales sans garantir de baisse des prix pour les consommateurs ; il s'abstient.",
+        "orateur": "David Taupiac",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/3009": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte, qui étend participation et intéressement aux PME, en demandant qu'ils ne remplacent pas les hausses de salaire.",
+        "orateur": "Frédéric Cabrolier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, le texte privilégie des primes exonérées de cotisations, qui remplacent en partie des hausses de salaire et réduisent les recettes sociales.",
+        "orateur": "Matthias Tavel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter le texte par respect pour les partenaires sociaux, tout en regrettant que la question des salaires en ait été exclue.",
+        "orateur": "Jérôme Guedj",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique s'abstenir : il estime les avancées insuffisantes au regard des salaires, mais ne s'oppose pas à un texte issu du dialogue social.",
+        "orateur": "Eva Sas",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Selon le groupe, le texte écarte la question des salaires et développe des primes exonérées de cotisations qui se substituent en partie aux hausses de salaire.",
+        "orateur": "Pierre Dharréville",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir la transposition d'un accord des partenaires sociaux qui oblige les entreprises de 11 à 49 salariés à partager la valeur.",
+        "orateur": "Michèle Peyron",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique soutenir la transposition fidèle d'un accord des partenaires sociaux visant une distribution plus juste des richesses des entreprises.",
+        "orateur": "Anne Bergantz",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Selon le groupe, le texte développe la participation, la prime de partage de la valeur et l'actionnariat salarié, dans le respect du dialogue social.",
+        "orateur": "Félicie Gérard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter un texte issu du dialogue social qui étend participation et intéressement, tout en regrettant le maintien du seuil de 11 salariés.",
+        "orateur": "Stéphane Viry",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique soutenir l'ouverture du partage de la valeur aux petites entreprises, issue d'un accord social, tout en regrettant l'absence des salaires.",
+        "orateur": "Michel Castellani",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 22 novembre 2023, discussion générale sur le texte de la commission mixte paritaire",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N058",
+          "date": "2023-11-22",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    }
+  }
+}

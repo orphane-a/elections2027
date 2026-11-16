@@ -1,0 +1,54 @@
+{
+  "slug": "logement",
+  "date_maj": "2026-11-09",
+  "en_bref": "Le logement pèse lourd dans le budget des ménages. Le débat porte sur le niveau des loyers, le rythme de construction, l'accès au logement social, la rénovation des logements mal isolés et la place des locations touristiques dans certaines villes.",
+  "sous_themes": ["Loyers et location", "Construction", "Passoires thermiques", "Mal-logement"],
+  "faits": [
+    {
+      "date": "2025-01",
+      "texte": "Depuis le 1er janvier 2025, un logement classé G au diagnostic de performance énergétique (DPE) est considéré comme non décent : il ne peut plus faire l'objet d'un nouveau bail. Le calendrier prévu par la loi Climat et résilience de 2021 vise ensuite les logements F en 2028 et E en 2034.",
+      "origine": "parlement",
+      "source": { "titre": "Service-public.fr, Propriétaires bailleurs : les logements classés G ne peuvent plus être loués (3 janvier 2025)", "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17975", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-12",
+      "texte": "En 2025, 379 222 logements ont été autorisés à la construction en France, soit 15,0 % de plus qu'en 2024, mais 8,8 % de moins que la moyenne des cinq années précédentes.",
+      "origine": "exterieur",
+      "source": { "titre": "SDES (ministère de la Transition écologique), Construction de logements : résultats à fin décembre 2025 (publié le 30 janvier 2026)", "url": "https://www.statistiques.developpement-durable.gouv.fr/construction-de-logements-resultats-fin-decembre-2025-france-entiere", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2026-02",
+      "texte": "Selon l'estimation de la Fondation pour le logement des défavorisés, 350 000 personnes sont sans domicile en France, et près de 600 000 personnes vivent hébergées chez un tiers faute de logement personnel.",
+      "origine": "exterieur",
+      "source": { "titre": "Fondation pour le logement des défavorisés, 31e rapport sur l'état du mal-logement en France (3 février 2026)", "url": "https://www.fondationpourlelogement.fr/la-fondation-pour-le-logement-devoile-ce-3-fevrier-son-nouveau-rapport-sur-letat-du-mal-logement-en-france/", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Proposition de loi Kasbarian-Bergé visant à protéger les logements contre l'occupation illicite (dite « anti-squat »)",
+      "phrase": "La loi alourdit les peines encourues pour le squat d'un logement et permet aux maires de constater l'occupation illicite.",
+      "date": "2023-04-04",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 1361 (deuxième lecture, dernier vote de l'Assemblée)", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/1361" },
+      "positions": { "RN": "pour", "LFI": "contre", "SOC": "contre", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": null }
+    },
+    {
+      "titre": "Loi n° 2024-1039 du 19 novembre 2024 visant à renforcer les outils de régulation des meublés de tourisme à l'échelle locale (loi Le Meur-Echaniz)",
+      "phrase": "La loi permet aux maires de limiter les locations touristiques (quotas, enregistrement obligatoire), impose des règles de performance énergétique et réduit l'avantage fiscal de ces locations.",
+      "date": "2024-11-07",
+      "legislature": "XVIIe législature (depuis 2024)",
+      "scrutin": { "titre": "Scrutin public n° 289 (texte de la commission mixte paritaire)", "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/289" },
+      "positions": { "RN": "contre", "LFI": "pour", "SOC": "pour", "ECO": "pour", "GDR": "pour", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "pour", "UDR": "contre" }
+    }
+  ],
+  "liens": [
+    { "titre": "SDES, statistiques de la construction de logements", "url": "https://www.statistiques.developpement-durable.gouv.fr/construction-de-logements-resultats-fin-decembre-2025-france-entiere", "type": "Site officiel" },
+    { "titre": "Service-public.fr, location des logements classés G au DPE", "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17975", "type": "Site officiel" },
+    { "titre": "ANIL, ce que change la loi sur les meublés de tourisme", "url": "https://www.anil.org/aj-renforcer-outils-regulation-meubles-tourisme/", "type": "Site officiel" },
+    { "titre": "Fondation pour le logement, rapport 2026 sur l'état du mal-logement", "url": "https://www.fondationpourlelogement.fr/reml-2026/", "type": "Site externe" },
+    { "titre": "Fondation pour le logement, présentation du 31e rapport", "url": "https://www.fondationpourlelogement.fr/31e-rapport-sur-letat-du-mal-logement-en-france-en-2026/", "type": "Site externe" }
+  ]
+}

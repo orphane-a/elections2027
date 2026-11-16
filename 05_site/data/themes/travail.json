@@ -1,0 +1,79 @@
+{
+  "slug": "travail",
+  "date_maj": "2026-11-09",
+  "en_bref": "Le thème couvre l'accès à l'emploi, l'indemnisation des personnes au chômage et l'âge de départ à la retraite. Pendant le mandat, les règles de l'assurance chômage, l'accompagnement des demandeurs d'emploi et le calendrier des retraites ont été modifiés plusieurs fois.",
+  "sous_themes": ["Chômage et emploi", "Assurance chômage", "Retraites", "Accompagnement vers l'emploi"],
+  "faits": [
+    {
+      "date": "2023-02",
+      "texte": "Depuis le 1er février 2023, la durée d'indemnisation chômage est multipliée par 0,75 pour les contrats terminés après cette date (soit 25 % de moins).",
+      "origine": "gouvernement",
+      "source": { "titre": "Unédic, « Assurance chômage : ce qui entre en vigueur au 1er février », 1er février 2023", "url": "https://www.unedic.org/actualites/assurance-chomage-ce-qui-entre-en-vigueur-au-1er-fevrier", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2023-04",
+      "texte": "La loi du 14 avril 2023 relève l'âge légal de départ à la retraite de 62 à 64 ans, à raison de trois mois par génération à partir des personnes nées fin 1961.",
+      "origine": "parlement",
+      "source": { "titre": "Légifrance, loi n° 2023-270 du 14 avril 2023 de financement rectificative de la sécurité sociale pour 2023, article 10", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047445077", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-01",
+      "texte": "Depuis le 1er janvier 2025, les allocataires du RSA sont inscrits automatiquement à France Travail. Au 31 janvier 2025, un peu moins d'un million de nouveaux inscrits étaient comptés.",
+      "origine": "parlement",
+      "source": { "titre": "Unédic, « RSA et France Travail : comprendre les conséquences pour l'assurance chômage », 26 mars 2025", "url": "https://www.unedic.org/publications/rsa-et-france-travail-comprendre-les-consequences-pour-l-assurance-chomage", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2025-12",
+      "texte": "La loi de financement de la sécurité sociale pour 2026 suspend jusqu'en 2028 la hausse de l'âge légal et de la durée de cotisation. Pour les personnes nées en 1964, l'âge légal passe de 63 ans à 62 ans et 9 mois.",
+      "origine": "parlement",
+      "source": { "titre": "Service-public.gouv.fr, « Suspension de la réforme des retraites : qui est concerné ? », 27 février 2026", "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18825", "consulte": "2026-11-09" },
+      "contestee": null
+    },
+    {
+      "date": "2026-08",
+      "texte": "Le taux de chômage au sens du BIT atteint 8,3 % au 2e trimestre 2026, contre 7,5 % au 2e trimestre 2022. Il est à son plus haut niveau depuis fin 2020.",
+      "origine": "exterieur",
+      "source": { "titre": "INSEE, Informations rapides n° 192, chômage au 2e trimestre 2026, 7 août 2026", "url": "https://www.insee.fr/fr/statistiques/9032359", "consulte": "2026-11-09" },
+      "contestee": null
+    }
+  ],
+  "votes": [
+    {
+      "titre": "Loi du 14 avril 2023 de financement rectificative de la sécurité sociale pour 2023 (réforme des retraites)",
+      "phrase": "La loi relève l'âge légal de départ de 62 à 64 ans. Adoptée sans vote final grâce à l'article 49.3, elle a fait l'objet d'une motion de censure : le vote retenu porte sur cette motion. « Pour » signifie que la majorité du groupe a voté la censure du gouvernement. Seuls les votes « pour » sont recensés lors d'une motion de censure : « contre » signifie ici que la majorité du groupe ne l'a pas votée (Les Républicains : 19 députés sur 61 l'ont votée).",
+      "date": "2023-03-20",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 1240 (motion de censure, 278 voix pour, non adoptée)", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/1240" },
+      "positions": { "RN": "pour", "LFI": "pour", "SOC": "pour", "ECO": "pour", "GDR": "pour", "EPR": "contre", "DEM": "contre", "HOR": "contre", "DR": "contre", "LIOT": "pour", "UDR": null }
+    },
+    {
+      "titre": "Loi du 21 décembre 2022 portant mesures d'urgence relatives au fonctionnement du marché du travail en vue du plein emploi (assurance chômage)",
+      "phrase": "La loi permet au gouvernement de fixer par décret les règles de l'assurance chômage et de les adapter à la situation de l'emploi. Groupe LIOT divisé : 1 pour, 4 contre, 3 abstentions.",
+      "date": "2022-11-15",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 567", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/567" },
+      "positions": { "RN": "contre", "LFI": "contre", "SOC": "contre", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "partage", "UDR": null }
+    },
+    {
+      "titre": "Loi du 18 décembre 2023 pour le plein emploi",
+      "phrase": "La loi crée France Travail à la place de Pôle emploi et prévoit l'inscription automatique des allocataires du RSA et des jeunes suivis en mission locale.",
+      "date": "2023-11-14",
+      "legislature": "XVIe législature (2022-2024)",
+      "scrutin": { "titre": "Scrutin public n° 2965", "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2965" },
+      "positions": { "RN": "contre", "LFI": "contre", "SOC": "contre", "ECO": "contre", "GDR": "contre", "EPR": "pour", "DEM": "pour", "HOR": "pour", "DR": "pour", "LIOT": "contre", "UDR": null }
+    }
+  ],
+  "liens": [
+    { "titre": "INSEE, le chômage au sens du BIT (dernière publication trimestrielle)", "url": "https://www.insee.fr/fr/statistiques/9032359", "type": "Site officiel" },
+    { "titre": "INSEE, L'essentiel sur le chômage", "url": "https://www.insee.fr/fr/statistiques/4805248", "type": "Site officiel" },
+    { "titre": "Légifrance, loi n° 2023-270 du 14 avril 2023 (réforme des retraites)", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047445077", "type": "Site officiel" },
+    { "titre": "Service-public.gouv.fr, suspension de la réforme des retraites", "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18825", "type": "Site officiel" },
+    { "titre": "Info-retraite, la suspension de la réforme votée à l'Assemblée nationale", "url": "https://www.info-retraite.fr/portail-info/sites/PortailInformationnel/home/actualites-1/la-suspension-de-la-reforme-des-retraites-votee-a-l-assemblee-nationale.html", "type": "Site officiel" },
+    { "titre": "Unédic, règles applicables depuis le 1er février 2023", "url": "https://www.unedic.org/actualites/assurance-chomage-ce-qui-entre-en-vigueur-au-1er-fevrier", "type": "Site officiel" },
+    { "titre": "Unédic, RSA et France Travail", "url": "https://www.unedic.org/publications/rsa-et-france-travail-comprendre-les-consequences-pour-l-assurance-chomage", "type": "Site officiel" },
+    { "titre": "Datan, analyse du vote sur la motion de censure du 20 mars 2023", "url": "https://datan.fr/votes/legislature-16/vote_1240", "type": "Site externe" }
+  ]
+}

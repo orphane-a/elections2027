@@ -1,0 +1,22 @@
+{
+  "id": "becht_olivier",
+  "prenom": "Olivier",
+  "nom": "Becht",
+  "parti": "Le Projet France (mouvement politique), sans parti",
+  "parti_sigle": null,
+  "groupe_an": "EPR",
+  "groupe_an_note": "Candidat hors parti ; il siège lui-même comme député apparenté au groupe Ensemble pour la République (Haut-Rhin).",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée le 24 septembre 2026 dans Paris Match, confirmée sur Sud Radio le 11 octobre 2026 (« j'irai jusqu'au bout »). Il présente son projet sous le nom « Le Projet France ».",
+  "a_verifier": false,
+  "date_declaration": "2026-09-24",
+  "site_campagne": null,
+  "programme": null,
+  "sources": [
+    { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
+    { "titre": "Sud Radio, Qui est Olivier Becht, cet ancien ministre qui se lance dans la course à l'Élysée", "url": "https://www.sudradio.fr/politique/qui-est-olivier-becht-cet-ancien-ministre-qui-se-lance-dans-la-course-a-lelysee", "date": "2026-10-08", "consulte": "2026-11-09" },
+    { "titre": "Sud Radio, Olivier Becht : « Je suis candidat à l'élection présidentielle et j'irai jusqu'au bout »", "url": "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout", "date": "2026-10-11", "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

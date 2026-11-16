@@ -1,0 +1,133 @@
+{
+  "id": "glucksmann_raphael",
+  "date_verif": "2026-11-09",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Il propose une loi de programmation sur cinq ans : moins d'élèves par classe, hausse du salaire des enseignants, rénovation des bâtiments scolaires.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose un service civique obligatoire de dix mois pour les jeunes.",
+        "sous_theme": "Jeunesse",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, annonce de candidature sur TF1", "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann", "date": "2026-08-24", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de relancer les colonies de vacances et de garantir un séjour collectif à chaque enfant.",
+        "sous_theme": "Jeunesse",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, annonce de candidature sur TF1", "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann", "date": "2026-08-24", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Il propose de permettre aux ménages modestes d'accéder à une voiture électrique pour un loyer de 100 euros par mois.",
+        "sous_theme": "Transports",
+        "chiffrage": null,
+        "source": { "titre": "LCP, meeting de lancement de campagne à Aubervilliers", "url": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir", "date": "2026-06-14", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de conserver le nucléaire tout en développant les énergies renouvelables.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Il propose de taxer les très grandes successions pour baisser la CSG sur les salaires et augmenter le salaire net.",
+        "sous_theme": "Salaires",
+        "chiffrage": "Recette annoncée : 15 Md€ par an, reversée sur les fiches de paie (environ 200 € net de plus par mois selon le candidat).",
+        "source": { "titre": "Public Sénat, premier débat de la primaire de la gauche (TF1-LCI)", "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-echanges-tendus-sur-les-alliances-avec-lfi-gaza-ukraine-que-retenir-du-1er-debat-entre-les-candidats", "date": "2026-09-24", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de tripler le chèque énergie pour les ménages modestes et moyens qui utilisent leur voiture pour aller travailler.",
+        "sous_theme": "Énergie et carburants",
+        "chiffrage": null,
+        "source": { "titre": "LCP, premier débat de la primaire de gauche (LCI)", "url": "https://lcp.fr/actualites/accord-avec-lfi-moyen-orient-pouvoir-d-achat-ce-qu-il-faut-retenir-du-premier-debat-de", "date": "2026-09-23", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il soutient la création d'un statut pour les parents seuls.",
+        "sous_theme": "Familles",
+        "chiffrage": null,
+        "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Il propose d'abroger la réforme des retraites de 2023 et de revenir à un âge de départ à 62 ans.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose que les carrières hachées et les métiers pénibles permettent de partir plus tôt à la retraite.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, annonce de candidature sur TF1", "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann", "date": "2026-08-24", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de proclamer un « état d'urgence industriel » pour les secteurs menacés par la concurrence chinoise.",
+        "sous_theme": "Industrie",
+        "chiffrage": null,
+        "source": { "titre": "LCP, meeting de lancement de campagne à Aubervilliers", "url": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir", "date": "2026-06-14", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Il propose de « démarchandiser » les Ehpad et les crèches, c'est-à-dire de les sortir d'une logique commerciale.",
+        "sous_theme": "Grand âge et petite enfance",
+        "chiffrage": null,
+        "source": { "titre": "Place publique, « Raphaël Glucksmann - Sa lettre aux Français »", "url": "https://place-publique.eu/posts/2fgDdljEIy36rgxBjRyiQZ/raphael-glucksmann-sa-lettre-aux-francais", "date": "2026-08-25", "type": "site", "consulte": "2026-11-09" }
+      }
+    ],
+    "logement": [],
+    "securite": [
+      {
+        "texte": "Il propose de faire adopter la proposition de loi intégrale transpartisane contre les violences sexistes et sexuelles faites aux femmes et aux enfants.",
+        "sous_theme": "Violences sexuelles",
+        "chiffrage": null,
+        "source": { "titre": "LCP, meeting de lancement de campagne à Aubervilliers", "url": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir", "date": "2026-06-14", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Il propose une convention citoyenne sur l'immigration, avec des citoyens tirés au sort, dont les propositions sont ensuite votées au Parlement.",
+        "sous_theme": "Méthode",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, annonce de candidature sur TF1", "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann", "date": "2026-08-24", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de régulariser les travailleurs sans papiers.",
+        "sous_theme": "Régularisations",
+        "chiffrage": null,
+        "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ],
+    "institutions": [],
+    "europe": [
+      {
+        "texte": "Il propose de renforcer l'aide à l'Ukraine en la finançant par la saisie des avoirs publics russes gelés en Europe.",
+        "sous_theme": "Ukraine",
+        "chiffrage": null,
+        "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il soutient la suspension de l'accord commercial entre l'Union européenne et Israël.",
+        "sous_theme": "Relations extérieures",
+        "chiffrage": null,
+        "source": { "titre": "Public Sénat, premier débat de la primaire de la gauche (TF1-LCI)", "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-echanges-tendus-sur-les-alliances-avec-lfi-gaza-ukraine-que-retenir-du-1er-debat-entre-les-candidats", "date": "2026-09-24", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Il propose de supprimer le droit de veto au sein de l'Union européenne et de lancer un grand emprunt européen.",
+        "sous_theme": "Fonctionnement de l'UE",
+        "chiffrage": null,
+        "source": { "titre": "LCP, premières lignes du programme (livre « Nous avons encore envie »)", "url": "https://lcp.fr/actualites/presidentielle-raphael-glucksmann-devoile-les-premieres-lignes-de-son-possible-programme", "date": "2026-05-26", "type": "presse", "consulte": "2026-11-09" }
+      }
+    ]
+  }
+}

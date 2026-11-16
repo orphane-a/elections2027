@@ -1,0 +1,364 @@
+{
+  "slug": "travail",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/1240": {
+      "RN": {
+        "texte": "Le groupe indique voter toutes les motions de censure pour rejeter une réforme adoptée sans vote et refusée, selon lui, par la majorité des Français.",
+        "orateur": "Laure Lavalette",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter la censure car le gouvernement n'a, selon lui, ni légitimité populaire ni légitimité parlementaire pour imposer la réforme.",
+        "orateur": "Mathilde Panot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter la censure car la réforme n'a, selon lui, de majorité ni dans le pays ni à l'Assemblée ; il demande son retrait ou un référendum.",
+        "orateur": "Boris Vallaud",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter la censure car la réforme pèse selon lui sur les femmes, les seniors et les carrières longues, et le gouvernement manque de légitimité.",
+        "orateur": "Cyrielle Chatelain",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter la censure pour obtenir le retrait de la réforme, qui n'a selon lui de majorité ni à l'Assemblée ni dans le pays.",
+        "orateur": "Pierre Dharréville",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique ne pas voter la censure : selon lui, la réforme évite un déficit des retraites et la motion ne propose pas de majorité alternative.",
+        "orateur": "Aurore Bergé",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique ne pas voter la censure car il soutient le gouvernement et juge la réforme nécessaire pour pérenniser le système de retraite.",
+        "orateur": "Jean-Paul Mattei",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique ne pas voter la censure car il juge la réforme nécessaire face à l'évolution démographique et à l'endettement du pays.",
+        "orateur": "Laurent Marcangeli",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique ne pas voter la censure car il juge une réforme nécessaire et estime que les signataires des motions n'ont pas de projet commun.",
+        "orateur": "Olivier Marleix",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique censurer le gouvernement pour son recours au 49.3 et pour une réforme qui pèse, selon lui, d'abord sur les plus modestes.",
+        "orateur": "Charles de Courson",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 20 mars 2023, discussion commune des motions de censure",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N182",
+          "date": "2023-03-20",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/567": {
+      "RN": {
+        "texte": "Le groupe indique voter contre car moduler l'indemnisation selon la conjoncture ne répond pas, selon lui, aux difficultés de recrutement.",
+        "orateur": "Victor Catteau",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre car la modulation et la fin de l'indemnisation après deux refus de CDI réduisent, selon lui, les droits des chômeurs.",
+        "orateur": "Hadrien Clouet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter contre car la réforme vise selon lui des économies sur l'assurance chômage en réduisant les droits des demandeurs d'emploi.",
+        "orateur": "Arthur Delaporte",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter contre car le texte réduit selon lui les droits des chômeurs, alors que le recrutement bute sur les conditions de travail.",
+        "orateur": "Marie-Charlotte Garin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter contre car réduire les droits des chômeurs ne favorise pas, selon lui, le retour à un emploi stable et de qualité.",
+        "orateur": "Yannick Monnet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique soutenir le texte car il évite un vide juridique pour l'indemnisation chômage et encourage l'emploi stable, notamment le CDI.",
+        "orateur": "Astrid Panosyan-Bouvet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique soutenir le texte car il comble un vide juridique, adapte l'indemnisation à la conjoncture et ouvre plus largement la VAE.",
+        "orateur": "Philippe Vigier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter le texte car il assure la continuité de l'assurance chômage, retient la modulation selon la conjoncture et réforme la VAE.",
+        "orateur": "Frédéric Valletoux",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte car il incite à reprendre vite un emploi, redonne une chance au paritarisme et facilite la VAE.",
+        "orateur": "Stéphane Viry",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 15 novembre 2022, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023O1N053",
+          "date": "2022-11-15",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": null,
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/2965": {
+      "RN": {
+        "texte": "Le groupe indique voter contre car le texte impose aux allocataires du RSA quinze heures d'activité sans tenir compte, selon lui, de leur situation.",
+        "orateur": "Jocelyn Dessigny",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre car les quinze heures d'activité obligatoires mettraient selon lui les salariés en concurrence avec un travail non payé.",
+        "orateur": "Hadrien Clouet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter contre car le texte renforce selon lui les sanctions sur les allocataires du RSA au lieu de lever les freins à l'emploi.",
+        "orateur": "Arthur Delaporte",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique voter contre car le texte crée des obligations pour les allocataires sans devoirs réciproques pour le service public de l'emploi.",
+        "orateur": "Marie-Charlotte Garin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter contre car le texte conditionne le RSA à quinze heures d'activité et retire la réciprocité du contrat d'engagement.",
+        "orateur": "Yannick Monnet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter le texte car il crée France Travail et renforce l'accompagnement des demandeurs d'emploi et des allocataires du RSA.",
+        "orateur": "Michèle Peyron",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter le texte car il coordonne les acteurs de l'emploi et prend en compte les freins au retour à l'emploi.",
+        "orateur": "Nicolas Turquois",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique soutenir le texte car il réforme le service public de l'emploi et renforce l'accompagnement, avec des droits et des devoirs.",
+        "orateur": "François Gernigon",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter le texte car il demande quinze heures d'activité aux allocataires du RSA en échange d'un accompagnement vers l'emploi.",
+        "orateur": "Philippe Juvin",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique ne pas voter le texte car les sanctions sur le RSA appauvrissent selon lui les chômeurs, et ses propositions ont été rejetées.",
+        "orateur": "Benjamin Saint-Huile",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 14 novembre 2023, discussion générale sur le texte de la CMP",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2024O1N050",
+          "date": "2023-11-14",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    }
+  }
+}

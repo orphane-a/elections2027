@@ -1,0 +1,23 @@
+{
+  "id": "branco_juan",
+  "prenom": "Juan",
+  "nom": "Branco",
+  "parti": "Les Ruches (mouvement citoyen)",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Les Ruches est un mouvement citoyen sans député à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée sur Sud Radio le 19 décembre 2025, soutenue par le mouvement Les Ruches. Citée par Sud Radio et Public Sénat, absente de la liste LCP du 14/10/2026.",
+  "a_verifier": false,
+  "date_declaration": "2025-12-19",
+  "site_campagne": "https://ruches.org",
+  "programme": { "titre": "Le Projet 2027 (« La Voie »), mesure par mesure", "url": "https://ruches.org/le-projet", "date": null, "type": "page web" },
+  "sources": [
+    { "titre": "Sud Radio, L'avocat Juan Branco candidat à la présidentielle", "url": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle", "date": "2025-12-19", "consulte": "2026-11-09" },
+    { "titre": "Sud Radio, Présidentielle 2027 : le point sur toutes les candidatures", "url": "https://www.sudradio.fr/politique/presidentielle-2027-le-point-sur-toutes-les-candidatures", "date": "2026-08-24", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "Les Ruches, site du mouvement", "url": "https://ruches.org", "date": null, "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

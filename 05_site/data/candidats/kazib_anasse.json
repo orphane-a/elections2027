@@ -1,0 +1,23 @@
+{
+  "id": "kazib_anasse",
+  "prenom": "Anasse",
+  "nom": "Kazib",
+  "parti": "Révolution permanente",
+  "parti_sigle": "RP",
+  "groupe_an": null,
+  "groupe_an_note": "Révolution permanente n'a pas de député à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée début juin 2026 (le 1er juin selon Économie Matin ; certains médias cités par des sites de synthèse indiquent le 2 juin). En 2022, il n'avait pas réuni les 500 parrainages. Le site de campagne précise que le programme complet est en cours d'écriture.",
+  "a_verifier": false,
+  "date_declaration": "2026-06-01",
+  "site_campagne": "https://anasse2027.fr",
+  "programme": { "titre": "Programme — premières mesures (document de campagne de 4 pages)", "url": "https://anasse2027.fr/programme", "date": null, "type": "page web" },
+  "sources": [
+    { "titre": "Économie Matin, Candidat à la présidentielle, Anasse Kazib rattrapé par ses propos visant Radouan Kourak", "url": "https://www.economiematin.fr/candidat-a-la-presidentielle-anasse-kazib-rattrape-par-ses-propos-racistes-visant-radouan-kourak", "date": "2026-06-02", "consulte": "2026-11-09" },
+    { "titre": "Le Courrier de l'Atlas, Cinq choses à savoir sur Anasse Kazib, cheminot candidat", "url": "https://www.lecourrierdelatlas.com/cinq-choses-a-savoir-sur-candidat-cheminot-anasse-kazib/", "date": "2026-06-23", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
+    { "titre": "anasse2027.fr, Programme", "url": "https://anasse2027.fr/programme", "date": null, "consulte": "2026-11-09" }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-09"
+}

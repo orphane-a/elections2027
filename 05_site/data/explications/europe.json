@@ -1,0 +1,263 @@
+{
+  "slug": "europe",
+  "date_maj": "2026-11-09",
+  "votes": {
+    "https://www.assemblee-nationale.fr/dyn/16/scrutins/2256": {
+      "RN": {
+        "texte": "Le groupe indique voter le texte, qu'il estime perfectible, car le compromis de la CMP sur la répartition annuelle des crédits va selon lui dans le bon sens.",
+        "orateur": "Frank Giletti",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Le groupe indique voter contre car, selon lui, le texte manque d'ambition et ne répond pas aux enjeux de paix, de climat et de souveraineté.",
+        "orateur": "Bastien Lachaud",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter pour car ses principales demandes ont été retenues en CMP : crédits accrus dès 2024, actualisation par une loi et Livre blanc.",
+        "orateur": "Anna Pic",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique s'abstenir car, selon lui, cette loi de continuité ne répond qu'en partie aux nouvelles menaces et ne renforce pas l'Europe de la défense.",
+        "orateur": "Cyrielle Chatelain",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Le groupe indique voter contre car il conteste les choix du texte : niveau de dépense, poids de la dissuasion, opérations extérieures et place de l'OTAN.",
+        "orateur": "Fabien Roussel",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter pour une loi de remontée en puissance des armées, de souveraineté et d'autonomie stratégique face à la dégradation de la sécurité.",
+        "orateur": "Anne Genetet",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter pour car la loi doit moderniser les armées et les adapter aux nouvelles menaces : cyber, drones, renseignement et espace.",
+        "orateur": "Josy Poueyto",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour car le texte tient compte des changements géopolitiques et confirme un modèle d'armée complet adossé à la dissuasion.",
+        "orateur": "Jean-Charles Larsonneur",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter pour en raison de trois avancées : crédits accrus avant 2027, cohérence du modèle d'armée et financement de l'industrie de défense.",
+        "orateur": "Jean-Louis Thiériot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique voter pour en saluant le compromis de la CMP : hausse des crédits dès 2024, actualisation avant 2027 et contrôle du Parlement renforcé.",
+        "orateur": "Laurent Panifous",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 12 juillet 2023, programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/seance/CRSANR5L16S2023E1N014",
+          "date": "2023-07-12",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": null
+    },
+    "https://www.assemblee-nationale.fr/dyn/17/scrutins/7905": {
+      "RN": {
+        "texte": "Le groupe indique voter pour car chaque euro de plus pour les armées vaut mieux que l'immobilisme, tout en estimant que le texte corrige la loi de 2023.",
+        "orateur": "Julien Limongi",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LFI": {
+        "texte": "Selon le groupe, la hausse de 36 milliards traduit un manque de préparation de la loi de 2023, et le texte manque de planification industrielle.",
+        "orateur": "Aurélien Saintoul",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "SOC": {
+        "texte": "Le groupe indique voter pour car les besoins des armées sont réels, tout en s'inquiétant du financement des crédits et d'une priorité industrielle nationale.",
+        "orateur": "Anna Pic",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "ECO": {
+        "texte": "Le groupe indique soutenir l'effort de défense mais voter contre, en raison des articles sur la surveillance algorithmique et l'état d'alerte.",
+        "orateur": "Damien Girard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "GDR": {
+        "texte": "Selon le groupe, le texte fait de la préparation de la guerre l'horizon de l'action publique et étend les régimes d'exception sans cadre stratégique clair.",
+        "orateur": "Édouard Bénard",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "EPR": {
+        "texte": "Le groupe indique voter pour car les 36 milliards supplémentaires permettent de répondre au retour de la guerre de haute intensité et aux menaces hybrides.",
+        "orateur": "François Cormier-Bouligeon",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DEM": {
+        "texte": "Le groupe indique voter pour car la hausse de 36 milliards renforce munitions, drones, cyber et espace, pour une France autonome dans ses décisions.",
+        "orateur": "Geneviève Darrieussecq",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "HOR": {
+        "texte": "Le groupe indique voter pour car, face au risque d'un conflit de haute intensité d'ici 2030, le texte renforce les moyens et la crédibilité des armées.",
+        "orateur": "Lise Magnier",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "DR": {
+        "texte": "Le groupe indique voter pour une loi de cohérence qui répond aux urgences capacitaires, en attendant une révision du format des armées après 2027.",
+        "orateur": "Jean-Louis Thiériot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "LIOT": {
+        "texte": "Le groupe indique voter pour car le texte tire les leçons des conflits récents (munitions, drones), tout en estimant que le format des armées évolue peu.",
+        "orateur": "Yannick Favennec-Bécot",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      },
+      "UDR": {
+        "texte": "Le groupe indique voter pour car les 36 milliards sont nécessaires, tout en y voyant un rattrapage contraint par l'état des finances publiques.",
+        "orateur": "Matthieu Bloch",
+        "source": {
+          "titre": "Assemblée nationale, compte rendu de la première séance du 1er juillet 2026, actualisation de la programmation militaire (CMP), discussion générale",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/CRSANR5L17S2026E1N001",
+          "date": "2026-07-01",
+          "type": "compte_rendu",
+          "consulte": "2026-11-09"
+        },
+        "relu": true
+      }
+    }
+  }
+}
