@@ -31,6 +31,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 Non communiqué.
@@ -41,10 +45,26 @@ Non communiqué.
 2. Rétablir l'impôt sur la fortune (ISF). (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Supprimer les droits de succession et de donation pour 90 % des foyers fiscaux. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Baisser les impôts. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Taxer à 100 % les commandes passées hors du territoire. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Relever le seuil des droits de succession et réduire ces droits. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose de porter le Smic à 1 600 euros net en baissant les cotisations salariales. (Mesure non chiffrée par le parti) Source : Site de Nicolas Dupont-Aignan, « Je propose le SMIC à 1600 euros net » (France 2), 2026-11-06, https://www.dupontaignan.fr/actualite/je-propose-le-smic-a-1600-euros-net-en-baissant-les-cotisations-salariales-%c2%b7-france-2/ (consulté le 2026-11-09)
 2. Il propose de baisser le carburant de 50 centimes par litre en supprimant les certificats d'économie d'énergie, la TVA sur cette taxe et des accises. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
+
+## Sylvain Durif (Elvita)
+
+1. Supprimer la fiscalité. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+2. Effacer les dettes. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+3. Supprimer la précarité. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -70,16 +90,29 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Baisser la TVA sur l'essence, le gazole, l'électricité et le gaz de 20 % à 5,5 %. (Coût annoncé par le RN : 12 Md€, financé par la fin d'aides aux étrangers et la baisse de la contribution à l'UE.) Source : Orange Actualités (6Medias), Carburants : la baisse de la TVA réclamée par Marine Le Pen, 2026-09-21, https://actu.orange.fr/question-du-jour-2026-09-21-CNT000002s0few.html (consulté le 2026-11-09)
 2. Exonérer d'impôt sur le revenu les moins de 30 ans, jusqu'à quatre fois le Smic. (Mesure non chiffrée par le parti) Source : LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes, 2026-10-06, https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut (consulté le 2026-11-09)
 3. Accorder une part fiscale pleine dès le deuxième enfant, au lieu d'une demi-part pour chacun des deux premiers. (Mesure non chiffrée par le parti) Source : LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes, 2026-10-06, https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Baisser les prix du gaz et de l'électricité à la place des chèques énergie. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Relocaliser la production en France. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Baisser la CSG sur les revenus du travail de 9,2 % à 6,6 % pour augmenter le salaire net. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti, 2026-10-27, https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/ (consulté le 2026-11-09)
 2. Rendre aux Français 60 % des économies publiques, soit 200 à 400 € net mensuels de plus pour un salaire de 2 200 € net. (Financement annoncé : 80 Md€ d'économies dès la première année, 200 Md€ d'ici 2032) Source : Interview de David Lisnard sur BFMTV, compte rendu sur le site du parti, 2026-11-03, https://www.unenouvelleenergie.fr/toc-toc-on-arrive-david-lisnard-annonce-plus-de-100-000-adherents-a-nouvelle-energie-sur-bfmtv/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -96,6 +129,10 @@ Non communiqué.
 3. Garantir à chaque personne un revenu au niveau du seuil de pauvreté, soit 1 337 euros par mois pour une personne seule. (Mesure non chiffrée par le parti) Source : L'Avenir en commun 2027, partie 3, chapitre 1, 2026-11-06, https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1 (consulté le 2026-11-09)
 
 ## Antoine Mikolajczak (Équinoxe)
+
+Non communiqué.
+
+## Manolo Mlekuz (Trajectoire)
 
 Non communiqué.
 
@@ -120,6 +157,10 @@ Non communiqué.
 2. Il propose d'exonérer de cotisations le temps de travail supplémentaire : à partir de la 36e heure, le salaire brut égale le net. (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

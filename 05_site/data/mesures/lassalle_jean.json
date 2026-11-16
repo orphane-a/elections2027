@@ -1,0 +1,43 @@
+{
+  "id": "lassalle_jean",
+  "date_verif": "2026-11-16",
+  "programme_publie": false,
+  "themes": {
+    "education": [
+      {
+        "texte": "Renforcer l'enseignement agricole.",
+        "sous_theme": "Formation agricole",
+        "chiffrage": null,
+        "source": {
+          "titre": "Pleinchamp, Jean Lassalle au Sommet de l'élevage",
+          "url": "https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar",
+          "date": "2026-10-08",
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [
+      {
+        "texte": "Verser un salaire équivalent au Smic à la personne qui gère le foyer.",
+        "sous_theme": "Travail domestique",
+        "chiffrage": null,
+        "source": {
+          "titre": "Pleinchamp, Jean Lassalle au Sommet de l'élevage",
+          "url": "https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar",
+          "date": "2026-10-08",
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [],
+    "europe": []
+  }
+}

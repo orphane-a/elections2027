@@ -1,0 +1,37 @@
+{
+  "id": "rohou_erwan",
+  "prenom": "Erwan",
+  "nom": "Rohou",
+  "parti": "Mouvement écologiste indépendant",
+  "parti_sigle": "MEI",
+  "groupe_an": null,
+  "groupe_an_note": "Le MEI n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Désigné",
+  "statut_detail": "Désigné candidat par le conseil national du MEI réuni à Rodez les 28 et 29 août 2026.",
+  "a_verifier": false,
+  "date_declaration": "2026-08-29",
+  "site_campagne": "https://www.les-ecologistes-mei.org",
+  "programme": null,
+  "sources": [
+    {
+      "titre": "MEI, Erwan Rohou, candidat du MEI aux élections présidentielles",
+      "url": "https://www.les-ecologistes-mei.org/post/erwan-rohou-candidat-du-mei-aux-%C3%A9lections-pr%C3%A9sidentielles",
+      "date": null,
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Infodujour, Le Mouvement écologiste indépendant a désigné son candidat à la présidentielle",
+      "url": "https://infodujour.fr/politique/elections/presidentielles/86679-le-mouvement-ecologiste-independant-a-designe-son-candidat-a-la-presidentielle",
+      "date": "2026-09-02",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-16"
+}

@@ -31,6 +31,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Permettre à chaque jeune d'accéder à une formation menant à un emploi « choisi et non subi ». (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -41,9 +45,24 @@ Non communiqué.
 2. Supprimer Parcoursup. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Augmenter de 30 % les budgets de l'université et de la recherche publique, financés par la suppression du crédit d'impôt recherche (CIR). (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Interdire le téléphone portable dans tout l'établissement scolaire, avec des contrôles des sacs au hasard. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Exclure 10 jours en cas de mauvais comportement et instaurer des retenues le samedi. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. En primaire, faire une dictée et 30 minutes de sport chaque jour. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 Non communiqué.
+
+## Sylvain Durif (Elvita)
+
+1. Mettre en place une « éducation consciente ». (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+2. Enseigner une « science cosmique » à l'école. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 9, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -69,15 +88,29 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+1. Renforcer l'enseignement agricole. (Mesure non chiffrée par le parti) Source : Pleinchamp, Jean Lassalle au Sommet de l'élevage, 2026-10-08, https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar (consulté le 2026-11-16)
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Supprimer la contribution vie étudiante et de campus (CVEC), un frais de 105 euros payé avant l'inscription à l'université. (Mesure non chiffrée par le parti) Source : LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes, 2026-10-06, https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut (consulté le 2026-11-09)
+
+## Jean-François Legendre (À nous maintenant)
+
+1. Réduire la scolarité de 15 à 12 ans sur le primaire et le secondaire. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Intégrer stages, sport, cuisine et alimentation saine au parcours scolaire. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Réexaminer le baccalauréat. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
 
 ## David Lisnard (Nouvelle Énergie)
 
 1. Supprimer la carte scolaire et instaurer progressivement un chèque-éducation pour le libre choix de l'école. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Éducation, s.d., https://www.unenouvelleenergie.fr/notre-programme/education/ (consulté le 2026-11-09)
 2. Créer un certificat de fin de primaire dont la réussite conditionne l'entrée au collège. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Éducation, s.d., https://www.unenouvelleenergie.fr/notre-programme/education/ (consulté le 2026-11-09)
 3. Augmenter de 20 % la rémunération des enseignants en cinq ans, en échange de plus d'autonomie et de présence dans l'établissement. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Éducation, s.d., https://www.unenouvelleenergie.fr/notre-programme/education/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -98,6 +131,10 @@ Non communiqué.
 1. Faire commencer les cours à 9 heures au collège et au lycée. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, nos réponses aux revendications lycéennes, 2026-10-20, https://parti-equinoxe.fr/nos-reponses-aux-revendications-lyceennes/ (consulté le 2026-11-09)
 2. Garantir une place dans l'enseignement supérieur à tous les bacheliers. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, nos réponses aux revendications lycéennes, 2026-10-20, https://parti-equinoxe.fr/nos-reponses-aux-revendications-lyceennes/ (consulté le 2026-11-09)
 3. Lancer un plan d'urgence de rénovation des bâtiments scolaires, en commençant par les sanitaires. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, nos réponses aux revendications lycéennes, 2026-10-20, https://parti-equinoxe.fr/nos-reponses-aux-revendications-lyceennes/ (consulté le 2026-11-09)
+
+## Manolo Mlekuz (Trajectoire)
+
+Non communiqué.
 
 ## Édouard Philippe (Horizons)
 
@@ -122,6 +159,10 @@ Non communiqué.
 3. Il propose d'augmenter le salaire des enseignants pour le rapprocher de la moyenne européenne. (Mesure non chiffrée par le parti) Source : Public Sénat, présentation du projet éducatif à Boulogne-Billancourt, 2026-08-31, https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

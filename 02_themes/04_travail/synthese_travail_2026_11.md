@@ -33,6 +33,12 @@ Non communiqué.
 
 1. Il défend la retraite par capitalisation. (Mesure non chiffrée par le parti) Source : LCP, entretien de Xavier Bertrand au Figaro, 2026-08-03, https://lcp.fr/actualites/presidentielle-xavier-bertrand-indique-tester-ses-idees-et-envisager-de-concourir-en (consulté le 2026-11-09)
 
+## Augustin Billetdoux (Sans parti)
+
+1. Attribuer les aides publiques aux entreprises selon des critères sociaux et environnementaux : maintien de l'emploi, écarts de salaires, pénibilité. (Mesure non chiffrée par le parti) Source : Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025), s.d., https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU (consulté le 2026-11-16)
+2. Aligner la durée du congé paternité sur celle du congé maternité. (Mesure non chiffrée par le parti) Source : Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025), s.d., https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU (consulté le 2026-11-16)
+3. Créer un statut d'« entreprise d'intérêt général » avec une comptabilité économique, sociale et environnementale pour les entreprises les plus aidées. (Mesure non chiffrée par le parti) Source : Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025), s.d., https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU (consulté le 2026-11-16)
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Faire en sorte que travailler « paye ». (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -43,9 +49,23 @@ Non communiqué.
 2. Rendre l'adhésion à un syndicat obligatoire pour tout travailleur. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Fixer les taux de retraite selon l'espérance de vie de chaque catégorie sociale et professionnelle. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Revenir à 39 heures de travail par semaine. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Supprimer l'âge légal de départ et exiger 172 trimestres pour une retraite à taux plein, avec une pension réduite en cas de départ plus tôt. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Exonérer de cotisations les retraités qui continuent de travailler. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose un « protectionnisme intelligent », sur le modèle des pays d'Asie, pour protéger la production en France. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
+
+## Sylvain Durif (Elvita)
+
+Non communiqué.
 
 ## Clara Egger (Solution démocratique)
 
@@ -73,17 +93,31 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+1. Verser un salaire équivalent au Smic à la personne qui gère le foyer. (Mesure non chiffrée par le parti) Source : Pleinchamp, Jean Lassalle au Sommet de l'élevage, 2026-10-08, https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar (consulté le 2026-11-16)
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Revenir à un âge légal de départ à la retraite de 62 ans, ou 60 ans pour ceux qui ont commencé à travailler avant 20 ans. (Mesure non chiffrée par le parti) Source : LCP, Présidentielle : que proposent les candidats à l'Élysée sur les retraites ?, 2026-09-16, https://lcp.fr/actualites/presidentielle-que-proposent-les-candidats-a-l-elysee-sur-les-retraites-441751 (consulté le 2026-11-09)
 2. Créer un pilier de retraite par capitalisation, en plus du système actuel. (Mesure non chiffrée par le parti) Source : Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen, 2026-10-06, https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f (consulté le 2026-11-09)
 3. Créer une « prime d'activité étudiante » pour les étudiants qui travaillent. (Mesure non chiffrée par le parti) Source : LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes, 2026-10-06, https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Remettre en cause la réduction du temps de travail. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Faire des salariés seniors des mentors en entreprise. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Instaurer un revenu minimum pour les petits agriculteurs. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Porter l'âge légal de départ à la retraite à 65 ans. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française », s.d., https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ (consulté le 2026-11-09)
 2. Garder une pension de base par répartition dès 65 ans et faire évoluer les autres régimes vers la capitalisation (épargne placée). (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française », s.d., https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ (consulté le 2026-11-09)
 3. Porter le minimum vieillesse à 1 000 € par mois. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française », s.d., https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -100,6 +134,10 @@ Non communiqué.
 3. Limiter les contrats précaires à 10 % des emplois dans les PME et à 5 % dans les grandes entreprises. (Mesure non chiffrée par le parti) Source : L'Avenir en commun 2027, partie 3, chapitre 1, 2026-11-06, https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1 (consulté le 2026-11-09)
 
 ## Antoine Mikolajczak (Équinoxe)
+
+Non communiqué.
+
+## Manolo Mlekuz (Trajectoire)
 
 Non communiqué.
 
@@ -131,6 +169,10 @@ Non communiqué.
 1. Réformer le système de retraites en gardant la répartition, sans exclure une part de capitalisation. (Mesure non chiffrée par le parti) Source : LCP, Retraites, salaires, sécurité : que propose Teddy Riner, 2026-11-10, https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935 (consulté le 2026-11-16)
 2. Réduire l'écart entre salaire net et salaire brut en allégeant les charges. (Mesure non chiffrée par le parti) Source : LCP, Retraites, salaires, sécurité : que propose Teddy Riner, 2026-11-10, https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935 (consulté le 2026-11-16)
 3. Ne pas remettre en question les 35 heures et laisser gagner plus ceux qui travaillent plus. (Mesure non chiffrée par le parti) Source : LCP, Retraites, salaires, sécurité : que propose Teddy Riner, 2026-11-10, https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935 (consulté le 2026-11-16)
+
+## Erwan Rohou (Mouvement écologiste indépendant)
+
+Non communiqué.
 
 ## Fabien Roussel (Parti communiste français)
 

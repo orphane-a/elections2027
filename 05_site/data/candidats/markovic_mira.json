@@ -1,0 +1,49 @@
+{
+  "id": "markovic_mira",
+  "prenom": "Mira",
+  "nom": "Markovic",
+  "parti": "Parti animaliste",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Le Parti animaliste n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Désignée",
+  "statut_detail": "Désignée candidate par le Parti animaliste, dont elle est cofondatrice, lors d'une conférence de presse le 2 octobre 2026. Programme complet non présenté au 11 novembre 2026.",
+  "a_verifier": false,
+  "date_declaration": "2026-10-02",
+  "site_campagne": null,
+  "programme": null,
+  "sources": [
+    {
+      "titre": "Presse Agence, Le Parti animaliste désigne Mira Markovic comme candidate",
+      "url": "https://presseagence.fr/paris-presidentielle-le-parti-animaliste-designe-mira-markovic-comme-candidate/",
+      "date": "2026-10-03",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages",
+      "url": "https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html",
+      "date": "2026-10-03",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Entrevue, Qui est Mira Markovic, candidate à la présidentielle 2027 ?",
+      "url": "https://entrevue.fr/presidentielle-2027/presidentielle-2027-qui-est-mira-markovic-cette-candidate-qui-veut-defendre/",
+      "date": "2026-11-11",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "ICI, Présidentielle 2027 : qui sont les candidats déclarés ?",
+      "url": "https://www.ici.fr/infos/politique/presidentielle-2027-qui-sont-les-candidats-declares-1598133",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-16"
+}

@@ -30,6 +30,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Accueillir dignement les personnes migrantes. (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -41,11 +45,25 @@ Non communiqué.
 1. Mettre des conditions au regroupement familial. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 2. Traiter les demandes d'asile au niveau des consulats. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Supprimer le droit d'asile et le regroupement familial. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Suspendre pendant 6 mois les visas pour les pays hors Union européenne, sauf pour les étudiants. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Expulser les étrangers en situation irrégulière et les détenus étrangers. (Économie annoncée : 40 Md€ liés à l'immigration illégale (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose de rétablir le contrôle aux frontières en sortant de l'espace Schengen et en recrutant 10 000 agents spécialisés. (Mesure non chiffrée par le parti) Source : Debout la France, projet Immigration et assimilation (livret daté du 03/03/2026), 2026-03-03, https://www.debout-la-france.fr/projet/immigration-et-assimilation/ (consulté le 2026-11-09)
 2. Il propose de supprimer le droit du sol par référendum. (Mesure non chiffrée par le parti) Source : Debout la France, projet Immigration et assimilation (livret daté du 03/03/2026), 2026-03-03, https://www.debout-la-france.fr/projet/immigration-et-assimilation/ (consulté le 2026-11-09)
 3. Il propose de supprimer les aides sociales non contributives pour les étrangers. (Mesure non chiffrée par le parti) Source : Debout la France, projet Immigration et assimilation (livret daté du 03/03/2026), 2026-03-03, https://www.debout-la-france.fr/projet/immigration-et-assimilation/ (consulté le 2026-11-09)
+
+## Sylvain Durif (Elvita)
+
+1. Supprimer les frontières. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -68,17 +86,31 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Organiser dès l'arrivée à l'Élysée un référendum pour réviser la Constitution et appliquer son programme sur l'immigration. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Interdiction du voile : Le Pen veut le faire de manière progressive, 2026-09-16, https://www.lagazettefrance.fr/article/interdiction-du-voile-le-pen-veut-le-faire-de-maniere-progressive (consulté le 2026-11-09)
 2. Réserver les aides personnalisées au logement (APL) aux Français, au nom de la « priorité nationale ». (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 3. Réduire les dépenses publiques liées à l'immigration. (Économie annoncée : 15 Md€ en 2027 et 29 Md€ en année pleine.) Source : Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen, 2026-10-06, https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Accueillir les réfugiés de façon temporaire, sans naturalisation pour eux ni pour leurs enfants nés en France. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Conditionner l'immigration de travail à une demande préalable auprès d'une ambassade de France. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Réviser l'aide médicale d'État (AME) et les visas étudiants. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Limiter l'immigration légale à 80 000 entrées par an, visas étudiants compris. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti, 2026-10-27, https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/ (consulté le 2026-11-09)
 2. Dénoncer l'accord franco-algérien de 1968 sur l'entrée et le séjour des Algériens en France. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti, 2026-10-27, https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/ (consulté le 2026-11-09)
 3. Supprimer l'aide médicale d'État (AME) et la remplacer par une aide limitée aux soins d'urgence. (Économie annoncée : 700 M€) Source : Nouvelle Énergie, programme, page Immigration, s.d., https://www.unenouvelleenergie.fr/notre-programme/immigration/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -95,6 +127,10 @@ Non communiqué.
 3. Accorder aux étrangers le droit de vote aux élections locales. (Mesure non chiffrée par le parti) Source : L'Avenir en commun 2027, partie 3, chapitre 4, 2026-11-06, https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4 (consulté le 2026-11-09)
 
 ## Antoine Mikolajczak (Équinoxe)
+
+Non communiqué.
+
+## Manolo Mlekuz (Trajectoire)
 
 Non communiqué.
 
@@ -121,6 +157,10 @@ Non communiqué.
 3. Il propose d'exiger cinq ans de séjour et de travail pour les prestations non contributives, et d'examiner l'asile hors des frontières. (Économie annoncée : 4,5 Md€, sous réserve d'une révision constitutionnelle par référendum.) Source : Public Sénat, plan d'économies de près de 200 milliards d'euros, 2026-10-12, https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

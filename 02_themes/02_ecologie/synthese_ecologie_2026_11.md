@@ -32,6 +32,11 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+1. Créer un « ISF climatique ». (Mesure non chiffrée par le parti) Source : Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025), s.d., https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU (consulté le 2026-11-16)
+2. Mettre en place une planification écologique et un protectionnisme écologique. (Mesure non chiffrée par le parti) Source : Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025), s.d., https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU (consulté le 2026-11-16)
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Rénover les logements des ménages modestes dans le cadre d'une transition écologique « juste ». (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -43,9 +48,25 @@ Non communiqué.
 2. Sortir la France du marché européen de l'électricité. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Supprimer les zones à faibles émissions (ZFE). (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Maintenir le nucléaire et développer la géothermie avec des pompes à chaleur. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Supprimer les subventions aux éoliennes. (Économie annoncée : 10 Md€ (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Dessaler l'eau de mer, réutiliser les eaux usées et utiliser l'eau de pluie dans les constructions neuves. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 Non communiqué.
+
+## Sylvain Durif (Elvita)
+
+1. Interdire les OGM. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+2. Interdire la déforestation. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 9, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+3. Sortir du nucléaire. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -68,16 +89,31 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Supprimer l'objectif « zéro artificialisation nette » des sols. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 2. Faire du diagnostic de performance énergétique (DPE) des logements un simple élément indicatif. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 3. Arrêter le Pacte vert européen (Green Deal). (Mesure non chiffrée par le parti) Source : Euronews, Moins de fonds pour l'Ukraine et budget de l'UE en baisse : que changerait une victoire de Le Pen, 2026-10-17, https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le- (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Généraliser la consigne du verre et réduire les emballages jetables. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Imposer des durées de garantie contre l'obsolescence programmée. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Donner la priorité à l'agriculture biologique et réduire les pesticides. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Miser sur le nucléaire, soumettre les projets d'énergies renouvelables au droit commun et réinvestir dans les nouvelles technologies nucléaires. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 3 « Générer un renouveau civique », s.d., https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/ (consulté le 2026-11-09)
 2. Faire payer la pollution par un prix du carbone et une fiscalité verte. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 3 « Générer un renouveau civique », s.d., https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+1. Mettre fin progressivement à l'élevage intensif, avec un accompagnement financier pour la reconversion des éleveurs. (Mesure non chiffrée par le parti) Source : HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages, 2026-10-03, https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html (consulté le 2026-11-16)
+2. Interdire la corrida et la chasse. (Mesure non chiffrée par le parti) Source : HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages, 2026-10-03, https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html (consulté le 2026-11-16)
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -97,6 +133,10 @@ Non communiqué.
 
 1. Fixer un prix du carbone d'au moins 100 euros par tonne en 2030, dont 80 % reversés aux ménages en revenu carbone mensuel. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
 2. Créer une Chambre citoyenne pour l'écologie de 150 personnes tirées au sort, avec un droit de veto sur les lois contraires. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
+
+## Manolo Mlekuz (Trajectoire)
+
+Non communiqué.
 
 ## Édouard Philippe (Horizons)
 
@@ -122,6 +162,12 @@ Non communiqué.
 ## Teddy Riner (Sans parti)
 
 Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
+
+1. Ne plus ajouter de capacités éoliennes ou intermittentes en attendant la mise en service des 14 réacteurs EPR2. (Mesure non chiffrée par le parti) Source : MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée), s.d., https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise (consulté le 2026-11-16)
+2. Mettre fin aux subventions sans limite de durée pour les énergies renouvelables. (Mesure non chiffrée par le parti) Source : MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée), s.d., https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise (consulté le 2026-11-16)
+3. Donner la priorité à la sobriété et à l'efficacité énergétique : rénovation thermique, récupération de chaleur. (Mesure non chiffrée par le parti) Source : MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée), s.d., https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise (consulté le 2026-11-16)
 
 ## Fabien Roussel (Parti communiste français)
 

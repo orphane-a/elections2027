@@ -32,6 +32,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Construire une Europe qui protège. (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -42,10 +46,24 @@ Non communiqué.
 2. Arrêter les livraisons d'armes à l'Ukraine. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Faire entrer la France dans les BRICS. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Suspendre les traités et décisions de l'Union européenne jusqu'à fin 2027. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Sortir du marché européen de l'électricité. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Suspendre l'accord commercial avec le Mercosur. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose que la France sorte de l'Union européenne. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
 2. Il propose une paix en Ukraine, avec une Ukraine neutre, hors de l'OTAN et de l'Union européenne. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
+
+## Sylvain Durif (Elvita)
+
+Non communiqué.
 
 ## Clara Egger (Solution démocratique)
 
@@ -72,17 +90,31 @@ Non communiqué.
 1. Faire sortir la France de l'Union européenne (« Frexit ») et revenir au franc. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne, 2026-08-19, https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne (consulté le 2026-11-09)
 2. Faire sortir la France de l'OTAN. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne, 2026-08-19, https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne (consulté le 2026-11-09)
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Plafonner la contribution nette de la France au budget de l'Union européenne à 5 milliards d'euros par an. (Mesure non chiffrée par le parti) Source : Euronews, Moins de fonds pour l'Ukraine et budget de l'UE en baisse : que changerait une victoire de Le Pen, 2026-10-17, https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le- (consulté le 2026-11-09)
 2. Maintenir l'aide financière à l'Ukraine six mois après l'élection, puis l'arrêter. (Mesure non chiffrée par le parti) Source : Paris Match Belgique, Marine Le Pen promet de couper l'aide à l'Ukraine (interview VRT), 2026-10-15, https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/ (consulté le 2026-11-09)
 3. Conclure le budget européen 2028-2034 seulement après les élections en France, Italie, Pologne et Espagne, sans hausse de la contribution française. (Mesure non chiffrée par le parti) Source : Paris Match Belgique, Marine Le Pen promet de couper l'aide à l'Ukraine (interview VRT), 2026-10-15, https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/ (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Renégocier les directives européennes et les règles du marché de l'électricité. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. S'opposer à l'accord avec le Mercosur et à la privatisation des barrages. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Supprimer la règle de l'unanimité dans l'Union européenne. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Négocier un traité de démocratisation de l'Europe qui revoit les pouvoirs de la Commission, de la Cour de justice et de la Banque centrale européenne. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 1 « Être maître de notre destin », s.d., https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/ (consulté le 2026-11-09)
 2. Permettre aux citoyens de trancher par référendum quand une règle européenne bloque une décision nationale. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 1 « Être maître de notre destin », s.d., https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/ (consulté le 2026-11-09)
 3. Interdire les surtranspositions, c'est-à-dire l'ajout de règles françaises plus strictes que les normes européennes. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard sur BFMTV, compte rendu sur le site du parti, 2026-11-03, https://www.unenouvelleenergie.fr/toc-toc-on-arrive-david-lisnard-annonce-plus-de-100-000-adherents-a-nouvelle-energie-sur-bfmtv/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -99,6 +131,10 @@ Non communiqué.
 3. Quitter immédiatement le commandement intégré de l'OTAN, puis l'organisation elle-même par étapes. (Mesure non chiffrée par le parti) Source : LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon, 2026-11-06, https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841 (consulté le 2026-11-09)
 
 ## Antoine Mikolajczak (Équinoxe)
+
+Non communiqué.
+
+## Manolo Mlekuz (Trajectoire)
 
 Non communiqué.
 
@@ -123,6 +159,10 @@ Non communiqué.
 1. Il propose que la France puisse, dans certains cas, déroger à la primauté du droit européen, notamment en matière d'immigration et de sécurité. (Mesure non chiffrée par le parti) Source : Public Sénat, entretien de Bruno Retailleau au Figaro sur la réforme constitutionnelle, 2026-09-03, https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-propose-une-revolution-copernicienne-dans-laquelle-la-constitution-ne-serait-plus-le-bouclier-qui-prote (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

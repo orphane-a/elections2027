@@ -1,0 +1,48 @@
+{
+  "id": "durif_sylvain",
+  "prenom": "Sylvain",
+  "nom": "Durif",
+  "parti": "Elvita",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Le mouvement Elvita n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Annoncé",
+  "statut_detail": "Candidature annoncée le 23 août 2026 dans une vidéo publiée sur un compte Instagram à son nom. Le site elvita2027.com, qui publie le programme, se présente comme édité par lui ; aucune autre source ne le confirme.",
+  "a_verifier": true,
+  "date_declaration": "2026-08-23",
+  "site_campagne": "https://elvita2027.com/",
+  "programme": {
+    "titre": "Programme « Zéro Défaut »",
+    "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+    "date": "2026-09-15",
+    "type": "PDF"
+  },
+  "sources": [
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Public Sénat, Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+      "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+      "date": "2026-10-14",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Sud Radio, Qui est ce Sylvain Durif, candidat à la présidentielle 2027 ?",
+      "url": "https://www.sudradio.fr/politique/qui-est-ce-sylvain-durif-le-christ-cosmique-candidat-a-la-presidentielle-2027",
+      "date": "2026-10-21",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Site elvita2027.com",
+      "url": "https://elvita2027.com/",
+      "date": null,
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Faible",
+  "date_maj": "2026-11-16"
+}

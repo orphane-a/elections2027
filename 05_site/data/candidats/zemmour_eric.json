@@ -7,17 +7,43 @@
   "groupe_an": null,
   "groupe_an_note": "Reconquête n'a pas de groupe à l'Assemblée nationale.",
   "statut": "Déclaré",
-  "statut_detail": "A annoncé « Je serai candidat » sur BFMTV le 17 septembre 2026. Selon Public Sénat, une déclaration formelle était attendue à l'automne ; aucune source consultée ne la confirme au 9 novembre 2026.",
-  "a_verifier": true,
+  "statut_detail": "A annoncé « Je serai candidat » sur BFMTV le 17 septembre 2026. Candidature officialisée à cette date selon LCP et Public Sénat, et classé parmi les déclarés dans la liste LCP du 10 novembre 2026.",
+  "a_verifier": false,
   "date_declaration": "2026-09-17",
   "site_campagne": "https://www.ericzemmour.fr/",
   "programme": null,
   "sources": [
-    { "titre": "LCP, Éric Zemmour officialise sa candidature", "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871", "date": "2026-09-17", "consulte": "2026-11-09" },
-    { "titre": "Public Sénat, Éric Zemmour officialise sa candidature à la présidentielle 2027", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "consulte": "2026-11-09" },
-    { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
-    { "titre": "Reconquête, site officiel (consultation « Le programme pour la France » en cours)", "url": "https://www.parti-reconquete.fr/", "date": "2026-11-09", "consulte": "2026-11-09" }
+    {
+      "titre": "LCP, Éric Zemmour officialise sa candidature",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
+      "date": "2026-09-17",
+      "consulte": "2026-11-09"
+    },
+    {
+      "titre": "Public Sénat, Éric Zemmour officialise sa candidature à la présidentielle 2027",
+      "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+      "date": "2026-09-18",
+      "consulte": "2026-11-09"
+    },
+    {
+      "titre": "LCP, liste des candidats déjà en lice",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+      "date": "2026-10-14",
+      "consulte": "2026-11-09"
+    },
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Reconquête, site officiel (consultation « Le programme pour la France » en cours)",
+      "url": "https://www.parti-reconquete.fr/",
+      "date": "2026-11-09",
+      "consulte": "2026-11-09"
+    }
   ],
   "confiance": "Moyen",
-  "date_maj": "2026-11-09"
+  "date_maj": "2026-11-16"
 }

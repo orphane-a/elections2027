@@ -32,6 +32,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+1. Faire débattre les critères des aides publiques par une assemblée citoyenne. (Mesure non chiffrée par le parti) Source : Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025), s.d., https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU (consulté le 2026-11-16)
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Réduire les doublons administratifs et alléger les normes. (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -42,9 +46,26 @@ Non communiqué.
 2. Instaurer le principe du mandat révocable des élus. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Convoquer une assemblée constituante avec un mandat de douze mois et supprimer l'article 49.3. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+1. Séparer le pouvoir exécutif en deux : un pouvoir qui décide et un pouvoir qui applique les décisions au plus près du terrain. (Mesure non chiffrée par le parti) Source : La France adulte, lettre de Joël Chevé aux élus (demande de parrainage), 2026-03-27, https://www.lafranceadulte.fr/lettre-LaFA.pdf (consulté le 2026-11-16)
+2. Créer un outil permanent de « remontée citoyenne » pour faire connaître aux institutions les préoccupations de la population. (Mesure non chiffrée par le parti) Source : La France adulte, lettre de Joël Chevé aux élus (demande de parrainage), 2026-03-27, https://www.lafranceadulte.fr/lettre-LaFA.pdf (consulté le 2026-11-16)
+
+## Christian Collovati (Sans parti)
+
+1. Élire un député et un sénateur par département. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Supprimer les avantages de retraite des parlementaires. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Supprimer ou réduire les agences de l'État. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose une démocratie directe sur le modèle suisse. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
+
+## Sylvain Durif (Elvita)
+
+1. Organiser une transition vers une monarchie, le « Royaume de France ». (Mesure non chiffrée par le parti) Source : Site elvita2027.com, s.d., https://elvita2027.com/ (consulté le 2026-11-16)
+2. Retirer l'immunité, sans préciser de qui. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+3. Simplifier l'administration. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -69,17 +90,32 @@ Non communiqué.
 1. Créer un référendum d'initiative citoyenne (RIC) « en toutes matières ». (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne, 2026-08-19, https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne (consulté le 2026-11-09)
 2. Abroger les lois Pleven (provocation à la haine raciale), Gayssot (négationnisme) et Avia (haine en ligne). (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne, 2026-08-19, https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne (consulté le 2026-11-09)
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Inscrire dans la Constitution, par référendum dans les douze mois suivant l'élection, une « règle d'or » qui plafonne le déficit public. (Mesure non chiffrée par le parti) Source : Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen, 2026-10-06, https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f (consulté le 2026-11-09)
 2. Supprimer les intercommunalités (EPCI) et les métropoles. (Économie annoncée : 250 M€.) Source : Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen, 2026-10-06, https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f (consulté le 2026-11-09)
 3. Supprimer la quasi-totalité des agences de l'État. (Économie annoncée : 3,4 Md€ en 2027.) Source : Public Sénat, 140 milliards d'euros d'économies d'ici 2032 : l'effort proposé par Marine Le Pen, 2026-10-06, https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Instaurer le référendum d'initiative citoyenne (RIC) et un référendum d'initiative gouvernementale. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Supprimer l'article 49.3 de la Constitution (adoption d'un texte sans vote). (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Confier l'effort budgétaire à une assemblée citoyenne élue hors partis, validée par référendum. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Réduire d'environ 12 % les effectifs publics : plus de 400 000 postes supprimés et 200 000 à 300 000 agents redéployés sur le terrain. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti, 2026-10-27, https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/ (consulté le 2026-11-09)
 2. Élargir le recours au référendum, y compris pour trancher certaines censures du Conseil constitutionnel. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti, 2026-10-27, https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/ (consulté le 2026-11-09)
 3. Inscrire une « règle d'or » qui limite les déficits publics dans les institutions. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 1 « Être maître de notre destin », s.d., https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+1. Créer un ministère indépendant de la Condition animale. (Mesure non chiffrée par le parti) Source : Presse Agence, Le Parti animaliste désigne Mira Markovic comme candidate, 2026-10-03, https://presseagence.fr/paris-presidentielle-le-parti-animaliste-designe-mira-markovic-comme-candidate/ (consulté le 2026-11-16)
+2. Sortir les animaux du régime juridique des biens. (Mesure non chiffrée par le parti) Source : HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages, 2026-10-03, https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html (consulté le 2026-11-16)
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -104,6 +140,12 @@ Non communiqué.
 1. Élire les députés à la proportionnelle, tirer au sort le Sénat parmi les élus locaux et compter le vote blanc. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
 2. Remplacer départements et intercommunalités par 350 « Pays de France », un échelon local de proximité. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
 3. Limiter à deux mandats une même fonction élective, sauf pour les maires des petites communes. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
+
+## Manolo Mlekuz (Trajectoire)
+
+1. Organiser un référendum d'initiative constituante en juin ou juillet 2027, en même temps que les législatives. (Mesure non chiffrée par le parti) Source : Trajectoire, page « Programme », s.d., https://trajectoire2027.fr/programme (consulté le 2026-11-16)
+2. Réunir une assemblée constituante tirée au sort pendant 9 mois, prolongeables de 3, avec des États généraux citoyens. (Mesure non chiffrée par le parti) Source : Trajectoire, page « Programme », s.d., https://trajectoire2027.fr/programme (consulté le 2026-11-16)
+3. Soumettre la nouvelle Constitution à référendum en décembre 2028 et quitter la présidence à la fin du processus. (Mesure non chiffrée par le parti) Source : Trajectoire, page « Programme », s.d., https://trajectoire2027.fr/programme (consulté le 2026-11-16)
 
 ## Édouard Philippe (Horizons)
 
@@ -131,6 +173,10 @@ Non communiqué.
 ## Teddy Riner (Sans parti)
 
 Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
+
+1. Créer un Défenseur de l'environnement doté d'un pouvoir d'alerte, de médiation et de veto suspensif. (Mesure non chiffrée par le parti) Source : MEI, Livre blanc pour la protection de l'environnement, signé Erwan Rohou (3 octobre, année non affichée), s.d., https://www.les-ecologistes-mei.org/post/le-livre-blanc-du-mouvement-ecologiste-ind%C3%A9pendant (consulté le 2026-11-16)
 
 ## Fabien Roussel (Parti communiste français)
 

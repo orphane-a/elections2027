@@ -1,0 +1,67 @@
+{
+  "id": "rohou_erwan",
+  "date_verif": "2026-11-16",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [
+      {
+        "texte": "Ne plus ajouter de capacités éoliennes ou intermittentes en attendant la mise en service des 14 réacteurs EPR2.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)",
+          "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise",
+          "date": null,
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Mettre fin aux subventions sans limite de durée pour les énergies renouvelables.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)",
+          "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise",
+          "date": null,
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Donner la priorité à la sobriété et à l'efficacité énergétique : rénovation thermique, récupération de chaleur.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)",
+          "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise",
+          "date": null,
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Créer un Défenseur de l'environnement doté d'un pouvoir d'alerte, de médiation et de veto suspensif.",
+        "sous_theme": "Gouvernance environnementale",
+        "chiffrage": null,
+        "source": {
+          "titre": "MEI, Livre blanc pour la protection de l'environnement, signé Erwan Rohou (3 octobre, année non affichée)",
+          "url": "https://www.les-ecologistes-mei.org/post/le-livre-blanc-du-mouvement-ecologiste-ind%C3%A9pendant",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "europe": []
+  }
+}

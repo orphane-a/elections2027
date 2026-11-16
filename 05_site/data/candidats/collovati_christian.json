@@ -1,0 +1,37 @@
+{
+  "id": "collovati_christian",
+  "prenom": "Christian",
+  "nom": "Collovati",
+  "parti": "Sans parti",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Candidature sans parti, sans groupe à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature présentée sur son site « Le Peuple français 2027 ». Cité parmi les candidats déclarés par franceinfo et LCP, sans date d'annonce.",
+  "a_verifier": true,
+  "date_declaration": null,
+  "site_campagne": "https://www.xn--lepeuplefranais2027-hyb.fr/",
+  "programme": null,
+  "sources": [
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "franceinfo, Portraits : qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+      "date": null,
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Christian Collovati, site « Le Peuple français 2027 »",
+      "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
+      "date": null,
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Faible",
+  "date_maj": "2026-11-16"
+}

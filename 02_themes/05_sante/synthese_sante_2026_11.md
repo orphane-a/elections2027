@@ -30,6 +30,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Lutter contre les déserts médicaux pour garantir des soins quels que soient le lieu de résidence et les revenus. (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -41,9 +45,23 @@ Non communiqué.
 2. Organiser un référendum sur la suppression des dépassements d'honoraires des médecins. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Lancer un plan d'urgence pour supprimer les déserts médicaux. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Supprimer l'aide médicale d'État (AME, soins des étrangers sans titre de séjour). (Économie annoncée : 1,2 Md€ (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Facturer au prix réel l'accouchement et l'hospitalisation aux personnes sans nationalité française. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 Non communiqué.
+
+## Sylvain Durif (Elvita)
+
+1. Instaurer une santé « naturelle et gratuite ». (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+2. Remplacer les médicaments par des produits naturels. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -66,15 +84,28 @@ Non communiqué.
 1. Mettre fin aux obligations médicales. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne, 2026-08-19, https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne (consulté le 2026-11-09)
 2. Reconnaître les médecines alternatives. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Francis Lalanne en meeting samedi pour lancer sa campagne, 2026-08-19, https://www.lagazettefrance.fr/article/presidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne (consulté le 2026-11-09)
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 Non communiqué.
+
+## Jean-François Legendre (À nous maintenant)
+
+1. Réduire les remboursements d'actes et de médicaments. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Créer un numéro d'urgence pour les agriculteurs en détresse. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
 
 ## David Lisnard (Nouvelle Énergie)
 
 1. Mieux rembourser les actes médicaux dans les zones manquant de médecins que dans les zones bien dotées. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Santé, s.d., https://www.unenouvelleenergie.fr/notre-programme/sante/ (consulté le 2026-11-09)
 2. Supprimer les agences régionales de santé (ARS) et confier leurs missions aux préfets et aux élus. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Santé, s.d., https://www.unenouvelleenergie.fr/notre-programme/sante/ (consulté le 2026-11-09)
 3. Doubler le nombre d'étudiants en médecine d'ici 2030. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Santé, s.d., https://www.unenouvelleenergie.fr/notre-programme/sante/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -95,6 +126,10 @@ Non communiqué.
 1. Créer un bilan de prévention santé entièrement pris en charge. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
 2. Conditionner l'installation des médecins aux besoins prioritaires des territoires. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
 3. Rendre le Nutri-Score obligatoire et taxer les produits gras, salés, sucrés, alcoolisés et ultra-transformés. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, Notre programme 2027, s.d., https://parti-equinoxe.fr/programme-2027/ (consulté le 2026-11-09)
+
+## Manolo Mlekuz (Trajectoire)
+
+Non communiqué.
 
 ## Édouard Philippe (Horizons)
 
@@ -117,6 +152,10 @@ Non communiqué.
 1. Il propose un jour de carence obligatoire dans le privé et des réexamens périodiques des arrêts maladie. (Économie annoncée : 4 Md€.) Source : Public Sénat, plan d'économies de près de 200 milliards d'euros, 2026-10-12, https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

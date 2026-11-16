@@ -1,0 +1,43 @@
+{
+  "id": "billetdoux_augustin",
+  "prenom": "Augustin",
+  "nom": "Billetdoux",
+  "parti": "Sans parti",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Candidature sans parti, sans groupe à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidature annoncée en septembre 2025 dans une vidéo et un texte publiés sur LinkedIn, sans rattachement à un parti. Jour exact non affiché par la source.",
+  "a_verifier": false,
+  "date_declaration": null,
+  "site_campagne": "https://billetdoux2027.fr/",
+  "programme": null,
+  "sources": [
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "franceinfo, Portraits : qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+      "date": null,
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Site de campagne d'Augustin Billetdoux",
+      "url": "https://billetdoux2027.fr/",
+      "date": null,
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Augustin Billetdoux, publication LinkedIn d'annonce de candidature (septembre 2025)",
+      "url": "https://fr.linkedin.com/posts/augustin-billetdoux-26a04b152_aucune-pr%C3%A9tendante-%C3%A0-2027-ne-propose-ce-activity-7376900103220928512-0dGU",
+      "date": null,
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-16"
+}

@@ -30,6 +30,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Faire de la protection des enfants et des femmes contre les violences une grande cause nationale. (Mesure non chiffrée par le parti) Source : Le manifeste de Karim Bouamrane, s.d., https://www.karimbouamrane2027.org/manifeste.html (consulté le 2026-11-09)
@@ -41,11 +45,27 @@ Non communiqué.
 2. Limiter les gardes à vue à 24 heures et à 200 000 par an. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Dissoudre les brigades motorisées BRAV-M. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Décréter un état d'urgence de 6 mois avec un couvre-feu de 22 h à 6 h. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Supprimer le juge d'application des peines et remplacer la peine maximale par un barème de peines. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Organiser un référendum sur la peine de mort. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose 10 000 policiers et gendarmes supplémentaires nets sur cinq ans, et 10 000 douaniers et policiers aux frontières. (Mesure non chiffrée par le parti) Source : Debout la France, projet Sécurité (livret daté du 31/10/2025, présenté comme projet présidentiel 2027), 2025-10-31, https://www.debout-la-france.fr/projet/securite/ (consulté le 2026-11-09)
 2. Il propose de créer 40 000 places de prison, dont 20 000 par la réhabilitation de casernes. (Mesure non chiffrée par le parti) Source : Debout la France, projet Sécurité (livret daté du 31/10/2025, présenté comme projet présidentiel 2027), 2025-10-31, https://www.debout-la-france.fr/projet/securite/ (consulté le 2026-11-09)
 3. Il propose une présomption de légitime défense pour un policier qui fait usage de son arme. (Mesure non chiffrée par le parti) Source : Debout la France, projet Sécurité (livret daté du 31/10/2025, présenté comme projet présidentiel 2027), 2025-10-31, https://www.debout-la-france.fr/projet/securite/ (consulté le 2026-11-09)
+
+## Sylvain Durif (Elvita)
+
+1. Supprimer les prisons. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+2. Retirer les stupéfiants de la circulation. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
+3. Retirer l'alcool de la circulation. (Mesure non chiffrée par le parti) Source : Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8, 2026-09-15, https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf (consulté le 2026-11-16)
 
 ## Clara Egger (Solution démocratique)
 
@@ -69,17 +89,31 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Organiser un référendum sur les « idéologies islamistes » : financements, mosquées radicales, imams, et interdiction des Frères musulmans. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Interdiction du voile : Le Pen veut le faire de manière progressive, 2026-09-16, https://www.lagazettefrance.fr/article/interdiction-du-voile-le-pen-veut-le-faire-de-maniere-progressive (consulté le 2026-11-09)
 2. Interdire le voile islamique par décret après ce référendum, d'abord dans les universités, les sorties scolaires, les fédérations sportives et les bâtiments publics. (Mesure non chiffrée par le parti) Source : La Gazette France (AFP), Interdiction du voile : Le Pen veut le faire de manière progressive, 2026-09-16, https://www.lagazettefrance.fr/article/interdiction-du-voile-le-pen-veut-le-faire-de-maniere-progressive (consulté le 2026-11-09)
 3. Expulser des logements sociaux les familles délinquantes. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Créer de nouvelles unités du RAID et du GIGN et ouvrir des commissariats selon les besoins. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Renforcer les moyens de la justice et simplifier les procédures. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+3. Passer des accords avec des pays qui acceptent d'accueillir des détenus. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Abaisser la majorité pénale à 16 ans et créer des établissements disciplinaires fermés pour mineurs. (Mesure non chiffrée par le parti) Source : Interview de David Lisnard dans « Objectif Élysée 2027 » sur CNews et Europe 1, compte rendu sur le site du parti, 2026-10-27, https://www.unenouvelleenergie.fr/david-lisnard-sur-cnews-et-europe-1-je-ne-suis-pas-candidat-pour-un-poste-je-viens-pour-redresser-le-pays/ (consulté le 2026-11-09)
 2. Rétablir les peines planchers pour les récidivistes et supprimer les réductions de peine automatiques. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Sécurité, s.d., https://www.unenouvelleenergie.fr/notre-programme/securite/ (consulté le 2026-11-09)
 3. Permettre aux communes volontaires d'armer leur police municipale et lui donner accès aux fichiers. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, page Sécurité, s.d., https://www.unenouvelleenergie.fr/notre-programme/securite/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+1. Intégrer les animaux dans les plans de secours ORSEC (catastrophes, incendies). (Mesure non chiffrée par le parti) Source : Presse Agence, Le Parti animaliste désigne Mira Markovic comme candidate, 2026-10-03, https://presseagence.fr/paris-presidentielle-le-parti-animaliste-designe-mira-markovic-comme-candidate/ (consulté le 2026-11-16)
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -100,6 +134,10 @@ Non communiqué.
 1. Rendre l'IGPN (inspection de la police) indépendante et enquêter sur chaque cas signalé de violence policière. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, rompre avec la spirale de la violence, 2026-10-19, https://parti-equinoxe.fr/rompre-avec-la-spirale-de-la-violence/ (consulté le 2026-11-09)
 2. Rendre obligatoires les caméras-piétons pour les policiers, avec sanctions en cas de caméra masquée ou d'absence d'identification. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, rompre avec la spirale de la violence, 2026-10-19, https://parti-equinoxe.fr/rompre-avec-la-spirale-de-la-violence/ (consulté le 2026-11-09)
 3. Sanctionner les dégradations en manifestation par des amendes et des travaux d'intérêt général de réparation. (Mesure non chiffrée par le parti) Source : Parti Équinoxe, notre plan pour sortir de la violence, 2026-10-15, https://parti-equinoxe.fr/notre-plan-pour-sortir-de-la-violence/ (consulté le 2026-11-09)
+
+## Manolo Mlekuz (Trajectoire)
+
+Non communiqué.
 
 ## Édouard Philippe (Horizons)
 
@@ -124,6 +162,10 @@ Non communiqué.
 3. Il propose une castration chimique des pédocriminels, sans leur consentement. (Mesure non chiffrée par le parti) Source : Public Sénat, meeting de Bruno Retailleau au parc Floral, 2026-06-20, https://www.publicsenat.fr/actualites/politique/presidentielle-jirai-jusquau-bout-de-lelection-pour-remettre-la-france-a-lendroit-clame-bruno-retailleau-a-son-premier-grand-meeting (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

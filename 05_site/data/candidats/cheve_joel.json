@@ -1,0 +1,43 @@
+{
+  "id": "cheve_joel",
+  "prenom": "Joël",
+  "nom": "Chevé",
+  "parti": "La France adulte",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "La France adulte n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Annoncé",
+  "statut_detail": "Président du mouvement La France adulte, il demande aux élus leur parrainage pour la présidentielle dans une lettre datée du 27 mars 2026. Aucune date d'annonce de candidature trouvée.",
+  "a_verifier": true,
+  "date_declaration": null,
+  "site_campagne": "https://www.lafranceadulte.fr/election2027",
+  "programme": null,
+  "sources": [
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "franceinfo, Portraits : qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ?",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+      "date": null,
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "La France adulte, lettre de Joël Chevé aux élus (demande de parrainage)",
+      "url": "https://www.lafranceadulte.fr/lettre-LaFA.pdf",
+      "date": "2026-03-27",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "La France adulte, page « Élection 2027 »",
+      "url": "https://www.lafranceadulte.fr/election2027",
+      "date": null,
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Faible",
+  "date_maj": "2026-11-16"
+}

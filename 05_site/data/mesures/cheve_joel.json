@@ -1,0 +1,42 @@
+{
+  "id": "cheve_joel",
+  "date_verif": "2026-11-16",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Séparer le pouvoir exécutif en deux : un pouvoir qui décide et un pouvoir qui applique les décisions au plus près du terrain.",
+        "sous_theme": "Séparation des pouvoirs",
+        "chiffrage": null,
+        "source": {
+          "titre": "La France adulte, lettre de Joël Chevé aux élus (demande de parrainage)",
+          "url": "https://www.lafranceadulte.fr/lettre-LaFA.pdf",
+          "date": "2026-03-27",
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Créer un outil permanent de « remontée citoyenne » pour faire connaître aux institutions les préoccupations de la population.",
+        "sous_theme": "Démocratie participative",
+        "chiffrage": null,
+        "source": {
+          "titre": "La France adulte, lettre de Joël Chevé aux élus (demande de parrainage)",
+          "url": "https://www.lafranceadulte.fr/lettre-LaFA.pdf",
+          "date": "2026-03-27",
+          "type": "declaration",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "europe": []
+  }
+}

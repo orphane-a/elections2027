@@ -1,0 +1,54 @@
+{
+  "id": "legendre_jean_francois",
+  "prenom": "Jean-François",
+  "nom": "Legendre",
+  "parti": "À nous maintenant",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "À nous maintenant n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Candidat au nom du mouvement citoyen À nous maintenant, créé en 2026, qui collecte des parrainages d'élus depuis mai 2026. Candidature rapportée par TV83 le 23 mai 2026 ; date exacte de l'annonce non communiquée.",
+  "a_verifier": false,
+  "date_declaration": null,
+  "site_campagne": "https://www.anousmaintenant.fr",
+  "programme": {
+    "titre": "Manifeste « 64 % : vers une alternative citoyenne en France »",
+    "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+    "date": null,
+    "type": "page web"
+  },
+  "sources": [
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Public Sénat, Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+      "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+      "date": "2026-10-14",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "TV83, Le mouvement citoyen À nous maintenant émerge",
+      "url": "https://www.tv83.info/le-mouvement-citoyen-a-nous-maintenant-emerge/",
+      "date": "2026-05-23",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "À nous maintenant, site du mouvement",
+      "url": "https://www.anousmaintenant.fr",
+      "date": null,
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+      "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+      "date": null,
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-16"
+}

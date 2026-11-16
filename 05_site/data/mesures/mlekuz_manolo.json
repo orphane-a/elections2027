@@ -1,0 +1,54 @@
+{
+  "id": "mlekuz_manolo",
+  "date_verif": "2026-11-16",
+  "programme_publie": true,
+  "themes": {
+    "education": [],
+    "ecologie": [],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Organiser un référendum d'initiative constituante en juin ou juillet 2027, en même temps que les législatives.",
+        "sous_theme": "Réforme constitutionnelle",
+        "chiffrage": null,
+        "source": {
+          "titre": "Trajectoire, page « Programme »",
+          "url": "https://trajectoire2027.fr/programme",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Réunir une assemblée constituante tirée au sort pendant 9 mois, prolongeables de 3, avec des États généraux citoyens.",
+        "sous_theme": "Démocratie participative",
+        "chiffrage": null,
+        "source": {
+          "titre": "Trajectoire, page « Programme »",
+          "url": "https://trajectoire2027.fr/programme",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Soumettre la nouvelle Constitution à référendum en décembre 2028 et quitter la présidence à la fin du processus.",
+        "sous_theme": "Réforme constitutionnelle",
+        "chiffrage": null,
+        "source": {
+          "titre": "Trajectoire, page « Programme »",
+          "url": "https://trajectoire2027.fr/programme",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "europe": []
+  }
+}

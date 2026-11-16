@@ -1,0 +1,351 @@
+{
+  "id": "legendre_jean_francois",
+  "date_verif": "2026-11-16",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Réduire la scolarité de 15 à 12 ans sur le primaire et le secondaire.",
+        "sous_theme": "Durée de la scolarité",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Intégrer stages, sport, cuisine et alimentation saine au parcours scolaire.",
+        "sous_theme": "Contenus",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Réexaminer le baccalauréat.",
+        "sous_theme": "Examens",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Généraliser la consigne du verre et réduire les emballages jetables.",
+        "sous_theme": "Déchets",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Imposer des durées de garantie contre l'obsolescence programmée.",
+        "sous_theme": "Consommation",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Donner la priorité à l'agriculture biologique et réduire les pesticides.",
+        "sous_theme": "Agriculture",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Baisser les prix du gaz et de l'électricité à la place des chèques énergie.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Relocaliser la production en France.",
+        "sous_theme": "Production",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "travail": [
+      {
+        "texte": "Remettre en cause la réduction du temps de travail.",
+        "sous_theme": "Temps de travail",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Faire des salariés seniors des mentors en entreprise.",
+        "sous_theme": "Emploi des seniors",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Instaurer un revenu minimum pour les petits agriculteurs.",
+        "sous_theme": "Agriculture",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "sante": [
+      {
+        "texte": "Réduire les remboursements d'actes et de médicaments.",
+        "sous_theme": "Assurance maladie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Créer un numéro d'urgence pour les agriculteurs en détresse.",
+        "sous_theme": "Santé mentale",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Remplacer les APL (aides au logement) par un encadrement des loyers.",
+        "sous_theme": "Loyers",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Développer des maisons à prix abordables en zone rurale.",
+        "sous_theme": "Logement rural",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Créer de nouvelles unités du RAID et du GIGN et ouvrir des commissariats selon les besoins.",
+        "sous_theme": "Forces de l'ordre",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Renforcer les moyens de la justice et simplifier les procédures.",
+        "sous_theme": "Justice",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Passer des accords avec des pays qui acceptent d'accueillir des détenus.",
+        "sous_theme": "Prisons",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Accueillir les réfugiés de façon temporaire, sans naturalisation pour eux ni pour leurs enfants nés en France.",
+        "sous_theme": "Asile",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Conditionner l'immigration de travail à une demande préalable auprès d'une ambassade de France.",
+        "sous_theme": "Immigration de travail",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Réviser l'aide médicale d'État (AME) et les visas étudiants.",
+        "sous_theme": "Droits des étrangers",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Instaurer le référendum d'initiative citoyenne (RIC) et un référendum d'initiative gouvernementale.",
+        "sous_theme": "Démocratie directe",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Supprimer l'article 49.3 de la Constitution (adoption d'un texte sans vote).",
+        "sous_theme": "Parlement",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Confier l'effort budgétaire à une assemblée citoyenne élue hors partis, validée par référendum.",
+        "sous_theme": "Budget",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "europe": [
+      {
+        "texte": "Renégocier les directives européennes et les règles du marché de l'électricité.",
+        "sous_theme": "Énergie et normes",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "S'opposer à l'accord avec le Mercosur et à la privatisation des barrages.",
+        "sous_theme": "Commerce et énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Supprimer la règle de l'unanimité dans l'Union européenne.",
+        "sous_theme": "Gouvernance européenne",
+        "chiffrage": null,
+        "source": {
+          "titre": "Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France »",
+          "url": "https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit",
+          "date": null,
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ]
+  }
+}

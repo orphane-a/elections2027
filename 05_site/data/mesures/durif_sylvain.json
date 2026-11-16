@@ -1,0 +1,228 @@
+{
+  "id": "durif_sylvain",
+  "date_verif": "2026-11-16",
+  "programme_publie": true,
+  "themes": {
+    "education": [
+      {
+        "texte": "Mettre en place une « éducation consciente ».",
+        "sous_theme": "Pédagogie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Enseigner une « science cosmique » à l'école.",
+        "sous_theme": "Programmes",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 9",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "ecologie": [
+      {
+        "texte": "Interdire les OGM.",
+        "sous_theme": "Agriculture",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Interdire la déforestation.",
+        "sous_theme": "Forêts",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 9",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Sortir du nucléaire.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "pouvoir_achat": [
+      {
+        "texte": "Supprimer la fiscalité.",
+        "sous_theme": "Impôts",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Effacer les dettes.",
+        "sous_theme": "Endettement",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Supprimer la précarité.",
+        "sous_theme": "Pauvreté",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "travail": [],
+    "sante": [
+      {
+        "texte": "Instaurer une santé « naturelle et gratuite ».",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Remplacer les médicaments par des produits naturels.",
+        "sous_theme": "Médicament",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "logement": [],
+    "securite": [
+      {
+        "texte": "Supprimer les prisons.",
+        "sous_theme": "Justice pénale",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Retirer les stupéfiants de la circulation.",
+        "sous_theme": "Drogues",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Retirer l'alcool de la circulation.",
+        "sous_theme": "Addictions",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "immigration": [
+      {
+        "texte": "Supprimer les frontières.",
+        "sous_theme": "Frontières",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "institutions": [
+      {
+        "texte": "Organiser une transition vers une monarchie, le « Royaume de France ».",
+        "sous_theme": "Régime politique",
+        "chiffrage": null,
+        "source": {
+          "titre": "Site elvita2027.com",
+          "url": "https://elvita2027.com/",
+          "date": null,
+          "type": "site",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Retirer l'immunité, sans préciser de qui.",
+        "sous_theme": "Élus",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Simplifier l'administration.",
+        "sous_theme": "État",
+        "chiffrage": null,
+        "source": {
+          "titre": "Programme « Zéro Défaut » de Sylvain-Pierre Durif (PDF), page 8",
+          "url": "https://elvita2027.com/documents/Programme_Sylvain_Pierre_Durif_2027Presidentielle.pdf",
+          "date": "2026-09-15",
+          "type": "programme",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "europe": []
+  }
+}

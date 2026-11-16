@@ -1,0 +1,48 @@
+{
+  "id": "mlekuz_manolo",
+  "prenom": "Manolo",
+  "nom": "Mlekuz",
+  "parti": "Trajectoire",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Trajectoire n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Déclaré",
+  "statut_detail": "Se présente comme candidat à la présidentielle 2027 pour le mouvement citoyen Trajectoire et cherche les 500 parrainages. Date d'annonce non communiquée.",
+  "a_verifier": true,
+  "date_declaration": null,
+  "site_campagne": "https://trajectoire2027.fr/",
+  "programme": {
+    "titre": "Programme de Trajectoire",
+    "url": "https://trajectoire2027.fr/programme",
+    "date": null,
+    "type": "page web"
+  },
+  "sources": [
+    {
+      "titre": "L'Etudiant, Manolo veut être candidat à la présidentielle",
+      "url": "https://www.letudiant.fr/lifestyle/la-prochaine-fois-que-je-demenage-c-est-a-l-eysee-manolo-19-ans-et-candidat-a-la-presidentielle.html",
+      "date": "2026-05-19",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "ICI, Présidentielle 2027 : qui sont les candidats déclarés ?",
+      "url": "https://www.ici.fr/infos/politique/presidentielle-2027-qui-sont-les-candidats-declares-1598133",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Trajectoire, page « Programme »",
+      "url": "https://trajectoire2027.fr/programme",
+      "date": null,
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-16"
+}

@@ -30,6 +30,10 @@ Non communiqué.
 
 Non communiqué.
 
+## Augustin Billetdoux (Sans parti)
+
+Non communiqué.
+
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
 1. Construire et rénover des logements, et accompagner les familles, les jeunes actifs et les personnes âgées. (Mesure non chiffrée par le parti) Source : Karim Bouamrane 2027, La France humaine et forte (page d'accueil), s.d., https://www.karimbouamrane2027.org/ (consulté le 2026-11-09)
@@ -40,7 +44,21 @@ Non communiqué.
 2. Obliger les propriétaires à déclarer les logements inoccupés depuis plus de douze mois. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 3. Créer une garantie universelle des loyers. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 
+## Joël Chevé (La France adulte)
+
+Non communiqué.
+
+## Christian Collovati (Sans parti)
+
+1. Baisser les loyers de 30 %. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+2. Supprimer la loi SRU (quota de logements sociaux par commune) et privilégier la rénovation aux constructions neuves. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Supprimer l'ANAH (agence qui finance la rénovation des logements). (Économie annoncée : 6 Md€ (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
 ## Nicolas Dupont-Aignan (Debout la France)
+
+Non communiqué.
+
+## Sylvain Durif (Elvita)
 
 Non communiqué.
 
@@ -64,15 +82,28 @@ Non communiqué.
 
 Non communiqué.
 
+## Jean Lassalle (Résistons !)
+
+Non communiqué.
+
 ## Marine Le Pen (Rassemblement national)
 
 1. Donner aux Français la priorité d'accès au logement social. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 2. Vendre une partie des logements HLM aux Français. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 3. Abroger la loi SRU, qui impose aux communes un quota de logements sociaux. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Le Pen à Hénin-Beaumont pour reprendre le fil d'une campagne à deux visages, 2026-09-13, https://www.sudradio.fr/societe/le-pen-a-henin-beaumont-pour-reprendre-le-fil-dune-campagne-a-deux-visages (consulté le 2026-11-09)
 
+## Jean-François Legendre (À nous maintenant)
+
+1. Remplacer les APL (aides au logement) par un encadrement des loyers. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+2. Développer des maisons à prix abordables en zone rurale. (Mesure non chiffrée par le parti) Source : Jean-François Legendre, manifeste « 64 % : vers une alternative citoyenne en France », s.d., https://docs.google.com/document/d/1G4dUZaI20umZghEgSgRGCQeiWDJ2fiwhLZvtUK7hofc/edit (consulté le 2026-11-16)
+
 ## David Lisnard (Nouvelle Énergie)
 
 1. Supprimer l'article 55 de la loi SRU, qui impose aux communes un quota de 20 à 25 % de logements sociaux. (Mesure non chiffrée par le parti) Source : Nouvelle Énergie, programme, axe 2 « Réussir une nouvelle ambition française », s.d., https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/ (consulté le 2026-11-09)
+
+## Mira Markovic (Parti animaliste)
+
+Non communiqué.
 
 ## Lydie Massard (Union démocratique bretonne)
 
@@ -89,6 +120,10 @@ Non communiqué.
 3. Augmenter de 10 % les aides personnalisées au logement (APL). (Mesure non chiffrée par le parti) Source : LCP, ce qui change dans le nouveau programme de Jean-Luc Mélenchon, 2026-11-06, https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841 (consulté le 2026-11-09)
 
 ## Antoine Mikolajczak (Équinoxe)
+
+Non communiqué.
+
+## Manolo Mlekuz (Trajectoire)
 
 Non communiqué.
 
@@ -111,6 +146,10 @@ Non communiqué.
 3. Il propose de supprimer le ZAN (objectif de zéro artificialisation des sols) et le DPE (diagnostic de performance énergétique). (Mesure non chiffrée par le parti) Source : Public Sénat, logement : Bruno Retailleau propose de déduire de l'impôt les intérêts d'emprunt, 2026-09-15, https://www.publicsenat.fr/actualites/politique/logement-bruno-retailleau-propose-de-deduire-de-l-imot-les-interets-d-emprunt-pour-un-pret-immobilier-en-fonction-du-nombre-d-enfants (consulté le 2026-11-09)
 
 ## Teddy Riner (Sans parti)
+
+Non communiqué.
+
+## Erwan Rohou (Mouvement écologiste indépendant)
 
 Non communiqué.
 

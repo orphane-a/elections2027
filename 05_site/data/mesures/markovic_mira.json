@@ -1,0 +1,80 @@
+{
+  "id": "markovic_mira",
+  "date_verif": "2026-11-16",
+  "programme_publie": false,
+  "themes": {
+    "education": [],
+    "ecologie": [
+      {
+        "texte": "Mettre fin progressivement à l'élevage intensif, avec un accompagnement financier pour la reconversion des éleveurs.",
+        "sous_theme": "Agriculture et élevage",
+        "chiffrage": null,
+        "source": {
+          "titre": "HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages",
+          "url": "https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html",
+          "date": "2026-10-03",
+          "type": "presse",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Interdire la corrida et la chasse.",
+        "sous_theme": "Condition animale",
+        "chiffrage": null,
+        "source": {
+          "titre": "HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages",
+          "url": "https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html",
+          "date": "2026-10-03",
+          "type": "presse",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "pouvoir_achat": [],
+    "travail": [],
+    "sante": [],
+    "logement": [],
+    "securite": [
+      {
+        "texte": "Intégrer les animaux dans les plans de secours ORSEC (catastrophes, incendies).",
+        "sous_theme": "Sécurité civile",
+        "chiffrage": null,
+        "source": {
+          "titre": "Presse Agence, Le Parti animaliste désigne Mira Markovic comme candidate",
+          "url": "https://presseagence.fr/paris-presidentielle-le-parti-animaliste-designe-mira-markovic-comme-candidate/",
+          "date": "2026-10-03",
+          "type": "presse",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "immigration": [],
+    "institutions": [
+      {
+        "texte": "Créer un ministère indépendant de la Condition animale.",
+        "sous_theme": "Organisation du gouvernement",
+        "chiffrage": null,
+        "source": {
+          "titre": "Presse Agence, Le Parti animaliste désigne Mira Markovic comme candidate",
+          "url": "https://presseagence.fr/paris-presidentielle-le-parti-animaliste-designe-mira-markovic-comme-candidate/",
+          "date": "2026-10-03",
+          "type": "presse",
+          "consulte": "2026-11-16"
+        }
+      },
+      {
+        "texte": "Sortir les animaux du régime juridique des biens.",
+        "sous_theme": "Statut des animaux",
+        "chiffrage": null,
+        "source": {
+          "titre": "HuffPost (Yahoo Actualités), La candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages",
+          "url": "https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html",
+          "date": "2026-10-03",
+          "type": "presse",
+          "consulte": "2026-11-16"
+        }
+      }
+    ],
+    "europe": []
+  }
+}

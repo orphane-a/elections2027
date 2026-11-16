@@ -1,0 +1,49 @@
+{
+  "id": "lassalle_jean",
+  "prenom": "Jean",
+  "nom": "Lassalle",
+  "parti": "Résistons !",
+  "parti_sigle": null,
+  "groupe_an": null,
+  "groupe_an_note": "Résistons ! n'a pas de groupe à l'Assemblée nationale.",
+  "statut": "Intention annoncée",
+  "statut_detail": "Le 10 juillet 2026, il conditionne sa candidature à une cagnotte d'au moins 100 000 €. Le 8 octobre, il dit ne pas avoir pris sa décision ; le 8 novembre, sa candidature n'est « pas encore officielle ».",
+  "a_verifier": true,
+  "date_declaration": null,
+  "site_campagne": null,
+  "programme": null,
+  "sources": [
+    {
+      "titre": "LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932",
+      "date": "2026-11-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "ICI Béarn Bigorre, Jean Lassalle lance une cagnotte pour être candidat à la présidentielle de 2027",
+      "url": "https://www.ici.fr/emissions/l-invite-de-la-redaction-de-ici-bearn-bigorre/jean-lassalle-lance-une-cagnotte-pour-etre-candidat-a-la-presidentielle-de-2027-2094458",
+      "date": "2026-07-10",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "franceinfo, Jean Lassalle lance une cagnotte pour pouvoir être de nouveau candidat",
+      "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-jean-lassalle-lance-une-cagnotte-pour-pouvoir-etre-de-nouveau-candidat-a-l-election_8102522.html",
+      "date": "2026-07-15",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "Pleinchamp, Jean Lassalle au Sommet de l'élevage",
+      "url": "https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar",
+      "date": "2026-10-08",
+      "consulte": "2026-11-16"
+    },
+    {
+      "titre": "L'Express via 6Médias (Orange Actu), Jean Lassalle en quête de 500 parrainages",
+      "url": "https://actu.orange.fr/politique/presidentielle-2027-jean-lassalle-en-quete-de-500-parrainages-l-express-via-6medias-CNT000002tCpt5.html",
+      "date": "2026-11-08",
+      "consulte": "2026-11-16"
+    }
+  ],
+  "confiance": "Moyen",
+  "date_maj": "2026-11-16"
+}
