@@ -12,6 +12,10 @@ const DATA = path.join(ICI, 'data');
 const OUT = path.join(ICI, 'public');
 const PREPROD = process.argv.includes('--preprod');
 const AUJOURDHUI = new Date().toISOString().slice(0, 10);
+// Adresse publique du site (sert aux balises canonical, au sitemap et au robots.txt).
+const SITE_URL = PREPROD ? 'https://preprod.demandez-le-programme.fr' : 'https://demandez-le-programme.fr';
+const PAGES_GENEREES = [];
+const urlPage = (fichier) => `${SITE_URL}/${fichier === 'index.html' ? '' : fichier}`;
 
 // ---------- Référentiels ----------
 const THEMES = [
@@ -198,7 +202,9 @@ function page({ fichier, titre, description, courant, corps, scripts = false }) 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(titre)}</title>
 <meta name="description" content="${esc(description)}">
-${PREPROD ? '<meta name="robots" content="noindex, nofollow">\n' : ''}<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="${urlPage(fichier)}">
+<meta property="og:url" content="${urlPage(fichier)}">
+${PREPROD ?'<meta name="robots" content="noindex, nofollow">\n' : ''}<link rel="stylesheet" href="style.css">
 ${scripts ? '<script>document.documentElement.classList.add(\'js\')</script>' : ''}
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent(LOGO_SVG.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))}">
 </head>
@@ -223,6 +229,18 @@ ${scripts ? '<script src="app.js" defer></script>' : ''}
 </html>
 `;
   fs.writeFileSync(path.join(OUT, fichier), html);
+  PAGES_GENEREES.push(fichier);
+}
+
+// robots.txt et sitemap.xml : la préprod interdit toute indexation, la prod l'autorise.
+function robotsEtSitemap() {
+  const robots = PREPROD
+    ? 'User-agent: *\nDisallow: /\n'
+    : `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+  fs.writeFileSync(path.join(OUT, 'robots.txt'), robots);
+  const urls = [...PAGES_GENEREES].sort((a, b) => (a === 'index.html' ? -1 : b === 'index.html' ? 1 : a.localeCompare(b)))
+    .map((f) => `  <url><loc>${urlPage(f)}</loc><lastmod>${AUJOURDHUI}</lastmod></url>`);
+  fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
 }
 
 // ---------- Accueil ----------
@@ -647,6 +665,7 @@ pageThemes();
 THEMES.forEach(ficheTheme);
 pageCandidats();
 pagesTexte();
+robotsEtSitemap();
 if (!process.argv.includes('--sans-md')) exportMarkdown();
 const pb = controles();
 console.log(`✅ Site généré${PREPROD ? ' (préprod)' : ''} : ${candidats.length} candidats, ${Object.keys(themesData).length}/10 thèmes avec bilan, ${Object.keys(mesures).length} fichiers de mesures.`);

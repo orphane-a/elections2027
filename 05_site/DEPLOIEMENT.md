@@ -1,13 +1,19 @@
 # 🚀 Mise en ligne du site Elections 2027
 
-Mise à jour : 2026-11-09
+Mise à jour : 2026-11-16
 
 ## Les deux environnements
 
 | | Adresse | Accès | Moteurs de recherche |
 |---|---|---|---|
-| 🧪 Préprod | https://preprod.elections2027.orphane.fr | Libre (sans mot de passe) | Interdits (noindex + robots.txt) |
-| 🌍 Prod | https://elections2027.orphane.fr | Public | Autorisés |
+| 🧪 Préprod | https://preprod.demandez-le-programme.fr | Libre (sans mot de passe) | Interdits (noindex + robots.txt) |
+| 🌍 Prod | https://demandez-le-programme.fr | Public | Autorisés |
+
+Redirections permanentes (301), qui gardent le chemin de la page :
+- `www.demandez-le-programme.fr` et l'ancienne adresse `elections2027.orphane.fr` → https://demandez-le-programme.fr
+- l'ancienne adresse `preprod.elections2027.orphane.fr` → https://preprod.demandez-le-programme.fr
+
+Le site génère lui-même `robots.txt` et `sitemap.xml`, et chaque page porte une balise `canonical` (son adresse officielle).
 
 **Règle :** on publie toujours d'abord en préprod, on relit, puis on publie en prod.
 

@@ -1,4 +1,7 @@
-# PROD : https://elections2027.orphane.fr, servie par Nginx derrière le Traefik de Coolify.
+# PROD : https://demandez-le-programme.fr, servie par Nginx derrière le Traefik de Coolify.
+# Redirections 301 vers https://demandez-le-programme.fr (en gardant le chemin) :
+#   www.demandez-le-programme.fr et l'ancienne adresse elections2027.orphane.fr
+# Certificats Let's Encrypt créés et renouvelés automatiquement par Traefik (certresolver letsencrypt).
 # Sur le serveur : /srv/elections2027-prod (docker-compose.yml, nginx.conf, site/)
 services:
   site:
@@ -14,19 +17,36 @@ services:
       - traefik.enable=true
       - traefik.docker.network=coolify
       - traefik.http.services.elections2027-prod.loadbalancer.server.port=80
-      # HTTP vers HTTPS
-      - traefik.http.routers.elections2027-prod-http.entryPoints=http
-      - traefik.http.routers.elections2027-prod-http.rule=Host(`elections2027.orphane.fr`)
-      - traefik.http.routers.elections2027-prod-http.middlewares=elections2027-prod-https
+      # Middlewares
       - traefik.http.middlewares.elections2027-prod-https.redirectscheme.scheme=https
       - traefik.http.middlewares.elections2027-prod-https.redirectscheme.permanent=true
-      # HTTPS
+      - traefik.http.middlewares.elections2027-prod-vers-domaine.redirectregex.regex=^https?://[^/]+(.*)
+      - traefik.http.middlewares.elections2027-prod-vers-domaine.redirectregex.replacement=https://demandez-le-programme.fr$${1}
+      - traefik.http.middlewares.elections2027-prod-vers-domaine.redirectregex.permanent=true
+      - traefik.http.middlewares.elections2027-prod-gzip.compress=true
+      # Domaine principal : HTTP vers HTTPS, puis le site
+      - traefik.http.routers.elections2027-prod-http.entryPoints=http
+      - traefik.http.routers.elections2027-prod-http.rule=Host(`demandez-le-programme.fr`)
+      - traefik.http.routers.elections2027-prod-http.middlewares=elections2027-prod-https
       - traefik.http.routers.elections2027-prod.entryPoints=https
-      - traefik.http.routers.elections2027-prod.rule=Host(`elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-prod.rule=Host(`demandez-le-programme.fr`)
       - traefik.http.routers.elections2027-prod.tls=true
       - traefik.http.routers.elections2027-prod.tls.certresolver=letsencrypt
       - traefik.http.routers.elections2027-prod.middlewares=elections2027-prod-gzip
-      - traefik.http.middlewares.elections2027-prod-gzip.compress=true
+      # www et ancienne adresse : redirection 301 directe vers https://demandez-le-programme.fr
+      - traefik.http.routers.elections2027-prod-redir-http.entryPoints=http
+      - traefik.http.routers.elections2027-prod-redir-http.rule=Host(`www.demandez-le-programme.fr`) || Host(`elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-prod-redir-http.middlewares=elections2027-prod-vers-domaine
+      - traefik.http.routers.elections2027-prod-redir-www.entryPoints=https
+      - traefik.http.routers.elections2027-prod-redir-www.rule=Host(`www.demandez-le-programme.fr`)
+      - traefik.http.routers.elections2027-prod-redir-www.tls=true
+      - traefik.http.routers.elections2027-prod-redir-www.tls.certresolver=letsencrypt
+      - traefik.http.routers.elections2027-prod-redir-www.middlewares=elections2027-prod-vers-domaine
+      - traefik.http.routers.elections2027-prod-redir-ancien.entryPoints=https
+      - traefik.http.routers.elections2027-prod-redir-ancien.rule=Host(`elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-prod-redir-ancien.tls=true
+      - traefik.http.routers.elections2027-prod-redir-ancien.tls.certresolver=letsencrypt
+      - traefik.http.routers.elections2027-prod-redir-ancien.middlewares=elections2027-prod-vers-domaine
 
 networks:
   coolify:

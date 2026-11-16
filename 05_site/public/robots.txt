@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://demandez-le-programme.fr/sitemap.xml

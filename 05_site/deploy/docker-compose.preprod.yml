@@ -1,4 +1,6 @@
-# PRÉPROD : https://preprod.elections2027.orphane.fr, accès libre, non indexée.
+# PRÉPROD : https://preprod.demandez-le-programme.fr, accès libre, non indexée.
+# Redirection 301 de l'ancienne adresse preprod.elections2027.orphane.fr (en gardant le chemin).
+# Certificats Let's Encrypt créés et renouvelés automatiquement par Traefik (certresolver letsencrypt).
 # Sur le serveur : /srv/elections2027-preprod (docker-compose.yml, nginx.conf, site/)
 services:
   site:
@@ -14,19 +16,31 @@ services:
       - traefik.enable=true
       - traefik.docker.network=coolify
       - traefik.http.services.elections2027-preprod.loadbalancer.server.port=80
-      # HTTP vers HTTPS
-      - traefik.http.routers.elections2027-preprod-http.entryPoints=http
-      - traefik.http.routers.elections2027-preprod-http.rule=Host(`preprod.elections2027.orphane.fr`)
-      - traefik.http.routers.elections2027-preprod-http.middlewares=elections2027-preprod-https
+      # Middlewares
       - traefik.http.middlewares.elections2027-preprod-https.redirectscheme.scheme=https
       - traefik.http.middlewares.elections2027-preprod-https.redirectscheme.permanent=true
-      # HTTPS
+      - traefik.http.middlewares.elections2027-preprod-vers-domaine.redirectregex.regex=^https?://[^/]+(.*)
+      - traefik.http.middlewares.elections2027-preprod-vers-domaine.redirectregex.replacement=https://preprod.demandez-le-programme.fr$${1}
+      - traefik.http.middlewares.elections2027-preprod-vers-domaine.redirectregex.permanent=true
+      - traefik.http.middlewares.elections2027-preprod-gzip.compress=true
+      # Domaine préprod : HTTP vers HTTPS, puis le site
+      - traefik.http.routers.elections2027-preprod-http.entryPoints=http
+      - traefik.http.routers.elections2027-preprod-http.rule=Host(`preprod.demandez-le-programme.fr`)
+      - traefik.http.routers.elections2027-preprod-http.middlewares=elections2027-preprod-https
       - traefik.http.routers.elections2027-preprod.entryPoints=https
-      - traefik.http.routers.elections2027-preprod.rule=Host(`preprod.elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-preprod.rule=Host(`preprod.demandez-le-programme.fr`)
       - traefik.http.routers.elections2027-preprod.tls=true
       - traefik.http.routers.elections2027-preprod.tls.certresolver=letsencrypt
       - traefik.http.routers.elections2027-preprod.middlewares=elections2027-preprod-gzip
-      - traefik.http.middlewares.elections2027-preprod-gzip.compress=true
+      # Ancienne adresse : redirection 301 directe vers https://preprod.demandez-le-programme.fr
+      - traefik.http.routers.elections2027-preprod-redir-http.entryPoints=http
+      - traefik.http.routers.elections2027-preprod-redir-http.rule=Host(`preprod.elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-preprod-redir-http.middlewares=elections2027-preprod-vers-domaine
+      - traefik.http.routers.elections2027-preprod-redir-ancien.entryPoints=https
+      - traefik.http.routers.elections2027-preprod-redir-ancien.rule=Host(`preprod.elections2027.orphane.fr`)
+      - traefik.http.routers.elections2027-preprod-redir-ancien.tls=true
+      - traefik.http.routers.elections2027-preprod-redir-ancien.tls.certresolver=letsencrypt
+      - traefik.http.routers.elections2027-preprod-redir-ancien.middlewares=elections2027-preprod-vers-domaine
 
 networks:
   coolify:

@@ -1,15 +1,15 @@
 #!/bin/sh
 # Publie le dossier public/ sur la préprod ou la prod.
 # Usage (depuis le dossier 05_site) :
-#   sh deploy/deployer.sh preprod   -> https://preprod.elections2027.orphane.fr (non indexée)
-#   sh deploy/deployer.sh prod      -> https://elections2027.orphane.fr (demande confirmation)
+#   sh deploy/deployer.sh preprod   -> https://preprod.demandez-le-programme.fr (non indexée)
+#   sh deploy/deployer.sh prod      -> https://demandez-le-programme.fr (demande confirmation)
 set -e
 SERVEUR="ubuntu@148.113.144.242"
 ENV="$1"
 
 case "$ENV" in
-  preprod) URL="https://preprod.elections2027.orphane.fr" ;;
-  prod)    URL="https://elections2027.orphane.fr" ;;
+  preprod) URL="https://preprod.demandez-le-programme.fr" ;;
+  prod)    URL="https://demandez-le-programme.fr" ;;
   *) echo "Usage : sh deploy/deployer.sh preprod|prod"; exit 1 ;;
 esac
 DOSSIER="/srv/elections2027-$ENV"
