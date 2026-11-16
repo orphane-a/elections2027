@@ -1,7 +1,7 @@
 # 🎓 Bilan du mandat 2022-2027 : Éducation
 
 Thème : Éducation
-Date de mise à jour : 2026-11-09
+Date de mise à jour : 2026-11-16
 Fichier généré par 05_site/build.mjs.
 
 ## En bref
