@@ -1,11 +1,14 @@
 # 🔍 Prétendants non déclarés (pas de fiche pour l'instant)
 
-Consulté le 2026-11-09, à revérifier régulièrement. Source : LCP (maj 14/10/2026) https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373
+Consulté le 2026-11-16, à revérifier régulièrement. Sources : LCP, liste des candidats déclarés et potentiels (10/11/2026, contenu mis à jour depuis) https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932 ; LCP (maj 14/10/2026) https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373
 
-François Hollande : dira s'il se présente en décembre, peut être janvier
+François Hollande : prévoit d'attendre janvier, le paysage n'étant pas encore dégagé (LCP, 10/11/2026)
 Bernard Cazeneuve (La Convention) : a présenté son projet, pas de déclaration
-Dominique de Villepin (La France humaniste) : pas officiellement candidat, cherche des parrainages
-Elisabeth Borne : intentions peu claires
-Bruno Le Maire : devait décider en octobre, à vérifier
+Dominique de Villepin (La France humaniste) : assure qu'il sera candidat mais demande d'être patient sur l'annonce officielle, pas officiellement candidat à ce jour (LCP et Public Sénat, novembre 2026)
+Élisabeth Borne : dit avoir des idées à porter au débat, pas de déclaration (LCP, 10/11/2026)
+Bruno Le Maire : a présenté 50 propositions le 12 novembre 2026, pas de déclaration de candidature (LCP)
+Thierry Breton : ne ferme pas la porte (LCP, 10/11/2026)
+Christine Lagarde : candidature évoquée, elle pourrait être nommée à la présidence du Forum économique mondial (LCP, 10/11/2026)
+Matthieu Pigasse : n'exclut aucune option (LCP, 10/11/2026)
 
 Candidats de la primaire socialiste, hors vainqueur : Olivier Faure, Jérôme Guedj, Emmanuel Maurel, Ségolène Royal. Statut après la primaire à vérifier.
