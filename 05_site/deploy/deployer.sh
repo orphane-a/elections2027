@@ -18,6 +18,9 @@ cd "$(dirname "$0")/.."
 # 0. Génération du site à partir de data/ (bandeau « préproduction » en préprod)
 if [ "$ENV" = "preprod" ]; then node build.mjs --preprod; else node build.mjs; fi
 
+# Version publiée, lue par le kanban Spec to prod pour vérifier la mise en ligne.
+git rev-parse HEAD > public/version.txt 2>/dev/null || echo "local" > public/version.txt
+
 if [ "$ENV" = "prod" ] && [ "$2" != "--oui" ]; then
   printf "Publier sur le site PUBLIC %s ? Tape OUI pour confirmer : " "$URL"
   read -r REPONSE

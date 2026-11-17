@@ -8,3 +8,6 @@ desktop.ini
 
 # Fichiers locaux de Claude Code
 .claude/settings.local.json
+
+# Version publiée, écrite par deploy/deployer.sh
+05_site/public/version.txt
