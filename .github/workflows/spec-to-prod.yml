@@ -1,0 +1,149 @@
+# Pipeline lancé par le kanban Spec to prod, jamais à la main.
+# Préprod : publie la branche du ticket avec 05_site/deploy/deployer.sh preprod.
+# Prod : fusionne la branche du ticket dans main, puis publie avec deployer.sh prod --oui.
+# Dans les deux cas, le pipeline attend que version.txt affiche le bon commit, puis prévient le kanban.
+#
+# Réglages du dépôt (Settings, Secrets and variables, Actions) :
+#   secret   SPEC_TO_PROD_SECRET  secret partagé avec le kanban (WEBHOOK_SECRET)
+#   secret   SSH_CLE_PRIVEE       clé privée de déploiement vers le serveur OVH
+#   secret   SSH_HOTE_CONNU       ligne known_hosts du serveur (ssh-keyscan 148.113.144.242)
+#   variable SPEC_TO_PROD_URL     adresse du kanban, par exemple https://kanban.orphane.fr
+
+name: Spec to prod
+
+on:
+  workflow_dispatch:
+    inputs:
+      environnement:
+        description: preprod ou prod
+        required: true
+        type: choice
+        options: [preprod, prod]
+      branche:
+        description: Branche du ticket, claude/...
+        required: true
+        type: string
+      ticket:
+        description: Numéro du ticket
+        required: true
+        type: string
+      run_id:
+        description: Identifiant du run côté kanban
+        required: true
+        type: string
+      webhook:
+        description: Webhook du kanban
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+# Un seul déploiement à la fois par environnement.
+concurrency:
+  group: spec-to-prod-${{ inputs.environnement }}
+  cancel-in-progress: false
+
+jobs:
+  deployer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # Les entrées passent par l'environnement, jamais directement dans les scripts.
+      ENVIRONNEMENT: ${{ inputs.environnement }}
+      BRANCHE: ${{ inputs.branche }}
+      TICKET: ${{ inputs.ticket }}
+      RUN_ID: ${{ inputs.run_id }}
+      WEBHOOK: ${{ inputs.webhook }}
+      SPEC_TO_PROD_SECRET: ${{ secrets.SPEC_TO_PROD_SECRET }}
+      SPEC_TO_PROD_URL: ${{ vars.SPEC_TO_PROD_URL }}
+      OUTIL: ${{ github.workspace }}/.spec-to-prod/taches-cloud/pipeline.mjs
+      URL_PREPROD: https://preprod.demandez-le-programme.fr
+      URL_PROD: https://demandez-le-programme.fr
+    steps:
+      - name: Vérifier les entrées
+        run: |
+          [[ "$BRANCHE" =~ ^claude/[a-z0-9][a-z0-9-]*$ ]] || { echo "Branche refusée : $BRANCHE"; exit 1; }
+          [[ "$TICKET" =~ ^[0-9]+$ ]] || { echo "Ticket refusé : $TICKET"; exit 1; }
+          [ -n "$SPEC_TO_PROD_URL" ] || { echo "La variable SPEC_TO_PROD_URL manque."; exit 1; }
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Récupérer l'outil du kanban
+        uses: actions/checkout@v4
+        with:
+          repository: orphane-a/spec-to-prod
+          ref: main
+          path: .spec-to-prod
+          sparse-checkout: taches-cloud
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Préparer git et SSH
+        env:
+          SSH_CLE_PRIVEE: ${{ secrets.SSH_CLE_PRIVEE }}
+          SSH_HOTE_CONNU: ${{ secrets.SSH_HOTE_CONNU }}
+        run: |
+          git config user.name "Spec to prod"
+          git config user.email "spec-to-prod@users.noreply.github.com"
+          git fetch origin "$BRANCHE"
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$SSH_CLE_PRIVEE" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$SSH_HOTE_CONNU" > ~/.ssh/known_hosts
+
+      # ---------- Préprod ----------
+      - name: Publier la préprod
+        if: inputs.environnement == 'preprod'
+        run: |
+          git checkout --detach "origin/$BRANCHE"
+          echo "VERSION=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          cd 05_site
+          npm ci
+          sh deploy/deployer.sh preprod
+
+      - name: Vérifier la préprod et prévenir le kanban
+        if: inputs.environnement == 'preprod'
+        run: |
+          node "$OUTIL" attendre "$URL_PREPROD/version.txt" "$VERSION" --minutes 5
+          node "$OUTIL" signaler PREPROD_DEPLOYEE "{\"urlPreprod\":\"$URL_PREPROD\",\"version\":\"${VERSION:0:7}\"}"
+
+      # ---------- Prod ----------
+      - name: Fusionner dans main
+        if: inputs.environnement == 'prod'
+        run: |
+          node "$OUTIL" signaler ETAPE_DEPLOIEMENT '{"etapes":{"fusion":"en_cours","envoi":"en_attente","verification":"en_attente"}}'
+          git checkout main
+          git merge --no-ff "origin/$BRANCHE" -m "Fusionne $BRANCHE (ticket $TICKET)"
+          git push origin main
+          echo "VERSION=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          node "$OUTIL" signaler ETAPE_DEPLOIEMENT '{"etapes":{"fusion":"vert","envoi":"en_cours","verification":"en_attente"}}'
+
+      - name: Publier la prod
+        if: inputs.environnement == 'prod'
+        run: |
+          cd 05_site
+          npm ci
+          sh deploy/deployer.sh prod --oui
+
+      - name: Vérifier la prod et prévenir le kanban
+        if: inputs.environnement == 'prod'
+        run: |
+          node "$OUTIL" attendre "$URL_PROD/version.txt" "$VERSION" --minutes 5
+          node "$OUTIL" signaler ETAPE_DEPLOIEMENT '{"etapes":{"fusion":"vert","envoi":"vert","verification":"vert"}}'
+          node "$OUTIL" signaler DEPLOIEMENT_TERMINE "{\"version\":\"${VERSION:0:7}\"}"
+
+      # ---------- Échec ----------
+      - name: Signaler l'échec au kanban
+        if: failure()
+        run: |
+          MOTIF="Le pipeline $ENVIRONNEMENT a échoué. Détail : $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          node "$OUTIL" signaler ECHEC "$(node -e 'console.log(JSON.stringify({ motif: process.argv[1] }))' "$MOTIF")"
+
+      - name: Effacer la clé SSH
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519
