@@ -276,19 +276,45 @@ function accueil() {
 <p class="small" style="margin:12px 0 0;max-width:66ch">Photos et logos sous licence libre (Wikimedia Commons). Le crédit de chaque photo et de chaque logo figure en bas de la fiche du candidat. Sans photo libre, les initiales sont affichées ; sans logo libre, le sigle du parti.</p>
 </section>
 <section class="bloc" aria-labelledby="lire">
-<h2 id="lire">Comment lire une fiche <span aria-hidden="true">👀</span></h2>
-<p class="intro">Sur chaque thème, on ne confond jamais ce qui existe déjà (les faits et les votes) et ce qui est annoncé. <a class="lnk" href="methode.html">Lire la méthode complète</a></p>
-<div class="trois">
-<article class="fait-ex"><p style="margin:0 0 8px;font-weight:600">Ce qui a été fait</p><p style="margin:0">Lois votées, budgets et résultats mesurés pendant le mandat 2022-2027, datés, avec leur origine et leur source officielle.</p></article>
-<article class="prop-ex"><p style="margin:0 0 8px;font-weight:600">Ce qui est proposé pour 2027</p><p style="margin:0">Jusqu'à 3 mesures clefs par candidat, en langage simple, avec le lien vers le programme ou la déclaration datée.</p></article>
-<article class="fait-ex"><p style="margin:0 0 8px;font-weight:600">Comment chaque parti a voté</p><p style="margin:0">Pour 2 ou 3 grandes lois du thème, la position de chaque groupe à l'Assemblée nationale, avec le lien vers le scrutin public.</p></article>
-</div>
+${blocLire()}
 </section>
 <section class="bloc" aria-labelledby="regles-t">
 <h2 id="regles-t">Nos règles <span aria-hidden="true">⚖️</span></h2>
 <div style="margin-top:16px">${regles.map(([t, p]) => `<div class="regle"><h3>${t}</h3><p>${p}</p></div>`).join('')}</div>
 </section>`,
   });
+}
+
+// ---------- Bloc « Comment lire une fiche » de l'accueil (ticket 91) ----------
+// Reprend, dans l'ordre, les intitulés exacts des sections de la page thème (ticket 89).
+// tests/lire.test.mjs vérifie que chaque h2 de la page thème est repris ici.
+const LIRE_PUCE_PLUS = '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="#3B4656" stroke-width="1.4"/><path d="M4.5 8h7M8 4.5v7" stroke="#3B4656" stroke-width="1.4"/></svg>';
+function blocLire() {
+  const puce = (ic, texte) => `<li>${ic === 'plus' ? LIRE_PUCE_PLUS : svg(I[ic], { t: 16, trait: '#3B4656' })}<span>${texte}</span></li>`;
+  const carte = (icone, titre, contenu) => `<li class="lire-carte">
+<div class="lire-tete">${icone}<h3>${titre}</h3></div>
+${contenu}
+</li>`;
+  const exemple = THEMES.find((t) => etatTheme(t.slug).publie);
+  return `<h2 id="lire">Comment lire une fiche <span aria-hidden="true">👀</span></h2>
+<p class="intro">Sur chaque thème, on ne confond jamais ce qui a été voté pendant le mandat et ce qui est proposé pour 2027. Chaque fiche suit le même ordre. <a class="lnk" href="methode.html">Lire la méthode complète</a></p>
+<ol class="lire-liste">
+${carte(tuile('ampoule'), 'En bref', "<p>L'enjeu du thème en quelques phrases, pour savoir de quoi on parle avant d'entrer dans le détail.</p>")}
+${carte(tuile('document'), 'Programmes 2027', `<ul>
+${puce('plus', "Une carte par candidat, avec jusqu'à 3 mesures clefs. Dépliez une mesure pour voir le détail, la source et ses dates.")}
+${puce('entonnoir', "Un filtre par sous thème pour ne garder qu'un sujet.")}
+${puce('horloge', 'Les candidats sans proposition publiée sont listés à part.')}
+</ul>`)}
+${carte(HEMICYCLE, 'Bilan du mandat : deux votes', `<ul>
+${puce('colonnes', 'Deux lois votées pendant le mandat 2022-2027, les mêmes pour tous les groupes.')}
+${puce('personnes', "Pour chaque loi, la position majoritaire de chaque groupe à l'Assemblée nationale.")}
+${puce('bulle', "Touchez un groupe pour lire la raison qu'il a donnée et voir ses candidats. Un lien mène au scrutin public.")}
+</ul>`)}
+</ol>
+<div class="lire-suite">
+<p>En bas de chaque fiche : <strong>Pour aller plus loin</strong>, des liens pour approfondir, puis <strong>Vérification</strong>, avec les dates, la relecture, le signalement d'erreur et l'historique.</p>
+${exemple ? `<a class="btn noprint" href="${exemple.slug}.html">Voir un exemple : ${esc(exemple.nom)}</a>` : ''}
+</div>`;
 }
 
 // ---------- Page de tous les thèmes ----------
