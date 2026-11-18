@@ -98,7 +98,10 @@ footer.pied .liens a{display:inline-flex;align-items:center;min-height:44px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0}
 .chip{display:inline-flex;align-items:center;gap:6px;flex:none;min-height:44px;padding:0 16px;border:1px solid rgba(20,32,46,.08);border-radius:999px;font-size:15px;white-space:nowrap;text-decoration:none}
 .chip:hover{border-color:var(--texte)}
-.chip[aria-current=page]{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.chip{background:var(--bg,#fff)}
+/* Thème actif : sa propre couleur, légèrement foncée, et un encadrement plus épais (pas de bleu foncé) */
+.chip[aria-current=page],.tsel li a[aria-current=page],.tsel summary{background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,#14202E);color:var(--texte);border:2.5px solid var(--texte);font-weight:700}
+.chip[aria-current=page]{padding:0 14.5px}
 .bandeau{margin:8px 0 20px;padding:clamp(22px,4vw,44px);border-radius:24px}
 .bandeau .ariane{margin:0 0 12px;font-size:15px;color:var(--doux)}
 .bandeau h1{margin:0;font-weight:700;font-size:clamp(32px,5.5vw,64px);line-height:1.03;letter-spacing:-.03em}
@@ -194,14 +197,14 @@ details.niv{margin:6px 0 8px}
 /* Sélecteur de thème mobile (moins de 640 px) : details et summary, sans JavaScript */
 .tsel-bloc{display:none;padding:16px 0 4px}
 .tsel-lab{margin:0 0 6px;font-size:14px;font-weight:600;color:var(--doux)}
-.tsel summary{list-style:none;display:flex;align-items:center;gap:12px;min-height:52px;padding:0 16px;background:var(--accent);color:#fff;border:1.5px solid var(--texte);border-radius:12px;font:600 16px var(--corps);cursor:pointer}
+.tsel summary{list-style:none;display:flex;align-items:center;gap:12px;min-height:52px;padding:0 16px;border-radius:12px;font:700 16px var(--corps);cursor:pointer}
 .tsel summary::-webkit-details-marker{display:none}
 .tsel .chev{flex:none;margin-left:auto}
 .tsel[open] .chev{transform:rotate(180deg)}
 .tsel .emo{flex:none;font-size:22px;line-height:1}
 .tsel ul{list-style:none;margin:8px 0 0;padding:8px;display:flex;flex-direction:column;gap:6px;background:#fff;border:1.5px solid var(--texte);border-radius:14px;box-shadow:0 8px 24px rgba(20,32,46,.18)}
 .tsel li a{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 14px;border-radius:10px;font-size:16px;font-weight:600;text-decoration:none;color:var(--texte)}
-.tsel li a[aria-current=page]{background:var(--accent);color:#fff}
+.tsel li a{background:var(--bg,#fff);border:2.5px solid transparent}
 @media (max-width:640px){
   .page-theme .chips{display:none}
   .tsel-bloc{display:block}

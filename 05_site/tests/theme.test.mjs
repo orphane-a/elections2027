@@ -182,7 +182,7 @@ test('liens de thèmes : un emoji masqué par lien, thème actif signalé, dans 
     const rangee = html.match(/<nav class="chips noprint" aria-label="Thèmes">[\s\S]*?<\/nav>/)[0];
     const mobile = html.match(/<details class="tsel">[\s\S]*?<\/details>/)[0];
     for (const [s, e] of Object.entries(EMOJIS)) {
-      const attendu = `<a class="chip" href="${s}.html"${s === slug ? ' aria-current="page"' : ' style="background:'}`;
+      const attendu = `<a class="chip" href="${s}.html"${s === slug ? ' aria-current="page"' : ''} style="--bg:#`;
       assert.ok(rangee.includes(attendu), `${slug} : lien ${s}`);
       assert.ok(rangee.includes(`<span class="emo" aria-hidden="true">${e}</span>`), `${slug} : emoji ${s}`);
       assert.ok(mobile.includes(`<span class="emo" aria-hidden="true">${e}</span>`), `${slug} : emoji mobile ${s}`);
@@ -190,7 +190,7 @@ test('liens de thèmes : un emoji masqué par lien, thème actif signalé, dans 
     assert.equal((rangee.match(/aria-current="page"/g) || []).length, 1);
     assert.equal((mobile.match(/aria-current="page"/g) || []).length, 1);
     assert.match(html, /<p class="tsel-lab" id="tsel-lab">Choisir un thème<\/p>/);
-    assert.match(mobile, new RegExp(`<summary aria-describedby="tsel-lab"><span class="emo" aria-hidden="true">${EMOJIS[slug]}</span>`));
+    assert.match(mobile, new RegExp(`<summary aria-describedby="tsel-lab" style="--bg:#[0-9A-F]{6}"><span class="emo" aria-hidden="true">${EMOJIS[slug]}</span>`));
   }
 });
 
@@ -279,4 +279,11 @@ test('une seule série d\'emojis de thèmes sur tout le site (accueil, page Thè
   }
   const fiche = lirePage(`candidat-${candidats[0].id}.html`);
   for (const e of Object.values(EMOJIS)) assert.ok(fiche.includes(`<span aria-hidden="true">${e} </span>`), `fiche candidat : ${e}`);
+});
+
+test('thème actif : sa couleur légèrement foncée et un encadrement épais, jamais le fond bleu foncé', () => {
+  const css = fs.readFileSync(path.join(SITE, 'src', 'style.css'), 'utf8');
+  assert.ok(css.includes('.chip[aria-current=page],.tsel li a[aria-current=page],.tsel summary{background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,#14202E);color:var(--texte);border:2.5px solid var(--texte);font-weight:700}'));
+  assert.equal(/(chip|tsel)[^{]*{[^}]*background:var(--accent)/.test(css), false);
+  assert.match(base.page('sante'), /<summary aria-describedby="tsel-lab" style="--bg:#FBDCE5">/);
 });

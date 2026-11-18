@@ -443,7 +443,7 @@ ${x.chiffrage ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>
 }
 // Emojis des liens de thèmes (les mêmes que partout sur le site, voir THEMES), décoratifs : masqués aux lecteurs d'écran.
 const emoNav = (t) => `<span class="emo" aria-hidden="true">${t.emoji}</span>`;
-const lienTheme = (t, courant, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${t.slug}.html"${t.slug === courant ? ' aria-current="page"' : ` style="background:${t.bg}"`}>${emoNav(t)}${esc(t.nom)}</a>`;
+const lienTheme = (t, courant, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${t.slug}.html"${t.slug === courant ? ' aria-current="page"' : ''} style="--bg:${t.bg}">${emoNav(t)}${esc(t.nom)}</a>`;
 // Ordinateur : rangée de liens. Mobile (moins de 640 px) : menu déroulant « Choisir un thème », sans JavaScript.
 const chipsThemes = (courant) => {
   const actif = THEMES.find((t) => t.slug === courant);
@@ -451,7 +451,7 @@ const chipsThemes = (courant) => {
 <div class="tsel-bloc noprint">
 <p class="tsel-lab" id="tsel-lab">Choisir un thème</p>
 <details class="tsel">
-<summary aria-describedby="tsel-lab">${emoNav(actif)}<span><span class="sr">Thème affiché : </span>${esc(actif.nom)}</span><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<summary aria-describedby="tsel-lab" style="--bg:${actif.bg}">${emoNav(actif)}<span><span class="sr">Thème affiché : </span>${esc(actif.nom)}</span><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
 <nav aria-label="Thèmes (menu mobile)"><ul>${THEMES.map((t) => `<li>${lienTheme(t, courant)}</li>`).join('')}</ul></nav>
 </details>
 </div>`;
