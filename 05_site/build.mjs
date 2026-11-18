@@ -188,7 +188,9 @@ const etatTheme = (slug) => {
 // ---------- Gabarit commun ----------
 const LOGO_SVG = '<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>';
 function page({ fichier, titre, description, courant, corps, scripts = false }) {
-  const nav = [['themes.html', 'Thèmes'], ['methode.html', 'Méthode'], ['candidats.html', 'Candidats'], ['qui-sommes-nous.html', 'Qui sommes nous ?'], ['signaler.html', 'Signaler une erreur']];
+  // Navigation principale : mêmes liens et mêmes emojis (décoratifs, masqués aux lecteurs d'écran) sur ordinateur et dans le menu mobile
+  const nav = [['themes.html', 'Thèmes', '🗂️'], ['methode.html', 'Méthode', '🔎'], ['candidats.html', 'Candidats', '🧑‍🤝‍🧑'], ['qui-sommes-nous.html', 'Qui sommes nous ?', '👋'], ['signaler.html', 'Signaler une erreur', '🚩']];
+  const liensNav = nav.map(([h, l, emo]) => `<a href="${h}"${courant === h ? ' aria-current="page"' : ''}><span class="emo" aria-hidden="true">${emo}</span>${l}</a>`).join('');
   const html = `<!doctype html>
 <html lang="fr">
 <head>
@@ -208,7 +210,11 @@ ${PREPROD ? '<div class="preprod" role="note">Version de préproduction, en cour
 <div class="wrap">
 <header class="top">
 <a class="logo" href="index.html">${LOGO_SVG}<span>Programmes 2027</span></a>
-<nav class="nav" aria-label="Navigation principale">${nav.map(([h, l]) => `<a href="${h}"${courant === h ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
+<nav class="nav" aria-label="Navigation principale">${liensNav}</nav>
+<details class="burger">
+<summary><svg class="bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="croix" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>Menu</summary>
+<nav class="bmenu" aria-label="Navigation principale (menu mobile)">${liensNav}</nav>
+</details>
 </header>
 <main id="contenu">
 ${corps}
@@ -258,7 +264,6 @@ function accueil() {
     corps: `<section class="hero">
 <h1>Les programmes de 2027, thème par thème</h1>
 <p>Choisissez un sujet : ce qu'a fait le dernier mandat, ce que propose chaque candidat et la source de chaque information.</p>
-<div class="legende"><div><span class="plein" aria-hidden="true"></span><span>Ce qui a été fait</span></div><div><span class="pointille" aria-hidden="true"></span><span>Ce qui est proposé pour 2027</span></div></div>
 </section>
 <section aria-labelledby="themes">
 <div class="tete-themes"><h2 id="themes">Choisissez un thème <span aria-hidden="true">🗳️</span></h2></div>
@@ -433,12 +438,27 @@ ${x.chiffrage ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>
 </div></li>`;
   }).join('\n');
   return `<li class="pc${col2 ? ' col2' : ''}" id="cand-${esc(c.id)}" style="border-left-color:${COULEUR[cleParti(c)]}">
-<div class="pc-tete">${photo(c, 'xs')}<div class="pc-id"><h3>${esc(nomComplet(c))}</h3><p>${esc(c.parti || 'Sans parti')}</p>${c.a_verifier ? '<span class="badge-verif">Candidature à confirmer</span>' : ''}</div>${repereParti(c)}</div>
+<div class="pc-tete">${photo(c, 's')}<div class="pc-id"><h3>${esc(nomComplet(c))}</h3><p>${esc(c.parti || 'Sans parti')}</p>${c.a_verifier ? '<span class="badge-verif">Candidature à confirmer</span>' : ''}</div>${repereParti(c)}</div>
 <ul class="pc-mes" aria-label="Mesures clefs de ${esc(nomComplet(c))}">${items}</ul>
 <p class="aucun-sub" hidden>Aucune mesure clef retenue sur ce sous thème.</p>
 </li>`;
 }
-const chipsThemes = (courant) => `<nav class="chips noprint" aria-label="Thèmes">${THEMES.map((t) => `<a class="chip" href="${t.slug}.html" style="background:${t.slug === courant ? '' : t.bg}"${t.slug === courant ? ' aria-current="page"' : ''}>${esc(t.nom)}</a>`).join('')}</nav>`;
+// Emojis des liens de thèmes (rangée ordinateur et sélecteur mobile), décoratifs : masqués aux lecteurs d'écran.
+const EMOJI_NAV = { education: '🎓', ecologie: '🌿', pouvoir_achat: '💶', travail: '💼', sante: '❤️', logement: '🏠', securite: '⚖️', immigration: '🌍', institutions: '🏛️', europe: '⭐' };
+const emoNav = (t) => `<span class="emo" aria-hidden="true">${EMOJI_NAV[t.slug]}</span>`;
+const lienTheme = (t, courant, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${t.slug}.html"${t.slug === courant ? ' aria-current="page"' : ` style="background:${t.bg}"`}>${emoNav(t)}${esc(t.nom)}</a>`;
+// Ordinateur : rangée de liens. Mobile (moins de 640 px) : menu déroulant « Choisir un thème », sans JavaScript.
+const chipsThemes = (courant) => {
+  const actif = THEMES.find((t) => t.slug === courant);
+  return `<nav class="chips noprint" aria-label="Thèmes">${THEMES.map((t) => lienTheme(t, courant, 'chip')).join('')}</nav>
+<div class="tsel-bloc noprint">
+<p class="tsel-lab" id="tsel-lab">Choisir un thème</p>
+<details class="tsel">
+<summary aria-describedby="tsel-lab">${emoNav(actif)}<span><span class="sr">Thème affiché : </span>${esc(actif.nom)}</span><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<nav aria-label="Thèmes (menu mobile)"><ul>${THEMES.map((t) => `<li>${lienTheme(t, courant)}</li>`).join('')}</ul></nav>
+</details>
+</div>`;
+};
 
 function ficheTheme(t) {
   const d = themesData[t.slug];
@@ -452,7 +472,8 @@ function ficheTheme(t) {
   toutes.forEach((x) => { const s = categorie(t.slug, x.sous_theme); compte[s] = (compte[s] || 0) + 1; });
   // Deux colonnes : la coupure est fixée à la génération (hauteur estimée, mesures repliées),
   // pour qu'une carte ne change jamais de colonne quand on déplie une mesure.
-  const poids = publies.map((c) => 56 + mesures[c.id].themes[t.slug].slice(0, 3).reduce((n, x) => n + 8 + 20 * Math.ceil(String(x.texte).length / 70), 0));
+  // Estimation : en-tête de carte 108 px (marge comprise), puis 24 px de padding et 22,5 px par ligne d'environ 60 caractères par mesure.
+  const poids = publies.map((c) => 108 + mesures[c.id].themes[t.slug].slice(0, 3).reduce((n, x) => n + 24 + 22.5 * Math.ceil(String(x.texte).length / 60), 0));
   const totalPoids = poids.reduce((a, b) => a + b, 0);
   let cumul = 0, iCol2 = -1, ecart = Infinity;
   poids.forEach((p, i) => { cumul += p; const e = Math.abs(totalPoids - 2 * cumul); if (i < poids.length - 1 && e < ecart) { ecart = e; iCol2 = i + 1; } });
@@ -502,12 +523,12 @@ ${chipsThemes(t.slug)}
 <p class="meta">${e.publie ? `Version du ${dateFr(d.date_maj)}. Propositions vérifiées le ${dateFr(verif)}.` : `Propositions vérifiées le ${dateFr(verif)}.`} <a class="lnk" href="methode.html">Comment nous travaillons</a></p>
 </div>
 <div class="actions noprint"><button type="button" class="btn" id="copier">${svg(I.lien, { t: 18 })}<span role="status">Copier le lien</span></button><button type="button" class="btn" id="imprimer">${svg(I.imprimante, { t: 18 })}Imprimer ou enregistrer en PDF</button></div>
+<section id="bref" class="bref" aria-labelledby="bref-t">
+<h2 id="bref-t">${svg(I.ampoule, { t: 22, trait: '#3A35C8', ep: 1.9 })}En bref</h2>
+<p class="enbref">${esc(d?.en_bref || 'Résumé en préparation.')}</p>
+</section>
 </div>
 <nav class="ancres noprint" aria-label="Accès rapides"><span class="ancres-t">Aller à</span><a class="anc" href="#qpq">${svg(I.document, { t: 18 })}Programmes 2027</a><a class="anc" href="#vote">${svg(I.colonnes, { t: 18 })}Bilan du mandat</a></nav>
-<section id="bref" class="sect deux t-deux" aria-labelledby="bref-t">
-<div class="g titre-ic">${tuile('ampoule')}<h2 id="bref-t">En bref</h2></div>
-<div class="d"><p class="enbref">${esc(d?.en_bref || 'Résumé en préparation.')}</p></div>
-</section>
 <section id="qpq" class="sect" aria-labelledby="qpq-t">
 <div class="qpq-tete"><div class="titre-ic">${tuile('document')}<h2 id="qpq-t">Programmes 2027</h2></div>
 <p class="compteur">${compteur}</p></div>

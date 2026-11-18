@@ -25,7 +25,7 @@ function generer(modifier = () => {}, ...options) {
   fs.copyFileSync(path.join(SITE, 'build.mjs'), path.join(dossier, 'build.mjs'));
   fs.cpSync(path.join(SITE, 'data'), path.join(dossier, 'data'), { recursive: true });
   fs.cpSync(path.join(SITE, 'src'), path.join(dossier, 'src'), { recursive: true });
-  fs.symlinkSync(path.join(SITE, 'node_modules'), path.join(dossier, 'node_modules'));
+  fs.symlinkSync(path.join(SITE, 'node_modules'), path.join(dossier, 'node_modules'), 'junction');
   modifier(path.join(dossier, 'data'));
   const sortie = execFileSync(process.execPath, ['build.mjs', '--sans-md', ...options], { cwd: dossier, encoding: 'utf8', stdio: 'pipe' });
   const page = (slug) => fs.readFileSync(path.join(dossier, 'public', `${slug}.html`), 'utf8');
@@ -63,7 +63,7 @@ for (const slug of THEMES) {
   test(`${slug} : le bloc « Programmes 2027 » est en tête, dans l'ordre de la page`, () => {
     const html = base.page(slug);
     assert.match(html, /<h2 id="qpq-t">Programmes 2027<\/h2>/);
-    const ordre = ['class="bandeau theme"', 'aria-label="Accès rapides"', 'id="bref"', 'id="qpq"', 'id="attente"', 'id="vote"', 'id="plus"', 'id="controle"']
+    const ordre = ['class="bandeau theme"', 'id="bref"', 'aria-label="Accès rapides"', 'id="qpq"', 'id="attente"', 'id="vote"', 'id="plus"', 'id="controle"']
       .map((m) => html.indexOf(m)).filter((i) => i !== -1);
     assert.ok(ordre.length >= 7, 'blocs manquants');
     assert.deepEqual(ordre, [...ordre].sort((a, b) => a - b), 'ordre des blocs');
@@ -166,11 +166,71 @@ test('deux colonnes : la coupure est fixée à la génération, une seule carte 
   }
 });
 
-test('les icônes de la page thème sont en SVG, sans emoji', () => {
+test('les icônes de la page thème sont en SVG ; les seuls emojis sont ceux des liens, masqués aux lecteurs d\'écran', () => {
   const html = base.page('sante');
-  const corps = html.slice(html.indexOf('<main'), html.indexOf('</main>'));
-  assert.equal(/\p{Extended_Pictographic}/u.test(corps.replace(/[©®™]/g, '')), false);
-  assert.match(corps, /<span class="th-logo" aria-hidden="true"><svg/);
+  const sansEmojisDecoratifs = html.replace(/<span class="emo" aria-hidden="true">[^<]+<\/span>/g, '');
+  assert.equal(/\p{Extended_Pictographic}/u.test(sansEmojisDecoratifs.replace(/[©®™]/g, '')), false);
+  assert.match(html, /<span class="th-logo" aria-hidden="true"><svg/);
+});
+
+// Ticket 89, maquette du 18 novembre 2026 : liens de thèmes, menus mobiles, En bref dans le bandeau
+const EMOJIS = { education: '🎓', ecologie: '🌿', pouvoir_achat: '💶', travail: '💼', sante: '❤️', logement: '🏠', securite: '⚖️', immigration: '🌍', institutions: '🏛️', europe: '⭐' };
+
+test('liens de thèmes : un emoji masqué par lien, thème actif signalé, dans la rangée et dans le sélecteur mobile', () => {
+  for (const slug of THEMES) {
+    const html = base.page(slug);
+    const rangee = html.match(/<nav class="chips noprint" aria-label="Thèmes">[\s\S]*?<\/nav>/)[0];
+    const mobile = html.match(/<details class="tsel">[\s\S]*?<\/details>/)[0];
+    for (const [s, e] of Object.entries(EMOJIS)) {
+      const attendu = `<a class="chip" href="${s}.html"${s === slug ? ' aria-current="page"' : ' style="background:'}`;
+      assert.ok(rangee.includes(attendu), `${slug} : lien ${s}`);
+      assert.ok(rangee.includes(`<span class="emo" aria-hidden="true">${e}</span>`), `${slug} : emoji ${s}`);
+      assert.ok(mobile.includes(`<span class="emo" aria-hidden="true">${e}</span>`), `${slug} : emoji mobile ${s}`);
+    }
+    assert.equal((rangee.match(/aria-current="page"/g) || []).length, 1);
+    assert.equal((mobile.match(/aria-current="page"/g) || []).length, 1);
+    assert.match(html, /<p class="tsel-lab" id="tsel-lab">Choisir un thème<\/p>/);
+    assert.match(mobile, new RegExp(`<summary aria-describedby="tsel-lab"><span class="emo" aria-hidden="true">${EMOJIS[slug]}</span>`));
+  }
+});
+
+test('en-tête : cinq liens avec emoji masqué, et le même menu dans le bouton « Menu » mobile', () => {
+  const html = base.page('logement');
+  const nav = html.match(/<nav class="nav" aria-label="Navigation principale">([\s\S]*?)<\/nav>/)[1];
+  const menu = html.match(/<details class="burger">[\s\S]*?<nav class="bmenu" aria-label="Navigation principale \(menu mobile\)">([\s\S]*?)<\/nav>/)[1];
+  assert.equal(nav, menu);
+  for (const e of ['🗂️', '🔎', '🧑‍🤝‍🧑', '👋', '🚩']) assert.ok(nav.includes(`<span class="emo" aria-hidden="true">${e}</span>`), e);
+  assert.match(nav, /<a href="themes.html" aria-current="page"><span class="emo" aria-hidden="true">🗂️<\/span>Thèmes<\/a>/);
+  assert.match(html, /<details class="burger">\n<summary>[\s\S]*?Menu<\/summary>/);
+});
+
+test('En bref est dans le bandeau, sous le titre et les boutons', () => {
+  for (const slug of THEMES) {
+    const html = base.page(slug);
+    const bandeau = html.slice(html.indexOf('class="bandeau theme"'), html.indexOf('aria-label="Accès rapides"'));
+    assert.ok(bandeau.indexOf('id="imprimer"') < bandeau.indexOf('<section id="bref" class="bref"'), slug);
+    assert.match(bandeau, /<h2 id="bref-t"><svg[^>]*aria-hidden="true"[\s\S]*?<\/svg>En bref<\/h2>\n<p class="enbref">/);
+    assert.equal((html.match(/id="bref"/g) || []).length, 1, `${slug} : un seul bloc En bref`);
+  }
+});
+
+test('style : espacements de la maquette et menus mobiles sous 640 px', () => {
+  const css = fs.readFileSync(path.join(SITE, 'src', 'style.css'), 'utf8');
+  for (const r of ['.top{position:relative;', 'padding:20px 0;', '.page-theme .chips{gap:10px;padding:24px 0 8px}', 'margin:20px 0 32px;padding:40px 44px;border-radius:28px',
+    '.bref{flex:1 1 100%;margin-top:4px;padding:20px 26px 22px;background:rgba(255,255,255,.7);border-radius:18px}', 'max-width:90ch',
+    '.qpq-liste{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}', 'margin:0 0 24px;', 'border-radius:14px;box-shadow:0 1px 3px rgba(20,32,46,.06)',
+    '.pc-tete{display:flex;align-items:center;gap:14px;padding:14px 20px}', 'width:72px;height:40px', '.mdet{margin:0 10px 16px 38px;']) assert.ok(css.includes(r), r);
+  assert.match(css, /@media \(max-width:640px\)\{\n {2}\.page-theme \.chips\{display:none\}\n {2}\.tsel-bloc\{display:block\}\n\}/);
+  assert.match(css, /@media \(max-width:640px\)\{\n {2}\.top\{padding:12px 0\}\n {2}\.top \.nav\{display:none\}\n {2}\.burger\{display:block\}\n\}/);
+});
+
+test('filtre : un candidat sans mesure sur le sous thème passe sous les autres avec la mention, sans être masqué', () => {
+  const js = fs.readFileSync(path.join(SITE, 'src', 'app.js'), 'utf8');
+  assert.match(js, /carte\.classList\.toggle\('sans-sub', n === 0\)/);
+  assert.match(js, /sans\.forEach\(function \(c\) \{ listeSans\.appendChild\(c\); \}\)/);
+  assert.equal(/\.pc[^\n]*hidden = /.test(js), false, 'aucune carte masquée');
+  const carte = cartes(base.page('institutions'))[0].html;
+  assert.match(carte, /<p class="aucun-sub" hidden>Aucune mesure clef retenue sur ce sous thème\.<\/p>/);
 });
 
 test("cas d'erreur : aucun candidat n'a publié sur le thème", () => {
