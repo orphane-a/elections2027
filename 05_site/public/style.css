@@ -113,8 +113,6 @@ footer.pied .liens a{display:inline-flex;align-items:center;min-height:44px}
 .ancre{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;font-size:20px;color:var(--doux2);text-decoration:none}
 .ancre:hover{color:var(--accent)}
 .enbref{margin:0;max-width:62ch;font-size:20px;line-height:1.5}
-details.lexique{background:#fff;border:1px solid var(--trait);border-radius:12px}
-details.lexique summary{padding:14px 18px;font-weight:600;cursor:pointer}
 dl.glo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px 32px;margin:0;padding:0 18px 18px}
 dl.glo dt{font-size:15px;font-weight:600}
 dl.glo dd{margin:2px 0 0;font-size:14px;color:var(--doux)}
