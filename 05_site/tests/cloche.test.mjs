@@ -146,3 +146,17 @@ test('aucun cookie : ni dans les pages, ni dans le script, ni dans la configurat
   assert.match(app, /localStorage/);
   for (const f of ['nginx.preprod.conf', 'nginx.prod.conf']) assert.equal(/cookie/i.test(fs.readFileSync(path.join(SITE, 'deploy', f), 'utf8')), false, f);
 });
+
+test('pastille : un clic sur la pastille ouvre bien le panneau (pastille cachée, pas retirée, sans capter le clic)', () => {
+  const css = fs.readFileSync(path.join(SITE, 'src/style.css'), 'utf8');
+  const app = fs.readFileSync(path.join(SITE, 'src/app.js'), 'utf8');
+  assert.match(css, /\.pastille\{pointer-events:none;/);
+  assert.equal(/pastille\.remove\(\)/.test(app), false);
+  assert.match(app, /pastille\.hidden = true/);
+});
+
+test('en-tête : jusqu\'à 960 px la cloche reste sur la ligne du logo et le panneau reste dans l\'écran', () => {
+  const css = fs.readFileSync(path.join(SITE, 'src/style.css'), 'utf8');
+  assert.match(css, /@media \(max-width:960px\)\{[^@]*\.top \.cloche\{order:2\}/);
+  assert.match(css, /\.top\{position:relative\}\n\.cloche\{position:static\}/);
+});
