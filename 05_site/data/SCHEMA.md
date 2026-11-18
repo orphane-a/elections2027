@@ -147,3 +147,22 @@ Spec : « Étiquette de mesure chiffrée ». Le niveau juge la solidité du chif
 - **Règle des deux sources**, vérifiée automatiquement à chaque génération : au moins 2 institutions différentes de niveau 1 ou 2 dans `sources` (deux notes de la même institution comptent pour une ; Cour des comptes + HCFP comptent pour une), dont au moins une de niveau 1 hors Cour des comptes et HCFP. Sinon le niveau est **ramené à Mesure chiffrée non évaluable** et signalé dans « Points à vérifier ».
 - Les think tanks (niveau 3) vont dans `autres_avis` : affichés, jamais comptés.
 - `relu` : comme pour les explications de vote. En prod, seules les étiquettes `relu: true` s'affichent (sinon Mesure chiffrée non évaluable) ; en préprod, les brouillons s'affichent avec « À relire ».
+
+## 6. `data/nouveautes.json` : journal des mises à jour (ticket 90)
+
+```json
+[
+  {
+    "date": "2026-11-19",
+    "nouveautes": [
+      { "type": "candidat_declare", "candidat": "fontaine_claire", "phrase": "Claire Fontaine (Mouvement des communes) a déclaré sa candidature.", "source": { "titre": "LCP, liste des candidats", "url": "https://...", "date": "2026-11-18" } }
+    ]
+  },
+  { "date": "2026-11-16", "nouveautes": [] }
+]
+```
+- Une entrée par mise à jour réussie, même sans nouveauté. La plus récente en premier. Écrite par `maj/maj.mjs`, jamais à la main.
+- `type` : `candidat_declare`, `programme_publie` ou `candidat_retire`. Les petites évolutions de mesures n'y vont jamais.
+- `phrase` : gabarit unique, sans adjectif : « <Prénom Nom> (<parti>) a déclaré sa candidature. », « … a publié son programme. », « … a retiré sa candidature. ». Le site recalcule toujours la phrase avec ce gabarit.
+- La cloche de l'en-tête affiche la dernière entrée ; `nouveautes.html` affiche tout l'historique.
+- Dates : à chaque mise à jour réussie, `date_verif` (mesures) et `date_maj` (candidats) passent à la date du jour pour chaque fiche vérifiée, même sans changement. Une fiche dont la vérification a échoué garde son ancienne date.

@@ -5,6 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { lireJournal, phrase, finPhrase } from './maj/lib.mjs';
 
 const ICI = path.dirname(fileURLToPath(import.meta.url));
 const RACINE = path.resolve(ICI, '..');
@@ -78,6 +79,10 @@ const candidats = lireDossier(path.join(DATA, 'candidats'))
 const mesures = Object.fromEntries(lireDossier(path.join(DATA, 'mesures')).map((m) => [m.id, m]));
 const themesData = Object.fromEntries(lireDossier(path.join(DATA, 'themes')).map((t) => [t.slug, t]));
 const explications = Object.fromEntries(lireDossier(path.join(DATA, 'explications')).map((x) => [x.slug, x]));
+// Journal des mises à jour (ticket 90) et date de vérification la plus ancienne parmi toutes les fiches.
+const JOURNAL = lireJournal(path.join(DATA, 'nouveautes.json'));
+const dateFiche = (c) => mesures[c.id]?.date_verif || c.date_maj;
+const DERNIERE_VERIF = candidats.map(dateFiche).filter(Boolean).sort()[0] || AUJOURDHUI;
 
 // ---------- Viabilité d'une mesure chiffrée (étiquette à quatre niveaux) ----------
 // Spec « Étiquette de mesure chiffrée ». Le niveau juge la solidité d'un chiffre, jamais l'intérêt d'une mesure.
@@ -185,6 +190,41 @@ const etatTheme = (slug) => {
   return t && Array.isArray(t.faits) && t.faits.length ? { publie: true, date: t.date_maj } : { publie: false };
 };
 
+// ---------- Cloche des nouveautés (ticket 90) ----------
+// Contenu écrit à la génération. Le JavaScript sert seulement à ouvrir, fermer et afficher la pastille.
+const ICONES_NOUV = { candidat_declare: '🗳️', programme_publie: '📄', candidat_retire: '🚪' };
+const parId = (id) => candidats.find((c) => c.id === id);
+// Phrase d'une nouveauté, toujours recalculée avec le gabarit unique. Lien vers la fiche si elle existe.
+function phraseNouveaute(n, classeLien = '') {
+  const c = parId(n.candidat);
+  if (!c) return esc(n.phrase || '');
+  const lib = `${nomComplet(c)} (${c.parti || 'Sans parti'})`;
+  return `<a${classeLien ? ` class="${classeLien}"` : ''} href="candidat-${esc(c.id)}.html">${esc(lib)}</a> ${esc(finPhrase(n.type))}`;
+}
+const MSG_VIDE = 'Aucun nouveau candidat ni nouveau programme lors de la dernière mise à jour.';
+const MSG_ERREUR = "Les nouveautés ne peuvent pas s'afficher pour le moment. Elles restent consultables sur la page des mises à jour.";
+const MSG_AUCUNE_MAJ = "La première mise à jour automatique n'a pas encore eu lieu.";
+const SVG_CLOCHE = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>';
+function cloche() {
+  const derniere = JOURNAL.ok ? JOURNAL.entrees[0] : null;
+  const nouv = derniere?.nouveautes || [];
+  let contenu;
+  if (!JOURNAL.ok) contenu = `<p class="erreur-encadre" role="status">${MSG_ERREUR}</p>`;
+  else if (!derniere) contenu = `<p class="vide">${MSG_AUCUNE_MAJ}</p>`;
+  else contenu = `<p class="quand">Mise à jour du ${dateFr(derniere.date)}</p>${nouv.length
+    ? `<ul>${nouv.map((n) => `<li><span class="ico" aria-hidden="true">${ICONES_NOUV[n.type] || '🔔'}</span><span>${phraseNouveaute(n)}</span></li>`).join('')}</ul>`
+    : `<p class="vide">${MSG_VIDE}</p>`}`;
+  return `<div class="cloche" data-maj="${esc(derniere?.date || '')}" data-nb="${nouv.length}">
+<a class="cloche-btn cloche-lien" href="nouveautes.html" aria-label="Nouveautés">${SVG_CLOCHE}</a>
+<button class="cloche-btn cloche-js" type="button" aria-label="Nouveautés" aria-expanded="false" aria-controls="cloche-pop">${SVG_CLOCHE}</button>
+<div class="cloche-pop" id="cloche-pop" role="dialog" aria-labelledby="cloche-titre" tabindex="-1" hidden>
+<h2 id="cloche-titre">Nouveautés</h2>
+${contenu}
+<div class="bas"><a class="lnk" href="nouveautes.html">Toutes les mises à jour</a><button class="fermer" type="button">Fermer</button></div>
+</div>
+</div>`;
+}
+
 // ---------- Gabarit commun ----------
 const LOGO_SVG = '<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>';
 function page({ fichier, titre, description, courant, corps, scripts = false }) {
@@ -201,7 +241,7 @@ function page({ fichier, titre, description, courant, corps, scripts = false }) 
 <link rel="canonical" href="${urlPage(fichier)}">
 <meta property="og:url" content="${urlPage(fichier)}">
 ${PREPROD ?'<meta name="robots" content="noindex, nofollow">\n' : ''}<link rel="stylesheet" href="style.css">
-${scripts ? '<script>document.documentElement.classList.add(\'js\')</script>' : ''}
+<script>document.documentElement.classList.add('js')</script>
 <link rel="icon" href="data:image/svg+xml,${encodeURIComponent(LOGO_SVG.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))}">
 </head>
 <body>
@@ -211,6 +251,7 @@ ${PREPROD ? '<div class="preprod" role="note">Version de préproduction, en cour
 <header class="top">
 <a class="logo" href="index.html">${LOGO_SVG}<span>Programmes 2027</span></a>
 <nav class="nav" aria-label="Navigation principale">${liensNav}</nav>
+${cloche()}
 <details class="burger">
 <summary><svg class="bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="croix" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>Menu</summary>
 <nav class="bmenu" aria-label="Navigation principale (menu mobile)">${liensNav}</nav>
@@ -220,11 +261,11 @@ ${PREPROD ? '<div class="preprod" role="note">Version de préproduction, en cour
 ${corps}
 </main>
 <footer class="pied">
-<p>Ce site ne recommande aucun vote. Il n'utilise aucun cookie. Dernière mise à jour du site : ${dateFr(AUJOURDHUI)}.</p>
-<div class="liens"><a class="lnk" href="methode.html">Méthode complète</a><a class="lnk" href="panel-sources.html">Panel de sources</a><a class="lnk" href="qui-sommes-nous.html">Qui sommes nous ?</a><a class="lnk" href="signaler.html">Signaler une erreur</a><a class="lnk" href="historique.html">Historique des corrections</a></div>
+<p>Ce site ne recommande aucun vote. Il n'utilise aucun cookie. Dernière vérification de toutes les fiches : ${dateFr(DERNIERE_VERIF)}.</p>
+<div class="liens"><a class="lnk" href="methode.html">Méthode complète</a><a class="lnk" href="panel-sources.html">Panel de sources</a><a class="lnk" href="qui-sommes-nous.html">Qui sommes nous ?</a><a class="lnk" href="nouveautes.html">Mises à jour</a><a class="lnk" href="signaler.html">Signaler une erreur</a><a class="lnk" href="historique.html">Historique des corrections</a></div>
 </footer>
 </div>
-${scripts ? '<script src="app.js" defer></script>' : ''}
+<script src="app.js" defer></script>
 </body>
 </html>
 `;
@@ -588,7 +629,7 @@ function pageCandidats() {
     description: 'Liste des candidats déclarés à la présidentielle 2027, statut de leur candidature et lien vers leur programme.',
     corps: `<div class="bandeau" style="background:#DDE3EE;margin-top:24px"><p class="ariane"><a class="lnk" href="index.html">Accueil</a> › Candidats</p>
 <h1>Les candidats déclarés <span aria-hidden="true">🧑‍🤝‍🧑</span></h1>
-<p class="sous">Ordre alphabétique. Une candidature n'est officielle qu'après la validation des 500 parrainages par le Conseil constitutionnel. Liste vérifiée le ${dateFr(AUJOURDHUI)}, mise à jour au fil de l'eau.</p></div>
+<p class="sous">Ordre alphabétique. Une candidature n'est officielle qu'après la validation des 500 parrainages par le Conseil constitutionnel. Liste vérifiée le ${dateFr(candidats.map((c) => c.date_maj).filter(Boolean).sort()[0] || AUJOURDHUI)}, mise à jour chaque lundi et chaque jeudi.</p></div>
 <div style="overflow-x:auto;margin-bottom:40px"><table class="liste"><caption class="sr">Candidats, parti, statut et programme</caption>
 <thead><tr><th scope="col">Candidat</th><th scope="col">Parti ou mouvement</th><th scope="col">Statut</th><th scope="col">Programme 2027</th></tr></thead><tbody>${lignes}</tbody></table></div>`,
   });
@@ -600,7 +641,7 @@ function pageCandidats() {
 <div class="d">${l.length ? l.slice(0, 3).map((x) => `<div class="mesure"><p class="mt">${esc(x.texte)}</p>${x.chiffrage ? `<p class="chiffre">${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, t.slug)}<a class="lnk" href="${url(x.source?.url)}"${ext} style="font-size:14px">${esc(x.source?.titre)}${x.source?.date ? `, ${dateFr(x.source.date)}` : ''}</a></div>`).join('') : '<p class="vide" style="border:0;padding:0">Non communiqué.</p>'}</div></section>`;
     }).join('\n');
     page({
-      fichier: `candidat-${c.id}.html`, titre: `${nomComplet(c)} : propositions 2027`, courant: 'candidats.html', scripts: true,
+      fichier: `candidat-${c.id}.html`, titre: `${nomComplet(c)} : propositions 2027`, courant: 'candidats.html',
       description: `Propositions de ${nomComplet(c)} (${c.parti || 'sans parti'}) pour la présidentielle 2027, thème par thème, avec les sources.`,
       corps: `<div class="bandeau" style="background:#fff;border:1px solid var(--trait);border-top:8px solid ${COULEUR[cleParti(c)]};margin-top:24px">
 <p class="ariane"><a class="lnk" href="index.html">Accueil</a> › <a class="lnk" href="candidats.html">Candidats</a> › ${esc(nomComplet(c))}</p>
@@ -660,6 +701,25 @@ function pagesTexte() {
     'Historique des corrections <span aria-hidden="true">🗂️</span>', 'Chaque version et chaque correction du site, datée.', [
       ['journal', 'Journal', `<ul class="plus">${hist.map((h) => `<li><strong>${dateFr(h.date)}</strong> : ${esc(h.texte)}</li>`).join('')}</ul>`],
     ]);
+  pageNouveautes();
+}
+
+// ---------- Page des mises à jour (ticket 90) : historique complet, la plus récente en haut ----------
+function pageNouveautes() {
+  const source = (s) => (s?.url ? ` <span class="src">Source : <a class="lnk" href="${url(s.url)}"${ext}>${esc(s.titre || 'lien')}${s.date ? `, ${dateFr(s.date)}` : ''}</a></span>` : '');
+  const liste = !JOURNAL.ok
+    ? `<p class="erreur-encadre" role="status">Les mises à jour ne peuvent pas s'afficher pour le moment.</p>`
+    : JOURNAL.entrees.length
+      ? `<ol class="journal-maj" reversed>${JOURNAL.entrees.map((e) => `<li><h3>Mise à jour du ${dateFr(e.date)}</h3>${e.nouveautes.length
+        ? `<ul>${e.nouveautes.map((n) => `<li>${phraseNouveaute(n, 'lnk')}${source(n.source)}</li>`).join('')}</ul>`
+        : '<p class="rien">Aucun nouveau candidat ni nouveau programme lors de cette mise à jour.</p>'}</li>`).join('\n')}</ol>`
+      : `<p class="rien">${MSG_AUCUNE_MAJ}</p>`;
+  page({
+    fichier: 'nouveautes.html', titre: 'Mises à jour', courant: 'nouveautes.html',
+    description: 'Les nouveaux candidats déclarés et les nouveaux programmes publiés, mise à jour par mise à jour.',
+    corps: `<div class="bandeau" style="background:#E6E4F8;margin-top:24px"><p class="ariane"><a class="lnk" href="index.html">Accueil</a> › Mises à jour</p><h1>Mises à jour <span aria-hidden="true">🔔</span></h1><p class="sous">Chaque lundi et chaque jeudi à 9h, toutes les fiches sont vérifiées. Ici, les nouveaux candidats et les nouveaux programmes, du plus récent au plus ancien.</p></div>
+<div class="page-texte"><section class="deux sect" id="journal"><div class="g"><h2>Journal</h2><p class="small">Les petites évolutions de mesures sont visibles dans chaque fiche, avec sa date de version.</p><p class="small">Dernière vérification de toutes les fiches : ${dateFr(DERNIERE_VERIF)}.</p></div><div class="d">${liste}</div></section></div><div style="height:24px"></div>`,
+  });
 }
 
 function pagePanel() {
@@ -759,6 +819,12 @@ function controles() {
     (repart[c.id] ||= Object.fromEntries(ORDRE_NIVEAUX.map((k) => [k, 0])))[v.niveau]++;
   }
   pb.push(...pbViabilite);
+  // Journal des nouveautés : fichier lisible, phrases conformes au gabarit unique
+  if (!JOURNAL.ok) pb.push(`data/nouveautes.json : ${JOURNAL.erreur} (la cloche affiche un message d'erreur)`);
+  for (const e of JOURNAL.entrees) for (const n of e.nouveautes) {
+    const c = parId(n.candidat);
+    if (c && n.phrase && n.phrase !== phrase(n.type, c)) pb.push(`nouveautes ${e.date}/${n.candidat} : phrase différente du gabarit (le gabarit est affiché)`);
+  }
   console.log(`🏷️  Étiquettes de viabilité : ${nChiffrees} mesures chiffrées. Répartition par candidat (validé / discuté / non évaluable / hors cadre) :`);
   for (const [id, r] of Object.entries(repart)) console.log(`   ${id} : ${ORDRE_NIVEAUX.map((k) => r[k]).join(' / ')}`);
   console.log(`🗳️  Explications de vote : ${nRelues} relues, ${nBrouillons} brouillons à relire, ${nPositions - nRelues - nBrouillons} non disponibles (sur ${nPositions} positions).`);
