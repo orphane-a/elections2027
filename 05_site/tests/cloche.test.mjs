@@ -25,7 +25,7 @@ test('la cloche est dans l\'en-tête de toutes les pages générées, à côté 
     const pages = generer(tmp, ...options);
     assert.ok(Object.keys(pages).length > 50);
     for (const [f, html] of Object.entries(pages)) {
-      assert.match(html, /<\/nav>\n<div class="cloche"[^>]*>[\s\S]*?<\/div>\n<\/div>\n<\/header>/, f);
+      assert.match(html, /<header class="top">[\s\S]*?<\/nav>\n<div class="cloche"[^>]*>[\s\S]*?<\/div>\n<\/div>\n<details class="burger">[\s\S]*?<\/header>/, f);
       assert.equal(html.match(/class="cloche"/g).length, 1, f);
       assert.match(html, /<script src="app\.js" defer><\/script>/, f);
       assert.match(html, /classList\.add\('js'\)/, f);
@@ -155,8 +155,9 @@ test('pastille : un clic sur la pastille ouvre bien le panneau (pastille cachée
   assert.match(app, /pastille\.hidden = true/);
 });
 
-test('en-tête : jusqu\'à 960 px la cloche reste sur la ligne du logo et le panneau reste dans l\'écran', () => {
+test('en-tête : jusqu\'à 1100 px la cloche reste sur la ligne du logo et le panneau reste dans l\'écran', () => {
   const css = fs.readFileSync(path.join(SITE, 'src/style.css'), 'utf8');
-  assert.match(css, /@media \(max-width:960px\)\{[^@]*\.top \.cloche\{order:2\}/);
-  assert.match(css, /\.top\{position:relative\}\n\.cloche\{position:static\}/);
+  assert.match(css, /@media \(max-width:1100px\)\{[^@]*\.top \.cloche\{order:2\}/);
+  assert.match(css, /\.top\{position:relative;/);
+  assert.match(css, /\.cloche\{position:static\}/);
 });

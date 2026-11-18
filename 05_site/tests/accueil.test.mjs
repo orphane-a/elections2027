@@ -31,7 +31,7 @@ before(() => {
   fs.cpSync(path.join(SITE, 'data'), path.join(dossier, 'data'), { recursive: true });
   fs.cpSync(path.join(SITE, 'src'), path.join(dossier, 'src'), { recursive: true });
   fs.cpSync(path.join(SITE, 'maj'), path.join(dossier, 'maj'), { recursive: true });
-  fs.symlinkSync(path.join(SITE, 'node_modules'), path.join(dossier, 'node_modules'));
+  fs.symlinkSync(path.join(SITE, 'node_modules'), path.join(dossier, 'node_modules'), 'junction');
 });
 
 after(() => fs.rmSync(tmp, { recursive: true, force: true }));
@@ -63,4 +63,18 @@ test('le site versionné dans public/ ne contient plus la phrase', () => {
   const css = fs.readFileSync(path.join(SITE, 'public', 'style.css'), 'utf8');
   assert.equal(index.includes(PHRASE), false);
   assert.equal(css.includes('.tete-themes p'), false);
+});
+
+test('accueil : plus de phrase « Point plein… Point pointillé… » sous les thèmes, ni de légende des repères (ticket 89)', () => {
+  const { index } = generer();
+  assert.equal(index.includes('Point plein'), false);
+  assert.equal(index.includes('class="legende"'), false);
+  assert.match(index, /<div class="tuiles" style="margin-bottom:40px">/);
+});
+
+test('page « Tous les thèmes » : plus de phrase « Point plein… Point pointillé… » (ticket 89)', () => {
+  generer();
+  const themes = fs.readFileSync(path.join(tmp, '05_site', 'public', 'themes.html'), 'utf8');
+  assert.equal(themes.includes('Point plein'), false);
+  assert.match(themes, /<div class="tuiles" style="[^"]*margin-bottom:40px">/);
 });
