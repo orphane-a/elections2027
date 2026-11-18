@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette du ticket 88 : retrait du lexique des pages thème</title>
+<style>
+:root{
+  --fond:#F7F6FC; --carte:#FFFFFF; --texte:#14202E; --doux:#3B4656; --doux2:#4A5666;
+  --trait:#D5DBE3; --accent:#3A35C8; --hero:#23267A; --gris:#EEF0F3; --gris-bord:#6B7788;
+  --ambre:#FFF1CC; --ambre-texte:#4A3000; --rouge:#B3261E; --rouge-fond:#FDECEA; --vert:#1E6B3A; --vert-fond:#E6F4EA;
+  --titre:system-ui,-apple-system,"Segoe UI",sans-serif; --corps:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#E4E3EE;color:var(--texte);font-family:var(--corps);font-size:16px;line-height:1.55}
+a{color:inherit}
+.lnk{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+h1,h2,h3{font-family:var(--titre);letter-spacing:-.02em}
+.small{font-size:14px;color:var(--doux2)}
+
+/* Cadre de la maquette */
+.doc{max-width:1320px;margin:0 auto;padding:32px 20px 80px}
+.doc>header h1{margin:0 0 6px;font-size:30px}
+.doc>header p{margin:0 0 8px;max-width:80ch;color:var(--doux)}
+.ecran{margin-top:48px}
+.ecran>h2{margin:0 0 4px;font-size:22px}
+.ecran>p.note{margin:0 0 14px;max-width:80ch;color:var(--doux);font-size:15px}
+.cadre{background:var(--fond);border:1px solid #C9C8D8;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(20,32,46,.06)}
+.barre{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;border-bottom:1px solid var(--trait);font-size:13px;color:var(--doux2)}
+.barre i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--trait)}
+.barre span{margin-left:8px;padding:2px 10px;background:var(--gris);border-radius:999px}
+.tel{width:375px;max-width:100%}
+.cote{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.cote>div{flex:1 1 360px;min-width:0}
+.etiq{display:inline-block;margin:0 0 8px;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600}
+.etiq.avant{background:var(--rouge-fond);color:var(--rouge)}
+.etiq.apres{background:var(--vert-fond);color:var(--vert)}
+
+/* Site (repris de 05_site/src/style.css) */
+.wrap{padding:0 clamp(16px,4vw,48px)}
+.preprod{background:var(--ambre);color:var(--ambre-texte);font-size:14px;text-align:center;padding:6px 16px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px;padding:8px 0;border-bottom:1px solid var(--trait)}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:700;font-size:20px}
+.nav{display:flex;flex-wrap:wrap;gap:0 20px;font-size:15px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.nav a.cur{font-weight:700;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border:1px solid rgba(20,32,46,.12);border-radius:999px;font-size:14px;white-space:nowrap}
+.chip.cur{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.bandeau{margin:8px 0 20px;padding:clamp(20px,4vw,40px);border-radius:24px;background:#FBDCE5}
+.bandeau .ariane{margin:0 0 12px;font-size:15px;color:var(--doux)}
+.bandeau h1{margin:0;font-weight:700;font-size:clamp(30px,5vw,56px);line-height:1.03;letter-spacing:-.03em}
+.bandeau .sous{margin:12px 0 0;font-size:18px;color:var(--doux)}
+.bandeau .meta{margin:16px 0 0;font-size:15px;color:var(--doux)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;background:#fff;color:var(--texte);border:1.5px solid var(--texte);border-radius:8px;font:inherit;font-size:15px;font-weight:600}
+.ancres{display:flex;gap:8px;padding:8px 0;overflow-x:auto;background:var(--fond);border-bottom:1px solid var(--trait)}
+.ancres a{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:0 18px;background:#fff;border:1px solid var(--trait);border-radius:999px;font-size:15px;font-weight:600;white-space:nowrap;text-decoration:none}
+.ancres-t{display:inline-flex;align-items:center;flex:none;padding-right:4px;font-size:14px;font-weight:600;color:var(--doux2)}
+.deux{display:flex;flex-wrap:wrap;gap:16px 48px;padding:36px 0;border-top:1px solid var(--trait)}
+.deux>.g{flex:1 1 200px}
+.deux>.d{flex:999 1 520px;min-width:0}
+.h2l h2{margin:0;font-weight:600;font-size:24px}
+.enbref{margin:0;max-width:62ch;font-size:20px;line-height:1.5}
+.fait{padding:16px 18px;background:var(--carte);border:1.5px solid var(--texte);border-radius:10px;margin-bottom:10px}
+.fait p{margin:0}
+.lexique{background:#fff;border:1px solid var(--trait);border-radius:12px;padding:14px 18px;font-weight:600}
+.retire{position:relative;outline:3px dashed var(--rouge);outline-offset:4px;opacity:.75}
+.retire::after{content:"Bloc retiré";position:absolute;right:10px;top:-12px;background:var(--rouge);color:#fff;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px}
+.repere{outline:3px solid var(--vert);outline-offset:4px;border-radius:6px}
+dl.glo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px 32px;margin:0}
+dl.glo dt{font-size:15px;font-weight:600}
+dl.glo dd{margin:2px 0 0;font-size:14px;color:var(--doux)}
+.regle{padding:20px 0;border-top:1px solid var(--trait)}
+.regle h3{margin:0 0 12px;font-size:20px}
+.coupe{padding:14px 0 20px;text-align:center;font-size:14px;color:var(--doux2)}
+
+/* Téléphone */
+.tel .wrap{padding:0 16px}
+.tel .nav{gap:0 14px;font-size:14px}
+.tel .chips{flex-wrap:nowrap;overflow-x:auto}
+.tel .bandeau{padding:18px;border-radius:18px}
+.tel .bandeau h1{font-size:32px}
+.tel .bandeau .sous{font-size:16px}
+.tel .deux{padding:24px 0;gap:10px}
+.tel .deux>.g,.tel .deux>.d{flex:1 1 100%}
+.tel .h2l h2{font-size:21px}
+.tel .enbref{font-size:17px}
+.tel dl.glo{grid-template-columns:1fr}
+
+/* États */
+.sq{background:linear-gradient(90deg,#E6E8EE,#F2F3F6,#E6E8EE);border-radius:8px}
+.alerte{padding:14px 18px;border-radius:10px;font-size:15px}
+.alerte.err{background:var(--rouge-fond);color:var(--rouge);border:1px solid #F1B8B3}
+.alerte.ok{background:var(--vert-fond);color:var(--vert);border:1px solid #B6DCC1}
+pre.term{margin:0;padding:16px 18px;background:#14202E;color:#E7EAF0;font-size:13px;line-height:1.5;border-radius:0 0 14px 14px;overflow-x:auto;white-space:pre-wrap}
+.grille-etats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.grille-etats h3{margin:0 0 8px;font-size:17px}
+@media (max-width:520px){.doc{padding:20px 12px 60px}.doc>header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="doc">
+<header>
+<h1>Ticket 88 : retirer « Que signifient ces étiquettes ? » des pages thème</h1>
+<p>Le haut des pages thème devient plus léger : le bloc « Ce qui a été fait » suit directement « En bref ». Le lexique reste complet sur la page Méthode, rejointe par le lien « Comment nous travaillons » déjà présent dans le bandeau.</p>
+<p class="small">Exemple utilisé : la page santé. Le changement vaut pour les 10 pages thème. Aucun nouveau texte n'est ajouté au site.</p>
+</header>
+
+<!-- Écran 1 -->
+<section class="ecran">
+<h2>1. Page thème sur ordinateur : avant et après</h2>
+<p class="note">À gauche, la page actuelle avec l'encadré entouré en rouge. À droite, la page après le ticket : rien d'autre ne bouge, ni le bandeau, ni les accès rapides, ni l'ordre des blocs.</p>
+<div class="cote">
+<div>
+<span class="etiq avant">Avant</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/sante.html</span></div>
+<div class="wrap">
+<div class="deux" style="border-top:0">
+<div class="g h2l"><h2>En bref</h2></div>
+<div class="d"><p class="enbref" style="font-size:17px">La santé touche chacun : trouver un médecin, être soigné à l'hôpital, se faire rembourser.</p></div>
+</div>
+<div style="padding:0 0 32px"><div class="lexique retire">▸ Que signifient ces étiquettes ?</div></div>
+<div class="deux">
+<div class="g h2l"><h2>Ce qui a été fait</h2></div>
+<div class="d"><div class="fait"><p>Faits du mandat 2022-2027…</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<span class="etiq apres">Après</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/sante.html</span></div>
+<div class="wrap">
+<div class="deux" style="border-top:0">
+<div class="g h2l"><h2>En bref</h2></div>
+<div class="d"><p class="enbref" style="font-size:17px">La santé touche chacun : trouver un médecin, être soigné à l'hôpital, se faire rembourser.</p></div>
+</div>
+<div class="deux repere">
+<div class="g h2l"><h2>Ce qui a été fait</h2></div>
+<div class="d"><div class="fait"><p>Faits du mandat 2022-2027…</p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Écran 2 -->
+<section class="ecran">
+<h2>2. Page thème complète sur ordinateur, après le ticket</h2>
+<p class="note">Le lien « Comment nous travaillons » du bandeau reste l'accès au lexique. Il est encadré en vert pour le repérer, son style ne change pas.</p>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/sante.html</span></div>
+<div class="preprod">Version de préproduction : contenu en relecture, ne pas partager.</div>
+<div class="wrap">
+<div class="top"><div class="logo">🗳️ Demandez le programme</div><nav class="nav"><a href="#">Accueil</a><a class="cur" href="#">Thèmes</a><a href="#">Candidats</a><a href="#">Méthode</a></nav></div>
+<div class="chips"><span class="chip cur">🩺 Santé</span><span class="chip">💼 Travail</span><span class="chip">🎒 École</span><span class="chip">🏠 Logement</span><span class="chip">🌱 Climat</span><span class="chip">…</span></div>
+<div class="bandeau">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › Santé</p>
+<h1>🩺 Santé</h1>
+<p class="sous">Hôpital, déserts médicaux, prévention</p>
+<p class="meta">Version du 16 novembre 2026. Propositions vérifiées le 9 novembre 2026. <a class="lnk repere" href="#methode">Comment nous travaillons</a></p>
+<div class="actions"><span class="btn">🔗 Copier le lien</span><span class="btn">🖨️ Imprimer ou enregistrer en PDF</span></div>
+</div>
+<nav class="ancres"><span class="ancres-t">Accès rapides</span><a href="#"># En bref</a><a href="#"># Fait</a><a href="#"># 2027</a><a href="#"># Sources</a><a href="#"># Vérification</a></nav>
+<div class="deux" style="border-top:0">
+<div class="g h2l"><h2>En bref</h2></div>
+<div class="d"><p class="enbref">La santé touche chacun : trouver un médecin, être soigné à l'hôpital, se faire rembourser. Le débat porte sur le nombre de soignants, leur répartition sur le territoire, les moyens des hôpitaux et la place de la prévention. La fin de vie fait aussi partie des grandes questions du mandat.</p></div>
+</div>
+<div class="deux">
+<div class="g"><div class="h2l"><h2>Ce qui a été fait</h2></div><p class="small" style="margin:4px 0 0;max-width:30ch">Bilan du mandat 2022-2027 : lois, budgets, résultats mesurés et votes.</p></div>
+<div class="d"><div class="fait"><p style="font-weight:600">Fin du numerus clausus en études de médecine</p><p class="small">Origine : Parlement. Source officielle et date de consultation sous chaque fait.</p></div><div class="fait"><p style="font-weight:600">Deuxième fait du mandat</p><p class="small">Chiffré et sourcé.</p></div></div>
+</div>
+<div class="deux">
+<div class="g h2l"><h2>Ce qui est proposé pour 2027</h2></div>
+<div class="d"><p class="small" style="margin:0">Cartes des candidats, inchangées.</p></div>
+</div>
+<p class="coupe">La suite de la page (Pour aller plus loin, Vérification) ne change pas.</p>
+</div>
+</div>
+</section>
+
+<!-- Écran 3 -->
+<section class="ecran">
+<h2>3. Page thème sur téléphone (375 pixels), après le ticket</h2>
+<p class="note">Sur petit écran, le gain est plus net : « Ce qui a été fait » arrive tout de suite après le résumé, sans encadré à franchir.</p>
+<div class="cote">
+<div style="flex:0 0 auto">
+<span class="etiq avant">Avant</span>
+<div class="cadre tel">
+<div class="wrap">
+<div class="deux" style="border-top:0"><div class="g h2l"><h2>En bref</h2></div><div class="d"><p class="enbref">La santé touche chacun : trouver un médecin, être soigné à l'hôpital, se faire rembourser.</p></div></div>
+<div style="padding:0 0 24px"><div class="lexique retire">▸ Que signifient ces étiquettes ?</div></div>
+<div class="deux"><div class="g h2l"><h2>Ce qui a été fait</h2></div><div class="d"><div class="fait"><p>Faits du mandat…</p></div></div></div>
+</div>
+</div>
+</div>
+<div style="flex:0 0 auto">
+<span class="etiq apres">Après</span>
+<div class="cadre tel">
+<div class="preprod">Version de préproduction.</div>
+<div class="wrap">
+<div class="top"><div class="logo" style="font-size:17px">🗳️ Demandez le programme</div><nav class="nav"><a href="#">Accueil</a><a class="cur" href="#">Thèmes</a><a href="#">Candidats</a><a href="#">Méthode</a></nav></div>
+<div class="chips"><span class="chip cur">🩺 Santé</span><span class="chip">💼 Travail</span><span class="chip">🎒 École</span></div>
+<div class="bandeau">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › Santé</p>
+<h1>🩺 Santé</h1>
+<p class="sous">Hôpital, déserts médicaux, prévention</p>
+<p class="meta">Version du 16 novembre 2026. <a class="lnk repere" href="#methode">Comment nous travaillons</a></p>
+<div class="actions"><span class="btn">🔗 Copier le lien</span></div>
+</div>
+<nav class="ancres"><a href="#"># En bref</a><a href="#"># Fait</a><a href="#"># 2027</a></nav>
+<div class="deux" style="border-top:0"><div class="g h2l"><h2>En bref</h2></div><div class="d"><p class="enbref">La santé touche chacun : trouver un médecin, être soigné à l'hôpital, se faire rembourser. Le débat porte sur le nombre de soignants et les moyens des hôpitaux.</p></div></div>
+<div class="deux repere"><div class="g"><div class="h2l"><h2>Ce qui a été fait</h2></div><p class="small" style="margin:4px 0 0">Bilan du mandat 2022-2027 : lois, budgets, résultats mesurés et votes.</p></div><div class="d"><div class="fait"><p style="font-weight:600">Fin du numerus clausus</p></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Écran 4 -->
+<section class="ecran" id="methode">
+<h2>4. Page Méthode, section « Comprendre les étiquettes » (inchangée)</h2>
+<p class="note">C'est la destination du lien « Comment nous travaillons ». Les 12 définitions restent identiques, elles viennent toujours de la constante GLOSSAIRE.</p>
+<div class="cote">
+<div style="flex:1 1 600px">
+<span class="etiq apres">Ordinateur</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/methode.html#etiquettes</span></div>
+<div class="wrap">
+<div class="regle">
+<h3>Comprendre les étiquettes</h3>
+<dl class="glo">
+<div><dt>Pour, Contre, Abstention</dt><dd>Position majoritaire du groupe du parti à l'Assemblée nationale lors du scrutin public sur la loi.</dd></div>
+<div><dt>Partagé</dt><dd>Le groupe s'est divisé sans majorité claire : le décompte est précisé sous la loi.</dd></div>
+<div><dt>Non représenté</dt><dd>Le groupe n'existait pas à l'Assemblée au moment du vote : il n'a donc pas voté.</dd></div>
+<div><dt>Sans groupe à l'Assemblée</dt><dd>Le parti du candidat n'a pas de groupe de députés : pas de vote de groupe à afficher.</dd></div>
+<div><dt>Mesure non chiffrée par le parti</dt><dd>Le candidat ne donne pas le coût de la mesure. L'étiquette l'indique, sans commentaire : il n'y a pas de chiffre à comparer.</dd></div>
+<div><dt>Non communiqué</dt><dd>Nous n'avons trouvé aucune proposition publiée et datée du candidat sur ce thème. Nous ne devinons jamais.</dd></div>
+<div><dt>Source contestée</dt><dd>Des sources sérieuses ne donnent pas le même chiffre. Nous indiquons l'objet du désaccord, la source retenue et l'autre analyse.</dd></div>
+<div><dt>Origine du fait</dt><dd>Gouvernement, Parlement ou facteur extérieur (conjoncture, crise) : d'où vient ce qui est décrit.</dd></div>
+<div><dt>Dans le cadre validé</dt><dd>Le chiffre du candidat est cohérent avec les estimations d'au moins deux sources indépendantes.</dd></div>
+<div><dt>Discuté</dt><dd>Les sources indépendantes ne s'accordent pas, ou le chiffre n'est tenable qu'avec des hypothèses fortes : nous les affichons toutes.</dd></div>
+<div><dt>Mesure chiffrée non évaluable</dt><dd>Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</dd></div>
+<div><dt>Hors du cadre validé</dt><dd>Au moins deux sources indépendantes jugent le chiffre incompatible avec leurs estimations. Ce niveau juge le chiffre, jamais l'intérêt de la mesure.</dd></div>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div style="flex:0 0 auto">
+<span class="etiq apres">Téléphone</span>
+<div class="cadre tel">
+<div class="wrap">
+<div class="regle">
+<h3>Comprendre les étiquettes</h3>
+<dl class="glo">
+<div><dt>Pour, Contre, Abstention</dt><dd>Position majoritaire du groupe du parti à l'Assemblée nationale lors du scrutin public sur la loi.</dd></div>
+<div><dt>Partagé</dt><dd>Le groupe s'est divisé sans majorité claire : le décompte est précisé sous la loi.</dd></div>
+<div><dt>Non communiqué</dt><dd>Nous n'avons trouvé aucune proposition publiée et datée du candidat sur ce thème. Nous ne devinons jamais.</dd></div>
+</dl>
+<p class="small" style="margin:14px 0 0">Les 9 autres définitions suivent, une par ligne.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Écran 5 -->
+<section class="ecran">
+<h2>5. États utiles</h2>
+<p class="note">Le site est statique : il n'y a pas de nouvel état à l'écran. Les états ci dessous montrent la page thème sans lexique dans chaque situation, et le résultat de la génération du site.</p>
+<div class="grille-etats">
+<div>
+<h3>Vide : fiche en préparation</h3>
+<div class="cadre tel" style="width:100%">
+<div class="wrap">
+<div class="bandeau" style="background:#E3ECF8;margin-top:16px"><h1 style="font-size:28px">🏠 Logement</h1><p class="meta">Fiche en préparation. <a class="lnk" href="#">Comment nous travaillons</a></p></div>
+<div class="deux" style="border-top:0;padding:16px 0"><div class="g h2l"><h2>En bref</h2></div><div class="d"><p class="enbref" style="font-size:16px">Résumé en préparation.</p></div></div>
+<div class="deux" style="padding:16px 0 20px"><div class="g h2l"><h2>Ce qui a été fait</h2></div><div class="d"><div class="fait"><p style="font-weight:600">Le bilan du dernier mandat est en cours de rédaction.</p><p class="small">Il ne dépend pas des programmes de 2027 : il sera publié en premier.</p></div></div></div>
+</div>
+</div>
+</div>
+<div>
+<h3>Chargement : page en cours d'affichage</h3>
+<div class="cadre tel" style="width:100%">
+<div class="wrap" style="padding-top:16px;padding-bottom:20px">
+<div class="sq" style="height:150px;border-radius:18px"></div>
+<div class="sq" style="height:24px;width:40%;margin:22px 0 12px"></div>
+<div class="sq" style="height:14px;margin-bottom:8px"></div>
+<div class="sq" style="height:14px;width:85%;margin-bottom:22px"></div>
+<div class="sq" style="height:24px;width:55%;margin-bottom:12px"></div>
+<div class="sq" style="height:70px"></div>
+<p class="small" style="margin:12px 0 0">Pas de place réservée pour l'ancien encadré : les blocs s'enchaînent.</p>
+</div>
+</div>
+</div>
+<div>
+<h3>Erreur : constante GLOSSAIRE supprimée par erreur</h3>
+<div class="cadre" style="width:100%">
+<div class="barre"><span style="margin:0">Terminal, dossier 05_site</span></div>
+<pre class="term">$ node build.mjs
+ReferenceError: GLOSSAIRE is not defined
+    at pageMethode (build.mjs)
+La génération du site a échoué.</pre>
+</div>
+<div class="alerte err" style="margin-top:10px">La page Méthode a encore besoin de GLOSSAIRE : seul le bloc de la page thème est retiré, la constante reste.</div>
+</div>
+<div>
+<h3>Succès : site régénéré et tests verts</h3>
+<div class="cadre" style="width:100%">
+<div class="barre"><span style="margin:0">Terminal, dossier 05_site</span></div>
+<pre class="term">$ node build.mjs
+Site généré dans public/
+$ grep -l "Que signifient ces étiquettes" public/*.html
+(aucun fichier)
+$ npm test
+✓ les pages thème n'affichent plus le lexique
+✓ methode.html contient « Comprendre les étiquettes »
+Tous les tests passent.</pre>
+</div>
+<div class="alerte ok" style="margin-top:10px">Les 10 pages thème sont allégées, la page Méthode garde ses 12 définitions.</div>
+</div>
+</div>
+</section>
+
+<!-- Écran 6 -->
+<section class="ecran">
+<h2>6. Ce qui change dans le code</h2>
+<div class="cadre"><pre class="term" style="border-radius:14px">05_site/build.mjs, gabarit de la page thème
+- &lt;section aria-label="Lexique" …&gt;&lt;details class="lexique noprint"&gt;…&lt;/details&gt;&lt;/section&gt;
+  (la constante GLOSSAIRE reste, utilisée par la page Méthode)
+
+05_site/src/style.css
+- details.lexique{…}
+- details.lexique summary{…}
+  (les règles dl.glo restent)
+
+05_site/tests : un test qui vérifie l'absence de « Que signifient ces étiquettes »
+dans une page thème et la présence de « Comprendre les étiquettes » dans methode.html</pre></div>
+</section>
+</div>
+</body>
+</html>

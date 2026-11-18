@@ -20,15 +20,15 @@ const urlPage = (fichier) => `${SITE_URL}/${fichier === 'index.html' ? '' : fich
 // ---------- Référentiels ----------
 const THEMES = [
   { slug: 'education', emoji: '🎓', nom: 'Éducation', sous: 'École, enseignants, enseignement supérieur', bg: '#E3E1FB' },
-  { slug: 'ecologie', emoji: '🌱', nom: 'Écologie et énergie', sous: 'Transition, énergies, transports, biodiversité', bg: '#D5F0E5' },
-  { slug: 'pouvoir_achat', emoji: '🛒', nom: "Pouvoir d'achat", sous: 'Salaires, prix, énergie, fiscalité des ménages', bg: '#FFE6BF' },
+  { slug: 'ecologie', emoji: '🌿', nom: 'Écologie et énergie', sous: 'Transition, énergies, transports, biodiversité', bg: '#D5F0E5' },
+  { slug: 'pouvoir_achat', emoji: '💶', nom: "Pouvoir d'achat", sous: 'Salaires, prix, énergie, fiscalité des ménages', bg: '#FFE6BF' },
   { slug: 'travail', emoji: '💼', nom: 'Travail et emploi', sous: 'Chômage, retraites, conditions de travail', bg: '#D8E7FA' },
-  { slug: 'sante', emoji: '🏥', nom: 'Santé', sous: 'Hôpital, déserts médicaux, prévention', bg: '#FBDCE5' },
+  { slug: 'sante', emoji: '❤️', nom: 'Santé', sous: 'Hôpital, déserts médicaux, prévention', bg: '#FBDCE5' },
   { slug: 'logement', emoji: '🏠', nom: 'Logement', sous: 'Loyers, construction, passoires thermiques', bg: '#FAEDB8' },
-  { slug: 'securite', emoji: '🛡️', nom: 'Sécurité et justice', sous: 'Délinquance, police, moyens de la justice', bg: '#DDE3EE' },
+  { slug: 'securite', emoji: '⚖️', nom: 'Sécurité et justice', sous: 'Délinquance, police, moyens de la justice', bg: '#DDE3EE' },
   { slug: 'immigration', emoji: '🌍', nom: 'Immigration et intégration', sous: 'Asile, titres de séjour, intégration', bg: '#D3EDF1' },
   { slug: 'institutions', emoji: '🏛️', nom: 'Institutions et démocratie', sous: 'Mode de scrutin, référendum, décentralisation', bg: '#EADDF6' },
-  { slug: 'europe', emoji: '🇪🇺', nom: 'Europe et international', sous: "Défense, relations avec l'UE, diplomatie", bg: '#FFDACB' },
+  { slug: 'europe', emoji: '⭐', nom: 'Europe et international', sous: "Défense, relations avec l'UE, diplomatie", bg: '#FFDACB' },
 ];
 const GROUPES = {
   RN: 'Rassemblement national', LFI: 'La France insoumise', SOC: 'Socialistes et apparentés',
@@ -37,7 +37,6 @@ const GROUPES = {
   LIOT: 'LIOT', UDR: 'Union des droites pour la République',
 };
 const ORIGINES = { gouvernement: 'Gouvernement', parlement: 'Parlement', exterieur: 'Facteur extérieur' };
-const POS = { pour: '✓ Pour', contre: '✕ Contre', abstention: '– Abstention', partage: '≈ Partagé' };
 const GLOSSAIRE = [
   ['Pour, Contre, Abstention', "Position majoritaire du groupe du parti à l'Assemblée nationale lors du scrutin public sur la loi."],
   ['Partagé', "Le groupe s'est divisé sans majorité claire : le décompte est précisé sous la loi."],
@@ -162,7 +161,6 @@ ${v.autres.length ? `<p class="t">Autres avis</p><p class="m">Think tanks qui as
 </div>
 </details>`;
 }
-const legendeNiveaux = () => `<div class="legende-niv noprint"><span class="lab">Étiquettes des mesures :</span>${['non_chiffree', ...ORDRE_NIVEAUX].map((k) => `<span class="niv-chip">${iconeNiveau(k)}${NIVEAUX[k].titre}</span>`).join('')}<a class="lnk" href="panel-sources.html">Comment sont choisies les sources</a></div>`;
 
 // Couleur et logo fixes par parti : teintes réparties à l'angle d'or, même luminosité pour tous (aucun classement)
 const partis = [...new Set(candidats.map((c) => c.parti_sigle || c.parti || 'Sans parti'))].sort((a, b) => normaliser(a).localeCompare(normaliser(b)));
@@ -174,17 +172,13 @@ const logo = (c, petit) => `<span class="logo-parti${petit ? ' p' : ''}" aria-hi
 // Photos des candidats et logos des partis (data/images, licences libres Wikimedia Commons, crédits dans credits.json)
 const IMAGES = JSON.parse(fs.readFileSync(path.join(DATA, 'images', 'credits.json'), 'utf8'));
 const logoDe = (c) => Object.entries(IMAGES.logos).find(([, v]) => v.candidats.includes(c.id))?.[0];
-const initiales = (c) => `${(c.prenom || '')[0] || ''}${(c.nom || '').replace(/^(Le|La|De|Du)s+/i, '')[0] || ''}`.toUpperCase();
+const initiales = (c) => `${(c.prenom || '')[0] || ''}${(c.nom || '').replace(/^(Le|La|De|Du)\s+/i, '')[0] || ''}`.toUpperCase();
 const photo = (c, taille = 'm') => IMAGES.photos[c.id]
   ? `<img class="photo ${taille}" style="--pc:${COULEUR[cleParti(c)]}" src="img/photos/${esc(c.id)}.webp" alt="" width="240" height="240" loading="lazy" decoding="async">`
   : `<span class="photo ${taille} sans" style="--pc:${COULEUR[cleParti(c)]}" aria-hidden="true" title="Photo non disponible sous licence libre">${esc(initiales(c))}</span>`;
 // Logo officiel si disponible sous licence libre, sinon le repère (sigle + couleur)
 const logoParti = (c, petit) => { const l = logoDe(c); return l ? `<span class="logo-img${petit ? ' p' : ''}"><img src="img/logos/${esc(l)}.png" alt="Logo ${esc(c.parti)}" loading="lazy" decoding="async"></span>` : logo(c, petit); };
 const credit = (x) => `${esc(x.auteur || 'Auteur inconnu')}, ${esc(x.licence || 'licence non précisée')}, <a class="lnk" href="${url(x.page)}"${ext}>Wikimedia Commons</a>`;
-// Logo du parti principal de chaque groupe à l'Assemblée (LIOT n'est pas un parti : il garde son sigle)
-const LOGO_GROUPE = { RN: 'RN', LFI: 'LFI', SOC: 'PS', ECO: 'LE', GDR: 'PCF', EPR: 'RE', DEM: 'MODEM', HOR: 'HOR', DR: 'LR', UDR: 'UDR' };
-const logoGroupe = (g) => { const l = LOGO_GROUPE[g]; return l && IMAGES.logos[l] ? `<span class="logo-img p" aria-hidden="true"><img src="img/logos/${esc(l)}.png" alt="" loading="lazy" decoding="async"></span>` : `<span class="logo-parti p" aria-hidden="true" style="background:${groupeCouleur(g)}">${esc(g)}</span>`; };
-const groupeCouleur = (g) => { const c = candidats.find((x) => x.groupe_an === g); return c ? COULEUR[cleParti(c)] : '#5F6B7A'; };
 
 const etatTheme = (slug) => {
   const t = themesData[slug];
@@ -194,7 +188,9 @@ const etatTheme = (slug) => {
 // ---------- Gabarit commun ----------
 const LOGO_SVG = '<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>';
 function page({ fichier, titre, description, courant, corps, scripts = false }) {
-  const nav = [['themes.html', 'Thèmes'], ['methode.html', 'Méthode'], ['candidats.html', 'Candidats'], ['qui-sommes-nous.html', 'Qui sommes nous ?'], ['signaler.html', 'Signaler une erreur']];
+  // Navigation principale : mêmes liens et mêmes emojis (décoratifs, masqués aux lecteurs d'écran) sur ordinateur et dans le menu mobile
+  const nav = [['themes.html', 'Thèmes', '🗂️'], ['methode.html', 'Méthode', '🔎'], ['candidats.html', 'Candidats', '🧑‍🤝‍🧑'], ['qui-sommes-nous.html', 'Qui sommes nous ?', '👋'], ['signaler.html', 'Signaler une erreur', '🚩']];
+  const liensNav = nav.map(([h, l, emo]) => `<a href="${h}"${courant === h ? ' aria-current="page"' : ''}><span class="emo" aria-hidden="true">${emo}</span>${l}</a>`).join('');
   const html = `<!doctype html>
 <html lang="fr">
 <head>
@@ -214,7 +210,11 @@ ${PREPROD ? '<div class="preprod" role="note">Version de préproduction, en cour
 <div class="wrap">
 <header class="top">
 <a class="logo" href="index.html">${LOGO_SVG}<span>Programmes 2027</span></a>
-<nav class="nav" aria-label="Navigation principale">${nav.map(([h, l]) => `<a href="${h}"${courant === h ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
+<nav class="nav" aria-label="Navigation principale">${liensNav}</nav>
+<details class="burger">
+<summary><svg class="bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="croix" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>Menu</summary>
+<nav class="bmenu" aria-label="Navigation principale (menu mobile)">${liensNav}</nav>
+</details>
 </header>
 <main id="contenu">
 ${corps}
@@ -264,12 +264,10 @@ function accueil() {
     corps: `<section class="hero">
 <h1>Les programmes de 2027, thème par thème</h1>
 <p>Choisissez un sujet : ce qu'a fait le dernier mandat, ce que propose chaque candidat et la source de chaque information.</p>
-<div class="legende"><div><span class="plein" aria-hidden="true"></span><span>Ce qui a été fait</span></div><div><span class="pointille" aria-hidden="true"></span><span>Ce qui est proposé pour 2027</span></div></div>
 </section>
 <section aria-labelledby="themes">
-<div class="tete-themes"><h2 id="themes">Choisissez un thème <span aria-hidden="true">🗳️</span></h2><p>Une fiche se lit en quelques minutes.</p></div>
-<div class="tuiles">${tuiles}</div>
-<p class="small" style="margin:16px 0 40px">Point plein : fiche publiée. Point pointillé : fiche en préparation.</p>
+<div class="tete-themes"><h2 id="themes">Choisissez un thème <span aria-hidden="true">🗳️</span></h2></div>
+<div class="tuiles" style="margin-bottom:40px">${tuiles}</div>
 </section>
 <section class="bloc" aria-labelledby="cands-t">
 <h2 id="cands-t">Tous les candidats, tous les partis <span aria-hidden="true">🧑‍🤝‍🧑</span></h2>
@@ -308,21 +306,64 @@ function pageThemes() {
     corps: `<div class="bandeau" style="background:#E3E1FB;margin-top:24px"><p class="ariane"><a class="lnk" href="index.html">Accueil</a> › Thèmes</p>
 <h1>Tous les thèmes <span aria-hidden="true">🗂️</span></h1>
 <p class="sous">${THEMES.length} thèmes. Pour chacun : ce qu'a fait le dernier mandat, ce que propose chaque candidat et la source de chaque information.</p></div>
-<div class="tuiles" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))">${tuiles}</div>
-<p class="small" style="margin:16px 0 40px">Point plein : fiche publiée. Point pointillé : fiche en préparation.</p>`,
+<div class="tuiles" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));margin-bottom:40px">${tuiles}</div>`,
   });
 }
 
-// ---------- Fiche thème ----------
-function blocFait(f) {
-  const c = f.contestee;
-  return `<article class="fait">
-<div class="l1"><p class="date">${dateFr(f.date)}</p><span class="tag">Origine : ${esc(ORIGINES[f.origine] || f.origine)}</span></div>
-<p class="txt">${esc(f.texte)}</p>
-<a class="lnk" href="${url(f.source?.url)}"${ext} style="font-size:15px">Source : ${esc(f.source?.titre)}</a>
-${c ? `<div class="conteste"><p class="t"><span aria-hidden="true">⚠️ </span>Source contestée</p><p>Désaccord : ${esc(c.objet)} Source retenue : ${esc(c.source_retenue)}.</p>${c.autre?.url ? `<a class="lnk" href="${url(c.autre.url)}"${ext}>Voir l'autre analyse : ${esc(c.autre.titre)}</a>` : ''}</div>` : ''}
-</article>`;
-}
+// ---------- Fiche thème (ticket 89) ----------
+// Icônes en SVG en ligne, décoratives (aria-hidden). Aucun emoji sur la page thème.
+const svg = (corps, { t = 24, trait = 'currentColor', ep = 2, vb = '0 0 24 24', style = '' } = {}) => `<svg width="${t}" height="${t}" viewBox="${vb}" fill="none" stroke="${trait}" stroke-width="${ep}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"${style ? ` style="${style}"` : ''}>${corps}</svg>`;
+const ETOILES = Array.from({ length: 12 }, (_, k) => { const a = (k * Math.PI) / 6; return `<circle cx="${(12 + 7 * Math.cos(a)).toFixed(2)}" cy="${(12 + 7 * Math.sin(a)).toFixed(2)}" r="1.1" fill="#3A35C8" stroke="none"/>`; }).join('');
+const LOGOS_THEMES = {
+  education: '<path d="M2 9.5 12 4.5l10 5-10 5z" fill="#EADDF6"/><path d="M6 11.5V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.5"/><path d="M22 9.5V15"/>',
+  ecologie: '<path d="M5 19c0-8.5 5-14 15-15 0 10-5.5 15-14 15z" fill="#EADDF6"/><path d="M5 19c3-4.5 6.5-7.5 10.5-9.5"/>',
+  pouvoir_achat: '<path d="M3 4h2.2l2.3 10.5h10.8l2-7.5H6.4"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="16.5" cy="19" r="1.6"/>',
+  travail: '<rect x="3" y="7.5" width="18" height="12.5" rx="2" fill="#EADDF6"/><path d="M9 7.5V5.5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5.5v2"/><path d="M3 13h18"/>',
+  sante: '<path d="M12 20.5s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 7.4a4.2 4.2 0 0 1 7.5 2.7c0 5.8-7.5 10.4-7.5 10.4z" fill="#EADDF6"/><path d="M7.5 12h2.5l1.2-2.2 2 4.4 1.3-2.2h2"/>',
+  logement: '<path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5" fill="#EADDF6"/><path d="M10 20v-5.5h4V20"/>',
+  securite: '<path d="M12 3 19.5 6v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z" fill="#EADDF6"/><path d="M9 12l2.2 2.2L15.5 10"/>',
+  immigration: '<circle cx="12" cy="12" r="9" fill="#EADDF6"/><path d="M3 12h18"/><path d="M12 3c2.4 2.5 3.7 5.5 3.7 9s-1.3 6.5-3.7 9c-2.4-2.5-3.7-5.5-3.7-9S9.6 5.5 12 3z"/>',
+  institutions: '<path d="M2 9.5 12 3l10 6.5z" fill="#EADDF6"/><path d="M4 10.5h16"/><path d="M5.5 11v7M9.8 11v7M14.2 11v7M18.5 11v7"/><path d="M3.5 18.5h17M2 21h20"/>',
+  europe: `<circle cx="12" cy="12" r="10.5" fill="#EADDF6" stroke="none"/>${ETOILES}`,
+};
+const logoTheme = (t) => `<span class="th-logo" aria-hidden="true">${svg(LOGOS_THEMES[t.slug] || LOGOS_THEMES.institutions, { t: 38, trait: '#3A35C8', ep: 1.6 })}</span>`;
+const I = {
+  ampoule: '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/>',
+  document: '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/>',
+  colonnes: '<path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M2 10l10-6 10 6z"/>',
+  lien: '<path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/>',
+  imprimante: '<path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/>',
+  entonnoir: '<path d="M3 5h18l-7 8v6l-4 2v-8z"/>',
+  horloge: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  drapeau: '<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>',
+  calendrier: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  bulle: '<path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+  personnes: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 4.5"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/>',
+  marteau: '<path d="M14 4l6 6M12.5 5.5l6 6M9 9l6 6"/><path d="M11 7l-6.5 6.5a1.5 1.5 0 0 0 0 2.1l1.9 1.9a1.5 1.5 0 0 0 2.1 0L15 11"/><path d="M4 21h9"/>',
+  main: '<path d="M4 11h3v9H4z"/><path d="M7 19h8.5a2 2 0 0 0 2-1.6l1.2-5.4A2 2 0 0 0 16.7 9.6H13V6a2 2 0 0 0-2-2l-4 7"/>',
+  loi: '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8.5 14.5l2.2 2.2 4.3-4.3"/>',
+};
+const ICONE_EXT = '<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+const NOUVEL_ONGLET = '<span class="sr"> (s\'ouvre dans un nouvel onglet)</span>';
+const tuile = (nom) => `<span class="tuile-ic" aria-hidden="true">${svg(I[nom], { trait: '#3A35C8', ep: 1.9 })}</span>`;
+const HEMICYCLE = '<span class="tuile-ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 32 32" focusable="false"><g fill="#3A35C8"><circle cx="4" cy="24" r="2.2"/><circle cx="6" cy="16.5" r="2.2"/><circle cx="10.5" cy="10" r="2.2"/><circle cx="16" cy="7.5" r="2.2"/><circle cx="21.5" cy="10" r="2.2"/><circle cx="26" cy="16.5" r="2.2"/><circle cx="28" cy="24" r="2.2"/><circle cx="10" cy="22" r="2"/><circle cx="13" cy="16" r="2"/><circle cx="19" cy="16" r="2"/><circle cx="22" cy="22" r="2"/></g><rect x="12" y="23" width="8" height="5" rx="1.5" fill="#14202E"/></svg></span>';
+const PLUS = '<svg class="plus-moins" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path class="barre-v" d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg>';
+
+// Positions des groupes : le sens est porté par l'icône et le mot, jamais par la seule couleur (ni vert ni rouge).
+const POSITIONS = [
+  { cle: 'pour', mot: 'Pour', ic: '<circle cx="12" cy="12" r="11" fill="#3A35C8"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>' },
+  { cle: 'contre', mot: 'Contre', ic: '<circle cx="12" cy="12" r="11" fill="#B45309"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>' },
+  { cle: 'abstention', mot: 'Abstention', ic: '<circle cx="12" cy="12" r="11" fill="#4A5666"/><path d="M7.5 12h9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>' },
+  { cle: 'partage', mot: 'Partagé', ic: '<circle cx="12" cy="12" r="10.2" fill="#fff" stroke="#4A5666" stroke-width="1.6"/><path d="M12 1.8v20.4" stroke="#4A5666" stroke-width="1.6"/><path d="M12 1.8a10.2 10.2 0 0 1 0 20.4z" fill="#4A5666"/>' },
+  { cle: null, mot: 'Non représenté', ic: '<circle cx="12" cy="12" r="10" fill="#fff" stroke="#4A5666" stroke-width="1.6" stroke-dasharray="3 2.5"/><path d="M8 12h8" stroke="#4A5666" stroke-width="2.2" stroke-linecap="round"/>' },
+];
+const icPos = (p, t = 22) => `<svg width="${t}" height="${t}" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="flex:none">${p.ic}</svg>`;
+const clePosition = (val) => (POSITIONS.some((p) => p.cle && p.cle === val) ? val : null);
+// Noms courts des groupes à l'Assemblée, affichés sur les pastilles (le nom complet est dans la bulle).
+const GROUPES_COURTS = { RN: 'RN', LFI: 'LFI', SOC: 'Socialistes', ECO: 'Écologistes', GDR: 'GDR', EPR: 'Ensemble', DEM: 'MoDem', HOR: 'Horizons', DR: 'Droite républicaine', LIOT: 'LIOT', UDR: 'UDR' };
+const NB_VOTES = 2;
+
 // Explication du vote d'un groupe : affichée seulement si elle a un texte et une source,
 // et si elle a été relue (en préprod, les brouillons s'affichent avec la mention « À relire »).
 const MAX_EXPLI = 160;
@@ -332,135 +373,182 @@ function explicationAffichable(slug, v, g) {
   if (!e.relu && !PREPROD) return null;
   return e;
 }
-const ORDRE_DECISIONS = [['pour', POS.pour], ['contre', POS.contre], ['abstention', POS.abstention], ['partage', POS.partage], [null, 'Non représenté']];
+const iconeVote = (v) => (/censure/i.test(v.titre) ? I.marteau : /confiance/i.test(v.titre) ? I.main : I.loi);
+const pluriel = (n, mot) => `${n} ${mot}${n > 1 ? 's' : ''}`;
 let compteurBulle = 0;
-function blocVote(v, slug) {
+function blocVote(v, k, slug) {
   const cles = Object.keys(GROUPES).filter((g) => v.positions && g in v.positions);
-  const groupeLi = (g) => {
+  const parPos = POSITIONS.map((p) => ({ ...p, gs: cles.filter((g) => clePosition(v.positions[g]) === p.cle) })).filter((p) => p.gs.length);
+  const resume = `${parPos.map((p) => `${p.gs.length} ${p.mot.toLowerCase()}`).join(', ')}, sur ${pluriel(cles.length, 'groupe')}`;
+  const barre = parPos.flatMap((p) => p.gs.map(() => `<span class="seg-${p.cle || 'nr'}"></span>`)).join('');
+  const pastille = (g) => {
     const id = `bulle-${++compteurBulle}`;
     const e = explicationAffichable(slug, v, g);
     const lies = candidats.filter((c) => c.groupe_an === g);
     const texte = e ? (e.texte.length > MAX_EXPLI ? e.texte.slice(0, MAX_EXPLI - 1).trimEnd() + '…' : e.texte) : null;
-    const bulle = e
-      ? `<p class="bt">${esc(texte)}</p>
-<p class="bs">${e.relu ? '' : '<span class="brouillon">À relire</span> '}<a class="lnk" href="${url(e.source.url)}"${ext}>Voir la source</a>${e.source.titre ? ` : ${esc(e.source.titre)}` : ''}${e.source.date ? `, ${dateFr(e.source.date)}` : ''}<span class="sr"> (s'ouvre dans un nouvel onglet)</span></p>`
-      : '<p class="bt nd">Explication non disponible.</p>';
-    return `<li class="grp${e ? ' a-expli' : ''}">
-<button type="button" class="grp-btn" aria-expanded="false" aria-controls="${id}">${logoGroupe(g)}<span class="gn">${esc(GROUPES[g])}</span>${e ? '<span class="info" aria-hidden="true">i</span><span class="sr">, pourquoi ce vote</span>' : ''}</button>
-<div class="bulle" id="${id}">${bulle}</div>
-${lies.length ? `<div class="c"><p class="cl">Candidat${lies.length > 1 ? 's' : ''} rattaché${lies.length > 1 ? 's' : ''}</p><ul class="lies">${lies.map((c) => `<li>${photo(c, 'xs')}<a class="lnk" href="candidat-${esc(c.id)}.html">${esc(nomComplet(c))}</a></li>`).join('')}</ul></div>` : ''}</li>`;
+    const raison = e
+      ? `<p class="b-raison">${e.relu ? '' : '<span class="brouillon">À relire</span> '}${esc(texte)} <a class="lnk" href="${url(e.source.url)}"${ext}>Voir la source</a>${NOUVEL_ONGLET}</p>`
+      : '<p class="b-raison nd">Explication non disponible.</p>';
+    const rattaches = lies.length
+      ? `Candidat${lies.length > 1 ? 's' : ''} rattaché${lies.length > 1 ? 's' : ''} : ${lies.map((c) => `<a class="lnk" href="candidat-${esc(c.id)}.html">${esc(nomComplet(c))}</a>`).join(', ')}.`
+      : 'Aucun candidat déclaré rattaché à ce groupe.';
+    return `<li class="gchip"><button type="button" class="gbtn" aria-expanded="false" aria-controls="${id}">${esc(GROUPES_COURTS[g] || g)}${e ? '<span class="ginfo" aria-hidden="true">i</span>' : ''}<span class="sr">, ${esc(GROUPES[g])}${e ? ', pourquoi ce vote' : ''}</span></button>
+<div class="bulle" id="${id}"><p class="b-nom">${svg(I.bulle, { t: 16, trait: '#3A35C8' })}${esc(GROUPES[g])}</p>${raison}<p class="b-cands">${svg(I.personnes, { t: 15, trait: '#3B4656', style: 'flex:none;margin-top:2px' })}<span>${rattaches}</span></p></div></li>`;
   };
-  const decisions = ORDRE_DECISIONS.map(([cle, lib]) => {
-    const gs = cles.filter((g) => (cle === null ? !(v.positions[g] in POS) : v.positions[g] === cle));
-    if (!gs.length) return '';
-    return `<section class="dec${cle === null ? ' nr' : ''}"><h5><span class="pos${cle === null ? ' nr' : ''}">${lib}</span><span class="nb">${gs.length} groupe${gs.length > 1 ? 's' : ''}</span></h5>
-<ul class="grp-liste">${gs.map(groupeLi).join('\n')}</ul></section>`;
-  }).join('\n');
-  return `<article class="vote">
-<h4>${esc(v.titre)}</h4>
-<p class="vm">Voté le ${dateFr(v.date)}, ${esc(v.legislature)}</p>
-<p class="vp">${esc(v.phrase)}</p>
-<div class="decisions">${decisions}</div>
-<p style="margin:12px 0 0"><a class="lnk" href="${url(v.scrutin?.url)}"${ext} style="font-size:14px">${esc(v.scrutin?.titre || 'Scrutin public')}, Assemblée nationale</a></p>
+  return `<article class="vcarte">
+<div class="vtete"><span class="vic" aria-hidden="true">${svg(iconeVote(v), { trait: '#fff', ep: 1.8 })}</span>
+<div class="vtxt"><p class="vnum">Vote ${k + 1}</p><h3>${esc(v.titre)}</h3><p class="vdate">${svg(I.calendrier, { t: 14, trait: '#3B4656' })}<span>${dateFr(v.date)}</span></p></div></div>
+<p class="vphrase">${esc(v.phrase)}</p>
+<div><div class="vbarre" aria-hidden="true">${barre}</div><p class="vresume">${resume}</p></div>
+${parPos.map((p) => `<div class="vrow vrow-${p.cle || 'nr'}"><p class="vpos">${icPos(p)}<span>${p.mot}</span><span class="vnb">${pluriel(p.gs.length, 'groupe')}</span></p>
+<ul class="gliste">${p.gs.map(pastille).join('\n')}</ul></div>`).join('\n')}
+<p class="vscrutin"><a class="lnk" href="${url(v.scrutin?.url)}"${ext}>${esc(v.scrutin?.titre || 'Scrutin public')}, Assemblée nationale${ICONE_EXT}</a>${NOUVEL_ONGLET}</p>
 </article>`;
 }
 // Filtre : liste fermée des sous-thèmes du thème, le reste va dans « Autres sujets »
-const norm = (x) => normaliser(x || '').replace(/s/g, '').trim();
+const norm = (x) => normaliser(x || '').replace(/s/g, '').trim();
 function categorie(slug, sub) {
   const ref = themesData[slug]?.sous_themes || [];
   return ref.find((r) => norm(r) === norm(sub) || norm(sub).includes(norm(r))) || 'Autres sujets';
 }
-function carteCandidat(c, slug) {
-  const m = mesures[c.id];
-  const liste = m?.themes?.[slug] || [];
-  const groupe = c.groupe_an && GROUPES[c.groupe_an] ? `Groupe à l'Assemblée : ${GROUPES[c.groupe_an]}` : "Sans groupe à l'Assemblée";
-  const corps = liste.length
-    ? liste.slice(0, 3).map((x) => `<div class="mesure" data-sub="${esc(categorie(slug, x.sous_theme))}">
-${x.sous_theme ? `<p><span class="tag">${esc(x.sous_theme)}</span></p>` : ''}
-<p class="mt">${esc(x.texte)}</p>
-${x.chiffrage ? `<p class="chiffre">${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, slug)}
-<a class="lnk" href="${url(x.source?.url)}"${ext} style="font-size:14px">${esc(x.source?.titre)}${x.source?.date ? `, ${dateFr(x.source.date)}` : ''}</a>
-<span class="small" style="display:block">S'ouvre dans un nouvel onglet</span>
-</div>`).join('\n') + '<p class="vide aucun-sub" hidden>Aucune mesure clef retenue sur ce sous thème.</p>'
-    : `<p class="vide">Non communiqué : aucune proposition publiée et datée trouvée sur ce thème au ${dateFr(m?.date_verif || AUJOURDHUI)}.${c.programme ? '' : ' Programme 2027 pas encore publié.'}</p>`;
-  return `<details class="carte sect" id="cand-${esc(c.id)}" open style="--c:${COULEUR[cleParti(c)]}">
-<summary><span class="ct">${photo(c)}${esc(nomComplet(c))}</span><span class="cpl">${logoParti(c, true)}<span>${esc(c.parti || 'Sans parti')}</span></span><span class="cp">${esc(groupe)}</span>${c.a_verifier ? '<span class="badge-verif">Candidature à confirmer</span>' : ''}</summary>
-<div class="corps">${corps}
-<p class="small" style="margin:0"><a class="lnk" href="candidat-${esc(c.id)}.html">Toutes les propositions de ${esc(nomComplet(c))}</a></p></div>
-</details>`;
+// Repère du parti sur la carte : logo officiel, sinon pastille couleur avec le sigle officiel, sinon un drapeau.
+// Jamais de sigle fabriqué à partir du nom du parti.
+function repereParti(c) {
+  const l = logoDe(c);
+  if (l) return `<span class="pc-logo"><img src="img/logos/${esc(l)}.png" alt="Logo ${esc(c.parti)}" loading="lazy" decoding="async"></span>`;
+  const fond = COULEUR[cleParti(c)];
+  return c.parti_sigle && !/^(SE|SP|NC)$/i.test(c.parti_sigle)
+    ? `<span class="pc-logo sigle" aria-hidden="true" style="background:${fond}">${esc(c.parti_sigle)}</span>`
+    : `<span class="pc-logo sigle" aria-hidden="true" style="background:${fond}">${svg(I.drapeau, { t: 16, trait: '#fff' })}</span>`;
 }
-const chipsThemes = (courant) => `<nav class="chips noprint" aria-label="Thèmes">${THEMES.map((t) => `<a class="chip" href="${t.slug}.html" style="background:${t.slug === courant ? '' : t.bg}"${t.slug === courant ? ' aria-current="page"' : ''}><span aria-hidden="true">${t.emoji}</span>${esc(t.nom)}</a>`).join('')}</nav>`;
+function carteCandidat(c, slug, col2 = false) {
+  const liste = (mesures[c.id]?.themes?.[slug] || []).slice(0, 3);
+  const items = liste.map((x, k) => {
+    const id = `m-${esc(c.id)}-${k + 1}`;
+    const s = x.source || {};
+    const dates = [s.date ? `Publiée le ${dateFr(s.date)}.` : '', s.consulte ? `Consultée le ${dateFr(s.consulte)}.` : ''].filter(Boolean).join(' ');
+    return `<li class="mes" data-sub="${esc(categorie(slug, x.sous_theme))}">
+<button type="button" class="mbtn" aria-expanded="false" aria-controls="${id}">${PLUS}<span class="mt">${esc(x.texte)}</span></button>
+<div class="mdet" id="${id}">
+${x.sous_theme ? `<p><span class="tag">${esc(x.sous_theme)}</span></p>` : ''}
+${x.chiffrage ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, slug)}
+<p class="msource">Source : <a class="lnk" href="${url(s.url)}"${ext}>${esc(s.titre)}${ICONE_EXT}</a>${NOUVEL_ONGLET}${dates ? `<span class="mdates">${dates}</span>` : ''}</p>
+</div></li>`;
+  }).join('\n');
+  return `<li class="pc${col2 ? ' col2' : ''}" id="cand-${esc(c.id)}" style="border-left-color:${COULEUR[cleParti(c)]}">
+<div class="pc-tete">${photo(c, 's')}<div class="pc-id"><h3>${esc(nomComplet(c))}</h3><p>${esc(c.parti || 'Sans parti')}</p>${c.a_verifier ? '<span class="badge-verif">Candidature à confirmer</span>' : ''}</div>${repereParti(c)}</div>
+<ul class="pc-mes" aria-label="Mesures clefs de ${esc(nomComplet(c))}">${items}</ul>
+<p class="aucun-sub" hidden>Aucune mesure clef retenue sur ce sous thème.</p>
+</li>`;
+}
+// Emojis des liens de thèmes (les mêmes que partout sur le site, voir THEMES), décoratifs : masqués aux lecteurs d'écran.
+const emoNav = (t) => `<span class="emo" aria-hidden="true">${t.emoji}</span>`;
+const lienTheme = (t, courant, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${t.slug}.html"${t.slug === courant ? ' aria-current="page"' : ''} style="--bg:${t.bg}">${emoNav(t)}${esc(t.nom)}</a>`;
+// Ordinateur : rangée de liens. Mobile (moins de 640 px) : menu déroulant « Choisir un thème », sans JavaScript.
+const chipsThemes = (courant) => {
+  const actif = THEMES.find((t) => t.slug === courant);
+  return `<nav class="chips noprint" aria-label="Thèmes">${THEMES.map((t) => lienTheme(t, courant, 'chip')).join('')}</nav>
+<div class="tsel-bloc noprint">
+<p class="tsel-lab" id="tsel-lab">Choisir un thème</p>
+<details class="tsel">
+<summary aria-describedby="tsel-lab" style="--bg:${actif.bg}">${emoNav(actif)}<span><span class="sr">Thème affiché : </span>${esc(actif.nom)}</span><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<nav aria-label="Thèmes (menu mobile)"><ul>${THEMES.map((t) => `<li>${lienTheme(t, courant)}</li>`).join('')}</ul></nav>
+</details>
+</div>`;
+};
 
-function ficheTheme(t, i) {
+function ficheTheme(t) {
   const d = themesData[t.slug];
   const e = etatTheme(t.slug);
-  const suivant = THEMES[(i + 1) % THEMES.length];
-  // Deux groupes, chacun dans l'ordre alphabétique : ceux qui ont publié sur ce thème, puis les autres
+  // Ordre alphabétique : ceux qui ont publié sur ce thème, puis les autres en compact
   const aPublie = (c) => (mesures[c.id]?.themes?.[t.slug] || []).length > 0;
   const publies = candidats.filter(aPublie);
   const enAttente = candidats.filter((c) => !aPublie(c));
-  const avecMesures = publies.length;
-  // Sous-thèmes réellement utilisés
-  const subsUtilises = new Set(candidats.flatMap((c) => (mesures[c.id]?.themes?.[t.slug] || []).map((x) => categorie(t.slug, x.sous_theme))));
-  const subs = [...(d?.sous_themes || []), 'Autres sujets'].filter((s) => subsUtilises.has(s));
-  const sansGroupe = candidats.filter((c) => !c.groupe_an).map(nomComplet);
+  const toutes = publies.flatMap((c) => mesures[c.id].themes[t.slug].slice(0, 3));
+  const compte = {};
+  toutes.forEach((x) => { const s = categorie(t.slug, x.sous_theme); compte[s] = (compte[s] || 0) + 1; });
+  // Deux colonnes : la coupure est fixée à la génération (hauteur estimée, mesures repliées),
+  // pour qu'une carte ne change jamais de colonne quand on déplie une mesure.
+  // Estimation : en-tête de carte 108 px (marge comprise), puis 24 px de padding et 22,5 px par ligne d'environ 60 caractères par mesure.
+  const poids = publies.map((c) => 108 + mesures[c.id].themes[t.slug].slice(0, 3).reduce((n, x) => n + 24 + 22.5 * Math.ceil(String(x.texte).length / 60), 0));
+  const totalPoids = poids.reduce((a, b) => a + b, 0);
+  let cumul = 0, iCol2 = -1, ecart = Infinity;
+  poids.forEach((p, i) => { cumul += p; const e = Math.abs(totalPoids - 2 * cumul); if (i < poids.length - 1 && e < ecart) { ecart = e; iCol2 = i + 1; } });
+  const debutCol2 = iCol2 > 0 && iCol2 < publies.length ? publies[iCol2] : null;
+  const subs = [...(d?.sous_themes || []), 'Autres sujets'].filter((s) => compte[s]);
+  const sansGroupe = candidats.filter((c) => !c.groupe_an || !GROUPES[c.groupe_an]);
   const datesVerif = candidats.map((c) => mesures[c.id]?.date_verif).filter(Boolean).sort();
   const verif = datesVerif[0] || d?.date_maj || AUJOURDHUI;
+  const votes = (d?.votes || []).slice(0, NB_VOTES);
+  const nbMes = (n) => `${n} mesure${n > 1 ? 's' : ''}`;
+  const onglet = (sub, lib, n, actif) => `<button type="button" class="f${actif ? ' on' : ''}" data-sub="${esc(sub)}" aria-pressed="${actif}">${esc(lib)}<span class="nb" aria-hidden="true">${n}</span><span class="sr"> (${nbMes(n)})</span></button>`;
 
-  const fait = d && e.publie ? `${d.faits.map(blocFait).join('\n')}
-${d.votes?.length ? `<div style="margin-top:28px"><h3 style="margin:0 0 4px;font-size:20px;font-weight:600">Comment chaque groupe a voté <span aria-hidden="true">🏛️</span></h3>
-<p class="small" style="margin:0 0 14px;max-width:66ch">Les grandes lois du mandat sur ce thème. Pour chaque loi, la position majoritaire de chaque groupe à l'Assemblée nationale, et les candidats rattachés à ce groupe. Les mêmes lois pour tous. Survolez ou touchez un groupe pour lire, en une phrase, la raison qu'il a donnée, avec sa source.</p>
-${d.votes.map((v) => blocVote(v, t.slug)).join('\n')}
-${sansGroupe.length ? `<p class="small" style="margin:14px 0 0">Candidats dont le parti n'a pas de groupe à l'Assemblée : ${esc(sansGroupe.join(', '))}.</p>` : ''}</div>` : ''}`
-    : `<div class="fait"><p class="txt" style="margin:0 0 6px;font-weight:600">Le bilan du dernier mandat est en cours de rédaction.</p><p class="small" style="margin:0">Il ne dépend pas des programmes de 2027 : il sera publié en premier.</p></div>`;
+  const compteur = publies.length
+    ? `<strong>${publies.length} candidat${publies.length > 1 ? 's' : ''} sur ${candidats.length}</strong> ${publies.length > 1 ? 'ont' : 'a'} publié sur ce thème, soit ${toutes.length} mesure${toutes.length > 1 ? 's' : ''} clef${toutes.length > 1 ? 's' : ''}. Ordre alphabétique, 3 mesures au maximum chacun. Touchez une mesure pour voir son chiffrage et sa source.`
+    : `<strong>0 candidat sur ${candidats.length}</strong> a publié sur ce thème.`;
+  const filtre = publies.length && subs.length > 1
+    ? `<div class="filtre noprint"><p id="filtre-t" class="filtre-t">${svg(I.entonnoir, { t: 16, trait: '#3B4656' })}Filtrer par sous thème</p>
+<div class="seg" role="group" aria-labelledby="filtre-t">${onglet('tous', 'Tous', toutes.length, true)}${subs.map((s) => onglet(s, s, compte[s], false)).join('')}</div></div>`
+    : '';
+  const programmes = publies.length
+    ? `${filtre}<p class="sr" role="status" id="filtre-etat"></p><ul class="qpq-liste">${publies.map((c) => carteCandidat(c, t.slug, c === debutCol2)).join('\n')}</ul>`
+    : '<p class="qpq-vide">Aucun candidat n\'a encore publié de proposition sur ce thème.</p>';
+  const attente = enAttente.length ? `<section id="attente" class="sect" aria-labelledby="att-t">
+<h2 id="att-t">${svg(I.horloge, { t: 20, trait: '#4A5666', ep: 1.9 })}Pas encore de proposition publiée sur ce thème <span class="nb">${pluriel(enAttente.length, 'candidat')}</span></h2>
+<p class="att-intro">Non communiqué : aucune proposition publiée et datée trouvée. Ils apparaîtront dans « Programmes 2027 » dès qu'ils publieront. Ordre alphabétique.</p>
+<ul class="att-liste">${enAttente.map((c) => `<li><a href="candidat-${esc(c.id)}.html">${photo(c, 'xs')}<span class="att-txt"><span class="an">${esc(nomComplet(c))}</span><span class="ap">${esc(c.parti || 'Sans parti')}</span><span class="ap">Non communiqué, vérifié le ${dateFr(mesures[c.id]?.date_verif || verif)}</span></span></a></li>`).join('')}</ul>
+</section>` : '';
+  const posPresentes = POSITIONS.filter((p) => votes.some((v) => Object.values(v.positions || {}).some((x) => clePosition(x) === p.cle)));
+  const bilan = votes.length
+    ? `<div class="vlegende">${posPresentes.map((p) => `<span>${icPos(p, 18)}${p.mot}</span>`).join('')}</div>
+</div>
+<div class="votes2">${votes.map((v, k) => blocVote(v, k, t.slug)).join('\n')}</div>
+${sansGroupe.length ? `<p class="sans-groupe">${svg(I.info, { t: 16, trait: '#4A5666', style: 'flex:none;margin-top:3px' })}<span>Sans groupe à l'Assemblée, donc sans vote : ${esc(sansGroupe.map(nomComplet).join(', '))}.</span></p>` : ''}`
+    : `</div>
+<div class="fait"><p class="txt" style="margin:0 0 6px;font-weight:600">Le bilan du dernier mandat est en cours de rédaction.</p><p class="small" style="margin:0">Il ne dépend pas des programmes de 2027 : il sera publié en premier.</p></div>`;
 
   page({
     fichier: `${t.slug}.html`, titre: `${t.nom} : bilan et propositions 2027`, courant: 'themes.html', scripts: true,
-    description: `${t.nom} : ce qui a été fait pendant le mandat 2022-2027 et ce que proposent les candidats à la présidentielle 2027, avec les sources.`,
-    corps: `${chipsThemes(t.slug)}
-<div class="bandeau" style="background:${t.bg}">
+    description: `${t.nom} : ce que proposent les candidats à la présidentielle 2027 et deux votes du mandat 2022-2027, avec les sources.`,
+    corps: `<div class="page-theme">
+${chipsThemes(t.slug)}
+<div class="bandeau theme" style="background:${t.bg}">
+<div class="b-txt">
 <p class="ariane"><a class="lnk" href="index.html">Accueil</a> › ${esc(t.nom)}</p>
-<h1><span aria-hidden="true">${t.emoji} </span>${esc(t.nom)}</h1>
+<h1>${logoTheme(t)}<span>${esc(t.nom)}</span></h1>
 <p class="sous">${esc(t.sous)}</p>
-<p class="meta">${e.publie ? `Version du ${dateFr(d.date_maj)}. Propositions vérifiées le ${dateFr(verif)}.` : 'Fiche en préparation.'} <a class="lnk" href="methode.html">Comment nous travaillons</a></p>
-<div class="actions noprint"><button type="button" class="btn" id="copier"><span aria-hidden="true">🔗</span><span role="status">Copier le lien</span></button><button type="button" class="btn" id="imprimer"><span aria-hidden="true">🖨️</span>Imprimer ou enregistrer en PDF</button></div>
+<p class="meta">${e.publie ? `Version du ${dateFr(d.date_maj)}. Propositions vérifiées le ${dateFr(verif)}.` : `Propositions vérifiées le ${dateFr(verif)}.`} <a class="lnk" href="methode.html">Comment nous travaillons</a></p>
 </div>
-<nav class="ancres noprint" aria-label="Accès rapides"><span class="ancres-t">Accès rapides</span><a href="#bref"><span class="diese" aria-hidden="true">#</span>En bref</a><a href="#fait"><span class="diese" aria-hidden="true">#</span>Fait</a><a href="#props"><span class="diese" aria-hidden="true">#</span>2027</a><a href="#plus"><span class="diese" aria-hidden="true">#</span>Sources</a><a href="#controle"><span class="diese" aria-hidden="true">#</span>Vérification</a></nav>
-<section id="bref" class="sect deux" style="border-top:0" aria-labelledby="bref-t">
-<div class="g h2l"><h2 id="bref-t">En bref</h2><a class="ancre noprint" href="#bref" aria-label="Lien direct vers le bloc En bref">#</a></div>
-<div class="d"><p class="enbref">${esc(d?.en_bref || 'Résumé en préparation.')}</p></div>
+<div class="actions noprint"><button type="button" class="btn" id="copier">${svg(I.lien, { t: 18 })}<span role="status">Copier le lien</span></button><button type="button" class="btn" id="imprimer">${svg(I.imprimante, { t: 18 })}Imprimer ou enregistrer en PDF</button></div>
+<section id="bref" class="bref" aria-labelledby="bref-t">
+<h2 id="bref-t">${svg(I.ampoule, { t: 22, trait: '#3A35C8', ep: 1.9 })}En bref</h2>
+<p class="enbref">${esc(d?.en_bref || 'Résumé en préparation.')}</p>
 </section>
-<section aria-label="Lexique" style="padding:0 0 32px"><details class="lexique noprint"><summary>Que signifient ces étiquettes ?</summary><dl class="glo">${GLOSSAIRE.map(([a, b]) => `<div><dt>${a}</dt><dd>${b}</dd></div>`).join('')}</dl></details></section>
-<section id="fait" class="sect deux" aria-labelledby="fait-t">
-<div class="g"><div class="h2l"><h2 id="fait-t">Ce qui a été fait</h2><a class="ancre noprint" href="#fait" aria-label="Lien direct vers le bloc Ce qui a été fait">#</a></div>
-<p class="small" style="margin:4px 0 0;max-width:30ch">Bilan du mandat 2022-2027 : lois, budgets, résultats mesurés et votes.</p></div>
-<div class="d">${fait}</div>
+</div>
+<nav class="ancres noprint" aria-label="Accès rapides"><span class="ancres-t">Aller à</span><a class="anc" href="#qpq">${svg(I.document, { t: 18 })}Programmes 2027</a><a class="anc" href="#vote">${svg(I.colonnes, { t: 18 })}Bilan du mandat</a></nav>
+<section id="qpq" class="sect" aria-labelledby="qpq-t">
+<div class="qpq-tete"><div class="titre-ic">${tuile('document')}<h2 id="qpq-t">Programmes 2027</h2></div>
+<p class="compteur">${compteur}</p></div>
+${programmes}
 </section>
-<section id="props" class="sect" aria-labelledby="props-t" style="padding:36px 0;border-top:1px solid var(--trait)">
-<div class="h2l"><h2 id="props-t">Ce qui est proposé pour 2027</h2><a class="ancre noprint" href="#props" aria-label="Lien direct vers le bloc Ce qui est proposé pour 2027">#</a></div>
-<p class="small" style="margin:4px 0 18px;max-width:70ch">${candidats.length} candidats déclarés. En haut, les ${avecMesures} qui ont publié au moins une proposition sur ce thème, dans l'ordre alphabétique, avec 3 mesures clefs au maximum chacun, choisies avec le même critère pour tous. En dessous, ceux qui n'ont encore rien publié sur ce thème. La couleur repère un parti, elle ne le classe pas.</p>
-${legendeNiveaux()}
-<div class="outils noprint">${subs.length > 1 ? `<span class="lab">Sous thème :</span><button type="button" class="f" data-sub="tous" aria-pressed="true">Tous</button>${subs.map((s) => `<button type="button" class="f" data-sub="${esc(s)}" aria-pressed="false">${esc(s)}</button>`).join('')}` : ''}
-<button type="button" class="btn" id="toutbtn" data-etat="ouvert">Tout replier</button></div>
-${publies.length ? `<div class="cartes">${publies.map((c) => carteCandidat(c, t.slug)).join('\n')}</div>` : `<p class="vide" style="border:0">Aucun candidat n'a encore publié de proposition sur ce thème.</p>`}
-${enAttente.length ? `<section class="attente-groupe" aria-labelledby="attente-t">
-<h3 id="attente-t">Pas encore de proposition publiée sur ce thème <span class="nb">${enAttente.length} candidat${enAttente.length > 1 ? 's' : ''}</span></h3>
-<p class="small" style="margin:0 0 12px;max-width:70ch">Non communiqué : aucune proposition publiée et datée trouvée au ${dateFr(verif)}. Ils apparaîtront en haut dès qu'ils publieront. Ordre alphabétique.</p>
-<ul class="attente-liste">${enAttente.map((c) => `<li><a class="cand" href="candidat-${esc(c.id)}.html">${photo(c, 's')}<span class="txt"><span class="an">${esc(nomComplet(c))}</span><span class="ap">${esc(c.parti || 'Sans parti')}${c.programme ? '' : ' · Programme 2027 pas encore publié'}</span></span>${logoParti(c, true)}</a></li>`).join('')}</ul>
-</section>` : ''}
+${attente}
+<section id="vote" class="sect" aria-labelledby="vote-t">
+<div class="vote-tete"><div class="titre-ic">${HEMICYCLE}<div><h2 id="vote-t">Bilan du mandat : deux votes</h2>
+<p class="vote-intro">Position majoritaire de chaque groupe à l'Assemblée nationale. Touchez un groupe pour lire la raison qu'il a donnée et voir ses candidats.</p></div></div>
+${bilan}
 </section>
-<section id="plus" class="sect deux" aria-labelledby="plus-t">
-<div class="g h2l"><h2 id="plus-t">Pour aller plus loin</h2><a class="ancre noprint" href="#plus" aria-label="Lien direct vers le bloc Pour aller plus loin">#</a></div>
+<section id="plus" class="sect deux t-deux" aria-labelledby="plus-t">
+<div class="g"><h2 id="plus-t">Pour aller plus loin</h2></div>
 <div class="d"><ul class="plus">${(d?.liens || []).map((l) => `<li><a class="lnk" href="${url(l.url)}"${ext}>${esc(l.titre)}</a><span class="m">${esc(l.type || 'Site externe')}, s'ouvre dans un nouvel onglet</span></li>`).join('')}
 <li><a class="lnk" href="candidats.html">Programmes officiels et sites de campagne de chaque candidat</a><span class="m">Page du site</span></li></ul></div>
 </section>
-<section id="controle" class="sect deux" aria-labelledby="ctrl-t">
-<div class="g h2l"><h2 id="ctrl-t">Vérification</h2><a class="ancre noprint" href="#controle" aria-label="Lien direct vers le bloc Vérification">#</a></div>
+<section id="controle" class="sect deux t-deux" aria-labelledby="ctrl-t">
+<div class="g"><h2 id="ctrl-t">Vérification</h2></div>
 <div class="d"><p style="margin:0 0 12px">Version du ${dateFr(d?.date_maj || AUJOURDHUI)}. Dernière vérification des propositions : ${dateFr(verif)}. Relecture : en attente de relecture humaine (version V0).</p>
 <p class="small" style="margin:0 0 12px;max-width:60ch">Vous repérez une erreur ou une mesure mal présentée ? Signalez-la : nous répondons sous 72 heures et la correction est publique.</p>
 <div class="noprint" style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px"><a class="btn noir" href="signaler.html">Signaler une erreur</a><a class="lnk" href="historique.html">Historique des modifications</a><a class="lnk" href="methode.html">Méthode complète</a></div></div>
 </section>
-<nav class="suivant noprint" aria-label="Thème suivant"><a href="themes.html">Tous les thèmes</a><a class="nx" href="${suivant.slug}.html" style="background:${suivant.bg}"><small>Thème suivant</small><span><span aria-hidden="true">${suivant.emoji} </span>${esc(suivant.nom)}</span></a></nav>`,
+</div>`,
   });
 }
 
