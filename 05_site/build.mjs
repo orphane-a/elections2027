@@ -306,8 +306,7 @@ function pageThemes() {
     corps: `<div class="bandeau" style="background:#E3E1FB;margin-top:24px"><p class="ariane"><a class="lnk" href="index.html">Accueil</a> › Thèmes</p>
 <h1>Tous les thèmes <span aria-hidden="true">🗂️</span></h1>
 <p class="sous">${THEMES.length} thèmes. Pour chacun : ce qu'a fait le dernier mandat, ce que propose chaque candidat et la source de chaque information.</p></div>
-<div class="tuiles" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))">${tuiles}</div>
-<p class="small" style="margin:16px 0 40px">Point plein : fiche publiée. Point pointillé : fiche en préparation.</p>`,
+<div class="tuiles" style="grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));margin-bottom:40px">${tuiles}</div>`,
   });
 }
 

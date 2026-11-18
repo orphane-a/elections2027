@@ -70,3 +70,10 @@ test('accueil : plus de phrase « Point plein… Point pointillé… » sous les
   assert.equal(index.includes('class="legende"'), false);
   assert.match(index, /<div class="tuiles" style="margin-bottom:40px">/);
 });
+
+test('page « Tous les thèmes » : plus de phrase « Point plein… Point pointillé… » (ticket 89)', () => {
+  generer();
+  const themes = fs.readFileSync(path.join(tmp, '05_site', 'public', 'themes.html'), 'utf8');
+  assert.equal(themes.includes('Point plein'), false);
+  assert.match(themes, /<div class="tuiles" style="[^"]*margin-bottom:40px">/);
+});
