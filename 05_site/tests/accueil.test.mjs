@@ -63,3 +63,10 @@ test('le site versionné dans public/ ne contient plus la phrase', () => {
   assert.equal(index.includes(PHRASE), false);
   assert.equal(css.includes('.tete-themes p'), false);
 });
+
+test('accueil : plus de phrase « Point plein… Point pointillé… » sous les thèmes, ni de légende des repères (ticket 89)', () => {
+  const { index } = generer();
+  assert.equal(index.includes('Point plein'), false);
+  assert.equal(index.includes('class="legende"'), false);
+  assert.match(index, /<div class="tuiles" style="margin-bottom:40px">/);
+});

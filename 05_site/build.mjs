@@ -267,8 +267,7 @@ function accueil() {
 </section>
 <section aria-labelledby="themes">
 <div class="tete-themes"><h2 id="themes">Choisissez un thème <span aria-hidden="true">🗳️</span></h2></div>
-<div class="tuiles">${tuiles}</div>
-<p class="small" style="margin:16px 0 40px">Point plein : fiche publiée. Point pointillé : fiche en préparation.</p>
+<div class="tuiles" style="margin-bottom:40px">${tuiles}</div>
 </section>
 <section class="bloc" aria-labelledby="cands-t">
 <h2 id="cands-t">Tous les candidats, tous les partis <span aria-hidden="true">🧑‍🤝‍🧑</span></h2>
