@@ -48,7 +48,6 @@ footer.pied .liens a{display:inline-flex;align-items:center;min-height:44px}
 .bloc>p.intro{margin:0 0 20px;max-width:66ch;color:var(--doux2)}
 .tete-themes{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 24px;margin:20px 0 14px}
 .tete-themes h2{margin:0;font-weight:600;font-size:26px}
-.tete-themes p{margin:0;font-size:15px;color:var(--doux2)}
 .tuiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:10px}
 @media (max-width:520px){
   .tuiles{grid-template-columns:1fr 1fr;gap:8px}
@@ -62,7 +61,6 @@ footer.pied .liens a{display:inline-flex;align-items:center;min-height:44px}
   .legende{margin-top:10px;gap:4px 16px;font-size:14px}
   .tete-themes{margin:14px 0 10px}
   .tete-themes h2{font-size:22px}
-  .tete-themes p{display:none}
 }
 .tuile{display:flex;flex-direction:column;gap:8px;min-height:104px;padding:14px;border:1px solid rgba(20,32,46,.08);border-radius:16px;text-decoration:none;color:var(--texte);transition:border-color .15s,box-shadow .15s}
 .tuile:hover{border-color:var(--texte);box-shadow:0 0 0 1px var(--texte)}

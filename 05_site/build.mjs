@@ -267,7 +267,7 @@ function accueil() {
 <div class="legende"><div><span class="plein" aria-hidden="true"></span><span>Ce qui a été fait</span></div><div><span class="pointille" aria-hidden="true"></span><span>Ce qui est proposé pour 2027</span></div></div>
 </section>
 <section aria-labelledby="themes">
-<div class="tete-themes"><h2 id="themes">Choisissez un thème <span aria-hidden="true">🗳️</span></h2><p>Une fiche se lit en quelques minutes.</p></div>
+<div class="tete-themes"><h2 id="themes">Choisissez un thème <span aria-hidden="true">🗳️</span></h2></div>
 <div class="tuiles">${tuiles}</div>
 <p class="small" style="margin:16px 0 40px">Point plein : fiche publiée. Point pointillé : fiche en préparation.</p>
 </section>
