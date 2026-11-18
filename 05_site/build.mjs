@@ -430,7 +430,6 @@ ${sansGroupe.length ? `<p class="small" style="margin:14px 0 0">Candidats dont l
 <div class="g h2l"><h2 id="bref-t">En bref</h2><a class="ancre noprint" href="#bref" aria-label="Lien direct vers le bloc En bref">#</a></div>
 <div class="d"><p class="enbref">${esc(d?.en_bref || 'Résumé en préparation.')}</p></div>
 </section>
-<section aria-label="Lexique" style="padding:0 0 32px"><details class="lexique noprint"><summary>Que signifient ces étiquettes ?</summary><dl class="glo">${GLOSSAIRE.map(([a, b]) => `<div><dt>${a}</dt><dd>${b}</dd></div>`).join('')}</dl></details></section>
 <section id="fait" class="sect deux" aria-labelledby="fait-t">
 <div class="g"><div class="h2l"><h2 id="fait-t">Ce qui a été fait</h2><a class="ancre noprint" href="#fait" aria-label="Lien direct vers le bloc Ce qui a été fait">#</a></div>
 <p class="small" style="margin:4px 0 0;max-width:30ch">Bilan du mandat 2022-2027 : lois, budgets, résultats mesurés et votes.</p></div>
