@@ -268,3 +268,15 @@ test('le site versionné dans public/ utilise le nouveau gabarit sur les 10 page
     assert.equal(html.includes('Que signifient ces étiquettes'), false, slug);
   }
 });
+
+test('une seule série d\'emojis de thèmes sur tout le site (accueil, page Thèmes, fiches candidat)', () => {
+  const dossier = path.join(dossiers[0], '05_site', 'public');
+  const lirePage = (f) => fs.readFileSync(path.join(dossier, f), 'utf8');
+  for (const f of ['index.html', 'themes.html']) {
+    const html = lirePage(f);
+    for (const [s, e] of Object.entries(EMOJIS)) assert.match(html, new RegExp(`href="${s}\.html"[^>]*>\n<span class="emo" aria-hidden="true">${e}</span>`), `${f} : ${s}`);
+    for (const ancien of ['🌱', '🛒', '🏥', '🛡️', '🇪🇺']) assert.equal(html.includes(ancien), false, `${f} : ${ancien}`);
+  }
+  const fiche = lirePage(`candidat-${candidats[0].id}.html`);
+  for (const e of Object.values(EMOJIS)) assert.ok(fiche.includes(`<span aria-hidden="true">${e} </span>`), `fiche candidat : ${e}`);
+});

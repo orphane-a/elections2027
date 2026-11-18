@@ -20,15 +20,15 @@ const urlPage = (fichier) => `${SITE_URL}/${fichier === 'index.html' ? '' : fich
 // ---------- Référentiels ----------
 const THEMES = [
   { slug: 'education', emoji: '🎓', nom: 'Éducation', sous: 'École, enseignants, enseignement supérieur', bg: '#E3E1FB' },
-  { slug: 'ecologie', emoji: '🌱', nom: 'Écologie et énergie', sous: 'Transition, énergies, transports, biodiversité', bg: '#D5F0E5' },
-  { slug: 'pouvoir_achat', emoji: '🛒', nom: "Pouvoir d'achat", sous: 'Salaires, prix, énergie, fiscalité des ménages', bg: '#FFE6BF' },
+  { slug: 'ecologie', emoji: '🌿', nom: 'Écologie et énergie', sous: 'Transition, énergies, transports, biodiversité', bg: '#D5F0E5' },
+  { slug: 'pouvoir_achat', emoji: '💶', nom: "Pouvoir d'achat", sous: 'Salaires, prix, énergie, fiscalité des ménages', bg: '#FFE6BF' },
   { slug: 'travail', emoji: '💼', nom: 'Travail et emploi', sous: 'Chômage, retraites, conditions de travail', bg: '#D8E7FA' },
-  { slug: 'sante', emoji: '🏥', nom: 'Santé', sous: 'Hôpital, déserts médicaux, prévention', bg: '#FBDCE5' },
+  { slug: 'sante', emoji: '❤️', nom: 'Santé', sous: 'Hôpital, déserts médicaux, prévention', bg: '#FBDCE5' },
   { slug: 'logement', emoji: '🏠', nom: 'Logement', sous: 'Loyers, construction, passoires thermiques', bg: '#FAEDB8' },
-  { slug: 'securite', emoji: '🛡️', nom: 'Sécurité et justice', sous: 'Délinquance, police, moyens de la justice', bg: '#DDE3EE' },
+  { slug: 'securite', emoji: '⚖️', nom: 'Sécurité et justice', sous: 'Délinquance, police, moyens de la justice', bg: '#DDE3EE' },
   { slug: 'immigration', emoji: '🌍', nom: 'Immigration et intégration', sous: 'Asile, titres de séjour, intégration', bg: '#D3EDF1' },
   { slug: 'institutions', emoji: '🏛️', nom: 'Institutions et démocratie', sous: 'Mode de scrutin, référendum, décentralisation', bg: '#EADDF6' },
-  { slug: 'europe', emoji: '🇪🇺', nom: 'Europe et international', sous: "Défense, relations avec l'UE, diplomatie", bg: '#FFDACB' },
+  { slug: 'europe', emoji: '⭐', nom: 'Europe et international', sous: "Défense, relations avec l'UE, diplomatie", bg: '#FFDACB' },
 ];
 const GROUPES = {
   RN: 'Rassemblement national', LFI: 'La France insoumise', SOC: 'Socialistes et apparentés',
@@ -441,9 +441,8 @@ ${x.chiffrage ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>
 <p class="aucun-sub" hidden>Aucune mesure clef retenue sur ce sous thème.</p>
 </li>`;
 }
-// Emojis des liens de thèmes (rangée ordinateur et sélecteur mobile), décoratifs : masqués aux lecteurs d'écran.
-const EMOJI_NAV = { education: '🎓', ecologie: '🌿', pouvoir_achat: '💶', travail: '💼', sante: '❤️', logement: '🏠', securite: '⚖️', immigration: '🌍', institutions: '🏛️', europe: '⭐' };
-const emoNav = (t) => `<span class="emo" aria-hidden="true">${EMOJI_NAV[t.slug]}</span>`;
+// Emojis des liens de thèmes (les mêmes que partout sur le site, voir THEMES), décoratifs : masqués aux lecteurs d'écran.
+const emoNav = (t) => `<span class="emo" aria-hidden="true">${t.emoji}</span>`;
 const lienTheme = (t, courant, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${t.slug}.html"${t.slug === courant ? ' aria-current="page"' : ` style="background:${t.bg}"`}>${emoNav(t)}${esc(t.nom)}</a>`;
 // Ordinateur : rangée de liens. Mobile (moins de 640 px) : menu déroulant « Choisir un thème », sans JavaScript.
 const chipsThemes = (courant) => {
