@@ -146,6 +146,8 @@
   var lire = function () { try { return window.localStorage.getItem(CLE); } catch (e) { return null; } };
   var ecrire = function (v) { try { window.localStorage.setItem(CLE, v); } catch (e) { /* stockage indisponible : pas de pastille mémorisée */ } };
   var pastille = null;
+  // Visiter la page des mises à jour compte comme avoir vu les nouveautés
+  if (date && /nouveautes\.html$/.test(location.pathname)) ecrire(date);
   if (date && nb > 0 && lire() !== date) {
     pastille = document.createElement('span');
     pastille.className = 'pastille';
@@ -159,7 +161,10 @@
     pop.hidden = false;
     btn.setAttribute('aria-expanded', 'true');
     if (date) ecrire(date);
-    if (pastille) { pastille.remove(); pastille = null; btn.setAttribute('aria-label', 'Nouveautés'); }
+    // La pastille est cachée, pas retirée : un clic tombé sur elle reste un clic dans la cloche
+    if (pastille) { pastille.hidden = true; pastille = null; btn.setAttribute('aria-label', 'Nouveautés'); }
+    // Une seule fenêtre ouverte à la fois : on referme les étiquettes de niveau
+    document.querySelectorAll('details.niv[open]').forEach(function (d) { d.open = false; });
     pop.focus();
   };
   var fermer = function (rendreFocus) {
@@ -171,11 +176,16 @@
   btn.addEventListener('click', function () { if (ouvert()) fermer(false); else ouvrir(); });
   var f = pop.querySelector('.fermer');
   if (f) f.addEventListener('click', function () { fermer(true); });
+  // Phase de capture : Échap ferme d'abord la cloche et rend le focus au bouton, sans toucher au reste de la page
   document.addEventListener('keydown', function (e) {
-    if ((e.key === 'Escape' || e.key === 'Esc') && ouvert()) { e.preventDefault(); fermer(true); }
-  });
+    if ((e.key === 'Escape' || e.key === 'Esc') && ouvert()) { e.preventDefault(); e.stopImmediatePropagation(); fermer(true); }
+  }, true);
+  var dansCloche = function (e) {
+    var chemin = e.composedPath ? e.composedPath() : [];
+    return cloche.contains(e.target) || chemin.indexOf(cloche) > -1;
+  };
   document.addEventListener('click', function (e) {
-    if (ouvert() && !cloche.contains(e.target)) fermer(false);
+    if (ouvert() && !dansCloche(e)) fermer(false);
   });
   document.addEventListener('focusin', function (e) {
     if (ouvert() && !cloche.contains(e.target)) fermer(false);
