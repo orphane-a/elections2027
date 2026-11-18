@@ -134,32 +134,34 @@ function viabilite(x, cid, slug) {
   };
 }
 const ligneSource = (s) => `<li><a class="lnk" href="${url(s.url)}"${ext}>${esc(INST[s.institution]?.nom || s.institution)}, ${esc(s.titre)}${s.date ? `, ${dateFr(s.date)}` : ''}</a>${s.verdict ? `<span class="m">${esc(s.verdict)}</span>` : ''}</li>`;
+// Bloc niveau statique (ticket 92) : visible dès que la mesure est dépliée, sans survol ni second clic.
+// Seules les sources du chiffrage restent derrière un lien repliable, ouvert au clic ou au clavier.
+const CHEVRON = '<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>';
 function etiquette(x, cid, slug) {
   const v = viabilite(x, cid, slug);
   if (!v) {
     const n = NIVEAUX.non_chiffree;
-    return `<details class="niv">
-<summary class="niv-btn"><span class="sr">Chiffrage : </span>${iconeNiveau('non_chiffree')}<span>${n.titre}</span><span class="i" aria-hidden="true">i</span><span class="sr"> (afficher l'explication)</span></summary>
-<div class="niv-pop">
+    return `<div class="nivbloc">
+<p class="niv-t"><span class="sr">Chiffrage : </span>${iconeNiveau('non_chiffree')}<span>${n.titre}</span></p>
 <p class="def">${n.def}</p>
-<a class="lnk" href="methode.html#chiffrage">Notre méthode</a>
-</div>
-</details>`;
+<a class="lnk discret" href="methode.html#chiffrage">Notre méthode</a>
+</div>`;
   }
   const n = NIVEAUX[v.niveau];
-  return `<details class="niv">
-<summary class="niv-btn"><span class="sr">Niveau du chiffre : </span>${iconeNiveau(v.niveau)}<span>${n.titre}</span><span class="i" aria-hidden="true">i</span><span class="sr"> (afficher l'explication)</span></summary>
-<div class="niv-pop">
-${v.brouillon ? '<p><span class="badge-verif" style="margin:0">À relire</span></p>' : ''}<p class="def">${n.def}</p>
-<p class="t">Pourquoi ce niveau</p><p>${esc(v.raison)}</p>
+  return `<div class="nivbloc">
+<p class="niv-t"><span class="sr">Niveau du chiffre : </span>${iconeNiveau(v.niveau)}<span>${n.titre}</span></p>
+<p class="def">${n.def}</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">${esc(v.raison)}</p>
+<details class="srcch"><summary>${CHEVRON}Voir les sources du chiffrage</summary>
+<div class="srcch-c">
 <dl><dt>Chiffre annoncé</dt><dd>${esc(v.chiffre)}</dd><dt>Estimations des sources</dt><dd>${esc(v.estimations)}</dd></dl>
 ${v.sources.length ? `<p class="t">Sources</p><ul>${v.sources.map(ligneSource).join('')}</ul>` : ''}
 ${v.divergentes.length ? `<p class="t">Sources qui ne vont pas dans le même sens</p><ul>${v.divergentes.map(ligneSource).join('')}</ul>` : ''}
 ${v.autres.length ? `<p class="t">Autres avis</p><p class="m">Think tanks qui assument une orientation : affichés pour information, ils ne comptent pas pour le niveau.</p><ul>${v.autres.map(ligneSource).join('')}</ul>` : ''}
-<p class="m">Dernière vérification : ${dateFr(v.date)}</p>
-<a class="lnk" href="panel-sources.html">Méthode et panel de sources</a>
-</div>
-</details>`;
+${v.brouillon ? '<p><span class="badge-verif" style="margin:0">À relire</span></p>' : ''}<p class="m">Dernière vérification : ${dateFr(v.date)}</p>
+<a class="lnk discret" href="panel-sources.html">Méthode et panel de sources</a>
+</div></details>
+</div>`;
 }
 
 // Couleur et logo fixes par parti : teintes réparties à l'angle d'or, même luminosité pour tous (aucun classement)
@@ -431,7 +433,7 @@ function carteCandidat(c, slug, col2 = false) {
 <button type="button" class="mbtn" aria-expanded="false" aria-controls="${id}">${PLUS}<span class="mt">${esc(x.texte)}</span></button>
 <div class="mdet" id="${id}">
 ${x.sous_theme ? `<p><span class="tag">${esc(x.sous_theme)}</span></p>` : ''}
-${x.chiffrage ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, slug)}
+${x.chiffrage && /\d/.test(x.chiffrage) ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, slug)}
 <p class="msource">Source : <a class="lnk" href="${url(s.url)}"${ext}>${esc(s.titre)}${ICONE_EXT}</a>${NOUVEL_ONGLET}${dates ? `<span class="mdates">${dates}</span>` : ''}</p>
 </div></li>`;
   }).join('\n');
@@ -571,7 +573,7 @@ function pageCandidats() {
     const blocs = THEMES.map((t) => {
       const l = m?.themes?.[t.slug] || [];
       return `<section class="deux"><div class="g"><h2 style="margin:0;font-size:22px;font-weight:600"><span aria-hidden="true">${t.emoji} </span>${esc(t.nom)}</h2><p class="small" style="margin:4px 0 0"><a class="lnk" href="${t.slug}.html#cand-${esc(c.id)}">Comparer sur ce thème</a></p></div>
-<div class="d">${l.length ? l.slice(0, 3).map((x) => `<div class="mesure"><p class="mt">${esc(x.texte)}</p>${x.chiffrage ? `<p class="chiffre">${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, t.slug)}<a class="lnk" href="${url(x.source?.url)}"${ext} style="font-size:14px">${esc(x.source?.titre)}${x.source?.date ? `, ${dateFr(x.source.date)}` : ''}</a></div>`).join('') : '<p class="vide" style="border:0;padding:0">Non communiqué.</p>'}</div></section>`;
+<div class="d">${l.length ? l.slice(0, 3).map((x) => `<div class="mesure"><p class="mt">${esc(x.texte)}</p>${x.chiffrage && /\d/.test(x.chiffrage) ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, t.slug)}<a class="lnk" href="${url(x.source?.url)}"${ext} style="font-size:14px">${esc(x.source?.titre)}${x.source?.date ? `, ${dateFr(x.source.date)}` : ''}</a></div>`).join('') : '<p class="vide" style="border:0;padding:0">Non communiqué.</p>'}</div></section>`;
     }).join('\n');
     page({
       fichier: `candidat-${c.id}.html`, titre: `${nomComplet(c)} : propositions 2027`, courant: 'candidats.html', scripts: true,
@@ -606,7 +608,7 @@ function pagesTexte() {
       ['candidats', 'Quels candidats', `<p>Tous les candidats qui ont déclaré leur candidature, quel que soit leur score dans les sondages. Quand une candidature n'est confirmée que par une seule source, ou que les sources divergent, nous l'indiquons avec l'étiquette « Candidature à confirmer ». La liste est revérifiée régulièrement jusqu'à la publication officielle de la liste du Conseil constitutionnel.</p>`],
       ['principes', 'Nos principes', `<p><strong>Mêmes règles pour tous.</strong> Même gabarit, même nombre de mesures, même ton, ordre alphabétique.</p><p><strong>Sources primaires d'abord.</strong> Programme officiel, site de campagne, puis déclarations publiques datées (interview, discours, tribune) rapportées par un média identifié. Pour le bilan : textes de loi, rapports officiels et statistiques publiques (INSEE, Cour des comptes, ministères, Assemblée nationale).</p><p><strong>Des faits, pas de jugements.</strong> Aucun adjectif qui juge, aucun classement, aucune recommandation de vote.</p><p><strong>Pas de source, pas d'affirmation.</strong> Si une position n'est pas publiée, nous écrivons « Non communiqué ». Nous ne devinons jamais.</p>`],
       ['mesures', 'Choix des mesures clefs', `<p>Une mesure est retenue si le candidat la présente comme prioritaire, ou si elle a un impact concret sur la vie quotidienne. Le même critère s'applique à tous : 3 mesures au maximum par candidat et par thème. Chaque mesure renvoie vers sa source et sa date.</p><p>Si le candidat ne donne pas le coût d'une mesure, l'étiquette « Mesure non chiffrée par le parti » l'indique, sans commentaire. Nous ne produisons pas nos propres estimations : quand une mesure est chiffrée, nous comparons le chiffre aux travaux publics d'institutions indépendantes (voir le bloc suivant).</p>`],
-      ['chiffrage', 'Les chiffres des mesures', `<p>Quand un candidat chiffre une mesure, une étiquette indique si ce chiffre est cohérent avec les estimations publiques d'institutions indépendantes. Elle juge la solidité du chiffre, jamais l'intérêt de la mesure. Aucune note globale, aucun classement des candidats.</p><ul class="plus">${['non_chiffree', ...ORDRE_NIVEAUX].map((k) => `<li><span class="niv-chip">${iconeNiveau(k)}${NIVEAUX[k].titre}</span><span class="m" style="margin-top:6px">${NIVEAUX[k].def}</span></li>`).join('')}</ul><p>Un niveau est attribué seulement si au moins deux institutions différentes du panel se prononcent, dont au moins une du premier cercle hors Cour des comptes et Haut Conseil des finances publiques (qui ne se cumulent pas). Sinon, la mesure reste « Mesure chiffrée non évaluable ». Deux notes d'une même institution comptent pour une seule. La même grille et le même seuil s'appliquent à tous les candidats.</p><p>Cliquer ou toucher le niveau ouvre une explication : la raison, le chiffre annoncé, les estimations, les sources (y compris celles qui ne vont pas dans le même sens) et la date de vérification. Chaque niveau est relu par une personne avant publication. Une mesure sans chiffre reçoit l'étiquette « Mesure non chiffrée par le parti », qui a la même forme mais n'est pas un niveau : il n'y a rien à comparer.</p><p><a class="lnk" href="panel-sources.html">Voir le panel de sources</a></p>`],
+      ['chiffrage', 'Les chiffres des mesures', `<p>Quand un candidat chiffre une mesure, une étiquette indique si ce chiffre est cohérent avec les estimations publiques d'institutions indépendantes. Elle juge la solidité du chiffre, jamais l'intérêt de la mesure. Aucune note globale, aucun classement des candidats.</p><ul class="plus">${['non_chiffree', ...ORDRE_NIVEAUX].map((k) => `<li><span class="niv-chip">${iconeNiveau(k)}${NIVEAUX[k].titre}</span><span class="m" style="margin-top:6px">${NIVEAUX[k].def}</span></li>`).join('')}</ul><p>Un niveau est attribué seulement si au moins deux institutions différentes du panel se prononcent, dont au moins une du premier cercle hors Cour des comptes et Haut Conseil des finances publiques (qui ne se cumulent pas). Sinon, la mesure reste « Mesure chiffrée non évaluable ». Deux notes d'une même institution comptent pour une seule. La même grille et le même seuil s'appliquent à tous les candidats.</p><p>Quand on déplie une mesure avec le bouton « + », on voit tout de suite si elle est chiffrée par le parti, son niveau, ce qu'il veut dire et pourquoi il a été attribué. Le lien « Voir les sources du chiffrage » donne ensuite le chiffre annoncé, les estimations, les sources (y compris celles qui ne vont pas dans le même sens) et la date de vérification. Chaque niveau est relu par une personne avant publication. Une mesure sans chiffre reçoit l'étiquette « Mesure non chiffrée par le parti », qui a la même forme mais n'est pas un niveau : il n'y a rien à comparer.</p><p><a class="lnk" href="panel-sources.html">Voir le panel de sources</a></p>`],
       ['bilan', 'Bilan du mandat et votes', `<p>Le bilan présente, pour chaque thème, 3 à 5 faits du mandat 2022-2027 : lois votées, budgets, résultats mesurés par des organismes publics, avec leur date, leur source et leur origine (gouvernement, Parlement ou facteur extérieur). Il ne désigne ni coupable ni gagnant.</p><p>Pour les votes, nous retenons 2 ou 3 grandes lois du thème et affichons, pour les mêmes lois et pour tous les groupes, la position majoritaire de chaque groupe à l'Assemblée nationale lors du scrutin public, avec le lien vers ce scrutin. Le mandat couvre deux législatures (2022-2024 puis depuis 2024) : un groupe qui n'existait pas encore apparaît « Non représenté ». Chaque candidat est rattaché au groupe où siègent les députés de son parti, ou indiqué « Sans groupe à l'Assemblée ».</p><p>Pour chaque groupe, une phrase de 160 caractères au plus résume la raison que le groupe a lui-même donnée pour son vote, en priorité lors des explications de vote en séance (compte rendu de l'Assemblée nationale), avec le lien vers cette source. Chaque phrase est relue avant publication. Sans source trouvée, nous écrivons « Explication non disponible ».</p><p>Quand des sources sérieuses se contredisent, nous retenons la plus consensuelle et nous signalons la contestation, avec l'objet du désaccord et le lien vers l'autre analyse.</p>`],
       ['etiquettes', 'Comprendre les étiquettes', `<dl class="glo" style="padding:0">${GLOSSAIRE.map(([a, b]) => `<div><dt>${a}</dt><dd>${b}</dd></div>`).join('')}</dl>`],
       ['logos', 'Repères et couleurs des partis', `<p>Chaque parti a un repère (son sigle) et une couleur, identiques sur toutes les pages. Les couleurs sont réparties automatiquement, avec la même intensité pour tous : elles servent à repérer un parti d'un coup d'œil, jamais à le classer. Le nom du parti est toujours écrit à côté.</p><p><strong>Photos et logos.</strong> Nous utilisons uniquement des images publiées sous licence libre ou dans le domaine public sur Wikimedia Commons, avec le nom de l'auteur et la licence. Les photos sont recadrées sur le visage, au même format pour tous. Quand aucune photo libre n'existe, nous affichons les initiales du candidat ; quand aucun logo libre n'existe, le repère du site (sigle et couleur). Un candidat ou son équipe peut nous proposer une photo libre de droits.</p><details><summary class="lnk" style="cursor:pointer">Crédits des images</summary><ul class="plus">${candidats.map((c) => `<li>${esc(nomComplet(c))}<span class="m">${IMAGES.photos[c.id] ? `Photo : ${credit(IMAGES.photos[c.id])}` : 'Photo : non disponible'}. ${logoDe(c) ? `Logo : ${credit(IMAGES.logos[logoDe(c)])}` : 'Logo : repère du site'}.</span></li>`).join('')}${Object.entries(IMAGES.logos).filter(([, v]) => !v.candidats.length).map(([k, v]) => `<li>Logo ${esc(k === 'MODEM' ? 'du MoDem' : k === 'UDR' ? "de l'UDR" : k)} (votes à l'Assemblée)<span class="m">${credit(v)}.</span></li>`).join('')}</ul><p>Dans les votes à l'Assemblée, chaque groupe est repéré par le logo du parti dont il est issu (par exemple le logo du Parti socialiste pour le groupe Socialistes et apparentés). Le groupe LIOT, qui ne correspond à aucun parti, garde son sigle.</p></details>`],
