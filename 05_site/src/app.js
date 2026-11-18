@@ -132,3 +132,52 @@
     });
   }
 })();
+// Cloche des nouveautés (ticket 90) : ouverture au clic, à Entrée ou Espace, fermeture par Échap, « Fermer » ou clic extérieur.
+// Pastille : nombre de nouveautés pas encore vues, mémorisé dans le navigateur (localStorage), jamais de cookie.
+(function () {
+  var cloche = document.querySelector('.cloche');
+  if (!cloche) return;
+  var btn = cloche.querySelector('.cloche-js');
+  var pop = document.getElementById('cloche-pop');
+  if (!btn || !pop) return;
+  var CLE = 'nouveautes-vues';
+  var date = cloche.getAttribute('data-maj') || '';
+  var nb = parseInt(cloche.getAttribute('data-nb') || '0', 10) || 0;
+  var lire = function () { try { return window.localStorage.getItem(CLE); } catch (e) { return null; } };
+  var ecrire = function (v) { try { window.localStorage.setItem(CLE, v); } catch (e) { /* stockage indisponible : pas de pastille mémorisée */ } };
+  var pastille = null;
+  if (date && nb > 0 && lire() !== date) {
+    pastille = document.createElement('span');
+    pastille.className = 'pastille';
+    pastille.setAttribute('aria-hidden', 'true');
+    pastille.textContent = String(nb);
+    btn.appendChild(pastille);
+    btn.setAttribute('aria-label', 'Nouveautés, ' + nb + ' non vue' + (nb > 1 ? 's' : ''));
+  }
+  var ouvert = function () { return btn.getAttribute('aria-expanded') === 'true'; };
+  var ouvrir = function () {
+    pop.hidden = false;
+    btn.setAttribute('aria-expanded', 'true');
+    if (date) ecrire(date);
+    if (pastille) { pastille.remove(); pastille = null; btn.setAttribute('aria-label', 'Nouveautés'); }
+    pop.focus();
+  };
+  var fermer = function (rendreFocus) {
+    if (!ouvert()) return;
+    pop.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    if (rendreFocus) btn.focus();
+  };
+  btn.addEventListener('click', function () { if (ouvert()) fermer(false); else ouvrir(); });
+  var f = pop.querySelector('.fermer');
+  if (f) f.addEventListener('click', function () { fermer(true); });
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && ouvert()) { e.preventDefault(); fermer(true); }
+  });
+  document.addEventListener('click', function (e) {
+    if (ouvert() && !cloche.contains(e.target)) fermer(false);
+  });
+  document.addEventListener('focusin', function (e) {
+    if (ouvert() && !cloche.contains(e.target)) fermer(false);
+  });
+})();

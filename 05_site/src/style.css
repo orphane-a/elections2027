@@ -252,3 +252,49 @@ details.niv{margin:6px 0 8px}
 .grp-btn{border:0;border-radius:8px;background:transparent}
 .grp-btn:focus-visible{outline-offset:-2px}
 .grp .c{margin:0;padding:10px 10px 12px;border-top:1px solid var(--trait)}
+/* Cloche des nouveautés (ticket 90) : contenu écrit à la génération, JavaScript pour ouvrir, fermer et la pastille */
+.top .nav{flex:1 1 auto;justify-content:flex-end}
+.cloche{position:relative}
+.cloche-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;color:var(--texte);border:1.5px solid transparent;border-radius:50%;cursor:pointer;text-decoration:none}
+.cloche-btn:hover{background:#ECEBF7}
+.cloche-btn[aria-expanded=true]{background:#ECEBF7;border-color:var(--texte)}
+.cloche-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.cloche-btn svg{display:block}
+.cloche-js{display:none}
+.js .cloche-js{display:inline-flex}
+.js .cloche-lien{display:none}
+.pastille{position:absolute;top:4px;right:2px;min-width:20px;height:20px;padding:0 5px;background:var(--accent);color:#fff;border:2px solid var(--fond);border-radius:10px;font-size:12px;font-weight:700;line-height:16px;text-align:center}
+.cloche-pop{position:absolute;right:0;top:calc(100% + 8px);z-index:20;width:380px;max-width:calc(100vw - 32px);padding:18px 20px 14px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;box-shadow:0 10px 30px rgba(20,32,46,.14);font-size:15px;line-height:1.5}
+.cloche-pop[hidden]{display:none}
+.cloche-pop:focus{outline:none}
+.cloche-pop h2{margin:0;font-family:var(--corps);font-size:17px;font-weight:700;letter-spacing:0}
+.cloche-pop .quand{margin:2px 0 10px;font-size:14px;color:var(--doux2)}
+.cloche-pop ul{margin:0;padding:0;list-style:none}
+.cloche-pop li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--trait)}
+.cloche-pop li .ico{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#ECEBF7;font-size:16px}
+.cloche-pop li a{color:var(--texte);text-decoration:underline;text-underline-offset:3px}
+.cloche-pop li a:hover{color:var(--accent)}
+.cloche-pop .vide{margin:0;padding:12px 0;border-top:1px solid var(--trait);color:var(--doux)}
+.cloche-pop .bas{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:4px;padding-top:6px;border-top:1px solid var(--trait)}
+.cloche-pop .bas a{display:inline-flex;align-items:center;min-height:44px}
+.cloche-pop .fermer{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;background:none;border:0;font:inherit;font-size:14px;color:var(--doux2);text-decoration:underline;cursor:pointer}
+.cloche-pop .fermer:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.erreur-encadre{margin:0;padding:12px 14px;border-top:1px solid var(--trait);background:var(--ambre);color:var(--ambre-texte);border-radius:8px;font-size:14px}
+.journal-maj{margin:0;padding:0;list-style:none}
+.journal-maj>li{padding:20px 0;border-top:1px solid var(--trait)}
+.journal-maj>li:first-child{border-top:0;padding-top:0}
+.journal-maj h3{margin:0 0 8px;font-family:var(--corps);font-size:18px;font-weight:700;letter-spacing:0}
+.journal-maj ul{margin:0;padding:0 0 0 20px}
+.journal-maj ul li{margin:4px 0}
+.journal-maj .rien{margin:0;color:var(--doux)}
+.journal-maj .src{font-size:14px;color:var(--doux2)}
+@media (max-width:520px){
+  .top{gap:0 8px}
+  .top .logo{flex:1 1 auto}
+  .top .cloche{order:2}
+  .top .nav{order:3;flex:1 1 100%;justify-content:flex-start}
+  .cloche{position:static}
+  .top{position:relative}
+  .cloche-pop{left:0;right:0;width:auto;max-width:none;top:56px}
+}
+@media print{.cloche{display:none!important}}
