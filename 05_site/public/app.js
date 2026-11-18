@@ -128,35 +128,17 @@
     });
     window.addEventListener('resize', function () { if (ouvert) placer(ouvert); });
   }
-  // Étiquette de viabilité : explication au clic, au toucher, au clavier (details natif) et au survol (souris).
-  // Une seule explication ouverte à la fois ; Échap la referme.
-  var nivs = document.querySelectorAll('details.niv');
-  if (nivs.length) {
-    var survolNiv = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    nivs.forEach(function (d) {
-      var sm = d.querySelector('summary');
-      d.addEventListener('toggle', function () {
-        if (d.open) nivs.forEach(function (o) { if (o !== d && o.open) o.open = false; });
-      });
-      if (survolNiv) {
-        var t = null;
-        d.addEventListener('mouseenter', function () {
-          clearTimeout(t);
-          t = setTimeout(function () { if (!d.open) { d.setAttribute('data-survol', '1'); d.open = true; } }, 150);
-        });
-        d.addEventListener('mouseleave', function () {
-          clearTimeout(t);
-          if (d.getAttribute('data-survol') === '1') { d.open = false; d.removeAttribute('data-survol'); }
-        });
-        // Un clic sur une explication ouverte au survol la garde ouverte
-        sm.addEventListener('click', function (e) {
-          if (d.getAttribute('data-survol') === '1') { e.preventDefault(); d.removeAttribute('data-survol'); }
-        });
-      }
+  // Impression : les sources du chiffrage s'impriment en entier, puis reprennent leur état d'avant
+  var srcch = document.querySelectorAll('details.srcch');
+  if (srcch.length) {
+    var fermes = [];
+    window.addEventListener('beforeprint', function () {
+      fermes = [];
+      srcch.forEach(function (d) { if (!d.open) { fermes.push(d); d.open = true; } });
     });
-    document.addEventListener('keydown', function (e) {
-      if (e.key !== 'Escape') return;
-      nivs.forEach(function (d) { if (d.open) { d.open = false; d.removeAttribute('data-survol'); d.querySelector('summary').focus(); } });
+    window.addEventListener('afterprint', function () {
+      fermes.forEach(function (d) { d.open = false; });
+      fermes = [];
     });
   }
 })();
