@@ -281,7 +281,7 @@ table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px
 .js .mbtn[aria-expanded=false]+.mdet{display:none}
 .mdet p{margin:0 0 8px}
 .mdet .tag{font-size:13px}
-.mdet .chiffre{color:var(--texte);font-weight:600}
+.mdet .chiffre,.mesure .chiffre{color:var(--texte);font-weight:600}
 .msource{overflow-wrap:anywhere}
 .mdates{display:block;color:var(--doux2)}
 .ext{margin-left:4px;vertical-align:-1px}
