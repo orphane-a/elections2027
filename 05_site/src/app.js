@@ -8,46 +8,45 @@
     var done = function () { if (lab) lab.textContent = 'Lien copié'; };
     try { navigator.clipboard.writeText(url).then(done, done); } catch (e) { done(); }
   });
-  // Imprimer
+  // Imprimer : la feuille de style d impression déplie toutes les mesures
   var pr = document.getElementById('imprimer');
-  if (pr) pr.addEventListener('click', function () {
-    document.querySelectorAll('details.carte').forEach(function (d) { d.open = true; });
-    window.print();
+  if (pr) pr.addEventListener('click', function () { window.print(); });
+
+  // Mesures clefs : chaque mesure se déplie seule (bouton avec aria-expanded)
+  document.querySelectorAll('.mbtn').forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.setAttribute('aria-expanded', b.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+    });
   });
-  // Tout replier / déplier
-  var tout = document.getElementById('toutbtn');
-  if (tout) tout.addEventListener('click', function () {
-    var cartes = document.querySelectorAll('details.carte');
-    var ouvrir = tout.getAttribute('data-etat') === 'ferme';
-    cartes.forEach(function (d) { d.open = ouvrir; });
-    tout.setAttribute('data-etat', ouvrir ? 'ouvert' : 'ferme');
-    tout.textContent = ouvrir ? 'Tout replier' : 'Tout déplier';
-  });
-  // Filtre par sous-thème
+
+  // Filtre par sous thème : un candidat sans mesure sur le sous thème garde sa place
   var filtres = document.querySelectorAll('.f[data-sub]');
   filtres.forEach(function (b) {
     b.addEventListener('click', function () {
       var sub = b.getAttribute('data-sub');
-      filtres.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-      document.querySelectorAll('details.carte').forEach(function (carte) {
+      filtres.forEach(function (x) {
+        var actif = x === b;
+        x.setAttribute('aria-pressed', actif ? 'true' : 'false');
+        x.classList.toggle('on', actif);
+      });
+      document.querySelectorAll('.pc').forEach(function (carte) {
         var n = 0;
-        carte.querySelectorAll('.mesure').forEach(function (m) {
+        carte.querySelectorAll('.mes').forEach(function (m) {
           var ok = sub === 'tous' || m.getAttribute('data-sub') === sub;
-          m.hidden = !ok; if (ok) n++;
+          m.classList.toggle('masque', !ok);
+          if (ok) n++;
         });
         var aucun = carte.querySelector('.aucun-sub');
-        var aMesures = carte.querySelectorAll('.mesure').length > 0;
-        if (aucun) aucun.hidden = !(aMesures && n === 0);
+        if (aucun) aucun.hidden = n > 0;
       });
     });
   });
 
-  // Raison du vote de chaque groupe : bulle au survol (souris), au toucher (mobile) et au clavier.
-  // Une seule bulle ouverte à la fois. Le choix survol / toucher dépend de l'appareil, pas de la largeur d'écran.
-  var groupes = document.querySelectorAll('.grp');
+  // Groupes à l Assemblée : un clic ouvre la bulle (nom complet, raison du vote, candidats rattachés).
+  // Une seule bulle ouverte à la fois ; Échap ou un clic ailleurs la referme.
+  var groupes = document.querySelectorAll('.gchip');
   if (groupes.length) {
-    var survol = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    var ouvert = null, minuteur = null;
+    var ouvert = null;
     var placer = function (li) {
       var b = li.querySelector('.bulle');
       b.style.left = '0px';
@@ -59,38 +58,23 @@
     var fermer = function () {
       if (!ouvert) return;
       ouvert.classList.remove('ouvert');
-      ouvert.querySelector('.grp-btn').setAttribute('aria-expanded', 'false');
+      ouvert.querySelector('.gbtn').setAttribute('aria-expanded', 'false');
       ouvert = null;
     };
     var ouvrir = function (li) {
-      if (ouvert === li) return;
       fermer();
       li.classList.add('ouvert');
-      li.querySelector('.grp-btn').setAttribute('aria-expanded', 'true');
+      li.querySelector('.gbtn').setAttribute('aria-expanded', 'true');
       ouvert = li;
       placer(li);
     };
     groupes.forEach(function (li) {
-      var btn = li.querySelector('.grp-btn');
-      if (!btn) return;
-      btn.addEventListener('click', function () {
-        if (ouvert === li && btn.getAttribute('data-survol') !== '1') fermer(); else ouvrir(li);
-        btn.removeAttribute('data-survol');
+      li.querySelector('.gbtn').addEventListener('click', function () {
+        if (ouvert === li) fermer(); else ouvrir(li);
       });
-      if (survol) {
-        li.addEventListener('mouseenter', function () {
-          clearTimeout(minuteur);
-          minuteur = setTimeout(function () { ouvrir(li); btn.setAttribute('data-survol', '1'); }, 120);
-        });
-        li.addEventListener('mouseleave', function () {
-          clearTimeout(minuteur);
-          btn.removeAttribute('data-survol');
-          if (ouvert === li && !li.contains(document.activeElement)) fermer();
-        });
-      }
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && ouvert) { var b = ouvert.querySelector('.grp-btn'); fermer(); b.focus(); }
+      if (e.key === 'Escape' && ouvert) { var b = ouvert.querySelector('.gbtn'); fermer(); b.focus(); }
     });
     document.addEventListener('click', function (e) {
       if (ouvert && !ouvert.contains(e.target)) fermer();
@@ -100,7 +84,7 @@
     });
     window.addEventListener('resize', function () { if (ouvert) placer(ouvert); });
   }
-// Étiquette de viabilité : explication au clic, au toucher, au clavier (details natif) et au survol (souris).
+  // Étiquette de viabilité : explication au clic, au toucher, au clavier (details natif) et au survol (souris).
   // Une seule explication ouverte à la fois ; Échap la referme.
   var nivs = document.querySelectorAll('details.niv');
   if (nivs.length) {
