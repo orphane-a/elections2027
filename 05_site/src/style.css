@@ -349,3 +349,6 @@ details.niv{margin:6px 0 8px}
   .vcarte{box-shadow:none}
 }
 .vote-tete .titre-ic{align-items:flex-start}
+.qpq-liste .pc.col2{break-before:column}
+@container (max-width:640px){.qpq-liste{columns:auto}}
+@media print{.qpq-liste{columns:auto}.ginfo{display:none}.pc-logo.sigle,.vbarre span,.vrow svg,.vic{-webkit-print-color-adjust:exact;print-color-adjust:exact}}

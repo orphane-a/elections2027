@@ -52,7 +52,7 @@ const aUnLogo = (c) => Object.values(credits.logos).some((v) => v.candidats.incl
 
 // Découpe la page : bloc des programmes, cartes, bloc des candidats sans proposition, bloc des votes
 const bloc = (html, id) => { const m = html.match(new RegExp(`<section id="${id}"[\\s\\S]*?\\n</section>`)); return m ? m[0] : ''; };
-const cartes = (html) => [...bloc(html, 'qpq').matchAll(/<li class="pc" id="cand-([^"]+)"[\s\S]*?\n<\/li>/g)].map((m) => ({ id: m[1], html: m[0] }));
+const cartes = (html) => [...bloc(html, 'qpq').matchAll(/<li class="pc(?: col2)?" id="cand-([^"]+)"[\s\S]*?\n<\/li>/g)].map((m) => ({ id: m[1], html: m[0] }));
 const enAttente = (html) => [...bloc(html, 'attente').matchAll(/href="candidat-([^"]+)\.html"/g)].map((m) => m[1]);
 
 let base;
@@ -152,10 +152,18 @@ test('logo du parti à droite, sinon sigle officiel, sinon drapeau : jamais de s
     const c = candidats.find((x) => x.id === id);
     const repere = carte.match(/<span class="pc-logo[^"]*"[^>]*>([\s\S]*?)<\/span><\/div>/)[1];
     if (aUnLogo(c)) assert.match(repere, /<img src="img\/logos\//, id);
-    else if (c.parti_sigle) assert.equal(repere, c.parti_sigle.replace(/&/g, '&amp;'), id);
+    else if (c.parti_sigle && !/^(SE|SP|NC)$/i.test(c.parti_sigle)) assert.equal(repere, c.parti_sigle.replace(/&/g, '&amp;'), id);
     else { assert.match(repere, /^<svg[^>]*aria-hidden="true"/, id); assert.equal(repere.replace(/<[^>]+>/g, '').trim(), '', `${id} : lettres dans la pastille`); }
   }
   assert.equal(html.includes('Voir le détail'), false);
+});
+
+test('deux colonnes : la coupure est fixée à la génération, une seule carte ouvre la colonne 2', () => {
+  for (const slug of THEMES) {
+    const html = base.page(slug);
+    const n = cartes(html).length;
+    assert.equal((bloc(html, 'qpq').match(/<li class="pc col2"/g) || []).length, n > 1 ? 1 : 0, slug);
+  }
 });
 
 test('les icônes de la page thème sont en SVG, sans emoji', () => {

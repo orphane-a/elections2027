@@ -172,7 +172,7 @@ const logo = (c, petit) => `<span class="logo-parti${petit ? ' p' : ''}" aria-hi
 // Photos des candidats et logos des partis (data/images, licences libres Wikimedia Commons, crédits dans credits.json)
 const IMAGES = JSON.parse(fs.readFileSync(path.join(DATA, 'images', 'credits.json'), 'utf8'));
 const logoDe = (c) => Object.entries(IMAGES.logos).find(([, v]) => v.candidats.includes(c.id))?.[0];
-const initiales = (c) => `${(c.prenom || '')[0] || ''}${(c.nom || '').replace(/^(Le|La|De|Du)s+/i, '')[0] || ''}`.toUpperCase();
+const initiales = (c) => `${(c.prenom || '')[0] || ''}${(c.nom || '').replace(/^(Le|La|De|Du)\s+/i, '')[0] || ''}`.toUpperCase();
 const photo = (c, taille = 'm') => IMAGES.photos[c.id]
   ? `<img class="photo ${taille}" style="--pc:${COULEUR[cleParti(c)]}" src="img/photos/${esc(c.id)}.webp" alt="" width="240" height="240" loading="lazy" decoding="async">`
   : `<span class="photo ${taille} sans" style="--pc:${COULEUR[cleParti(c)]}" aria-hidden="true" title="Photo non disponible sous licence libre">${esc(initiales(c))}</span>`;
@@ -414,11 +414,11 @@ function repereParti(c) {
   const l = logoDe(c);
   if (l) return `<span class="pc-logo"><img src="img/logos/${esc(l)}.png" alt="Logo ${esc(c.parti)}" loading="lazy" decoding="async"></span>`;
   const fond = COULEUR[cleParti(c)];
-  return c.parti_sigle
+  return c.parti_sigle && !/^(SE|SP|NC)$/i.test(c.parti_sigle)
     ? `<span class="pc-logo sigle" aria-hidden="true" style="background:${fond}">${esc(c.parti_sigle)}</span>`
     : `<span class="pc-logo sigle" aria-hidden="true" style="background:${fond}">${svg(I.drapeau, { t: 16, trait: '#fff' })}</span>`;
 }
-function carteCandidat(c, slug) {
+function carteCandidat(c, slug, col2 = false) {
   const liste = (mesures[c.id]?.themes?.[slug] || []).slice(0, 3);
   const items = liste.map((x, k) => {
     const id = `m-${esc(c.id)}-${k + 1}`;
@@ -432,7 +432,7 @@ ${x.chiffrage ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>
 <p class="msource">Source : <a class="lnk" href="${url(s.url)}"${ext}>${esc(s.titre)}${ICONE_EXT}</a>${NOUVEL_ONGLET}${dates ? `<span class="mdates">${dates}</span>` : ''}</p>
 </div></li>`;
   }).join('\n');
-  return `<li class="pc" id="cand-${esc(c.id)}" style="border-left-color:${COULEUR[cleParti(c)]}">
+  return `<li class="pc${col2 ? ' col2' : ''}" id="cand-${esc(c.id)}" style="border-left-color:${COULEUR[cleParti(c)]}">
 <div class="pc-tete">${photo(c, 'xs')}<div class="pc-id"><h3>${esc(nomComplet(c))}</h3><p>${esc(c.parti || 'Sans parti')}</p>${c.a_verifier ? '<span class="badge-verif">Candidature à confirmer</span>' : ''}</div>${repereParti(c)}</div>
 <ul class="pc-mes" aria-label="Mesures clefs de ${esc(nomComplet(c))}">${items}</ul>
 <p class="aucun-sub" hidden>Aucune mesure clef retenue sur ce sous thème.</p>
@@ -450,6 +450,13 @@ function ficheTheme(t) {
   const toutes = publies.flatMap((c) => mesures[c.id].themes[t.slug].slice(0, 3));
   const compte = {};
   toutes.forEach((x) => { const s = categorie(t.slug, x.sous_theme); compte[s] = (compte[s] || 0) + 1; });
+  // Deux colonnes : la coupure est fixée à la génération (hauteur estimée, mesures repliées),
+  // pour qu'une carte ne change jamais de colonne quand on déplie une mesure.
+  const poids = publies.map((c) => 56 + mesures[c.id].themes[t.slug].slice(0, 3).reduce((n, x) => n + 8 + 20 * Math.ceil(String(x.texte).length / 70), 0));
+  const totalPoids = poids.reduce((a, b) => a + b, 0);
+  let cumul = 0, iCol2 = -1, ecart = Infinity;
+  poids.forEach((p, i) => { cumul += p; const e = Math.abs(totalPoids - 2 * cumul); if (i < poids.length - 1 && e < ecart) { ecart = e; iCol2 = i + 1; } });
+  const debutCol2 = iCol2 > 0 && iCol2 < publies.length ? publies[iCol2] : null;
   const subs = [...(d?.sous_themes || []), 'Autres sujets'].filter((s) => compte[s]);
   const sansGroupe = candidats.filter((c) => !c.groupe_an || !GROUPES[c.groupe_an]);
   const datesVerif = candidats.map((c) => mesures[c.id]?.date_verif).filter(Boolean).sort();
@@ -466,7 +473,7 @@ function ficheTheme(t) {
 <div class="seg" role="group" aria-labelledby="filtre-t">${onglet('tous', 'Tous', toutes.length, true)}${subs.map((s) => onglet(s, s, compte[s], false)).join('')}</div></div>`
     : '';
   const programmes = publies.length
-    ? `${filtre}<ul class="qpq-liste">${publies.map((c) => carteCandidat(c, t.slug)).join('\n')}</ul>`
+    ? `${filtre}<p class="sr" role="status" id="filtre-etat"></p><ul class="qpq-liste">${publies.map((c) => carteCandidat(c, t.slug, c === debutCol2)).join('\n')}</ul>`
     : '<p class="qpq-vide">Aucun candidat n\'a encore publié de proposition sur ce thème.</p>';
   const attente = enAttente.length ? `<section id="attente" class="sect" aria-labelledby="att-t">
 <h2 id="att-t">${svg(I.horloge, { t: 20, trait: '#4A5666', ep: 1.9 })}Pas encore de proposition publiée sur ce thème <span class="nb">${pluriel(enAttente.length, 'candidat')}</span></h2>

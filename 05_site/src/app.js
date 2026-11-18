@@ -39,6 +39,9 @@
         var aucun = carte.querySelector('.aucun-sub');
         if (aucun) aucun.hidden = n > 0;
       });
+      var etat = document.getElementById('filtre-etat');
+      var nb = document.querySelectorAll('.mes:not(.masque)').length;
+      if (etat) etat.textContent = nb + (nb > 1 ? ' mesures affichées' : ' mesure affichée') + (sub === 'tous' ? '' : ' pour le sous thème ' + sub) + '.';
     });
   });
 
