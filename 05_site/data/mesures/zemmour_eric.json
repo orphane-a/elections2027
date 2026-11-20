@@ -1,6 +1,6 @@
 {
   "id": "zemmour_eric",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -24,7 +24,26 @@
       }
     ],
     "ecologie": [],
-    "pouvoir_achat": [],
+    "pouvoir_achat": [
+      {
+        "texte": "Supprimer la CSG sur les revenus du travail pour augmenter de 10 % le salaire net.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 4", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Baisser de 40 centimes par litre les taxes sur les carburants.",
+        "sous_theme": "Carburants",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 4", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Supprimer les droits de succession et l'impôt sur la fortune.",
+        "sous_theme": "Fiscalité",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 4", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      }
+    ],
     "travail": [
       {
         "texte": "Investir dans l'automatisation et la robotique pour remplacer la main-d'œuvre immigrée dans certains métiers.",
@@ -33,9 +52,42 @@
         "source": { "titre": "Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026)", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "type": "presse", "consulte": "2026-11-09" }
       }
     ],
-    "sante": [],
-    "logement": [],
-    "securite": [],
+    "sante": [
+      {
+        "texte": "Supprimer l'aide médicale d'État (AME, soins des étrangers sans papiers).",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 2", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      }
+    ],
+    "logement": [
+      {
+        "texte": "Réserver le logement social aux Français.",
+        "sous_theme": "Logement social",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 2", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      }
+    ],
+    "securite": [
+      {
+        "texte": "Construire 100 000 places de prison en 24 mois.",
+        "sous_theme": "Prisons",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 3", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Instaurer des peines planchers et une loi anti-casseurs.",
+        "sous_theme": "Justice pénale",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 3", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Supprimer les aménagements de peine et l'excuse de minorité (peine réduite pour les mineurs).",
+        "sous_theme": "Justice pénale",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 3", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      }
+    ],
     "immigration": [
       {
         "texte": "Expulser un étranger en situation régulière après un an de chômage.",
@@ -48,6 +100,12 @@
         "sous_theme": "Expulsions",
         "chiffrage": null,
         "source": { "titre": "Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026)", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Réserver aux Français les aides sociales non contributives et les allocations familiales.",
+        "sous_theme": "Préférence nationale",
+        "chiffrage": null,
+        "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 2", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
       }
     ],
     "institutions": [],

@@ -1,6 +1,6 @@
 {
   "id": "le_pen_marine",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -9,6 +9,18 @@
         "sous_theme": "Enseignement supérieur",
         "chiffrage": null,
         "source": { "titre": "LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes", "url": "https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut", "date": "2026-10-06", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Supprimer Parcoursup : l'entrée dans le supérieur dépend du seul baccalauréat.",
+        "sous_theme": "Accès au supérieur",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Lycée : Le Pen veut supprimer Parcoursup, le contrôle continu et avancer le bac en mai", "url": "https://www.sudradio.fr/societe/lycee-le-pen-veut-supprimer-parcoursup-le-controle-continu-et-avancer-le-bac-en-mai", "date": "2026-11-16", "type": "presse", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Supprimer le contrôle continu en première et terminale et avancer les épreuves du bac à la deuxième quinzaine de mai.",
+        "sous_theme": "Baccalauréat",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), Lycée : Le Pen veut supprimer Parcoursup, le contrôle continu et avancer le bac en mai", "url": "https://www.sudradio.fr/societe/lycee-le-pen-veut-supprimer-parcoursup-le-controle-continu-et-avancer-le-bac-en-mai", "date": "2026-11-16", "type": "presse", "consulte": "2026-11-20" }
       }
     ],
     "ecologie": [

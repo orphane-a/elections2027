@@ -1,6 +1,6 @@
 {
   "id": "retailleau_bruno",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -35,6 +35,12 @@
         "sous_theme": "Énergie",
         "chiffrage": null,
         "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Prolonger les centrales nucléaires jusqu'à 80 ans.",
+        "sous_theme": "Énergie",
+        "chiffrage": null,
+        "source": { "titre": "Avec Retailleau, Le projet, Électricité, mesure 08.01", "url": "https://www.avecretailleau.fr/projet/theme/electricite", "date": null, "type": "site", "consulte": "2026-11-20" }
       }
     ],
     "pouvoir_achat": [
@@ -49,6 +55,12 @@
         "sous_theme": "Salaires",
         "chiffrage": null,
         "source": { "titre": "Public Sénat, conférence de presse de Bruno Retailleau au siège de LR", "url": "https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus", "date": "2026-09-15", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Rendre environ 500 euros par an aux salariés au salaire médian en baissant les cotisations sur le travail.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Avec Retailleau, Le projet, Travail, mesure 1", "url": "https://www.avecretailleau.fr/projet/theme/travail", "date": null, "type": "site", "consulte": "2026-11-20" }
       }
     ],
     "travail": [
@@ -77,6 +89,18 @@
         "sous_theme": "Arrêts maladie",
         "chiffrage": "Économie annoncée : 4 Md€.",
         "source": { "titre": "Public Sénat, plan d'économies de près de 200 milliards d'euros", "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu", "date": "2026-10-12", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Confier la direction de chaque hôpital à un médecin, assisté d'un administrateur.",
+        "sous_theme": "Hôpital",
+        "chiffrage": null,
+        "source": { "titre": "franceinfo, Bruno Retailleau veut économiser 300 000 postes dans la fonction publique", "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html", "date": "2026-11-12", "type": "presse", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Confier la prévention aux mutuelles, avec des cotisations réduites pour les assurés qui suivent les recommandations.",
+        "sous_theme": "Prévention",
+        "chiffrage": null,
+        "source": { "titre": "franceinfo, Bruno Retailleau veut économiser 300 000 postes dans la fonction publique", "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html", "date": "2026-11-12", "type": "presse", "consulte": "2026-11-20" }
       }
     ],
     "logement": [

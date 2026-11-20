@@ -2,7 +2,7 @@
 
 Thème : Europe et international
 Candidat : Jean Lassalle (Résistons !)
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Niveau de confiance des sources : Moyen
 Fichier généré par 05_site/build.mjs.
 

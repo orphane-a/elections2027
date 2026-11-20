@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "date": "2026-11-20",
+    "nouveautes": [
+      {
+        "type": "candidat_declare",
+        "candidat": "de_villepin_dominique",
+        "phrase": "Dominique de Villepin (La France humaniste) a déclaré sa candidature.",
+        "source": {
+          "titre": "LCP, Dominique de Villepin officiellement candidat à l'Élysée",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372",
+          "date": "2026-11-20"
+        }
+      },
+      {
+        "type": "programme_publie",
+        "candidat": "de_villepin_dominique",
+        "phrase": "Dominique de Villepin (La France humaniste) a publié son programme.",
+        "source": {
+          "titre": "La France humaniste, Réussir à nouveau : le programme de Dominique de Villepin pour 2027",
+          "url": "https://parti-humaniste.fr/programme/reussir-a-nouveau/"
+        }
+      }
+    ]
+  }
+]

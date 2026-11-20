@@ -1,7 +1,7 @@
-# 🇪🇺 Europe et international : synthèse comparée
+# ⭐ Europe et international : synthèse comparée
 
 Thème : Europe et international
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -56,6 +56,12 @@ Non communiqué.
 2. Sortir du marché européen de l'électricité. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. Suspendre l'accord commercial avec le Mercosur. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 
+## Dominique de Villepin (La France humaniste)
+
+1. Proposer un pacte de souveraineté européen et un conseil de sécurité européen restreint. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 10, proposition 087, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-10.html (consulté le 2026-11-20)
+2. Réformer l'OTAN avec un pilier de défense européen. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 10, proposition 088, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-10.html (consulté le 2026-11-20)
+3. Étendre progressivement la taxe carbone aux frontières de l'Union européenne. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 10, proposition 090, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-10.html (consulté le 2026-11-20)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose que la France sorte de l'Union européenne. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
@@ -69,6 +75,7 @@ Non communiqué.
 
 1. Négocier des clauses de retrait pour les engagements européens rejetés par les électeurs. (Mesure non chiffrée par le parti) Source : Solution démocratique, communiqué de lancement du programme présidentiel 2027, 2026-11-05, https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/ (consulté le 2026-11-09)
 2. Négocier la sortie de l'Union européenne si les électeurs la choisissent par vote. (Mesure non chiffrée par le parti) Source : Solution démocratique, communiqué de lancement du programme présidentiel 2027, 2026-11-05, https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/ (consulté le 2026-11-09)
+3. Défendre dans l'Union européenne un modèle où les peuples décident eux-mêmes de la coopération qu'ils souhaitent. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 
 ## Raphaël Glucksmann (Place publique)
 
@@ -164,7 +171,7 @@ Non communiqué.
 
 ## Erwan Rohou (Mouvement écologiste indépendant)
 
-Non communiqué.
+1. Donner à l'Europe les moyens d'assurer sa sécurité et de réduire ses dépendances. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 9, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-20)
 
 ## Fabien Roussel (Parti communiste français)
 

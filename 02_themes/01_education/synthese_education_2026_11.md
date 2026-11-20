@@ -1,7 +1,7 @@
 # 🎓 Éducation : synthèse comparée
 
 Thème : Éducation
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -55,6 +55,12 @@ Non communiqué.
 2. Exclure 10 jours en cas de mauvais comportement et instaurer des retenues le samedi. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. En primaire, faire une dictée et 30 minutes de sport chaque jour. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 
+## Dominique de Villepin (La France humaniste)
+
+1. Revaloriser d'au moins 10 % les métiers pédagogiques et organiser une conférence sociale de ces métiers. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 189, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-20.html (consulté le 2026-11-20)
+2. Ouvrir dès le bac des cursus de présélection des enseignants, réservés aux étudiants boursiers. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 197, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-20.html (consulté le 2026-11-20)
+3. Équilibrer savoirs théoriques et pratiques, avec 100 heures de pratique artistique par an. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 199, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-20.html (consulté le 2026-11-20)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 Non communiqué.
@@ -68,6 +74,7 @@ Non communiqué.
 
 1. Créer une commission de spécialistes français et étrangers chargée de proposer des réformes de l'enseignement supérieur. (Mesure non chiffrée par le parti) Source : Solution démocratique, communiqué de lancement du programme présidentiel 2027, 2026-11-05, https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/ (consulté le 2026-11-09)
 2. Consulter les élus locaux sur le partage des compétences entre territoires, avec l'éducation comme sujet prioritaire. (Mesure non chiffrée par le parti) Source : Solution démocratique, communiqué de lancement du programme présidentiel 2027, 2026-11-05, https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/ (consulté le 2026-11-09)
+3. Améliorer les outils d'évaluation des politiques éducatives : collecte des données, transparence, comparaisons internationales. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 
 ## Raphaël Glucksmann (Place publique)
 
@@ -95,6 +102,8 @@ Non communiqué.
 ## Marine Le Pen (Rassemblement national)
 
 1. Supprimer la contribution vie étudiante et de campus (CVEC), un frais de 105 euros payé avant l'inscription à l'université. (Mesure non chiffrée par le parti) Source : LCP, Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes, 2026-10-06, https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut (consulté le 2026-11-09)
+2. Supprimer Parcoursup : l'entrée dans le supérieur dépend du seul baccalauréat. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Lycée : Le Pen veut supprimer Parcoursup, le contrôle continu et avancer le bac en mai, 2026-11-16, https://www.sudradio.fr/societe/lycee-le-pen-veut-supprimer-parcoursup-le-controle-continu-et-avancer-le-bac-en-mai (consulté le 2026-11-20)
+3. Supprimer le contrôle continu en première et terminale et avancer les épreuves du bac à la deuxième quinzaine de mai. (Mesure non chiffrée par le parti) Source : Sud Radio (AFP), Lycée : Le Pen veut supprimer Parcoursup, le contrôle continu et avancer le bac en mai, 2026-11-16, https://www.sudradio.fr/societe/lycee-le-pen-veut-supprimer-parcoursup-le-controle-continu-et-avancer-le-bac-en-mai (consulté le 2026-11-20)
 
 ## Jean-François Legendre (À nous maintenant)
 

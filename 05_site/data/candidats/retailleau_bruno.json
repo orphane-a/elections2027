@@ -10,13 +10,14 @@
   "statut_detail": "Candidature annoncée le 12 février 2026, puis désigné candidat par les adhérents LR le 19 avril 2026 avec 73,8 % des voix.",
   "a_verifier": false,
   "date_declaration": "2026-02-12",
-  "site_campagne": null,
+  "site_campagne": "https://www.avecretailleau.fr/",
   "programme": null,
   "sources": [
     { "titre": "LCP, liste des candidats déjà en lice et des prétendants", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
     { "titre": "Public Sénat, le dernier décompte des candidats déjà sur la ligne de départ", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
-    { "titre": "Public Sénat, référendum sur l'immigration : le projet de Bruno Retailleau est-il faisable ? (annonce de candidature du 12 février)", "url": "https://www.publicsenat.fr/actualites/politique/referendum-sur-limmigration-primaute-du-droit-national-le-projet-de-bruno-retailleau-est-il-faisable", "date": "2026-02-13", "consulte": "2026-11-09" }
+    { "titre": "Public Sénat, référendum sur l'immigration : le projet de Bruno Retailleau est-il faisable ? (annonce de candidature du 12 février)", "url": "https://www.publicsenat.fr/actualites/politique/referendum-sur-limmigration-primaute-du-droit-national-le-projet-de-bruno-retailleau-est-il-faisable", "date": "2026-02-13", "consulte": "2026-11-09" },
+    { "titre": "Avec Retailleau, site de campagne (mentions légales : Les Républicains, campagne présidentielle 2027)", "url": "https://www.avecretailleau.fr/", "date": null, "consulte": "2026-11-20" }
   ],
   "confiance": "Bon",
-  "date_maj": "2026-11-09"
+  "date_maj": "2026-11-20"
 }

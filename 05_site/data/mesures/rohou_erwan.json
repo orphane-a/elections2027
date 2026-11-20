@@ -1,6 +1,6 @@
 {
   "id": "rohou_erwan",
-  "date_verif": "2026-11-16",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [],
@@ -9,37 +9,19 @@
         "texte": "Ne plus ajouter de capacités éoliennes ou intermittentes en attendant la mise en service des 14 réacteurs EPR2.",
         "sous_theme": "Énergie",
         "chiffrage": null,
-        "source": {
-          "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)",
-          "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise",
-          "date": null,
-          "type": "declaration",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)", "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise", "date": null, "type": "declaration", "consulte": "2026-11-16" }
       },
       {
         "texte": "Mettre fin aux subventions sans limite de durée pour les énergies renouvelables.",
         "sous_theme": "Énergie",
         "chiffrage": null,
-        "source": {
-          "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)",
-          "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise",
-          "date": null,
-          "type": "declaration",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)", "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise", "date": null, "type": "declaration", "consulte": "2026-11-16" }
       },
       {
         "texte": "Donner la priorité à la sobriété et à l'efficacité énergétique : rénovation thermique, récupération de chaleur.",
         "sous_theme": "Énergie",
         "chiffrage": null,
-        "source": {
-          "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)",
-          "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise",
-          "date": null,
-          "type": "declaration",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "MEI, « Décarboner sans dénaturer », texte signé Erwan Rohou (29 septembre, année non affichée)", "url": "https://www.les-ecologistes-mei.org/post/d%C3%A9carboner-sans-d%C3%A9naturer-refonder-la-politique-%C3%A9nerg%C3%A9tique-fran%C3%A7aise", "date": null, "type": "declaration", "consulte": "2026-11-16" }
       }
     ],
     "pouvoir_achat": [],
@@ -53,15 +35,28 @@
         "texte": "Créer un Défenseur de l'environnement doté d'un pouvoir d'alerte, de médiation et de veto suspensif.",
         "sous_theme": "Gouvernance environnementale",
         "chiffrage": null,
-        "source": {
-          "titre": "MEI, Livre blanc pour la protection de l'environnement, signé Erwan Rohou (3 octobre, année non affichée)",
-          "url": "https://www.les-ecologistes-mei.org/post/le-livre-blanc-du-mouvement-ecologiste-ind%C3%A9pendant",
-          "date": null,
-          "type": "programme",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "MEI, Livre blanc pour la protection de l'environnement, signé Erwan Rohou (3 octobre, année non affichée)", "url": "https://www.les-ecologistes-mei.org/post/le-livre-blanc-du-mouvement-ecologiste-ind%C3%A9pendant", "date": null, "type": "programme", "consulte": "2026-11-16" }
+      },
+      {
+        "texte": "Instaurer une représentation plus proportionnelle pour refléter les différentes sensibilités politiques.",
+        "sous_theme": "Mode de scrutin",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 10", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "programme", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Créer un référendum d'initiative citoyenne (RIC), avec débat contradictoire et règles claires.",
+        "sous_theme": "Référendum",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 10", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "programme", "consulte": "2026-11-20" }
       }
     ],
-    "europe": []
+    "europe": [
+      {
+        "texte": "Donner à l'Europe les moyens d'assurer sa sécurité et de réduire ses dépendances.",
+        "sous_theme": "Défense",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 9", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "programme", "consulte": "2026-11-20" }
+      }
+    ]
   }
 }
