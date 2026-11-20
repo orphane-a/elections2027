@@ -175,6 +175,16 @@ dl.glo dd{margin:2px 0 0;font-size:14px;color:var(--doux)}
 .page-texte .d{max-width:66ch}
 table.liste{width:100%;border-collapse:collapse;font-size:15px}
 table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--trait);vertical-align:top}
+/* Sur téléphone, un tableau « empile » devient une suite de petites fiches : une ligne = une fiche, chaque case porte son titre */
+@media (max-width:640px){
+  table.liste.empile{min-width:0!important}
+  table.liste.empile,table.liste.empile tbody,table.liste.empile tr,table.liste.empile th,table.liste.empile td{display:block;width:100%}
+  table.liste.empile thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  table.liste.empile tr{padding:12px 0;border-bottom:1px solid var(--trait)}
+  table.liste.empile th,table.liste.empile td{padding:2px 0;border:0;overflow-wrap:anywhere}
+  table.liste.empile tr>:first-child{font-size:17px;font-weight:600;padding-bottom:6px}
+  table.liste.empile td[data-label]::before{content:attr(data-label) " : ";font-weight:600;color:var(--doux2)}
+}
 
 @media print{.noprint,.chips,.ancres,.top,footer.pied,.suivant,.outils,.preprod{display:none!important}
   body{background:#fff}}

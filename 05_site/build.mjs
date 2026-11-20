@@ -624,15 +624,15 @@ ${bilan}
 // ---------- Candidats ----------
 function pageCandidats() {
   const lignes = candidats.map((c) => `<tr><td><a class="lnk" href="candidat-${esc(c.id)}.html">${esc(nomComplet(c))}</a>${c.a_verifier ? '<br><span class="badge-verif">Candidature à confirmer</span>' : ''}</td>
-<td>${esc(c.parti || 'Sans parti')}</td><td>${esc(c.statut)}${c.date_declaration ? `, ${dateFr(c.date_declaration)}` : ''}</td>
-<td>${c.programme?.url ? `<a class="lnk" href="${url(c.programme.url)}"${ext}>${esc(c.programme.titre || 'Programme')}</a>` : 'Pas encore publié'}</td></tr>`).join('\n');
+<td data-label="Parti ou mouvement">${esc(c.parti || 'Sans parti')}</td><td data-label="Statut">${esc(c.statut)}${c.date_declaration ? `, ${dateFr(c.date_declaration)}` : ''}</td>
+<td data-label="Programme 2027">${c.programme?.url ? `<a class="lnk" href="${url(c.programme.url)}"${ext}>${esc(c.programme.titre || 'Programme')}</a>` : 'Pas encore publié'}</td></tr>`).join('\n');
   page({
     fichier: 'candidats.html', titre: 'Les candidats déclarés', courant: 'candidats.html',
     description: 'Liste des candidats déclarés à la présidentielle 2027, statut de leur candidature et lien vers leur programme.',
     corps: `<div class="bandeau" style="background:#DDE3EE;margin-top:24px"><p class="ariane"><a class="lnk" href="index.html">Accueil</a> › Candidats</p>
 <h1>Les candidats déclarés <span aria-hidden="true">🧑‍🤝‍🧑</span></h1>
 <p class="sous">Ordre alphabétique. Une candidature n'est officielle qu'après la validation des 500 parrainages par le Conseil constitutionnel. Liste vérifiée le ${dateFr(candidats.map((c) => c.date_maj).filter(Boolean).sort()[0] || AUJOURDHUI)}, mise à jour chaque lundi et chaque jeudi.</p></div>
-<div style="overflow-x:auto;margin-bottom:40px"><table class="liste"><caption class="sr">Candidats, parti, statut et programme</caption>
+<div style="overflow-x:auto;margin-bottom:40px"><table class="liste empile"><caption class="sr">Candidats, parti, statut et programme</caption>
 <thead><tr><th scope="col">Candidat</th><th scope="col">Parti ou mouvement</th><th scope="col">Statut</th><th scope="col">Programme 2027</th></tr></thead><tbody>${lignes}</tbody></table></div>`,
   });
   for (const c of candidats) {
@@ -726,7 +726,7 @@ function pageNouveautes() {
 
 function pagePanel() {
   const parNiveau = (n) => (PANEL.institutions || []).filter((i) => i.niveau === n);
-  const tableau = `<div style="overflow-x:auto"><table class="liste" style="min-width:560px"><caption class="sr">Institutions du premier cercle, ce qu'elles apportent et leur point de vigilance</caption><thead><tr><th scope="col">Institution</th><th scope="col">Utile pour</th><th scope="col">Point de vigilance</th></tr></thead><tbody>${parNiveau(1).map((i) => `<tr><th scope="row">${esc(i.nom)}</th><td>${esc(i.utile)}</td><td>${esc(i.vigilance)}</td></tr>`).join('')}</tbody></table></div>`;
+  const tableau = `<div style="overflow-x:auto"><table class="liste empile" style="min-width:560px"><caption class="sr">Institutions du premier cercle, ce qu'elles apportent et leur point de vigilance</caption><thead><tr><th scope="col">Institution</th><th scope="col">Utile pour</th><th scope="col">Point de vigilance</th></tr></thead><tbody>${parNiveau(1).map((i) => `<tr><th scope="row">${esc(i.nom)}</th><td data-label="Utile pour">${esc(i.utile)}</td><td data-label="Point de vigilance">${esc(i.vigilance)}</td></tr>`).join('')}</tbody></table></div>`;
   const noms = (n) => esc(parNiveau(n).map((i) => i.nom).join(', '));
   pageTexte('panel-sources.html', 'Panel de sources', 'Les institutions qui servent à juger les chiffres des mesures, leurs critères et leurs limites.', '#EADDF6',
     'Qui nous aide à juger les chiffres <span aria-hidden="true">🏛️</span>',
