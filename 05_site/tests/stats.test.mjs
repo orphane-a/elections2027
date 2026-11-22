@@ -119,14 +119,14 @@ test('petits outils : lecture de ligne, page du site, robots, sources', () => {
   assert.equal(sourceDe('www.linkedin.com'), 'social');
 });
 
-test('commande d\'agrégation : écrit le fichier du jour, signale les lignes ignorées et supprime le sel', () => {
+test('commande d\'agrégation : écrit le fichier du jour, signale les lignes ignorées et supprime le sel', async () => {
   const d = tmp();
   const j = path.join(d, 'logs');
   const s = path.join(d, 'stats');
   fs.mkdirSync(j);
   fs.writeFileSync(path.join(j, `acces-${D}.log`), [ligne({}), ligne({ page: '/style.css' }), 'abîmée', ligne({ ip: '203.0.113.2' })].join('\n') + '\n');
   const sortie = [];
-  const code = agregerCli(['--journaux', j, '--stats', s, '--date', D, '--aujourdhui', '2026-11-25'], { ecrire: (t) => sortie.push(t) });
+  const code = await agregerCli(['--journaux', j, '--stats', s, '--date', D, '--aujourdhui', '2026-11-25'], { ecrire: (t) => sortie.push(t) });
   assert.equal(code, 0);
   const r = JSON.parse(fs.readFileSync(path.join(s, `${D}.json`), 'utf8'));
   for (const k of ['date', 'visiteursUniques', 'pagesVues', 'pages', 'sources', 'appareils', 'lignesIgnorees']) assert.ok(k in r, k);
@@ -139,21 +139,22 @@ test('commande d\'agrégation : écrit le fichier du jour, signale les lignes ig
   fs.rmSync(d, { recursive: true, force: true });
 });
 
-test("commande d'agrégation : journal vide = fichier à 0, journal introuvable = code 1 sans fichier", () => {
+test("commande d'agrégation : journal vide = fichier à 0, journal introuvable = code 1 sans fichier", async () => {
   const d = tmp();
   const j = path.join(d, 'logs');
   const s = path.join(d, 'stats');
   fs.mkdirSync(j);
   fs.writeFileSync(path.join(j, `acces-${D}.log`), '');
   const sortie = [];
-  assert.equal(agregerCli(['--journaux', j, '--stats', s, '--date', D], { ecrire: (t) => sortie.push(t) }), 0);
+  assert.equal(await agregerCli(['--journaux', j, '--stats', s, '--date', D], { ecrire: (t) => sortie.push(t) }), 0);
   assert.equal(JSON.parse(fs.readFileSync(path.join(s, `${D}.json`), 'utf8')).visiteursUniques, 0);
   assert.match(sortie.join('\n'), /Aucune visite le 24 novembre 2026\.\nFichier écrit avec 0 visite unique et 0 page vue\./);
   sortie.length = 0;
-  assert.equal(agregerCli(['--journaux', j, '--stats', s, '--date', '2026-11-23'], { ecrire: (t) => sortie.push(t) }), 1);
+  assert.equal(await agregerCli(['--journaux', j, '--stats', s, '--date', '2026-11-23'], { ecrire: (t) => sortie.push(t) }), 1);
   assert.equal(fs.existsSync(path.join(s, '2026-11-23.json')), false);
   assert.match(sortie.join('\n'), /Journal du 23 novembre 2026 introuvable\./);
-  assert.equal(agregerCli(['--journaux', j, '--stats', s, '--date', '24/11/2026'], { ecrire: () => {} }), 1);
+  assert.equal(await agregerCli(['--journaux', j, '--stats', s, '--date', '24/11/2026'], { ecrire: () => {} }), 1);
+  assert.equal(await agregerCli(['--journaux', j, '--stats', s, '--date'], { ecrire: () => {} }), 1, '--date sans valeur');
   fs.rmSync(d, { recursive: true, force: true });
 });
 
@@ -164,6 +165,7 @@ test('critère 7 : journaux bruts supprimés après 7 jours, totaux anonymes gar
   fs.mkdirSync(j);
   fs.mkdirSync(s);
   for (const x of ['2026-11-10', '2026-11-17', '2026-11-18', '2026-11-19', '2026-11-24']) fs.writeFileSync(path.join(j, `acces-${x}.log`), '');
+  for (const f of ['acces-2026-11-01.log.gz', 'acces-2026-11-02.log.1', 'acces-inconnu.log']) fs.writeFileSync(path.join(j, f), '');
   for (const x of ['2024-10-24', '2024-10-25', '2026-11-24']) fs.writeFileSync(path.join(s, `${x}.json`), '{}');
   fs.writeFileSync(path.join(j, 'autre.txt'), '');
   nettoyer({ journaux: j, stats: s, aujourdhui: '2026-11-25' });
@@ -198,7 +200,7 @@ test('critère 4 : consultation du 1er au 30 novembre, en français', () => {
   assert.match(r.texte, /Pages vues : 2 289/);
   assert.match(r.texte, /Pages les plus lues\n 1\. Accueil\s+350\n 2\. Pouvoir d'achat\s+210\n 3\. Fiche candidat : Gabriel Attal\s+35\n 4\. Méthode\s+14/);
   assert.match(r.texte, /Sources de visite : moteur de recherche \d+ %, réseau social \d+ %, autre site \d+ %, accès direct \d+ %/);
-  assert.match(r.texte, /Appareil : téléphone \d+ %, ordinateur \d+ %/);
+  assert.match(r.texte, /Appareil : téléphone ou tablette \d+ %, ordinateur \d+ %/);
   fs.rmSync(d, { recursive: true, force: true });
 });
 
@@ -223,8 +225,13 @@ test('consultation : comparaison de deux semaines', () => {
   const r = visiteursCli(['--comparer', 'semaine', '--dossier', d], () => '', '2026-11-30');
   assert.equal(r.code, 0);
   assert.match(r.texte, /^Cette semaine \(23 au 29 novembre\) et semaine précédente \(16 au 22 novembre\)/);
-  assert.match(r.texte, /Visites uniques\s+859\s+600\s+\+43 %/);
+  assert.match(r.texte, /Visites uniques\s+859\s+600\s+non calculé/);
   assert.match(r.texte, /semaine précédente, pas de totaux pour 1 jour \(16 novembre\)/);
+  assert.match(r.texte, /L'écart n'est pas calculé : il manque des jours dans une des deux périodes\./);
+  fs.writeFileSync(path.join(d, '2026-11-16.json'), JSON.stringify({ visiteursUniques: 100, pagesVues: 300 }));
+  const complet = visiteursCli(['--comparer', 'semaine', '--dossier', d], () => '', '2026-11-30');
+  assert.match(complet.texte, /Visites uniques\s+859\s+700\s+\+23 %/);
+  assert.match(complet.texte, /Pages vues\s+2 259\s+2 100\s+\+8 %/);
   fs.rmSync(d, { recursive: true, force: true });
 });
 
@@ -313,4 +320,55 @@ test('critère 10 : la page Qui sommes nous et le pied de page décrivent la mes
     assert.equal(/Il n'utilise aucun cookie|aucun suivi|Nginx|hachage/.test(html.replace(/<script[\s\S]*?<\/script>/g, '')), false, f);
   }
   fs.rmSync(tmpSite, { recursive: true, force: true });
+});
+
+test('comparaison : une période sans aucune donnée = message clair, code 1, aucun chiffre', () => {
+  const d = totauxNovembre();
+  const r = visiteursCli(['--comparer', 'semaine', '--dossier', d], () => '', '2026-11-30');
+  assert.equal(r.code, 1);
+  assert.equal(r.texte, 'Aucune donnée pour cette période (semaine précédente, 16 au 22 novembre 2026).\nComparaison impossible. La mesure a commencé le 24 novembre 2026.');
+  const mois = visiteursCli(['--comparer', 'mois', '--dossier', d], () => '', '2027-01-01');
+  assert.equal(mois.code, 1);
+  assert.doesNotMatch(mois.texte, /\d+ %|\b0\b/);
+  const json = visiteursCli(['--comparer', 'mois', '--json', '--dossier', d], () => '', '2027-01-01');
+  assert.equal(json.code, 1);
+  assert.equal(JSON.parse(json.texte).erreur, 'Aucune donnée pour cette période');
+  assert.equal(visiteursCli(['--comparer'], () => '', '2026-12-01').code, 1);
+  fs.rmSync(d, { recursive: true, force: true });
+});
+
+test('les jours à venir ne sont pas signalés comme manquants ; période trop longue refusée', () => {
+  const d = totauxNovembre();
+  const r = visiteursCli(['2026-11-24', '2026-11-30', '--dossier', d], () => '', '2026-11-27');
+  assert.doesNotMatch(r.texte, /Attention/);
+  for (const args of [['9999-12-30', '9999-12-31'], ['2020-01-01', '2026-11-30']]) {
+    const x = visiteursCli(args, () => '', '2026-12-01');
+    assert.equal(x.code, 1);
+    assert.match(x.texte, /^Période trop longue/);
+  }
+  fs.rmSync(d, { recursive: true, force: true });
+});
+
+test('robots de prévisualisation exclus, téléphones CUBOT comptés, requêtes 400 comptées comme erreurs', () => {
+  for (const ua of ['WhatsApp/2.23.20.0', 'Mastodon/4.3.0 (http.rb/5.2.0; +https://mastodon.social/)', 'Mozilla/5.0 (compatible; Cardyb/1.1; +bsky.app)', 'meta-externalagent/1.1', 'ChatGPT-User/1.0', 'Mozilla/5.0 (compatible; Google-InspectionTool/1.0)', 'Iframely/1.3.1']) assert.equal(estRobot(ua), true, ua);
+  assert.equal(estRobot('Mozilla/5.0 (Linux; Android 10; CUBOT X30) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36'), false);
+  assert.equal(sourceDe('com.google.android.gm'), 'autre');
+  const r = agreger([ligne({ page: '', ua: '', statut: 400 })], { date: D, sel: SEL });
+  assert.equal(r.lignesIgnorees, 0);
+  assert.equal(r.exclues.erreurs, 1);
+});
+
+test('gros journal : lecture ligne par ligne', async () => {
+  const d = tmp();
+  const j = path.join(d, 'logs');
+  fs.mkdirSync(j);
+  const bloc = Array.from({ length: 1000 }, (_, i) => ligne({ ip: `10.0.${i % 50}.1` })).join('\n') + '\n';
+  const fd = fs.openSync(path.join(j, `acces-${D}.log`), 'w');
+  for (let i = 0; i < 50; i++) fs.writeSync(fd, bloc);
+  fs.closeSync(fd);
+  assert.equal(await agregerCli(['--journaux', j, '--stats', path.join(d, 'stats'), '--date', D, '--aujourdhui', '2026-11-25'], { ecrire: () => {} }), 0);
+  const r = JSON.parse(fs.readFileSync(path.join(d, 'stats', `${D}.json`), 'utf8'));
+  assert.equal(r.pagesVues, 50000);
+  assert.equal(r.visiteursUniques, 50);
+  fs.rmSync(d, { recursive: true, force: true });
 });
