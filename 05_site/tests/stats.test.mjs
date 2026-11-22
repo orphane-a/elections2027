@@ -353,6 +353,8 @@ test('robots de prévisualisation exclus, téléphones CUBOT comptés, requêtes
   for (const ua of ['WhatsApp/2.23.20.0', 'Mastodon/4.3.0 (http.rb/5.2.0; +https://mastodon.social/)', 'Mozilla/5.0 (compatible; Cardyb/1.1; +bsky.app)', 'meta-externalagent/1.1', 'ChatGPT-User/1.0', 'Mozilla/5.0 (compatible; Google-InspectionTool/1.0)', 'Iframely/1.3.1']) assert.equal(estRobot(ua), true, ua);
   assert.equal(estRobot('Mozilla/5.0 (Linux; Android 10; CUBOT X30) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36'), false);
   assert.equal(sourceDe('com.google.android.gm'), 'autre');
+  for (const ua of ['Mozilla/5.0 zgrab/0.x', 'Mozilla/5.0 (compatible; CensysInspect/1.1)', 'Mozilla/5.0 (compatible; Nmap Scripting Engine)', 'Pinterest/0.2 (+https://www.pinterest.com/bot.html)', 'TelegramBot (like TwitterBot)', 'Mozilla/5.0 (compatible; Discordbot/2.0)', 'Slackbot-LinkExpanding 1.0']) assert.equal(estRobot(ua), true, ua);
+  for (const ua of ['Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131.0 Mobile Safari/537.36 Telegram-Android/11.4.2', 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 discord/1.0.9 Chrome/128 Electron/32 Safari/537.36', 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Slack/4.41 Chrome/130 Electron/33 Safari/537.36']) assert.equal(estRobot(ua), false, ua);
   const r = agreger([ligne({ page: '', ua: '', statut: 400 })], { date: D, sel: SEL });
   assert.equal(r.lignesIgnorees, 0);
   assert.equal(r.exclues.erreurs, 1);
