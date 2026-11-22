@@ -65,6 +65,11 @@ test('exigence 2 et critère 5 : chaque en-tête garde le lien « Comparer sur c
     assert.ok(b.html.includes(`<a class="lnk cmp" href="${b.slug}.html#cand-${cid}">Comparer sur ce thème</a>`), `${cid} ${b.slug}`);
   }
   assert.ok(page(complet).includes(`href="sante.html#cand-${complet}">Comparer sur ce thème</a>`));
+  // La cible existe sur la page thème, que le candidat ait publié sur ce thème ou non
+  for (const [slug] of THEMES) {
+    const html = pages[`${slug}.html`];
+    for (const cid of ids) assert.equal((html.match(new RegExp(`id="cand-${cid}"`, 'g')) || []).length, 1, `${slug}.html#cand-${cid}`);
+  }
 });
 
 test('exigence 3 et critère 1 : la mesure vient en premier, au plus 3 par thème, avec un texte plus grand et plus gras que l\'étiquette', () => {

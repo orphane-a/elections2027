@@ -585,7 +585,7 @@ function ficheTheme(t) {
   const attente = enAttente.length ? `<section id="attente" class="sect" aria-labelledby="att-t">
 <h2 id="att-t">${svg(I.horloge, { t: 20, trait: '#4A5666', ep: 1.9 })}Pas encore de proposition publiée sur ce thème <span class="nb">${pluriel(enAttente.length, 'candidat')}</span></h2>
 <p class="att-intro">Non communiqué : aucune proposition publiée et datée trouvée. Ils apparaîtront dans « Programmes 2027 » dès qu'ils publieront. Ordre alphabétique.</p>
-<ul class="att-liste">${enAttente.map((c) => `<li><a href="candidat-${esc(c.id)}.html">${photo(c, 'xs')}<span class="att-txt"><span class="an">${esc(nomComplet(c))}</span><span class="ap">${esc(c.parti || 'Sans parti')}</span><span class="ap">Non communiqué, vérifié le ${dateFr(mesures[c.id]?.date_verif || verif)}</span></span></a></li>`).join('')}</ul>
+<ul class="att-liste">${enAttente.map((c) => `<li id="cand-${esc(c.id)}"><a href="candidat-${esc(c.id)}.html">${photo(c, 'xs')}<span class="att-txt"><span class="an">${esc(nomComplet(c))}</span><span class="ap">${esc(c.parti || 'Sans parti')}</span><span class="ap">Non communiqué, vérifié le ${dateFr(mesures[c.id]?.date_verif || verif)}</span></span></a></li>`).join('')}</ul>
 </section>` : '';
   const posPresentes = POSITIONS.filter((p) => votes.some((v) => Object.values(v.positions || {}).some((x) => clePosition(x) === p.cle)));
   const bilan = votes.length
