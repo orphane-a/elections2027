@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette du ticket 93 : page qui sommes nous</title>
+<style>
+:root{
+  --fond:#F7F6FC; --carte:#FFFFFF; --texte:#14202E; --doux:#3B4656; --doux2:#4A5666;
+  --trait:#D5DBE3; --accent:#3A35C8; --gris:#EEF0F3; --cyan:#D3EDF1;
+  --ambre:#FFF1CC; --ambre-texte:#4A3000; --rouge:#B3261E; --rouge-fond:#FDECEA; --vert:#1E6B3A; --vert-fond:#E6F4EA;
+  --titre:system-ui,-apple-system,"Segoe UI",sans-serif; --corps:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#E4E3EE;color:var(--texte);font-family:var(--corps);font-size:16px;line-height:1.55}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.lnk{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+h1,h2,h3{font-family:var(--titre);letter-spacing:-.02em}
+.small{font-size:14px;color:var(--doux2)}
+
+/* Cadre de la maquette */
+.doc{max-width:1320px;margin:0 auto;padding:32px 20px 80px}
+.doc>header h1{margin:0 0 6px;font-size:30px}
+.doc>header p{margin:0 0 8px;max-width:80ch;color:var(--doux)}
+.ecran{margin-top:56px}
+.ecran>h2{margin:0 0 4px;font-size:22px}
+.ecran>p.note{margin:0 0 14px;max-width:80ch;color:var(--doux);font-size:15px}
+.cadre{background:var(--fond);border:1px solid #C9C8D8;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(20,32,46,.06)}
+.barre{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;border-bottom:1px solid var(--trait);font-size:13px;color:var(--doux2)}
+.barre i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--trait)}
+.barre span{margin-left:8px;padding:2px 10px;background:var(--gris);border-radius:999px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tel{width:375px;max-width:100%}
+.cote{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.cote>div{flex:1 1 380px;min-width:0}
+.etiq{display:inline-block;margin:0 0 8px;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600}
+.etiq.avant{background:var(--rouge-fond);color:var(--rouge)}
+.etiq.apres{background:var(--vert-fond);color:var(--vert)}
+.notes{margin:14px 0 0;padding:0 0 0 20px;max-width:90ch;font-size:15px;color:var(--doux)}
+.notes li{margin:4px 0}
+.retire{outline:3px dashed var(--rouge);outline-offset:3px;background:var(--rouge-fond);text-decoration:line-through;text-decoration-color:var(--rouge)}
+.garde{outline:2px solid var(--vert);outline-offset:4px;border-radius:4px}
+
+/* Site (repris de 05_site/public/style.css) */
+.wrap{padding:0 clamp(16px,4vw,48px)}
+.preprod{background:var(--ambre);color:var(--ambre-texte);font-size:14px;text-align:center;padding:6px 16px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px;padding:8px 0;border-bottom:1px solid var(--trait)}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:700;font-size:20px;text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;gap:0 20px;font-size:15px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.nav a[aria-current=page]{font-weight:700;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.burger{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;font-weight:600;font-size:15px}
+.bandeau{margin:24px 0 20px;padding:clamp(22px,4vw,44px);border-radius:24px;background:var(--cyan)}
+.bandeau .ariane{margin:0 0 12px;font-size:15px;color:var(--doux)}
+.bandeau h1{margin:0;font-weight:700;font-size:clamp(32px,5.5vw,56px);line-height:1.03;letter-spacing:-.03em}
+.bandeau .sous{margin:12px 0 0;font-size:18px;color:var(--doux)}
+.deux{display:flex;flex-wrap:wrap;gap:16px 48px;padding:36px 0;border-top:1px solid var(--trait)}
+.deux>.g{flex:1 1 200px}
+.deux>.d{flex:999 1 520px;min-width:0;max-width:66ch}
+.deux h2{margin:0;font-weight:600;font-size:24px}
+.deux .d p:first-child{margin-top:0}
+.deux .d p:last-child{margin-bottom:0}
+footer.pied{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 32px;padding:28px 0 40px;border-top:1px solid var(--trait);font-size:14px;color:var(--doux2)}
+footer.pied p{margin:0;max-width:56ch}
+footer.pied .liens{display:flex;flex-wrap:wrap;gap:0 24px}
+
+/* Version téléphone */
+.tel .bandeau{padding:22px;border-radius:18px}
+.tel .bandeau h1{font-size:32px}
+.tel .bandeau .sous{font-size:16px}
+.tel .deux{padding:24px 0;gap:10px}
+.tel .deux>.g,.tel .deux>.d{flex:1 1 100%}
+.tel .deux h2{font-size:21px}
+.tel .wrap{padding:0 16px}
+
+/* Relecture (état d'erreur) */
+.diff{margin:0;padding:16px;background:#fff;border:1px solid var(--trait);border-radius:10px;font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-x:auto;white-space:pre}
+.diff .m{display:block;background:var(--rouge-fond);color:var(--rouge)}
+.diff .f{display:block;color:var(--doux2);font-weight:700}
+.alerte{display:flex;gap:12px;padding:14px 16px;border-radius:10px;font-size:15px}
+.alerte.err{background:var(--rouge-fond);color:var(--rouge);border:1px solid #E7B4AF}
+.alerte.ok{background:var(--vert-fond);color:var(--vert);border:1px solid #B6DCC2}
+.alerte p{margin:0}
+</style>
+</head>
+<body>
+<div class="doc">
+<header>
+<h1>Ticket 93 : page qui sommes nous</h1>
+<p>Retrait des deux notes de travail entre crochets de la page « Qui sommes nous ? ». Rien n'est ajouté à leur place. Les titres, les ancres et les autres sections restent identiques.</p>
+<p class="small">Source à modifier : <code>05_site/build.mjs</code>, appel <code>pageTexte('qui-sommes-nous.html', ...)</code>. Page régénérée : <code>05_site/public/qui-sommes-nous.html</code>.</p>
+</header>
+
+<!-- Écran 1 -->
+<section class="ecran" aria-labelledby="e1">
+<h2 id="e1">1. Ordinateur : avant et après</h2>
+<p class="note">À gauche, la page actuelle : les deux paragraphes barrés en rouge disparaissent. À droite, la page attendue : les phrases encadrées en vert restent seules dans leur section.</p>
+<div class="cote">
+<div>
+<span class="etiq avant">Avant</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/qui-sommes-nous.html</span></div>
+<div class="preprod">Version de préproduction, non publique.</div>
+<div class="wrap">
+<header class="top"><a class="logo" href="#">Programmes 2027</a><nav class="nav" aria-label="Navigation de la maquette avant"><a href="#">Thèmes</a><a href="#">Méthode</a><a href="#">Candidats</a><a href="#" aria-current="page">Qui sommes nous ?</a><a href="#">Signaler une erreur</a></nav></header>
+<div class="bandeau"><p class="ariane"><a class="lnk" href="#">Accueil</a> › Qui sommes nous ?</p><h1>Qui est derrière ce site <span aria-hidden="true">🙋</span></h1><p class="sous">Voici qui porte le projet, comment il est financé et comment nous contacter.</p></div>
+<section class="deux"><div class="g"><h2>Qui porte le projet</h2></div><div class="d"><p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p><p class="small retire">[Nom et parcours de la porteuse du projet : à compléter avant la mise en ligne publique.]</p></div></section>
+<section class="deux"><div class="g"><h2>Financement</h2></div><div class="d"><p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p><p class="small retire">[Mode de financement : à compléter avant la mise en ligne publique.]</p></div></section>
+<section class="deux"><div class="g"><h2>Ce que nous ne faisons pas</h2></div><div class="d"><p>Pas de recommandation de vote, pas de test d'affinité, pas de commentaires ni de forum. Nous ne produisons pas nos propres estimations économiques…</p></div></section>
+</div>
+</div>
+</div>
+<div>
+<span class="etiq apres">Après</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/qui-sommes-nous.html</span></div>
+<div class="preprod">Version de préproduction, non publique.</div>
+<div class="wrap">
+<header class="top"><a class="logo" href="#">Programmes 2027</a><nav class="nav" aria-label="Navigation de la maquette après"><a href="#">Thèmes</a><a href="#">Méthode</a><a href="#">Candidats</a><a href="#" aria-current="page">Qui sommes nous ?</a><a href="#">Signaler une erreur</a></nav></header>
+<div class="bandeau"><p class="ariane"><a class="lnk" href="#">Accueil</a> › Qui sommes nous ?</p><h1>Qui est derrière ce site <span aria-hidden="true">🙋</span></h1><p class="sous">Voici qui porte le projet, comment il est financé et comment nous contacter.</p></div>
+<section class="deux" id="equipe"><div class="g"><h2>Qui porte le projet</h2></div><div class="d"><p class="garde">Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p></div></section>
+<section class="deux" id="financement"><div class="g"><h2>Financement</h2></div><div class="d"><p class="garde">Aucun financement d'un parti, d'un candidat ou d'une campagne.</p></div></section>
+<section class="deux"><div class="g"><h2>Ce que nous ne faisons pas</h2></div><div class="d"><p>Pas de recommandation de vote, pas de test d'affinité, pas de commentaires ni de forum. Nous ne produisons pas nos propres estimations économiques…</p></div></section>
+</div>
+</div>
+</div>
+</div>
+<ul class="notes">
+<li>Aucun paragraphe vide ne reste : la section se termine juste après la phrase conservée, l'espacement vient seulement du bas de section (36 pixels).</li>
+<li>Les sections « Vos données » et « Nous contacter », le pied de page et les ancres <code>#equipe</code> et <code>#financement</code> ne changent pas.</li>
+</ul>
+</section>
+
+<!-- Écran 2 -->
+<section class="ecran" aria-labelledby="e2">
+<h2 id="e2">2. Ordinateur : page complète après le ticket</h2>
+<p class="note">État de succès : la page telle qu'un visiteur la verra en préprod, avec ses cinq sections.</p>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/qui-sommes-nous.html</span></div>
+<div class="preprod">Version de préproduction, non publique.</div>
+<div class="wrap">
+<header class="top"><a class="logo" href="#">Programmes 2027</a><nav class="nav" aria-label="Navigation de la page complète"><a href="#">Thèmes</a><a href="#">Méthode</a><a href="#">Candidats</a><a href="#" aria-current="page">Qui sommes nous ?</a><a href="#">Signaler une erreur</a></nav></header>
+<div class="bandeau"><p class="ariane"><a class="lnk" href="#">Accueil</a> › Qui sommes nous ?</p><h1>Qui est derrière ce site <span aria-hidden="true">🙋</span></h1><p class="sous">Voici qui porte le projet, comment il est financé et comment nous contacter.</p></div>
+<section class="deux"><div class="g"><h2>Qui porte le projet</h2></div><div class="d"><p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p></div></section>
+<section class="deux"><div class="g"><h2>Financement</h2></div><div class="d"><p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p></div></section>
+<section class="deux"><div class="g"><h2>Ce que nous ne faisons pas</h2></div><div class="d"><p>Pas de recommandation de vote, pas de test d'affinité, pas de commentaires ni de forum. Nous ne produisons pas nos propres estimations économiques (nous comparons les chiffres annoncés aux travaux d'institutions indépendantes, voir le <a class="lnk" href="#">panel de sources</a>) et nous ne couvrons que les mesures clefs, avec un lien vers le programme complet.</p></div></section>
+<section class="deux"><div class="g"><h2>Vos données</h2></div><div class="d"><p>Pas de compte, pas de publicité, pas de cookie. Les polices de caractères sont hébergées sur notre serveur : votre navigateur ne contacte aucun service tiers en consultant le site.</p></div></section>
+<section class="deux"><div class="g"><h2>Nous contacter</h2></div><div class="d"><p>Pour signaler une erreur ou nous écrire : <a class="lnk" href="#">page de signalement</a>. Nous répondons sous 72 heures.</p></div></section>
+<footer class="pied"><p>Ce site ne recommande aucun vote. Il n'utilise aucun cookie. Dernière mise à jour du site : 18 novembre 2026.</p><div class="liens"><a class="lnk" href="#">Méthode complète</a><a class="lnk" href="#">Panel de sources</a><a class="lnk" href="#">Qui sommes nous ?</a><a class="lnk" href="#">Signaler une erreur</a><a class="lnk" href="#">Historique des corrections</a></div></footer>
+</div>
+</div>
+</section>
+
+<!-- Écran 3 -->
+<section class="ecran" aria-labelledby="e3">
+<h2 id="e3">3. Téléphone (375 pixels) : avant et après</h2>
+<p class="note">Sur téléphone, le titre de section passe au dessus du texte. Sans la note entre crochets, chaque section devient une seule phrase courte.</p>
+<div class="cote">
+<div style="flex:0 1 375px">
+<span class="etiq avant">Avant</span>
+<div class="cadre tel">
+<div class="preprod">Version de préproduction, non publique.</div>
+<div class="wrap">
+<header class="top"><a class="logo" href="#">Programmes 2027</a><span class="burger">Menu</span></header>
+<div class="bandeau"><p class="ariane"><a class="lnk" href="#">Accueil</a> › Qui sommes nous ?</p><h1>Qui est derrière ce site <span aria-hidden="true">🙋</span></h1><p class="sous">Voici qui porte le projet, comment il est financé et comment nous contacter.</p></div>
+<section class="deux"><div class="g"><h2>Qui porte le projet</h2></div><div class="d"><p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p><p class="small retire">[Nom et parcours de la porteuse du projet : à compléter avant la mise en ligne publique.]</p></div></section>
+<section class="deux"><div class="g"><h2>Financement</h2></div><div class="d"><p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p><p class="small retire">[Mode de financement : à compléter avant la mise en ligne publique.]</p></div></section>
+</div>
+</div>
+</div>
+<div style="flex:0 1 375px">
+<span class="etiq apres">Après</span>
+<div class="cadre tel">
+<div class="preprod">Version de préproduction, non publique.</div>
+<div class="wrap">
+<header class="top"><a class="logo" href="#">Programmes 2027</a><span class="burger">Menu</span></header>
+<div class="bandeau"><p class="ariane"><a class="lnk" href="#">Accueil</a> › Qui sommes nous ?</p><h1>Qui est derrière ce site <span aria-hidden="true">🙋</span></h1><p class="sous">Voici qui porte le projet, comment il est financé et comment nous contacter.</p></div>
+<section class="deux"><div class="g"><h2>Qui porte le projet</h2></div><div class="d"><p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p></div></section>
+<section class="deux"><div class="g"><h2>Financement</h2></div><div class="d"><p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p></div></section>
+<section class="deux"><div class="g"><h2>Ce que nous ne faisons pas</h2></div><div class="d"><p>Pas de recommandation de vote, pas de test d'affinité, pas de commentaires ni de forum…</p></div></section>
+<section class="deux"><div class="g"><h2>Vos données</h2></div><div class="d"><p>Pas de compte, pas de publicité, pas de cookie…</p></div></section>
+<section class="deux"><div class="g"><h2>Nous contacter</h2></div><div class="d"><p>Pour signaler une erreur ou nous écrire : <a class="lnk" href="#">page de signalement</a>. Nous répondons sous 72 heures.</p></div></section>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Écran 4 -->
+<section class="ecran" aria-labelledby="e4">
+<h2 id="e4">4. États de la modification</h2>
+<p class="note">La page est statique : elle n'a ni état vide ni état de chargement côté visiteur. Les états utiles concernent la relecture et les tests.</p>
+<div class="cote">
+<div>
+<span class="etiq apres">Succès : modification dans la source</span>
+<pre class="diff"><span class="f">05_site/build.mjs</span>  ['equipe', 'Qui porte le projet', `&lt;p&gt;Ce site est mené à titre individuel, …&lt;/p&gt;<span class="m">-&lt;p class="small"&gt;[Nom et parcours de la porteuse du projet : à compléter …]&lt;/p&gt;</span>`],
+  ['financement', 'Financement', `&lt;p&gt;Aucun financement d'un parti, …&lt;/p&gt;<span class="m">-&lt;p class="small"&gt;[Mode de financement : à compléter …]&lt;/p&gt;</span>`],
+<span class="f">05_site/public/qui-sommes-nous.html</span>  régénérée par le build, mêmes suppressions</pre>
+<div class="alerte ok" style="margin-top:12px"><span aria-hidden="true">✅</span><p>npm test : tous les tests passent. Aucune occurrence de « à compléter » ni de texte entre crochets dans qui-sommes-nous.html.</p></div>
+</div>
+<div>
+<span class="etiq avant">Erreur : modification refusée en relecture</span>
+<pre class="diff"><span class="f">05_site/public/qui-sommes-nous.html</span>  seule cette page est modifiée
+<span class="f">05_site/build.mjs</span>  inchangé</pre>
+<div class="alerte err" style="margin-top:12px"><span aria-hidden="true">⛔</span><p>La page publiée ne correspond plus à la source. Au prochain build, les textes provisoires reviendraient. Faites la modification dans build.mjs, puis régénérez le site.</p></div>
+<div class="alerte err" style="margin-top:12px"><span aria-hidden="true">⛔</span><p>Test en échec : qui-sommes-nous.html contient encore « à compléter ». Corrigez la source sans remettre les textes provisoires.</p></div>
+</div>
+</div>
+</section>
+
+<!-- Écran 5 -->
+<section class="ecran" aria-labelledby="e5">
+<h2 id="e5">5. Hors périmètre</h2>
+<ul class="notes">
+<li>La note de la page « Signaler une erreur » (« [Adresse de contact ou formulaire : à brancher avant la mise en ligne publique.] ») reste en place : ticket séparé.</li>
+<li>Aucun nom, aucun parcours, aucun mode de financement n'est ajouté.</li>
+<li>Pas d'entrée dans l'historique des corrections : il s'agit d'une note de travail retirée, pas d'une information corrigée.</li>
+</ul>
+</section>
+</div>
+</body>
+</html>

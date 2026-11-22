@@ -687,8 +687,8 @@ function pagesTexte() {
     ]);
   pageTexte('qui-sommes-nous.html', 'Qui sommes nous ?', 'Qui porte le site Programmes 2027, comment il est financé et comment le contacter.', '#D3EDF1',
     'Qui est derrière ce site <span aria-hidden="true">🙋</span>', 'Voici qui porte le projet, comment il est financé et comment nous contacter.', [
-      ['equipe', 'Qui porte le projet', `<p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p><p class="small">[Nom et parcours de la porteuse du projet : à compléter avant la mise en ligne publique.]</p>`],
-      ['financement', 'Financement', `<p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p><p class="small">[Mode de financement : à compléter avant la mise en ligne publique.]</p>`],
+      ['equipe', 'Qui porte le projet', `<p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p>`],
+      ['financement', 'Financement', `<p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p>`],
       ['limites', 'Ce que nous ne faisons pas', `<p>Pas de recommandation de vote, pas de test d'affinité, pas de commentaires ni de forum. Nous ne produisons pas nos propres estimations économiques (nous comparons les chiffres annoncés aux travaux d'institutions indépendantes, voir le <a class="lnk" href="panel-sources.html">panel de sources</a>) et nous ne couvrons que les mesures clefs, avec un lien vers le programme complet.</p>`],
       ['donnees', 'Vos données', `<p class="lead">Pas de cookie, pas de publicité, aucun service tiers.</p><p class="plus">Pour compter les visites, notre serveur garde 7 jours l'adresse de connexion et le type de navigateur, puis n'en conserve que des totaux anonymes.</p><ul class="points">${[
         "Aucun script de mesure dans les pages : votre navigateur n'envoie rien de plus qu'une simple consultation.",
