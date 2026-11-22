@@ -1,7 +1,7 @@
 # 🏛️ Institutions et démocratie : synthèse comparée
 
 Thème : Institutions et démocratie
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -57,6 +57,12 @@ Non communiqué.
 2. Supprimer les avantages de retraite des parlementaires. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. Supprimer ou réduire les agences de l'État. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 
+## Dominique de Villepin (La France humaniste)
+
+1. Créer un référendum d'initiative citoyenne. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 8, proposition 074, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-8.html (consulté le 2026-11-20)
+2. Abaisser le droit de vote à 16 ans, avec un temps d'apprentissage civique. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 8, proposition 075, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-8.html (consulté le 2026-11-20)
+3. Poser le principe d'une obligation de vote, sans sanction. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 8, proposition 076, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-8.html (consulté le 2026-11-20)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose une démocratie directe sur le modèle suisse. (Mesure non chiffrée par le parti) Source : Sud Radio, interview de Nicolas Dupont-Aignan, 2026-09-20, https://www.sudradio.fr/linvite-politique/nicolas-dupont-aignan-la-position-du-rn-est-incomprehensible (consulté le 2026-11-09)
@@ -75,7 +81,7 @@ Non communiqué.
 
 ## Raphaël Glucksmann (Place publique)
 
-Non communiqué.
+1. Inscrire dans l'article 1 de la Constitution que la République est écologique, et déclarer l'état d'urgence écologique. (Mesure non chiffrée par le parti) Source : Révolution écologique : les premiers 100 jours (livret de campagne, première partie), 2026-11-09, https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf (consulté le 2026-11-20)
 
 ## Anasse Kazib (Révolution permanente)
 
@@ -177,6 +183,8 @@ Non communiqué.
 ## Erwan Rohou (Mouvement écologiste indépendant)
 
 1. Créer un Défenseur de l'environnement doté d'un pouvoir d'alerte, de médiation et de veto suspensif. (Mesure non chiffrée par le parti) Source : MEI, Livre blanc pour la protection de l'environnement, signé Erwan Rohou (3 octobre, année non affichée), s.d., https://www.les-ecologistes-mei.org/post/le-livre-blanc-du-mouvement-ecologiste-ind%C3%A9pendant (consulté le 2026-11-16)
+2. Instaurer une représentation plus proportionnelle pour refléter les différentes sensibilités politiques. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 10, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-20)
+3. Créer un référendum d'initiative citoyenne (RIC), avec débat contradictoire et règles claires. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 10, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-20)
 
 ## Fabien Roussel (Parti communiste français)
 

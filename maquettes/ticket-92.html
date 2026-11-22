@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Maquette du ticket 92 : affichage du détail dans une mesure</title>
+<style>
+body{margin:0;background:#E9E8F2;color:#14202E;font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55}
+.doc{max-width:1360px;margin:0 auto;padding:32px 24px 80px;box-sizing:border-box}
+.doc>header h1{margin:0 0 8px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:34px;letter-spacing:-.02em;line-height:1.15}
+.doc>header p{margin:0 0 8px;max-width:80ch;color:#3B4656}
+.sommaire{display:flex;flex-wrap:wrap;gap:6px 10px;margin:16px 0 0;padding:0;list-style:none;font-size:14px}
+.sommaire a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;background:#fff;border:1px solid #D5DBE3;border-radius:999px;color:#14202E;text-decoration:none}
+.ecran{margin-top:48px}
+.et{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:24px;letter-spacing:-.02em}
+.num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:#14202E;color:#fff;border-radius:50%;font-family:"Public Sans",system-ui,sans-serif;font-size:15px}
+.ei{margin:0 0 14px;max-width:80ch;color:#3B4656}
+.cadre{background:#F7F6FC;border:1px solid #D5DBE3;border-radius:16px;padding:24px;box-sizing:border-box;container-type:inline-size}
+.tel .cadre{width:375px;max-width:100%;padding:16px;border-radius:28px;border:8px solid #14202E}
+.cote{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.cote>div>p.lab{margin:0 0 8px;font-size:14px;font-weight:700;color:#3B4656}
+.note{margin:14px 0 0;padding:12px 14px;background:#fff;border:1px dashed #6B7788;border-radius:10px;font-size:14px;color:#3B4656}
+/* Site */
+a{color:#3A35C8}a:hover{color:#14202E}
+.lnk{color:#3A35C8;text-decoration:underline;text-underline-offset:3px}
+.discret{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.band{margin:0 0 20px;padding:20px 24px;background:#D5F0E5;border-radius:20px}
+.band .ariane{margin:0 0 6px;font-size:14px;color:#3B4656}
+.band h1{margin:0;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:32px;letter-spacing:-.02em}
+.grille{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.pc{background:#fff;border:1px solid #D5DBE3;border-left:6px solid;border-radius:10px;padding-bottom:6px}
+.pc-tete{display:flex;align-items:center;gap:12px;padding:12px 18px}
+.ph{flex:none;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#EEF0F3;color:#3B4656;font-size:14px;font-weight:700}
+.pc-id{flex:1;min-width:0}.pc-id h3{margin:0;font-size:17px;line-height:1.25}.pc-id p{margin:0;font-size:14px;color:#4A5666}
+.sigle{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:48px;height:32px;padding:0 6px;border-radius:6px;color:#fff;font-size:12px;font-weight:700}
+.pc-mes{list-style:none;margin:0 18px;padding:6px 0 0;border-top:1px solid #D5DBE3}
+.pc-mes>li+li{border-top:1px dotted #D5DBE3}
+.mbtn{display:flex;gap:12px;align-items:flex-start;width:100%;padding:12px 10px;background:transparent;border:0;border-radius:8px;text-align:left;font:15px/1.5 "Public Sans",system-ui,sans-serif;color:#14202E;cursor:pointer}
+.mbtn:hover,.mbtn.ouv{background:#F3F4F8}
+.mbtn:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #3A35C8;outline-offset:2px;border-radius:4px}
+.pm{flex:none;margin-top:3px;color:#4A5666}
+.mdet{margin:0 10px 16px 38px;padding:12px 16px;border-left:3px solid #D5DBE3;font-size:14px;line-height:1.5}
+.mdet p{margin:0 0 8px}
+.tag{display:inline-block;padding:2px 10px;background:#EEF0F3;color:#3B4656;border-radius:6px;font-size:13px;font-weight:600}
+.chiffre{color:#14202E;font-weight:600;overflow-wrap:anywhere}
+/* Nouveau bloc niveau : statique, encadré 1,5 px, fond blanc, sans couleur de jugement */
+.nivbloc{box-sizing:border-box;max-width:100%;margin:0 0 10px;padding:12px 14px;background:#fff;border:1.5px solid #14202E;border-radius:10px;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+.nivbloc p{margin:0}
+.niv-t{display:flex;align-items:center;gap:8px;margin:0 0 6px!important;font-size:15px;font-weight:700}
+.nivbloc .def{color:#3B4656}
+.nivbloc .t{margin:12px 0 2px!important;font-weight:700}
+.srcch{margin-top:6px}
+.srcch>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:#3A35C8;font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer;list-style:none}
+.srcch>summary::-webkit-details-marker{display:none}
+.chev{flex:none;transition:transform .15s}
+.srcch[open] .chev{transform:rotate(90deg)}
+.srcch-c{padding-top:10px;border-top:1px solid #D5DBE3}
+.srcch-c p{margin:0 0 8px}
+.srcch dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0 0 12px}
+.srcch dt{font-weight:600}.srcch dd{margin:0}
+.srcch ul{margin:0 0 12px;padding:0;list-style:none}
+.srcch li{padding:8px 0;border-top:1px solid #D5DBE3}
+.m{display:block;color:#4A5666}
+.msource{overflow-wrap:anywhere}.mdates{display:block;color:#4A5666}.ext{margin-left:4px;vertical-align:-1px}
+.niv-chip{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 12px 0 8px;background:#fff;border:1.5px solid #14202E;border-radius:8px;font-size:14px;font-weight:600}
+.ref{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.console{margin:0;padding:12px 14px;background:#14202E;color:#F7F6FC;border-radius:10px;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+.lecteur{margin:0;padding:0;list-style:none;font-size:15px}
+.lecteur li{padding:10px 14px;margin-bottom:6px;background:#fff;border:1px solid #D5DBE3;border-radius:10px}
+.lecteur b{display:inline-block;min-width:110px;color:#4A5666;font-weight:600}
+.meth{max-width:66ch;background:#fff;border:1px solid #D5DBE3;border-radius:12px;padding:20px 24px}
+.meth h3{margin:0 0 10px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:22px}
+.meth p{margin:0 0 12px}
+.barre{text-decoration:line-through;color:#6B7788}
+.neuf{background:#F0EFFC;border-radius:4px;padding:0 2px}
+.souris{display:inline-block;margin-left:6px;font-size:13px;font-weight:700;color:#3A35C8}
+@container (max-width:640px){
+ .grille,.cote{grid-template-columns:1fr}
+ .band{padding:16px;border-radius:18px}.band h1{font-size:26px}
+ .pc{border-left-width:5px}.pc-tete{padding:12px 14px}
+ .pc-mes{margin:0 12px}
+ .mbtn{padding:12px 8px}
+ .mdet{margin:0 6px 14px 34px;padding:10px 0 10px 12px}
+ .nivbloc{padding:10px 12px}
+ .srcch dl{grid-template-columns:1fr}.srcch dd{margin-bottom:6px}
+}
+@media (max-width:760px){.cote{grid-template-columns:1fr}.doc{padding:20px 12px 60px}.cadre{padding:14px}}
+@media print{.srcch>.srcch-c{display:block}.srcch>summary{display:none}}
+</style></head>
+<body><div class="doc">
+<header>
+<h1>Ticket 92 : affichage du détail dans une mesure</h1>
+<p>Au clic sur « + », le détail d'une mesure montre tout de suite si elle est chiffrée par le parti, son niveau, ce qu'il veut dire et pourquoi. Plus de deuxième couche repliée, plus de bulle au survol, plus d'icône « i ». Les sources du chiffrage restent derrière un seul lien « Voir les sources du chiffrage », ouvert au clic ou au clavier.</p>
+<p>Ordre dans le détail : sous thème, ligne « Chiffrage annoncé » (mesure chiffrée seulement), bloc niveau encadré (icône et titre, définition, « Pourquoi ce niveau »), lien des sources du chiffrage, puis source de la mesure.</p>
+<ul class="sommaire">
+<li><a href="#e1">1. Mesures repliées</a></li><li><a href="#e2">2. Les trois cas dépliés</a></li><li><a href="#e3">3. Sources du chiffrage ouvertes</a></li><li><a href="#e4">4. Les cinq étiquettes</a></li><li><a href="#e5">5. Survol et clavier</a></li><li><a href="#e6">6. Erreur de build</a></li><li><a href="#e7">7. Fiche candidat</a></li><li><a href="#methode">8. Méthode</a></li><li><a href="#e9">9. Lecteur d'écran</a></li><li><a href="#e10">10. Téléphone</a></li></ul>
+</header>
+
+<section class="ecran " id="e1"><h2 class="et"><span class="num">1</span>Page thème, mesures repliées (état de départ)</h2><p class="ei">Rien ne change avant le clic : la liste des mesures reste compacte. Pas d'état de chargement, le détail est déjà dans la page générée.</p><div class="cadre"><div class="band"><p class="ariane">Accueil › Thèmes › Écologie et énergie</p><h1>🌱 Écologie et énergie</h1></div><div class="grille"><article class="pc" style="border-left-color:#4A7A1E">
+<div class="pc-tete"><span class="ph" aria-hidden="true">GA</span><div class="pc-id"><h3>Gabriel Attal</h3><p>Renaissance</p></div><span class="sigle" style="background:#4A7A1E" aria-hidden="true">RE</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Ramener la part des énergies fossiles de près de 60 % à 30 % en 2035, grâce à 14 réacteurs EPR et aux renouvelables.</span></button>
+</li><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.</span></button>
+</li><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Dépister automatiquement les polluants éternels (PFAS, substances chimiques très persistantes) dans les captages d'eau potable.</span></button>
+</li></ul></article><article class="pc" style="border-left-color:#5F6B7A">
+<div class="pc-tete"><span class="ph" aria-hidden="true">CE</span><div class="pc-id"><h3>[Candidat exemple]</h3><p>[Parti exemple], carte d'illustration au contenu fictif</p></div><span class="sigle" style="background:#5F6B7A" aria-hidden="true">X</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">[Mesure clef chiffrée, en langage simple]</span></button>
+</li></ul></article></div></div></section>
+
+<section class="ecran " id="e2"><h2 class="et"><span class="num">2</span>Les trois cas, dépliés d'un seul clic</h2><p class="ei">À gauche, une mesure non chiffrée puis une mesure chiffrée non évaluable (cas réels, comme les 22 mesures chiffrées actuelles). À droite, une mesure chiffrée avec un niveau validé, sur une carte d'illustration au contenu fictif. Tout est visible sans survol ni second clic.</p><div class="cadre"><div class="band"><p class="ariane">Accueil › Thèmes › Écologie et énergie</p><h1>🌱 Écologie et énergie</h1></div><div class="grille"><article class="pc" style="border-left-color:#4A7A1E">
+<div class="pc-tete"><span class="ph" aria-hidden="true">GA</span><div class="pc-id"><h3>Gabriel Attal</h3><p>Renaissance</p></div><span class="sigle" style="background:#4A7A1E" aria-hidden="true">RE</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Ramener la part des énergies fossiles de près de 60 % à 30 % en 2035, grâce à 14 réacteurs EPR et aux renouvelables.</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Chiffrage : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#14202E">?</text></svg><span>Mesure non chiffrée par le parti</span></p>
+<p class="def">Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p>
+<a class="lnk discret" href="#methode">Notre méthode</a></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réduire notre dépendance énergétique (plan Messmer II)<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.</span></button>
+<div class="mdet"><p><span class="tag">Eau</span></p>
+<p class="chiffre">Chiffrage annoncé : Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p>
+<p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réparer les cinq cents réseaux d'eau les plus vétustes<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Dépister automatiquement les polluants éternels (PFAS, substances chimiques très persistantes) dans les captages d'eau potable.</span></button>
+</li></ul></article><article class="pc" style="border-left-color:#5F6B7A">
+<div class="pc-tete"><span class="ph" aria-hidden="true">CE</span><div class="pc-id"><h3>[Candidat exemple]</h3><p>[Parti exemple], carte d'illustration au contenu fictif</p></div><span class="sigle" style="background:#5F6B7A" aria-hidden="true">X</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">[Mesure clef chiffrée, en langage simple]</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<p class="chiffre">Chiffrage annoncé : [X Md€ par an]</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6"/><circle cx="17" cy="12" r="2.9" fill="#14202E" stroke="#FFFFFF" stroke-width="1.5"/></svg><span>Discuté</span></p>
+<p class="def">Les sources indépendantes ne s'accordent pas sur le chiffre, ou il n'est tenable qu'avec des hypothèses fortes. Nous les affichons toutes, sans trancher.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">[Une à trois phrases : où se situe le désaccord entre les sources.]</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>[X Md€ par an]</dd><dt>Estimations des sources</dt><dd>[Y Md€] selon [Institution 1], [Z Md€] selon [Institution 2]</dd></dl>
+<p class="t">Sources</p><ul><li><a class="lnk" href="#">[Institution 1], [titre du rapport], [date]</a><span class="m">Estime [Y Md€ par an].</span></li><li><a class="lnk" href="#">[Institution 2], [titre de la note], [date]</a><span class="m">Estime [Z Md€ par an], avec une autre hypothèse.</span></li></ul>
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">Programme de [candidat exemple], page [12]<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li></ul></article></div>
+<p class="note">Mesure non chiffrée : pas de ligne « Chiffrage annoncé », pas de « Pourquoi ce niveau », pas de lien des sources du chiffrage. Juste l'étiquette, sa définition et le lien discret « Notre méthode ».</p></div></section>
+
+<section class="ecran " id="e3"><h2 class="et"><span class="num">3</span>Succès : sources du chiffrage ouvertes</h2><p class="ei">Après un clic (ou Entrée, Espace) sur « Voir les sources du chiffrage ». Le chevron tourne. On y retrouve le chiffre annoncé, les estimations, les sources, les sources qui ne vont pas dans le même sens, les autres avis et la date de vérification, comme dans l'ancienne bulle.</p><div class="cadre"><div class="grille"><article class="pc" style="border-left-color:#5F6B7A">
+<div class="pc-tete"><span class="ph" aria-hidden="true">CE</span><div class="pc-id"><h3>[Candidat exemple]</h3><p>[Parti exemple], carte d'illustration au contenu fictif</p></div><span class="sigle" style="background:#5F6B7A" aria-hidden="true">X</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">[Mesure clef chiffrée, en langage simple]</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<p class="chiffre">Chiffrage annoncé : [X Md€ par an]</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6"/><circle cx="17" cy="12" r="2.9" fill="#14202E" stroke="#FFFFFF" stroke-width="1.5"/></svg><span>Discuté</span></p>
+<p class="def">Les sources indépendantes ne s'accordent pas sur le chiffre, ou il n'est tenable qu'avec des hypothèses fortes. Nous les affichons toutes, sans trancher.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">[Une à trois phrases : où se situe le désaccord entre les sources.]</p>
+<details class="srcch" open><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>[X Md€ par an]</dd><dt>Estimations des sources</dt><dd>[Y Md€] selon [Institution 1], [Z Md€] selon [Institution 2]</dd></dl>
+<p class="t">Sources</p><ul><li><a class="lnk" href="#">[Institution 1], [titre du rapport], [date]</a><span class="m">Estime [Y Md€ par an].</span></li><li><a class="lnk" href="#">[Institution 2], [titre de la note], [date]</a><span class="m">Estime [Z Md€ par an], avec une autre hypothèse.</span></li></ul>
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">Programme de [candidat exemple], page [12]<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li></ul></article><article class="pc" style="border-left-color:#4A7A1E">
+<div class="pc-tete"><span class="ph" aria-hidden="true">GA</span><div class="pc-id"><h3>Gabriel Attal</h3><p>Renaissance</p></div><span class="sigle" style="background:#4A7A1E" aria-hidden="true">RE</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Ramener la part des énergies fossiles de près de 60 % à 30 % en 2035, grâce à 14 réacteurs EPR et aux renouvelables.</span></button>
+</li><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.</span></button>
+<div class="mdet"><p><span class="tag">Eau</span></p>
+<p class="chiffre">Chiffrage annoncé : Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p>
+<p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch" open><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réparer les cinq cents réseaux d'eau les plus vétustes<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Dépister automatiquement les polluants éternels (PFAS, substances chimiques très persistantes) dans les captages d'eau potable.</span></button>
+</li></ul></article></div></div></section>
+
+<section class="ecran " id="e4"><h2 class="et"><span class="num">4</span>Référence : les cinq étiquettes en bloc statique</h2><p class="ei">Même forme pour toutes les mesures et tous les candidats. Le niveau n'est jamais donné par la couleur seule : icône, titre et définition. Pas de fond coloré.</p><div class="cadre"><div class="ref"><div class="nivbloc"><p class="niv-t"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#14202E">?</text></svg><span>Mesure non chiffrée par le parti</span></p><p class="def">Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p></div><div class="nivbloc"><p class="niv-t"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6"/><circle cx="10" cy="12" r="2.8" fill="#14202E"/></svg><span>Dans le cadre validé</span></p><p class="def">Le chiffre annoncé est cohérent avec les estimations d'au moins deux sources indépendantes.</p></div><div class="nivbloc"><p class="niv-t"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6"/><circle cx="17" cy="12" r="2.9" fill="#14202E" stroke="#FFFFFF" stroke-width="1.5"/></svg><span>Discuté</span></p><p class="def">Les sources indépendantes ne s'accordent pas sur le chiffre, ou il n'est tenable qu'avec des hypothèses fortes. Nous les affichons toutes, sans trancher.</p></div><div class="nivbloc"><p class="niv-t"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p><p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p></div><div class="nivbloc"><p class="niv-t"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6"/><circle cx="20.5" cy="4.5" r="2.8" fill="#14202E"/></svg><span>Hors du cadre validé</span></p><p class="def">Au moins deux sources indépendantes jugent ce chiffre incompatible avec leurs propres estimations. Ce niveau juge le chiffre, jamais l'intérêt de la mesure.</p></div></div></div></section>
+
+<section class="ecran " id="e5"><h2 class="et"><span class="num">5</span>Survol et clavier</h2><p class="ei">Avec une souris, passer sur l'étiquette ne fait rien : ni ouverture, ni fermeture. Seul le bouton « + » change de fond au survol. Au clavier, Tab passe du bouton « + » au lien des sources du chiffrage, puis à la source.</p><div class="cadre"><div class="cote"><div><p class="lab">Souris sur l'étiquette <span class="souris">(curseur ici)</span> : rien ne bouge</p><ul class="pc-mes" style="background:#fff;border-radius:10px;margin:0"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Ramener la part des énergies fossiles de près de 60 % à 30 % en 2035, grâce à 14 réacteurs EPR et aux renouvelables.</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Chiffrage : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#14202E">?</text></svg><span>Mesure non chiffrée par le parti</span></p>
+<p class="def">Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p>
+<a class="lnk discret" href="#methode">Notre méthode</a></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réduire notre dépendance énergétique (plan Messmer II)<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li></ul></div>
+<div><p class="lab">Focus clavier sur « Voir les sources du chiffrage »</p><ul class="pc-mes" style="background:#fff;border-radius:10px;margin:0"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.</span></button>
+<div class="mdet"><p><span class="tag">Eau</span></p>
+<p class="chiffre">Chiffrage annoncé : Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p>
+<p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary style="outline:3px solid #3A35C8;outline-offset:2px;border-radius:4px"><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réparer les cinq cents réseaux d'eau les plus vétustes<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li></ul></div></div></div></section>
+
+<section class="ecran " id="e6"><h2 class="et"><span class="num">6</span>Erreur : niveau inconnu ou mal sourcé</h2><p class="ei">Comportement actuel conservé. La page affiche « Mesure chiffrée non évaluable » avec la raison par défaut, et le problème reste écrit dans la console du build pour être corrigé.</p><div class="cadre"><div class="cote"><div><p class="lab">Ce que voit le visiteur</p><ul class="pc-mes" style="background:#fff;border-radius:10px;margin:0"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">[Mesure dont le niveau saisi est « valide » au lieu de « cadre_valide »]</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<p class="chiffre">Chiffrage annoncé : [X Md€ par an]</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p>
+<p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>[X Md€ par an]</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">Programme de [candidat exemple], page [12]<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li></ul></div>
+<div><p class="lab">Console du build (inchangée)</p><pre class="console">⚠ viabilité exemple/ecologie : niveau inconnu « valide » (affiché Mesure chiffrée non évaluable)
+⚠ viabilité exemple/sante : « Discuté » ramené à Mesure chiffrée non évaluable (1 institution indépendante, il en faut 2 différentes)</pre></div></div></div></section>
+
+<section class="ecran " id="e7"><h2 class="et"><span class="num">7</span>Fiche candidat : même rendu</h2><p class="ei">Question ouverte 1, choix par défaut : la page candidat utilise le même bloc statique, sans bouton « + » autour (les mesures y sont déjà visibles).</p><div class="cadre"><div class="meth" style="max-width:720px"><h3>🌱 Écologie et énergie</h3>
+<div style="padding-top:14px;border-top:1px solid #D5DBE3"><p style="margin:0 0 8px;font-size:17px">Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.</p><div class="mdet" style="margin:0;padding:0;border:0"><p class="chiffre">Chiffrage annoncé : Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p>
+<p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div><p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réparer les cinq cents réseaux d'eau les plus vétustes<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p></div></div>
+<div style="padding-top:14px;border-top:1px solid #D5DBE3"><p style="margin:0 0 8px;font-size:17px">Dépister automatiquement les polluants éternels (PFAS, substances chimiques très persistantes) dans les captages d'eau potable.</p><div class="mdet" style="margin:0;padding:0;border:0"><div class="nivbloc"><p class="niv-t"><span class="sr">Chiffrage : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#14202E">?</text></svg><span>Mesure non chiffrée par le parti</span></p>
+<p class="def">Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p>
+<a class="lnk discret" href="#methode">Notre méthode</a></div><p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Mes chantiers capitaux (mesure n° 22)<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p></div></div></div></div></section>
+
+<section class="ecran" id="methode"><h2 class="et"><span class="num">8</span>Méthode : paragraphe « Les chiffres des mesures »</h2><p class="ei">Seule la phrase sur le clic change. Texte barré : supprimé. Texte surligné : nouveau.</p><div class="cadre"><div class="meth"><h3>Les chiffres des mesures</h3>
+<p>Un niveau est attribué seulement si au moins deux institutions différentes du panel se prononcent. […]</p>
+<p><span class="barre">Cliquer ou toucher le niveau ouvre une explication : la raison, le chiffre annoncé, les estimations, les sources (y compris celles qui ne vont pas dans le même sens) et la date de vérification.</span> <span class="neuf">Quand on déplie une mesure avec le bouton « + », on voit tout de suite si elle est chiffrée par le parti, son niveau, ce qu'il veut dire et pourquoi il a été attribué. Le lien « Voir les sources du chiffrage » donne ensuite le chiffre annoncé, les estimations, les sources (y compris celles qui ne vont pas dans le même sens) et la date de vérification.</span> Chaque niveau est relu par une personne avant publication. […]</p></div></div></section>
+
+<section class="ecran " id="e9"><h2 class="et"><span class="num">9</span>Lecteur d'écran</h2><p class="ei">Ce qui est lu après avoir déplié une mesure. Le niveau est du texte simple, sans annonce de bouton. Seul le lien des sources est annoncé comme repliable, ce qui est attendu.</p><div class="cadre"><ul class="lecteur">
+<li><b>Bouton</b>Ramener la part des énergies fossiles […], développé</li>
+<li><b>Texte</b>Énergie</li>
+<li><b>Texte</b>Chiffrage : Mesure non chiffrée par le parti</li>
+<li><b>Texte</b>Le candidat ne donne pas le coût de cette mesure. […]</li>
+<li><b>Lien</b>Notre méthode</li>
+<li><b>Bouton</b>Réparer en priorité les 500 réseaux d'eau […], développé</li>
+<li><b>Texte</b>Chiffrage annoncé : Redéploiement de 600 M€ de crédits existants […]</li>
+<li><b>Texte</b>Niveau du chiffre : Mesure chiffrée non évaluable</li>
+<li><b>Texte</b>Moins de deux sources indépendantes se prononcent […]. Pourquoi ce niveau. Nous n'avons pas encore relevé […]</li>
+<li><b>Résumé</b>Voir les sources du chiffrage, réduit</li>
+</ul></div></section>
+
+<section class="ecran tel" id="e10"><h2 class="et"><span class="num">10</span>Version téléphone (375 pixels)</h2><p class="ei">Un seul toucher sur « + » suffit. Le bloc niveau tient dans la largeur du détail, sans défilement horizontal. Les lignes « Chiffre annoncé » et « Estimations » passent l'une sous l'autre.</p><div class="cadre"><div class="band"><p class="ariane">Accueil › Thèmes › Écologie et énergie</p><h1>🌱 Écologie et énergie</h1></div><article class="pc" style="border-left-color:#4A7A1E">
+<div class="pc-tete"><span class="ph" aria-hidden="true">GA</span><div class="pc-id"><h3>Gabriel Attal</h3><p>Renaissance</p></div><span class="sigle" style="background:#4A7A1E" aria-hidden="true">RE</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Ramener la part des énergies fossiles de près de 60 % à 30 % en 2035, grâce à 14 réacteurs EPR et aux renouvelables.</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Chiffrage : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#14202E">?</text></svg><span>Mesure non chiffrée par le parti</span></p>
+<p class="def">Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p>
+<a class="lnk discret" href="#methode">Notre méthode</a></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réduire notre dépendance énergétique (plan Messmer II)<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Réparer en priorité les 500 réseaux d'eau les plus dégradés pour économiser 1 000 milliards de litres par an d'ici 2035.</span></button>
+<div class="mdet"><p><span class="tag">Eau</span></p>
+<p class="chiffre">Chiffrage annoncé : Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span></p>
+<p class="def">Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>Redéploiement de 600 M€ de crédits existants et prêts de long terme de la Banque des Territoires, sans impôt nouveau</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">attalpresident.fr, Réparer les cinq cents réseaux d'eau les plus vétustes<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li><li class="mes"><button type="button" class="mbtn" aria-expanded="false"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">Dépister automatiquement les polluants éternels (PFAS, substances chimiques très persistantes) dans les captages d'eau potable.</span></button>
+</li></ul></article><div style="height:14px"></div><article class="pc" style="border-left-color:#5F6B7A">
+<div class="pc-tete"><span class="ph" aria-hidden="true">CE</span><div class="pc-id"><h3>[Candidat exemple]</h3><p>[Parti exemple], carte d'illustration au contenu fictif</p></div><span class="sigle" style="background:#5F6B7A" aria-hidden="true">X</span></div>
+<ul class="pc-mes"><li class="mes"><button type="button" class="mbtn ouv" aria-expanded="true"><svg class="pm" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="1.4"/></svg><span class="mt">[Mesure clef chiffrée, en langage simple]</span></button>
+<div class="mdet"><p><span class="tag">Énergie</span></p>
+<p class="chiffre">Chiffrage annoncé : [X Md€ par an]</p>
+<div class="nivbloc"><p class="niv-t"><span class="sr">Niveau du chiffre : </span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="#14202E" stroke-width="1.6"/><circle cx="17" cy="12" r="2.9" fill="#14202E" stroke="#FFFFFF" stroke-width="1.5"/></svg><span>Discuté</span></p>
+<p class="def">Les sources indépendantes ne s'accordent pas sur le chiffre, ou il n'est tenable qu'avec des hypothèses fortes. Nous les affichons toutes, sans trancher.</p>
+<p class="t">Pourquoi ce niveau</p><p class="raison">[Une à trois phrases : où se situe le désaccord entre les sources.]</p>
+<details class="srcch" open><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c">
+<dl><dt>Chiffre annoncé</dt><dd>[X Md€ par an]</dd><dt>Estimations des sources</dt><dd>[Y Md€] selon [Institution 1], [Z Md€] selon [Institution 2]</dd></dl>
+<p class="t">Sources</p><ul><li><a class="lnk" href="#">[Institution 1], [titre du rapport], [date]</a><span class="m">Estime [Y Md€ par an].</span></li><li><a class="lnk" href="#">[Institution 2], [titre de la note], [date]</a><span class="m">Estime [Z Md€ par an], avec une autre hypothèse.</span></li></ul>
+
+<p class="m">Dernière vérification : 9 novembre 2026</p>
+<a class="lnk discret" href="#">Méthode et panel de sources</a>
+</div></details></div>
+<p class="msource">Source : <a class="lnk" href="#">Programme de [candidat exemple], page [12]<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" class="ext"><path d="M6 3H3v10h10v-3M9 2h5v5M14 2 7 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><span class="sr"> (s'ouvre dans un nouvel onglet)</span><span class="mdates">Consultée le 9 novembre 2026.</span></p></div></li></ul></article></div></section>
+
+</div></body></html>

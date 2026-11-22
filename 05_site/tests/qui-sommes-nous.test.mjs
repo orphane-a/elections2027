@@ -66,7 +66,7 @@ test('un nouveau build produit la même page que celle committée', () => {
     const copie = path.join(tmp, '05_site');
     fs.mkdirSync(copie);
     fs.mkdirSync(path.join(tmp, '03_bilan_mandat'));
-    for (const f of ['build.mjs', 'data', 'src']) fs.cpSync(path.join(SITE, f), path.join(copie, f), { recursive: true });
+    for (const f of ['build.mjs', 'data', 'src', 'maj']) fs.cpSync(path.join(SITE, f), path.join(copie, f), { recursive: true });
     fs.symlinkSync(path.join(SITE, 'node_modules'), path.join(copie, 'node_modules'), 'dir');
     execFileSync(process.execPath, ['build.mjs'], { cwd: copie, stdio: 'ignore' });
     const regeneree = fs.readFileSync(path.join(copie, 'public', 'qui-sommes-nous.html'), 'utf8');

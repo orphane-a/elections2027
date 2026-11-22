@@ -1,6 +1,6 @@
 {
   "id": "attal_gabriel",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": true,
   "themes": {
     "education": [
@@ -89,6 +89,18 @@
         "sous_theme": "Accès aux soins",
         "chiffrage": null,
         "source": { "titre": "attalpresident.fr, Un assistant médical IA pour chaque Français", "url": "https://attalpresident.fr/programme/mesures/assistant-medical-ia", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Ramener les comptes de la Sécurité sociale à l'équilibre en 2032, avant la fin du quinquennat.",
+        "sous_theme": "Financement",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, Équilibrer les comptes de la Sécurité sociale", "url": "https://attalpresident.fr/programme/mesures/equilibre-securite-sociale", "date": "2026-07-03", "type": "site", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Lancer un plan d'urgence de climatisation des écoles et des établissements médico-sociaux.",
+        "sous_theme": "Chaleur et santé",
+        "chiffrage": null,
+        "source": { "titre": "attalpresident.fr, thématique Santé, plan d'urgence de climatisation des établissements", "url": "https://attalpresident.fr/programme/thematiques/sante", "date": null, "type": "site", "consulte": "2026-11-20" }
       }
     ],
     "logement": [

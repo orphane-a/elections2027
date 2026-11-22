@@ -33,6 +33,15 @@ ssh "$SERVEUR" "sudo mkdir -p $DOSSIER/site.new && sudo chown ubuntu:ubuntu $DOS
 # 2. Envoi des fichiers, puis bascule d'un coup (l'ancienne version est gardée dans site.old)
 tar -czf - -C public . | ssh "$SERVEUR" "tar -xzf - -C $DOSSIER/site.new && rm -rf $DOSSIER/site.old && { [ -d $DOSSIER/site ] && mv $DOSSIER/site $DOSSIER/site.old || true; } && mv $DOSSIER/site.new $DOSSIER/site && chmod -R a+rX $DOSSIER/site"
 
+# 2 bis. PROD seulement : mesure d'audience (ticket 95). Dossier des journaux écrit par Nginx
+# (utilisateur 101 dans l'image nginx:alpine), script d'agrégation et tâche planifiée de la nuit.
+if [ "$ENV" = "prod" ]; then
+  ssh "$SERVEUR" "sudo mkdir -p $DOSSIER/logs $DOSSIER/stats $DOSSIER/outils && sudo chown 101:101 $DOSSIER/logs && sudo chmod 750 $DOSSIER/logs && sudo chown ubuntu:ubuntu $DOSSIER/outils"
+  scp stats/agreger.mjs "$SERVEUR:$DOSSIER/outils/agreger.mjs"
+  scp deploy/visites.cron "$SERVEUR:/tmp/elections2027-visites"
+  ssh "$SERVEUR" "sudo install -o root -g root -m 644 /tmp/elections2027-visites /etc/cron.d/elections2027-visites && rm -f /tmp/elections2027-visites"
+fi
+
 # 3. Configuration Docker + Nginx, puis (re)démarrage
 scp "deploy/docker-compose.$ENV.yml" "$SERVEUR:$DOSSIER/docker-compose.yml"
 scp "deploy/nginx.$ENV.conf" "$SERVEUR:$DOSSIER/nginx.conf"

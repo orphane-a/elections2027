@@ -7,23 +7,19 @@
   "groupe_an": "ECO",
   "groupe_an_note": null,
   "statut": "Désignée",
-  "statut_detail": "Désignée par les adhérents des Écologistes (86 %) le 8 décembre 2025, puis candidature autonome validée en juillet 2026. Un vote des adhérents du 10 au 13 décembre 2026 tranchera entre son maintien et un ralliement à un autre candidat de gauche.",
+  "statut_detail": "Désignée par les adhérents des Écologistes (86 %) le 8 décembre 2025, puis candidature autonome validée en juillet 2026. Le 18 novembre 2026 sur France 2, elle se dit prête à une coalition autour de Jean-Luc Mélenchon et indique rester candidate tant que son mouvement n'a pas tranché. Un vote des adhérents du 10 au 13 décembre 2026 choisira entre son maintien et un ralliement.",
   "a_verifier": false,
   "date_declaration": "2025-12-08",
   "site_campagne": "https://marinetondelier.fr/",
-  "programme": {
-    "titre": "Pour une prospérité écologique. Le nouveau programme des Écologistes (557 mesures, juillet 2026)",
-    "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-    "date": "2026-07-01",
-    "type": "PDF"
-  },
+  "programme": { "titre": "Pour une prospérité écologique. Le nouveau programme des Écologistes (557 mesures, juillet 2026)", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "PDF" },
   "sources": [
     { "titre": "Reporterre, Marine Tondelier représentera Les Écologistes à la primaire de la gauche", "url": "https://reporterre.net/Presidentielle-2027-Marine-Tondelier-representera-Les-Ecologistes-a-la-primaire-de-la-gauche", "date": "2025-12-08", "consulte": "2026-11-09" },
     { "titre": "Public Sénat, les Écologistes reportent l'heure du choix à décembre", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-les-ecologistes-reportent-lheure-du-choix-a-decembre-marine-tondelier-toujours-en-lice", "date": "2026-09-21", "consulte": "2026-11-09" },
     { "titre": "LCP, pas de choix définitif des Écologistes avant la mi-décembre", "url": "https://lcp.fr/actualites/candidature-a-la-presidentielle-pas-de-choix-definitif-des-ecologistes-avant-la-mi", "date": "2026-09-21", "consulte": "2026-11-09" },
     { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
-    { "titre": "Les Écologistes, page Projet 2027", "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027", "date": "2026-07-01", "consulte": "2026-11-09" }
+    { "titre": "Les Écologistes, page Projet 2027", "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027", "date": "2026-07-01", "consulte": "2026-11-09" },
+    { "titre": "Reporterre, Marine Tondelier prête à rallier Jean-Luc Mélenchon", "url": "https://reporterre.net/Marine-Tondelier-prete-a-rallier-Jean-Luc-Melenchon-de-nombreux-soutiens-et-quelques", "date": "2026-11-20", "consulte": "2026-11-20" }
   ],
   "confiance": "Bon",
-  "date_maj": "2026-11-09"
+  "date_maj": "2026-11-20"
 }

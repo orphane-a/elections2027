@@ -1,6 +1,6 @@
 {
   "id": "kazib_anasse",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": true,
   "themes": {
     "education": [
@@ -65,6 +65,12 @@
         "sous_theme": "Accès aux soins",
         "chiffrage": null,
         "source": { "titre": "anasse2027.fr, Programme, partie « Unifier la nouvelle classe ouvrière »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Exproprier les secteurs stratégiques, dont la santé, et les placer sous le contrôle des travailleurs.",
+        "sous_theme": "Organisation des soins",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme (premières mesures)", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-20" }
       }
     ],
     "logement": [

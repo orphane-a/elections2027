@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette du ticket 91 : comment lire une fiche</title>
+<style>
+:root{
+  --fond:#F7F6FC; --carte:#FFFFFF; --texte:#14202E; --doux:#3B4656; --doux2:#4A5666;
+  --trait:#D5DBE3; --accent:#3A35C8; --hero:#23267A; --gris:#EEF0F3; --gris-bord:#6B7788; --lilas:#EADDF6;
+  --ambre:#FFF1CC; --ambre-texte:#4A3000; --rouge:#B3261E; --rouge-fond:#FDECEA; --vert:#1E6B3A; --vert-fond:#E6F4EA;
+  --titre:system-ui,-apple-system,"Segoe UI",sans-serif; --corps:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#E4E3EE;color:var(--texte);font-family:var(--corps);font-size:16px;line-height:1.55}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.lnk{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+h1,h2,h3{font-family:var(--titre);letter-spacing:-.02em}
+.small{font-size:14px;color:var(--doux2)}
+
+/* Cadre de la maquette */
+.doc{max-width:1320px;margin:0 auto;padding:32px 20px 80px}
+.doc>header h1{margin:0 0 6px;font-size:30px}
+.doc>header p{margin:0 0 8px;max-width:80ch;color:var(--doux)}
+.ecran{margin-top:56px}
+.ecran>h2{margin:0 0 4px;font-size:22px}
+.ecran>p.note{margin:0 0 14px;max-width:80ch;color:var(--doux);font-size:15px}
+.cadre{background:var(--fond);border:1px solid #C9C8D8;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(20,32,46,.06)}
+.barre{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;border-bottom:1px solid var(--trait);font-size:13px;color:var(--doux2)}
+.barre i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--trait)}
+.barre span{margin-left:8px;padding:2px 10px;background:var(--gris);border-radius:999px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tel{width:375px;max-width:100%}
+.cote{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.cote>div{flex:1 1 380px;min-width:0}
+.etiq{display:inline-block;margin:0 0 8px;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600}
+.etiq.avant{background:var(--rouge-fond);color:var(--rouge)}
+.etiq.apres{background:var(--vert-fond);color:var(--vert)}
+.coupe{padding:14px 0 20px;text-align:center;font-size:14px;color:var(--doux2)}
+.notes{margin:14px 0 0;padding:0 0 0 20px;max-width:90ch;font-size:15px;color:var(--doux)}
+.notes li{margin:4px 0}
+.retire{position:relative;outline:3px dashed var(--rouge);outline-offset:3px}
+.retire-txt{background:var(--rouge-fond);text-decoration:line-through;text-decoration-color:var(--rouge)}
+.nouveau{outline:3px solid var(--vert);outline-offset:4px;border-radius:6px}
+
+/* Site (repris de 05_site/src/style.css) */
+.wrap{padding:0 clamp(16px,4vw,48px)}
+.preprod{background:var(--ambre);color:var(--ambre-texte);font-size:14px;text-align:center;padding:6px 16px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px;padding:12px 0;border-bottom:1px solid var(--trait)}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:700;font-size:20px;text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;gap:0 20px;font-size:15px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.burger{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;font-weight:600;font-size:15px}
+.bloc{padding:44px 0;border-top:1px solid var(--trait)}
+.bloc>h2{margin:0 0 8px;font-weight:600;font-size:28px}
+.bloc>p.intro{margin:0 0 20px;max-width:66ch;color:var(--doux2)}
+.regle{display:flex;flex-wrap:wrap;gap:6px 48px;padding:20px 0;border-top:1px solid var(--trait)}
+.regle h3{flex:1 1 240px;margin:0;font-family:var(--corps);font-size:18px;font-weight:600;letter-spacing:0}
+.regle p{flex:999 1 360px;margin:0;max-width:62ch;color:var(--doux)}
+.cands-ph{display:flex;flex-wrap:wrap;gap:8px}
+.cands-ph span{width:180px;height:56px;border-radius:12px;background:#fff;border:1px solid var(--trait)}
+
+/* Ancien bloc (pour la comparaison) */
+.trois{display:flex;flex-wrap:wrap;gap:20px}
+.trois article{flex:1 1 300px;padding:22px;border-radius:10px}
+.fait-ex{background:var(--carte);border:1.5px solid var(--texte)}
+.prop-ex{border:1.5px dashed var(--doux2)}
+
+/* Nouveau bloc « Comment lire une fiche » */
+.lire-liste{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;counter-reset:etape}
+.lire-carte{display:flex;flex-direction:column;gap:10px;padding:20px 22px 22px;background:var(--carte);border:1px solid var(--trait);border-radius:16px}
+.lire-tete{display:flex;align-items:center;gap:12px}
+.tuile-ic{flex:none;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--lilas)}
+.lire-carte h3{margin:0;font-size:20px;font-weight:600;line-height:1.2}
+.lire-carte p{margin:0;color:var(--doux)}
+.lire-carte ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--doux)}
+.lire-carte li{display:flex;gap:8px;align-items:flex-start}
+.lire-carte li svg{flex:none;margin-top:3px}
+.lire-suite{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin:16px 0 0;padding:14px 18px;background:#fff;border:1px dashed var(--trait);border-radius:12px;color:var(--doux)}
+.lire-suite p{flex:1 1 380px;margin:0}
+.lire-suite strong{color:var(--texte);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;background:#fff;color:var(--texte);border:1.5px solid var(--texte);border-radius:8px;font-size:15px;font-weight:600;text-decoration:none}
+.btn:hover{background:var(--gris)}
+.focus-demo{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+
+/* Téléphone */
+.tel .wrap{padding:0 16px}
+.tel .bloc{padding:32px 0}
+.tel .bloc>h2{font-size:23px}
+.tel .lire-liste{grid-template-columns:1fr;gap:12px}
+.tel .lire-carte{padding:16px 16px 18px}
+.tel .lire-carte h3{font-size:18px}
+.tel .lire-suite{padding:14px 16px}
+.tel .lire-suite p{flex-basis:100%}
+.tel .btn{width:100%;justify-content:center}
+
+/* Impression */
+.papier{background:#fff;color:#000;padding:28px 32px;font-size:13px}
+.papier .bloc{border-top:0;padding:0}
+.papier .bloc>h2{font-size:20px}
+.papier .lire-liste{grid-template-columns:1fr;gap:8px}
+.papier .lire-carte{border:1px solid #888;border-radius:6px;padding:10px 12px;break-inside:avoid}
+.papier .lire-carte h3{font-size:15px}
+.papier .tuile-ic{width:30px;height:30px;border-radius:8px}
+.papier .tuile-ic svg{width:18px;height:18px}
+.papier .lire-suite{border:1px solid #888}
+
+/* Méthode */
+.page-texte{padding:8px 0 24px}
+.bandeau{margin:16px 0 8px;padding:clamp(20px,4vw,40px);border-radius:24px;background:#EADDF6}
+.bandeau h1{margin:0;font-weight:700;font-size:clamp(30px,5vw,48px);line-height:1.05}
+.deux{display:flex;flex-wrap:wrap;gap:16px 48px;padding:32px 0;border-top:1px solid var(--trait)}
+.deux>.g{flex:1 1 200px}
+.deux>.d{flex:999 1 520px;min-width:0}
+.deux h2{margin:0;font-weight:600;font-size:24px}
+ol.gabarit{margin:0;padding:0 0 0 22px;display:flex;flex-direction:column;gap:8px}
+ol.gabarit li::marker{font-weight:600;color:var(--accent)}
+
+/* États */
+.grille-etats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.grille-etats h3{margin:0 0 8px;font-size:17px}
+.alerte{padding:14px 18px;border-radius:10px;font-size:15px}
+.alerte.err{background:var(--rouge-fond);color:var(--rouge);border:1px solid #F1B8B3}
+.alerte.ok{background:var(--vert-fond);color:var(--vert);border:1px solid #B6DCC1}
+pre.term{margin:0;padding:16px 18px;background:#14202E;color:#E7EAF0;font-size:13px;line-height:1.5;border-radius:0 0 14px 14px;overflow-x:auto;white-space:pre-wrap}
+pre.term .r{color:#FF9C94}
+pre.term .v{color:#8FDCA6}
+.sr-liste{margin:0;padding:16px 18px 16px 40px;background:#fff;font-size:15px}
+.sr-liste li{margin:4px 0}
+.sr-liste code{background:var(--gris);padding:1px 6px;border-radius:6px;font-size:14px}
+table.corresp{width:100%;border-collapse:collapse;background:#fff;font-size:15px}
+table.corresp th,table.corresp td{padding:10px 14px;border-bottom:1px solid var(--trait);text-align:left;vertical-align:top}
+table.corresp th{background:var(--gris);font-weight:600}
+.tab-scroll{overflow-x:auto;border:1px solid #C9C8D8;border-radius:14px}
+@media (max-width:520px){.doc{padding:20px 12px 60px}.doc>header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="doc">
+<header>
+<h1>Ticket 91 : le bloc « Comment lire une fiche » suit la nouvelle page thème</h1>
+<p>Le bloc de l'accueil décrit maintenant la page thème livrée au ticket 89, dans le même ordre : En bref, Programmes 2027, Bilan du mandat : deux votes, puis Pour aller plus loin et Vérification. Les intitulés sont repris mot pour mot.</p>
+<p>Trois cartes avec la même petite icône que sur la page thème (ampoule, document, hémicycle), une ligne pour la fin de la fiche, et un lien vers un exemple. La section « Le gabarit d'une fiche » de la page Méthode est alignée de la même façon.</p>
+<p class="small">Exemple utilisé pour le lien « Voir un exemple » : Éducation, premier thème publié de la liste. Polices système dans cette maquette ; le site garde ses propres polices.</p>
+</header>
+
+<!-- Écran 1 -->
+<section class="ecran">
+<h2>1. Accueil sur ordinateur : avant et après</h2>
+<p class="note">Seul le bloc « Comment lire une fiche » change. Le titre, son identifiant <code>lire</code> et le lien « Lire la méthode complète » restent. Les blocs voisins (candidats, règles) ne bougent pas.</p>
+<div class="cote">
+<div>
+<span class="etiq avant">Avant</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>demandez-le-programme.fr</span></div>
+<div class="wrap">
+<p class="coupe">… bloc « Tous les candidats, tous les partis » …</p>
+<section class="bloc" aria-label="Exemple : ancien bloc">
+<h2>Comment lire une fiche <span aria-hidden="true">👀</span></h2>
+<p class="intro">Sur chaque thème, on ne confond jamais ce qui existe déjà (les faits et les votes) et ce qui est annoncé. <a class="lnk" href="#">Lire la méthode complète</a></p>
+<div class="trois">
+<article class="fait-ex retire"><p style="margin:0 0 8px;font-weight:600"><span class="retire-txt">Ce qui a été fait</span></p><p style="margin:0">Lois votées, <span class="retire-txt">budgets et résultats mesurés</span> pendant le mandat 2022-2027, datés, avec leur origine et leur source officielle.</p></article>
+<article class="prop-ex"><p style="margin:0 0 8px;font-weight:600">Ce qui est proposé pour 2027</p><p style="margin:0">Jusqu'à 3 mesures clefs par candidat, en langage simple, avec le lien vers le programme ou la déclaration datée.</p></article>
+<article class="fait-ex"><p style="margin:0 0 8px;font-weight:600">Comment chaque parti a voté</p><p style="margin:0">Pour <span class="retire-txt">2 ou 3 grandes lois</span> du thème, la position de chaque groupe à l'Assemblée nationale, avec le lien vers le scrutin public.</p></article>
+</div>
+</section>
+<p class="coupe">… bloc « Nos règles » …</p>
+</div>
+</div>
+<ul class="notes">
+<li>Le bilan est présenté avant les propositions, alors que la page thème fait l'inverse.</li>
+<li>Les faits, budgets et résultats chiffrés ne sont plus affichés sur les pages thème.</li>
+<li>« 2 ou 3 grandes lois » : il y en a toujours deux.</li>
+</ul>
+</div>
+
+<div>
+<span class="etiq apres">Après</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>demandez-le-programme.fr</span></div>
+<div class="wrap">
+<p class="coupe">… bloc « Tous les candidats, tous les partis » …</p>
+<section class="bloc" aria-labelledby="lire">
+<h2 id="lire">Comment lire une fiche <span aria-hidden="true">👀</span></h2>
+<p class="intro">Sur chaque thème, on ne confond jamais ce qui a été voté pendant le mandat et ce qui est proposé pour 2027. Chaque fiche suit le même ordre. <a class="lnk" href="#">Lire la méthode complète</a></p>
+<ol class="lire-liste">
+<li class="lire-carte">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></svg></span>
+<h3>En bref</h3></div>
+<p>L'enjeu du thème en quelques phrases, pour savoir de quoi on parle avant d'entrer dans le détail.</p>
+</li>
+<li class="lire-carte">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
+<h3>Programmes 2027</h3></div>
+<ul>
+<li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="#3B4656" stroke-width="1.4"/><path d="M4.5 8h7M8 4.5v7" stroke="#3B4656" stroke-width="1.4"/></svg><span>Une carte par candidat, avec jusqu'à 3 mesures clefs. Dépliez une mesure pour voir le détail, la source et ses dates.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg><span>Un filtre par sous thème pour ne garder qu'un sujet.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Les candidats sans proposition publiée sont listés à part.</span></li>
+</ul>
+</li>
+<li class="lire-carte">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g fill="#3A35C8"><circle cx="4" cy="24" r="2.2"/><circle cx="6" cy="16.5" r="2.2"/><circle cx="10.5" cy="10" r="2.2"/><circle cx="16" cy="7.5" r="2.2"/><circle cx="21.5" cy="10" r="2.2"/><circle cx="26" cy="16.5" r="2.2"/><circle cx="28" cy="24" r="2.2"/><circle cx="10" cy="22" r="2"/><circle cx="13" cy="16" r="2"/><circle cx="19" cy="16" r="2"/><circle cx="22" cy="22" r="2"/></g><rect x="12" y="23" width="8" height="5" rx="1.5" fill="#14202E"/></svg></span>
+<h3>Bilan du mandat : deux votes</h3></div>
+<ul>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M2 10l10-6 10 6z"/></svg><span>Deux lois votées pendant le mandat 2022-2027, les mêmes pour tous les groupes.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 4.5"/></svg><span>Pour chaque loi, la position majoritaire de chaque groupe à l'Assemblée nationale.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Touchez un groupe pour lire la raison qu'il a donnée et voir ses candidats. Un lien mène au scrutin public.</span></li>
+</ul>
+</li>
+</ol>
+<div class="lire-suite nouveau">
+<p>En bas de chaque fiche : <strong>Pour aller plus loin</strong>, des liens pour approfondir, puis <strong>Vérification</strong>, avec les dates, la relecture, le signalement d'erreur et l'historique.</p>
+<a class="btn" href="#">Voir un exemple : Éducation</a>
+</div>
+</section>
+<p class="coupe">… bloc « Nos règles » …</p>
+</div>
+</div>
+<ul class="notes">
+<li>Trois cartes dans l'ordre de la page thème, sans numéro affiché. Liste ordonnée <code>ol</code> : l'ordre reste annoncé aux lecteurs d'écran.</li>
+<li>Fond blanc, bordure fine et coins arrondis, comme les cartes de la page thème. Fin de l'ancien contraste bordure pleine et bordure pointillée.</li>
+<li>Encadré vert : la ligne ajoutée pour la fin de la fiche et le lien vers un exemple.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Écran 2 -->
+<section class="ecran">
+<h2>2. Ce que chaque carte reprend de la page thème</h2>
+<p class="note">Chaque intitulé du bloc est le titre exact d'une section de la page thème. Le test de cohérence compare les deux et nomme l'intitulé qui manque.</p>
+<div class="tab-scroll">
+<table class="corresp">
+<thead><tr><th scope="col">Ordre</th><th scope="col">Intitulé dans le bloc</th><th scope="col">Section de la page thème</th><th scope="col">Icône</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>En bref</td><td><code>#bref</code>, titre « En bref »</td><td>Ampoule</td></tr>
+<tr><td>2</td><td>Programmes 2027</td><td><code>#qpq</code>, titre « Programmes 2027 », puis la liste « Pas encore de proposition publiée sur ce thème »</td><td>Document</td></tr>
+<tr><td>3</td><td>Bilan du mandat : deux votes</td><td><code>#vote</code>, titre « Bilan du mandat : deux votes »</td><td>Hémicycle</td></tr>
+<tr><td>Ligne du bas</td><td>Pour aller plus loin, puis Vérification</td><td><code>#plus</code> et <code>#controle</code></td><td>Aucune</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- Écran 3 -->
+<section class="ecran">
+<h2>3. Accueil sur téléphone (375 pixels)</h2>
+<p class="note">Les cartes s'empilent sur une colonne, sans défilement horizontal. Le bouton « Voir un exemple » prend toute la largeur pour rester facile à toucher (44 pixels de haut au moins).</p>
+<div class="cote">
+<div style="flex:0 1 375px;min-width:0">
+<div class="cadre tel">
+<div class="barre"><i></i><span>demandez-le-programme.fr</span></div>
+<div class="wrap">
+<div class="top"><span class="logo"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Programmes 2027</span><span class="burger">Menu</span></div>
+<p class="coupe">… thèmes et candidats …</p>
+<section class="bloc" aria-label="Exemple sur téléphone">
+<h2>Comment lire une fiche <span aria-hidden="true">👀</span></h2>
+<p class="intro">Sur chaque thème, on ne confond jamais ce qui a été voté pendant le mandat et ce qui est proposé pour 2027. Chaque fiche suit le même ordre. <a class="lnk" href="#">Lire la méthode complète</a></p>
+<ol class="lire-liste">
+<li class="lire-carte">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></svg></span>
+<h3>En bref</h3></div>
+<p>L'enjeu du thème en quelques phrases, pour savoir de quoi on parle avant d'entrer dans le détail.</p>
+</li>
+<li class="lire-carte">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
+<h3>Programmes 2027</h3></div>
+<ul>
+<li><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="#3B4656" stroke-width="1.4"/><path d="M4.5 8h7M8 4.5v7" stroke="#3B4656" stroke-width="1.4"/></svg><span>Une carte par candidat, avec jusqu'à 3 mesures clefs. Dépliez une mesure pour voir le détail, la source et ses dates.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg><span>Un filtre par sous thème pour ne garder qu'un sujet.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Les candidats sans proposition publiée sont listés à part.</span></li>
+</ul>
+</li>
+<li class="lire-carte">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g fill="#3A35C8"><circle cx="4" cy="24" r="2.2"/><circle cx="6" cy="16.5" r="2.2"/><circle cx="10.5" cy="10" r="2.2"/><circle cx="16" cy="7.5" r="2.2"/><circle cx="21.5" cy="10" r="2.2"/><circle cx="26" cy="16.5" r="2.2"/><circle cx="28" cy="24" r="2.2"/><circle cx="10" cy="22" r="2"/><circle cx="13" cy="16" r="2"/><circle cx="19" cy="16" r="2"/><circle cx="22" cy="22" r="2"/></g><rect x="12" y="23" width="8" height="5" rx="1.5" fill="#14202E"/></svg></span>
+<h3>Bilan du mandat : deux votes</h3></div>
+<ul>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M2 10l10-6 10 6z"/></svg><span>Deux lois votées pendant le mandat 2022-2027, les mêmes pour tous les groupes.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 4.5"/></svg><span>Pour chaque loi, la position majoritaire de chaque groupe à l'Assemblée nationale.</span></li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B4656" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Touchez un groupe pour lire la raison qu'il a donnée et voir ses candidats. Un lien mène au scrutin public.</span></li>
+</ul>
+</li>
+</ol>
+<div class="lire-suite">
+<p>En bas de chaque fiche : <strong>Pour aller plus loin</strong>, des liens pour approfondir, puis <strong>Vérification</strong>, avec les dates, la relecture, le signalement d'erreur et l'historique.</p>
+<a class="btn" href="#">Voir un exemple : Éducation</a>
+</div>
+</section>
+<p class="coupe">… bloc « Nos règles » …</p>
+</div>
+</div>
+</div>
+<div>
+<ul class="notes">
+<li>Sous 640 pixels : une seule colonne, marges de 16 pixels, titre du bloc à 23 pixels, titres de carte à 18 pixels.</li>
+<li>Les icônes gardent leur taille de 44 pixels pour rester reconnaissables d'une page à l'autre.</li>
+<li>Les textes passent à la ligne, aucun mot n'est coupé, aucune largeur fixe.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Écran 4 -->
+<section class="ecran">
+<h2>4. Clavier et lecteur d'écran</h2>
+<p class="note">Le bloc ne contient que deux éléments à atteindre au clavier, dans cet ordre : « Lire la méthode complète », puis « Voir un exemple : Éducation ». Les cartes ne sont pas cliquables, elles ne prennent pas le focus.</p>
+<div class="cote">
+<div>
+<h3 style="margin:0 0 8px;font-size:17px">Focus visible sur le lien « Voir un exemple »</h3>
+<div class="cadre"><div class="wrap" style="padding-top:20px;padding-bottom:20px">
+<div class="lire-suite" style="margin:0">
+<p>En bas de chaque fiche : <strong>Pour aller plus loin</strong>, des liens pour approfondir, puis <strong>Vérification</strong>, avec les dates, la relecture, le signalement d'erreur et l'historique.</p>
+<a class="btn focus-demo" href="#">Voir un exemple : Éducation</a>
+</div>
+</div></div>
+<p class="small">Contour de 3 pixels en couleur accent, décalé de 3 pixels, comme sur le reste du site.</p>
+</div>
+<div>
+<h3 style="margin:0 0 8px;font-size:17px">Ce qu'annonce un lecteur d'écran</h3>
+<div class="cadre">
+<ol class="sr-liste">
+<li>Titre de niveau 2 : Comment lire une fiche. <span class="small">(emoji masqué)</span></li>
+<li>Sur chaque thème, on ne confond jamais ce qui a été voté pendant le mandat et ce qui est proposé pour 2027. Chaque fiche suit le même ordre. Lien : Lire la méthode complète.</li>
+<li>Liste de 3 éléments.</li>
+<li>1. Titre de niveau 3 : En bref. <span class="small">(icône masquée)</span></li>
+<li>2. Titre de niveau 3 : Programmes 2027. Liste de 3 éléments…</li>
+<li>3. Titre de niveau 3 : Bilan du mandat : deux votes. Liste de 3 éléments…</li>
+<li>En bas de chaque fiche : Pour aller plus loin… Lien : Voir un exemple : Éducation.</li>
+</ol>
+</div>
+<p class="small">Toutes les icônes portent <code>aria-hidden="true"</code> et <code>focusable="false"</code>. L'emoji 👀 du titre est dans un <code>span aria-hidden="true"</code>.</p>
+</div>
+</div>
+</section>
+
+<!-- Écran 5 -->
+<section class="ecran">
+<h2>5. Impression de l'accueil</h2>
+<p class="note">À l'impression, les cartes passent sur une colonne et ne se coupent pas entre deux pages. Les icônes restent, en petit. Le bouton devient un simple lien souligné.</p>
+<div class="cadre" style="max-width:640px">
+<div class="papier">
+<section class="bloc" aria-label="Exemple imprimé">
+<h2>Comment lire une fiche</h2>
+<p class="intro" style="color:#000">Sur chaque thème, on ne confond jamais ce qui a été voté pendant le mandat et ce qui est proposé pour 2027. Chaque fiche suit le même ordre. Lire la méthode complète : methode.html</p>
+<ol class="lire-liste">
+<li class="lire-carte"><div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></svg></span><h3>En bref</h3></div><p style="color:#000">L'enjeu du thème en quelques phrases.</p></li>
+<li class="lire-carte"><div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg></span><h3>Programmes 2027</h3></div><p style="color:#000">Jusqu'à 3 mesures clefs par candidat, à déplier pour voir le détail, la source et ses dates. Un filtre par sous thème. Les candidats sans proposition publiée sont listés à part.</p></li>
+<li class="lire-carte"><div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g fill="#3A35C8"><circle cx="4" cy="24" r="2.2"/><circle cx="6" cy="16.5" r="2.2"/><circle cx="10.5" cy="10" r="2.2"/><circle cx="16" cy="7.5" r="2.2"/><circle cx="21.5" cy="10" r="2.2"/><circle cx="26" cy="16.5" r="2.2"/><circle cx="28" cy="24" r="2.2"/><circle cx="10" cy="22" r="2"/><circle cx="13" cy="16" r="2"/><circle cx="19" cy="16" r="2"/><circle cx="22" cy="22" r="2"/></g><rect x="12" y="23" width="8" height="5" rx="1.5" fill="#14202E"/></svg></span><h3>Bilan du mandat : deux votes</h3></div><p style="color:#000">Deux lois votées pendant le mandat 2022-2027 et la position majoritaire de chaque groupe à l'Assemblée nationale, avec la raison donnée par le groupe et le lien vers le scrutin public.</p></li>
+</ol>
+<div class="lire-suite" style="color:#000"><p>En bas de chaque fiche : <strong>Pour aller plus loin</strong>, puis <strong>Vérification</strong>.</p></div>
+</section>
+</div>
+</div>
+<p class="small">Sur papier, le texte des listes à puces est regroupé en une phrase par carte et le bouton « Voir un exemple » n'est pas imprimé (classe <code>noprint</code>).</p>
+</section>
+
+<!-- Écran 6 -->
+<section class="ecran">
+<h2>6. Page Méthode : section « Le gabarit d'une fiche »</h2>
+<p class="note">Même ordre et mêmes intitulés que le bloc de l'accueil. Le reste de la page Méthode ne change pas dans ce ticket. Commit séparé.</p>
+<div class="cote">
+<div>
+<span class="etiq avant">Avant</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>demandez-le-programme.fr/methode.html</span></div>
+<div class="wrap">
+<div class="deux">
+<div class="g"><h2>Le gabarit d'une fiche</h2></div>
+<div class="d"><p style="margin:0"><strong>En bref</strong> : l'enjeu du thème en 2 ou 3 phrases. <strong class="retire-txt">Ce qui a été fait</strong> : <span class="retire-txt">3 à 5 faits et les votes</span>. <strong class="retire-txt">Ce qui est proposé pour 2027</strong> : 3 mesures au maximum par candidat. <strong>Pour aller plus loin</strong> : 5 à 10 liens. <strong>Vérification</strong> : dates, relecture, signalement d'erreur.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<span class="etiq apres">Après</span>
+<div class="cadre">
+<div class="barre"><i></i><i></i><i></i><span>demandez-le-programme.fr/methode.html</span></div>
+<div class="wrap">
+<div class="deux">
+<div class="g"><h2>Le gabarit d'une fiche</h2></div>
+<div class="d">
+<p style="margin:0 0 10px">Chaque fiche thème suit le même ordre, pour tous les candidats.</p>
+<ol class="gabarit">
+<li><strong>En bref</strong> : l'enjeu du thème en quelques phrases.</li>
+<li><strong>Programmes 2027</strong> : une carte par candidat, jusqu'à 3 mesures clefs à déplier, avec la source et ses dates. Un filtre par sous thème.</li>
+<li><strong>Pas encore de proposition publiée sur ce thème</strong> : les candidats sans mesure publiée, dans l'ordre alphabétique.</li>
+<li><strong>Bilan du mandat : deux votes</strong> : la position majoritaire de chaque groupe à l'Assemblée nationale sur deux lois du mandat 2022-2027, la raison donnée par le groupe, ses candidats et le lien vers le scrutin public.</li>
+<li><strong>Pour aller plus loin</strong> : 5 à 10 liens.</li>
+<li><strong>Vérification</strong> : dates, relecture, signalement d'erreur et historique.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Écran 7 -->
+<section class="ecran">
+<h2>7. États</h2>
+<p class="note">Le bloc est du texte fixe, écrit au moment de la génération du site. Il n'attend aucune donnée dans le navigateur. Les états utiles concernent donc le lien d'exemple, la génération et les tests.</p>
+<div class="grille-etats">
+
+<div>
+<h3>Vide : aucun thème publié</h3>
+<div class="cadre"><div class="wrap" style="padding-top:18px;padding-bottom:18px">
+<div class="lire-suite" style="margin:0">
+<p>En bas de chaque fiche : <strong>Pour aller plus loin</strong>, des liens pour approfondir, puis <strong>Vérification</strong>, avec les dates, la relecture, le signalement d'erreur et l'historique.</p>
+</div>
+</div></div>
+<p class="small">Si aucun thème n'est publié, le bouton « Voir un exemple » n'est pas généré. Le reste du bloc ne change pas.</p>
+</div>
+
+<div>
+<h3>Chargement : polices pas encore prêtes</h3>
+<div class="cadre"><div class="wrap" style="padding-top:18px;padding-bottom:18px">
+<div class="lire-carte" style="font-family:Georgia,serif">
+<div class="lire-tete"><span class="tuile-ic" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A35C8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></svg></span><h3 style="font-family:system-ui,sans-serif">En bref</h3></div>
+<p>L'enjeu du thème en quelques phrases.</p>
+</div>
+</div></div>
+<p class="small">Pas d'écran d'attente : le texte et les icônes sont dans la page. Tant que les polices du site chargent, la police système s'affiche (<code>font-display:swap</code>), sans décalage de mise en page.</p>
+</div>
+
+<div>
+<h3>Erreur : un intitulé a changé sur la page thème</h3>
+<div class="cadre">
+<div class="barre"><span style="margin:0">npm test, dans 05_site</span></div>
+<pre class="term"><span class="r">✖ accueil : le bloc « Comment lire une fiche » reprend les intitulés de la page thème</span>
+  Intitulé absent du bloc : « Bilan du mandat : deux votes »
+  Trouvé sur la page thème, pas dans index.html (section #lire).
+  Mettez à jour accueil() dans build.mjs.
+
+<span class="r">tests 24, réussis 23, échoués 1</span></pre>
+</div>
+<p class="small">Le test lit les titres h2 de la page thème générée et vérifie que chacun est présent dans le bloc. Le message nomme l'intitulé manquant.</p>
+</div>
+
+<div>
+<h3>Succès : site régénéré, tests au vert</h3>
+<div class="cadre">
+<div class="barre"><span style="margin:0">npm test, dans 05_site</span></div>
+<pre class="term"><span class="v">✔ accueil : le bloc garde son titre, son identifiant et le lien vers methode.html
+✔ accueil : En bref, Programmes 2027, Bilan du mandat, dans cet ordre
+✔ accueil : plus de « Ce qui a été fait », « budgets » ni « 2 ou 3 grandes lois »
+✔ accueil : les intitulés du bloc sont ceux de la page thème
+✔ méthode : le gabarit d'une fiche suit la même architecture
+✔ tests des tickets 87, 88 et 89</span>
+
+<span class="v">tous les tests réussis</span></pre>
+</div>
+<div class="alerte ok" style="margin-top:12px">public/index.html et public/methode.html sont régénérés et commités avec le code.</div>
+</div>
+
+</div>
+</section>
+
+<!-- Écran 8 -->
+<section class="ecran">
+<h2>8. Textes du bloc, prêts à intégrer</h2>
+<p class="note">Relus pour la neutralité : aucun adjectif qui juge, aucun candidat ni parti cité, aucun tiret long.</p>
+<div class="cadre"><div class="wrap" style="padding-top:20px;padding-bottom:20px">
+<dl style="margin:0;display:grid;gap:12px">
+<div><dt style="font-weight:600">Titre (h2, id lire)</dt><dd style="margin:2px 0 0;color:var(--doux)">Comment lire une fiche 👀</dd></div>
+<div><dt style="font-weight:600">Introduction</dt><dd style="margin:2px 0 0;color:var(--doux)">Sur chaque thème, on ne confond jamais ce qui a été voté pendant le mandat et ce qui est proposé pour 2027. Chaque fiche suit le même ordre. Lien : Lire la méthode complète.</dd></div>
+<div><dt style="font-weight:600">Carte 1 : En bref</dt><dd style="margin:2px 0 0;color:var(--doux)">L'enjeu du thème en quelques phrases, pour savoir de quoi on parle avant d'entrer dans le détail.</dd></div>
+<div><dt style="font-weight:600">Carte 2 : Programmes 2027</dt><dd style="margin:2px 0 0;color:var(--doux)">Une carte par candidat, avec jusqu'à 3 mesures clefs. Dépliez une mesure pour voir le détail, la source et ses dates. / Un filtre par sous thème pour ne garder qu'un sujet. / Les candidats sans proposition publiée sont listés à part.</dd></div>
+<div><dt style="font-weight:600">Carte 3 : Bilan du mandat : deux votes</dt><dd style="margin:2px 0 0;color:var(--doux)">Deux lois votées pendant le mandat 2022-2027, les mêmes pour tous les groupes. / Pour chaque loi, la position majoritaire de chaque groupe à l'Assemblée nationale. / Touchez un groupe pour lire la raison qu'il a donnée et voir ses candidats. Un lien mène au scrutin public.</dd></div>
+<div><dt style="font-weight:600">Ligne du bas</dt><dd style="margin:2px 0 0;color:var(--doux)">En bas de chaque fiche : Pour aller plus loin, des liens pour approfondir, puis Vérification, avec les dates, la relecture, le signalement d'erreur et l'historique. Bouton : Voir un exemple : Éducation.</dd></div>
+</dl>
+</div></div>
+</section>
+
+</div>
+</body>
+</html>

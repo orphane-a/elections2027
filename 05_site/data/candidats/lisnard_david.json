@@ -7,22 +7,18 @@
   "groupe_an": null,
   "groupe_an_note": "Nouvelle Énergie n'a pas de groupe à l'Assemblée nationale. Le rattachement éventuel de députés proches du parti à un groupe n'a pas pu être vérifié.",
   "statut": "Déclaré",
-  "statut_detail": "Candidature annoncée le 31 mars 2026, le jour de son départ des Républicains. Il propose une primaire ouverte de la droite et du centre, en décembre 2026 ou janvier 2027.",
+  "statut_detail": "Candidature annoncée le 31 mars 2026, le jour de son départ des Républicains. Le 17 novembre 2026, les équipes d'Attal, Retailleau et Lisnard envisagent une primaire en janvier 2027 ; Nouvelle Énergie indique qu'aucun accord n'est conclu à ce stade.",
   "a_verifier": false,
   "date_declaration": "2026-03-31",
   "site_campagne": "https://www.unenouvelleenergie.fr/",
-  "programme": {
-    "titre": "Le programme de Nouvelle Énergie pour 2027 (trois axes et pages thématiques)",
-    "url": "https://www.unenouvelleenergie.fr/notre-programme/",
-    "date": null,
-    "type": "page web"
-  },
+  "programme": { "titre": "Le programme de Nouvelle Énergie pour 2027 (trois axes et pages thématiques)", "url": "https://www.unenouvelleenergie.fr/notre-programme/", "date": null, "type": "page web" },
   "sources": [
     { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
     { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
     { "titre": "Site officiel du candidat (lisnard2027.fr, renvoie vers unenouvelleenergie.fr)", "url": "https://www.lisnard2027.fr/", "date": "2026-11-09", "consulte": "2026-11-09" },
-    { "titre": "CNews, Objectif Élysée 2027 avec David Lisnard", "url": "https://www.cnews.fr/france/2026-10-27/objectif-elysee-2027-je-porte-un-projet-de-prosperite-dautorite-et-de-retour-au", "date": "2026-10-27", "consulte": "2026-11-09" }
+    { "titre": "CNews, Objectif Élysée 2027 avec David Lisnard", "url": "https://www.cnews.fr/france/2026-10-27/objectif-elysee-2027-je-porte-un-projet-de-prosperite-dautorite-et-de-retour-au", "date": "2026-10-27", "consulte": "2026-11-09" },
+    { "titre": "Public Sénat, primaire : les équipes d'Attal, Retailleau et Lisnard s'alignent sur un vote en janvier", "url": "https://www.publicsenat.fr/actualites/politique/primaire-les-equipes-dattal-retailleau-et-lisnard-salignent-sur-un-vote-en-janvier-moins-sur-le-cas-deric-zemmour", "date": "2026-11-17", "consulte": "2026-11-20" }
   ],
   "confiance": "Bon",
-  "date_maj": "2026-11-09"
+  "date_maj": "2026-11-20"
 }

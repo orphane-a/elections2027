@@ -1,7 +1,7 @@
-# 🌱 Écologie et énergie : synthèse comparée
+# 🌿 Écologie et énergie : synthèse comparée
 
 Thème : Écologie et énergie
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -58,6 +58,12 @@ Non communiqué.
 2. Supprimer les subventions aux éoliennes. (Économie annoncée : 10 Md€ (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. Dessaler l'eau de mer, réutiliser les eaux usées et utiliser l'eau de pluie dans les constructions neuves. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 
+## Dominique de Villepin (La France humaniste)
+
+1. Réduire de moitié l'usage des produits phytosanitaires d'ici 2030 et restaurer haies et mares. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 219, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-22.html (consulté le 2026-11-20)
+2. Appliquer l'objectif « zéro artificialisation nette » des sols, avec une mise en œuvre solidaire. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 221, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-22.html (consulté le 2026-11-20)
+3. Créer une stratégie nationale de transformation agricole, avec des moyens supplémentaires chaque année. (1,5 milliard d'euros supplémentaires par an) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 222, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-22.html (consulté le 2026-11-20)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 Non communiqué.
@@ -71,11 +77,14 @@ Non communiqué.
 ## Clara Egger (Solution démocratique)
 
 1. Soumettre systématiquement à référendum les grandes politiques et les traités environnementaux. (Mesure non chiffrée par le parti) Source : Solution démocratique, communiqué de lancement du programme présidentiel 2027, 2026-11-05, https://solutiondemocratique.fr/presidentielle-2027-solution-democratique-devoile-son-programme-pour-rendre-aux-francais-le-pouvoir-de-decider/ (consulté le 2026-11-09)
+2. Dresser un bilan des politiques environnementales : efficacité, qui en supporte les coûts, compatibilité avec la croissance. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+3. Soumettre à référendum une loi d'orientation sur la place du nucléaire, sans prise de position du président. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 
 ## Raphaël Glucksmann (Place publique)
 
 1. Il propose de permettre aux ménages modestes d'accéder à une voiture électrique pour un loyer de 100 euros par mois. (Mesure non chiffrée par le parti) Source : LCP, meeting de lancement de campagne à Aubervilliers, 2026-06-14, https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir (consulté le 2026-11-09)
 2. Il propose de conserver le nucléaire tout en développant les énergies renouvelables. (Mesure non chiffrée par le parti) Source : LCP, dernier débat de la primaire socialiste sur BFMTV, 2026-10-04, https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat (consulté le 2026-11-09)
+3. Investir 200 milliards d'euros d'argent public sur cinq ans pour sortir des énergies fossiles. (200 milliards d'euros sur cinq ans, dont 50 milliards par une contribution exceptionnelle sur les plus hauts patrimoines) Source : Révolution écologique : les premiers 100 jours (livret de campagne, première partie), 2026-11-09, https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf (consulté le 2026-11-20)
 
 ## Anasse Kazib (Révolution permanente)
 
@@ -158,6 +167,7 @@ Non communiqué.
 
 1. Il propose de mettre fin aux subventions publiques pour l'éolien et le photovoltaïque. (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
 2. Il propose d'abroger la troisième programmation pluriannuelle de l'énergie (PPE3, le plan énergie de l'État jusqu'en 2035). (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
+3. Prolonger les centrales nucléaires jusqu'à 80 ans. (Mesure non chiffrée par le parti) Source : Avec Retailleau, Le projet, Électricité, mesure 08.01, s.d., https://www.avecretailleau.fr/projet/theme/electricite (consulté le 2026-11-20)
 
 ## Teddy Riner (Sans parti)
 
