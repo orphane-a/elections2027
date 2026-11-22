@@ -95,12 +95,13 @@ export function lireArguments(argv, aujourdhui) {
     else if (a === '--verifier') o.verifier = true;
     else if (a === '--dossier') o.dossier = argv[++i];
     else if (a === '--aujourdhui') aujourdhui = argv[++i];
-    else if (a === '--comparer') o.comparer = argv[++i];
+    else if (a === '--comparer') { o.comparer = argv[++i]; if (!o.comparer || o.comparer.startsWith('-')) return { erreur: 'Comparaison non reconnue : choisir semaine ou mois.\nExemple : sh deploy/visiteurs.sh --comparer semaine' }; }
     else if (a.startsWith('--comparer=')) o.comparer = a.slice(11);
     else if (a.startsWith('-')) return { erreur: `Option inconnue : ${a}\nOptions : --comparer semaine, --comparer mois, --json` };
     else o.dates.push(a);
   }
   if (!estDate(aujourdhui)) return { erreur: ERREUR_DATES };
+  o.aujourdhui = aujourdhui;
   const hier = decaler(aujourdhui, -1);
   if (o.comparer) {
     if (o.dates.length) return { erreur: "L'option --comparer ne prend pas de date.\nExemple : sh deploy/visiteurs.sh --comparer semaine" };
@@ -123,6 +124,7 @@ export function lireArguments(argv, aujourdhui) {
   if (o.dates.length > 2 || !o.dates.every(estDate)) return { erreur: ERREUR_DATES };
   const [debut = hier, fin = debut] = o.dates;
   if (debut > fin) return { erreur: 'La date de début est après la date de fin.\nExemple : sh deploy/visiteurs.sh 2026-11-01 2026-11-30' };
+  if (debut < '2020-01-01' || fin > '2100-12-31' || (Date.parse(fin) - Date.parse(debut)) / 86400000 > 800) return { erreur: 'Période trop longue : les totaux sont gardés 25 mois au plus.\nExemple : sh deploy/visiteurs.sh 2026-11-01 2026-11-30' };
   o.periode = [debut, fin];
   return o;
 }
@@ -149,12 +151,12 @@ export function lireDossier(dossier) {
 }
 
 // Somme des totaux quotidiens d'une période.
-export function cumuler(totaux, [debut, fin]) {
+export function cumuler(totaux, [debut, fin], aujourdhui = null) {
   const jours = joursEntre(debut, fin);
   const r = { debut, fin, visiteursUniques: 0, pagesVues: 0, jours: [], joursSansDonnees: [], pages: {}, sources: {}, appareils: {} };
   for (const d of jours) {
     const t = totaux[d];
-    if (!t) { r.joursSansDonnees.push(d); continue; }
+    if (!t) { if (!aujourdhui || d < aujourdhui) r.joursSansDonnees.push(d); continue; } // jours à venir : pas encore calculés, pas « manquants »
     r.visiteursUniques += t.visiteursUniques;
     r.pagesVues += t.pagesVues;
     r.jours.push({ date: d, visiteursUniques: t.visiteursUniques, pagesVues: t.pagesVues });
@@ -165,7 +167,7 @@ export function cumuler(totaux, [debut, fin]) {
 }
 
 const ecart = (a, b) => (b ? `${a >= b ? '+' : '−'}${Math.abs(Math.round((100 * (a - b)) / b))} %` : 'non calculable');
-const col = (t, n, droite = false) => (droite ? t.padStart(n) : t.padEnd(n));
+const col = (t, n, droite = false) => (droite ? ` ${t}`.padStart(n) : `${t} `.padEnd(n));
 
 function avertissement(r) {
   if (!r.joursSansDonnees.length || !r.jours.length) return [];
@@ -178,27 +180,36 @@ function vide(r, totaux) {
   const dates = Object.keys(totaux).sort();
   const l = [`Aucune donnée pour cette période (${periodeFr(r.debut, r.fin)}).`];
   if (dates.length) l.push(`La mesure a commencé le ${dateFr(dates[0])}.`);
-  else l.push("Aucun total n'existe encore sur le serveur.");
+  else l.push('Aucun total lisible sur le serveur.');
   return l;
 }
 
 export function rapport(o, totaux) {
-  const r = cumuler(totaux, o.periode);
+  const r = cumuler(totaux, o.periode, o.aujourdhui);
   if (o.precedente) {
-    const p = cumuler(totaux, o.precedente);
-    if (!r.jours.length && !p.jours.length) {
-      return { code: 1, texte: o.json ? JSON.stringify({ erreur: 'Aucune donnée pour cette période', debut: r.debut, fin: p.fin }) : vide({ debut: p.debut, fin: r.fin }, totaux).join('\n') };
-    }
-    if (o.json) return { code: 0, texte: JSON.stringify({ periode: r, precedente: p }, null, 2) };
+    const p = cumuler(totaux, o.precedente, o.aujourdhui);
     const nom = o.comparer === 'semaine' ? ['Cette semaine', 'Semaine précédente'] : ['Ce mois ci', 'Mois précédent'];
+    // Pas de comparaison si une des deux périodes n'a aucune donnée : on n'affiche jamais un 0 inventé.
+    const videes = [[r, nom[0]], [p, nom[1]]].filter(([x]) => !x.jours.length);
+    if (videes.length) {
+      if (o.json) return { code: 1, texte: JSON.stringify({ erreur: 'Aucune donnée pour cette période', periodes: videes.map(([x]) => ({ debut: x.debut, fin: x.fin })) }) };
+      const l = videes.map(([x, n]) => `Aucune donnée pour cette période (${n.toLowerCase()}, ${periodeFr(x.debut, x.fin)}).`);
+      const dates = Object.keys(totaux).sort();
+      l.push(dates.length ? `Comparaison impossible. La mesure a commencé le ${dateFr(dates[0])}.` : 'Comparaison impossible. Aucun total lisible sur le serveur.');
+      return { code: 1, texte: l.join('\n') };
+    }
+    const complet = !r.joursSansDonnees.length && !p.joursSansDonnees.length;
+    if (o.json) return { code: 0, texte: JSON.stringify({ periode: r, precedente: p, ecartComparable: complet }, null, 2) };
+    const ec = (a, b) => (complet ? ecart(a, b) : 'non calculé');
     const l = [`${nom[0]} (${periodeFr(r.debut, r.fin).replace(/ \d{4}$/, '')}) et ${nom[1].toLowerCase()} (${periodeFr(p.debut, p.fin).replace(/ \d{4}$/, '')})`, ''];
-    l.push(`${col('', 18)}${col(nom[0], 16, true)}${col(nom[1], 22, true)}${col('Écart', 10, true)}`);
-    l.push(`${col('Visites uniques', 18)}${col(nb(r.visiteursUniques), 16, true)}${col(nb(p.visiteursUniques), 22, true)}${col(ecart(r.visiteursUniques, p.visiteursUniques), 10, true)}`);
-    l.push(`${col('Pages vues', 18)}${col(nb(r.pagesVues), 16, true)}${col(nb(p.pagesVues), 22, true)}${col(ecart(r.pagesVues, p.pagesVues), 10, true)}`);
+    l.push(`${col('', 18)}${col(nom[0], 16, true)}${col(nom[1], 22, true)}${col('Écart', 16, true)}`);
+    l.push(`${col('Visites uniques', 18)}${col(nb(r.visiteursUniques), 16, true)}${col(nb(p.visiteursUniques), 22, true)}${col(ec(r.visiteursUniques, p.visiteursUniques), 16, true)}`);
+    l.push(`${col('Pages vues', 18)}${col(nb(r.pagesVues), 16, true)}${col(nb(p.pagesVues), 22, true)}${col(ec(r.pagesVues, p.pagesVues), 16, true)}`);
     l.push('', 'Visites uniques par jour, cumulées.');
     for (const [x, n] of [[r, nom[0]], [p, nom[1]]]) {
       if (x.joursSansDonnees.length) l.push(`Attention : ${n.toLowerCase()}, pas de totaux pour ${x.joursSansDonnees.length} jour${x.joursSansDonnees.length > 1 ? 's' : ''} (${plagesFr(x.joursSansDonnees)}).`);
     }
+    if (!complet) l.push("L'écart n'est pas calculé : il manque des jours dans une des deux périodes.");
     return { code: 0, texte: l.join('\n') };
   }
   if (!r.jours.length) {
@@ -230,7 +241,7 @@ export function rapport(o, totaux) {
   }
   const a = r.appareils;
   const totA = (a.telephone || 0) + (a.ordinateur || 0);
-  if (totA) l.push(`${totS ? '' : '\n'}Appareil : téléphone ${pc(a.telephone || 0, totA)} %, ordinateur ${pc(a.ordinateur || 0, totA)} %`);
+  if (totA) l.push(`${totS ? '' : '\n'}Appareil : téléphone ou tablette ${pc(a.telephone || 0, totA)} %, ordinateur ${pc(a.ordinateur || 0, totA)} %`);
   return { code: 0, texte: l.join('\n') };
 }
 

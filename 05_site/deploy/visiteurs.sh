@@ -24,6 +24,7 @@ echo "Connexion au serveur de prod…" >&2
 DONNEES=$(ssh -o BatchMode=yes -o ConnectTimeout=10 "$SERVEUR" \
   "cd $DOSSIER 2>/dev/null || exit 0; for f in 2*.json; do [ -f \"\$f\" ] && printf '%s\t%s\n' \"\$f\" \"\$(tr -d '\n' < \"\$f\")\"; done; exit 0")
 if [ $? -ne 0 ]; then
+  case " $* " in *" --json "*) echo '{"erreur":"Serveur injoignable : la connexion SSH a échoué."}'; exit 2 ;; esac
   echo "Serveur injoignable : la connexion SSH a échoué."
   echo "Vérifiez la connexion internet et la clé SSH, puis relancez."
   exit 2
