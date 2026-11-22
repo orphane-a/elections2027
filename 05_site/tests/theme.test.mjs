@@ -280,7 +280,7 @@ test('une seule série d\'emojis de thèmes sur tout le site (accueil, page Thè
     for (const ancien of ['🌱', '🛒', '🏥', '🛡️', '🇪🇺']) assert.equal(html.includes(ancien), false, `${f} : ${ancien}`);
   }
   const fiche = lirePage(`candidat-${candidats[0].id}.html`);
-  for (const e of Object.values(EMOJIS)) assert.ok(fiche.includes(`<span aria-hidden="true">${e} </span>`), `fiche candidat : ${e}`);
+  for (const [s, e] of Object.entries(EMOJIS)) assert.ok(fiche.includes(`<h2 id="h-${s}"><span class="emo" aria-hidden="true">${e}</span>`), `fiche candidat : ${e}`);
 });
 
 test('thème actif : sa couleur légèrement foncée et un encadrement épais, jamais le fond bleu foncé', () => {
