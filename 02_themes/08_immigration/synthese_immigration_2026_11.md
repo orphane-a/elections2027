@@ -1,7 +1,7 @@
 # 🌍 Immigration et intégration : synthèse comparée
 
 Thème : Immigration et intégration
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -44,6 +44,7 @@ Non communiqué.
 
 1. Mettre des conditions au regroupement familial. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
 2. Traiter les demandes d'asile au niveau des consulats. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-09)
+3. Réduire la durée de la rétention administrative et appliquer des travaux d'intérêt général pour les infractions au séjour. (Mesure non chiffrée par le parti) Source : Les Ruches, Le Projet 2027 (« La Voie »), mesure par mesure, s.d., https://ruches.org/le-projet (consulté le 2026-11-20)
 
 ## Joël Chevé (La France adulte)
 
@@ -54,6 +55,12 @@ Non communiqué.
 1. Supprimer le droit d'asile et le regroupement familial. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 2. Suspendre pendant 6 mois les visas pour les pays hors Union européenne, sauf pour les étudiants. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. Expulser les étrangers en situation irrégulière et les détenus étrangers. (Économie annoncée : 40 Md€ liés à l'immigration illégale (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
+## Dominique de Villepin (La France humaniste)
+
+1. Mener une diplomatie migratoire pour augmenter les réadmissions des personnes visées par une obligation de quitter le territoire (OQTF). (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 6, proposition 053, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-6.html (consulté le 2026-11-20)
+2. Rendre obligatoire un enregistrement biométrique des étrangers sans titre de séjour. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 6, proposition 055, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-6.html (consulté le 2026-11-20)
+3. Créer une autorité indépendante de l'information sur les migrations. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 6, proposition 057, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-6.html (consulté le 2026-11-20)
 
 ## Nicolas Dupont-Aignan (Debout la France)
 
@@ -67,7 +74,8 @@ Non communiqué.
 
 ## Clara Egger (Solution démocratique)
 
-Non communiqué.
+1. Dresser dès la première année un bilan des politiques migratoires des trente dernières années. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+2. Soumettre à référendum les décisions migratoires les plus importantes si suffisamment de Français le demandent. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 
 ## Raphaël Glucksmann (Place publique)
 
@@ -182,3 +190,4 @@ Non communiqué.
 
 1. Expulser un étranger en situation régulière après un an de chômage. (Mesure non chiffrée par le parti) Source : Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026), 2026-09-18, https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027 (consulté le 2026-11-09)
 2. Expulser les étrangers détenus, en situation irrégulière, condamnés ou vivant uniquement d'aides sociales. (Mesure non chiffrée par le parti) Source : Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026), 2026-09-18, https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027 (consulté le 2026-11-09)
+3. Réserver aux Français les aides sociales non contributives et les allocations familiales. (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 2, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)

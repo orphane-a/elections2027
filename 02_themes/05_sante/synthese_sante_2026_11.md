@@ -1,7 +1,7 @@
-# 🏥 Santé : synthèse comparée
+# ❤️ Santé : synthèse comparée
 
 Thème : Santé
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -15,6 +15,8 @@ Non communiqué.
 ## Gabriel Attal (Renaissance)
 
 1. Mettre à disposition de chaque Français un assistant médical utilisant l'intelligence artificielle, pour un premier conseil et l'orientation dans le parcours de soins. (Mesure non chiffrée par le parti) Source : attalpresident.fr, Un assistant médical IA pour chaque Français, s.d., https://attalpresident.fr/programme/mesures/assistant-medical-ia (consulté le 2026-11-09)
+2. Ramener les comptes de la Sécurité sociale à l'équilibre en 2032, avant la fin du quinquennat. (Mesure non chiffrée par le parti) Source : attalpresident.fr, Équilibrer les comptes de la Sécurité sociale, 2026-07-03, https://attalpresident.fr/programme/mesures/equilibre-securite-sociale (consulté le 2026-11-20)
+3. Lancer un plan d'urgence de climatisation des écoles et des établissements médico-sociaux. (Mesure non chiffrée par le parti) Source : attalpresident.fr, thématique Santé, plan d'urgence de climatisation des établissements, s.d., https://attalpresident.fr/programme/thematiques/sante (consulté le 2026-11-20)
 
 ## Delphine Batho (Génération écologie)
 
@@ -54,6 +56,12 @@ Non communiqué.
 1. Supprimer l'aide médicale d'État (AME, soins des étrangers sans titre de séjour). (Économie annoncée : 1,2 Md€ (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 2. Facturer au prix réel l'accouchement et l'hospitalisation aux personnes sans nationalité française. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 
+## Dominique de Villepin (La France humaniste)
+
+1. Plafonner le reste à charge des patients en fonction de leurs revenus. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 126, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-13.html (consulté le 2026-11-20)
+2. Faciliter l'accès de chacun à un soignant. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 122, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-13.html (consulté le 2026-11-20)
+3. Donner aux établissements de santé des budgets pluriannuels et plus de souplesse. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 128, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-13.html (consulté le 2026-11-20)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 Non communiqué.
@@ -65,7 +73,8 @@ Non communiqué.
 
 ## Clara Egger (Solution démocratique)
 
-Non communiqué.
+1. Publier un bilan régulier du système de santé : accès aux soins, prévention, délais, répartition des soignants. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+2. Expliquer publiquement les décisions sanitaires, surtout en crise, et rendre accessibles leurs fondements scientifiques. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 
 ## Raphaël Glucksmann (Place publique)
 
@@ -74,6 +83,7 @@ Non communiqué.
 ## Anasse Kazib (Révolution permanente)
 
 1. Rendre l'avortement, la PMA (procréation médicalement assistée) et les transitions de genre libres et gratuits. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, partie « Unifier la nouvelle classe ouvrière », s.d., https://anasse2027.fr/programme (consulté le 2026-11-09)
+2. Exproprier les secteurs stratégiques, dont la santé, et les placer sous le contrôle des travailleurs. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme (premières mesures), s.d., https://anasse2027.fr/programme (consulté le 2026-11-20)
 
 ## Selma Labib (NPA-Révolutionnaires)
 
@@ -150,6 +160,8 @@ Non communiqué.
 ## Bruno Retailleau (Les Républicains)
 
 1. Il propose un jour de carence obligatoire dans le privé et des réexamens périodiques des arrêts maladie. (Économie annoncée : 4 Md€.) Source : Public Sénat, plan d'économies de près de 200 milliards d'euros, 2026-10-12, https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu (consulté le 2026-11-09)
+2. Confier la direction de chaque hôpital à un médecin, assisté d'un administrateur. (Mesure non chiffrée par le parti) Source : franceinfo, Bruno Retailleau veut économiser 300 000 postes dans la fonction publique, 2026-11-12, https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html (consulté le 2026-11-20)
+3. Confier la prévention aux mutuelles, avec des cotisations réduites pour les assurés qui suivent les recommandations. (Mesure non chiffrée par le parti) Source : franceinfo, Bruno Retailleau veut économiser 300 000 postes dans la fonction publique, 2026-11-12, https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html (consulté le 2026-11-20)
 
 ## Teddy Riner (Sans parti)
 
@@ -174,4 +186,4 @@ Non communiqué.
 
 ## Éric Zemmour (Reconquête)
 
-Non communiqué.
+1. Supprimer l'aide médicale d'État (AME, soins des étrangers sans papiers). (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 2, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)

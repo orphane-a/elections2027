@@ -1,7 +1,7 @@
-# 🛡️ Sécurité et justice : synthèse comparée
+# ⚖️ Sécurité et justice : synthèse comparée
 
 Thème : Sécurité et justice
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -55,6 +55,12 @@ Non communiqué.
 2. Supprimer le juge d'application des peines et remplacer la peine maximale par un barème de peines. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. Organiser un référendum sur la peine de mort. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 
+## Dominique de Villepin (La France humaniste)
+
+1. Créer une agence de renseignement contre le narcotrafic, sur le modèle de la DEA américaine. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 7, proposition 067, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-7.html (consulté le 2026-11-20)
+2. Créer un parquet national dédié aux violences faites aux femmes et aux enfants. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 7, proposition 069, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-7.html (consulté le 2026-11-20)
+3. Créer 15 000 places de prise en charge pour les primo-délinquants. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 7, proposition 072, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-7.html (consulté le 2026-11-20)
+
 ## Nicolas Dupont-Aignan (Debout la France)
 
 1. Il propose 10 000 policiers et gendarmes supplémentaires nets sur cinq ans, et 10 000 douaniers et policiers aux frontières. (Mesure non chiffrée par le parti) Source : Debout la France, projet Sécurité (livret daté du 31/10/2025, présenté comme projet présidentiel 2027), 2025-10-31, https://www.debout-la-france.fr/projet/securite/ (consulté le 2026-11-09)
@@ -69,11 +75,14 @@ Non communiqué.
 
 ## Clara Egger (Solution démocratique)
 
-Non communiqué.
+1. Rendre transparentes les décisions de défense et d'intervention armée ; celles prises en urgence peuvent être remises en cause par un vote populaire. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+2. Établir un plan qui identifie les crises à venir, estime chaque année leur probabilité et prépare le pays. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+3. Justifier publiquement les nominations aux emplois civils et militaires selon des critères connus de tous. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 
 ## Raphaël Glucksmann (Place publique)
 
 1. Il propose de faire adopter la proposition de loi intégrale transpartisane contre les violences sexistes et sexuelles faites aux femmes et aux enfants. (Mesure non chiffrée par le parti) Source : LCP, meeting de lancement de campagne à Aubervilliers, 2026-06-14, https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir (consulté le 2026-11-09)
+2. Consacrer 1 milliard d'euros à la sécurité civile dès juin 2027 contre les canicules et les incendies, avec un fonds d'indemnisation des sinistrés. (1 milliard d'euros dès juin 2027) Source : Révolution écologique : les premiers 100 jours (livret de campagne, première partie), 2026-11-09, https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf (consulté le 2026-11-20)
 
 ## Anasse Kazib (Révolution permanente)
 
@@ -185,4 +194,6 @@ Non communiqué.
 
 ## Éric Zemmour (Reconquête)
 
-Non communiqué.
+1. Construire 100 000 places de prison en 24 mois. (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 3, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)
+2. Instaurer des peines planchers et une loi anti-casseurs. (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 3, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)
+3. Supprimer les aménagements de peine et l'excuse de minorité (peine réduite pour les mineurs). (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 3, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)

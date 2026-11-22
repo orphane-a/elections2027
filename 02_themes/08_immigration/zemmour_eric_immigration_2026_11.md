@@ -2,7 +2,7 @@
 
 Thème : Immigration et intégration
 Candidat : Éric Zemmour (Reconquête)
-Date de mise à jour : 2026-11-09
+Date de mise à jour : 2026-11-20
 Niveau de confiance des sources : Moyen
 Fichier généré par 05_site/build.mjs.
 
@@ -14,3 +14,6 @@ Fichier généré par 05_site/build.mjs.
 2. Expulser les étrangers détenus, en situation irrégulière, condamnés ou vivant uniquement d'aides sociales.
    Chiffrage : Mesure non chiffrée par le parti
    Source : Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026), 2026-09-18, https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027 (consulté le 2026-11-09)
+3. Réserver aux Français les aides sociales non contributives et les allocations familiales.
+   Chiffrage : Mesure non chiffrée par le parti
+   Source : Éric Zemmour, Nos priorités pour les Français, priorité 2, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)

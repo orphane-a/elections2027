@@ -181,6 +181,16 @@ dl.glo dd{margin:2px 0 0;font-size:14px;color:var(--doux)}
 @media (max-width:640px){footer.pied .liens{flex-direction:column;gap:0}.page-texte .d p.lead{font-size:17px}}
 table.liste{width:100%;border-collapse:collapse;font-size:15px}
 table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--trait);vertical-align:top}
+/* Sur téléphone, un tableau « empile » devient une suite de petites fiches : une ligne = une fiche, chaque case porte son titre */
+@media (max-width:640px){
+  table.liste.empile{min-width:0!important}
+  table.liste.empile,table.liste.empile tbody,table.liste.empile tr,table.liste.empile th,table.liste.empile td{display:block;width:100%}
+  table.liste.empile thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  table.liste.empile tr{padding:12px 0;border-bottom:1px solid var(--trait)}
+  table.liste.empile th,table.liste.empile td{padding:2px 0;border:0;overflow-wrap:anywhere}
+  table.liste.empile tr>:first-child{font-size:17px;font-weight:600;padding-bottom:6px}
+  table.liste.empile td[data-label]::before{content:attr(data-label) " : ";font-weight:600;color:var(--doux2)}
+}
 
 @media print{.noprint,.chips,.ancres,.top,footer.pied,.suivant,.outils,.preprod{display:none!important}
   body{background:#fff}}
@@ -190,25 +200,33 @@ table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px
 .legende-niv{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 20px}
 .legende-niv .lab{font-size:15px;font-weight:600}
 .legende-niv .lnk{display:inline-flex;align-items:center;min-height:44px;font-size:15px}
-.niv-chip,.niv-btn{display:inline-flex;align-items:center;gap:8px;box-sizing:border-box;min-height:36px;padding:0 12px 0 8px;background:#fff;color:var(--texte);border:1.5px solid var(--texte);border-radius:8px;font-size:14px;font-weight:600}
-details.niv{margin:6px 0 8px}
-.niv-btn{min-height:44px;cursor:pointer;list-style:none}
-.niv-btn::-webkit-details-marker{display:none}
-.niv-btn:hover,details.niv[open] .niv-btn{background:#F3F4F8}
-.niv-btn .i{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:1.5px solid var(--texte);border-radius:50%;font-size:14px;line-height:1}
-.niv-pop{box-sizing:border-box;margin-top:8px;padding:16px 18px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;font-size:14px;line-height:1.5;color:var(--texte)}
-.niv-pop p{margin:0 0 12px}
-.niv-pop .def{color:var(--doux)}
-.niv-pop .t{margin:0 0 4px;font-weight:700}
-.niv-pop .m{display:block;color:var(--doux2)}
-.niv-pop dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0 0 12px}
-.niv-pop dt{font-weight:600}
-.niv-pop dd{margin:0;overflow-wrap:anywhere}
-.niv-pop ul{margin:0 0 12px;padding:0;list-style:none}
-.niv-pop li{padding:8px 0;border-top:1px solid var(--trait)}
-.niv-pop>.lnk{display:inline-flex;align-items:center;min-height:44px}
-@media (max-width:420px){.niv-pop dl{grid-template-columns:1fr}.niv-pop dd{margin-bottom:6px}}
-@media print{details.niv .niv-btn .i{display:none}}
+.niv-chip{display:inline-flex;align-items:center;gap:8px;box-sizing:border-box;min-height:36px;padding:0 12px 0 8px;background:#fff;color:var(--texte);border:1.5px solid var(--texte);border-radius:8px;font-size:14px;font-weight:600}
+/* Bloc niveau statique dans le détail d'une mesure (ticket 92) : encadré, fond blanc, aucune couleur de jugement */
+.nivbloc{box-sizing:border-box;max-width:100%;margin:0 0 10px;padding:12px 14px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;font-size:14px;line-height:1.5;color:var(--texte);overflow-wrap:anywhere}
+.nivbloc p{margin:0}
+.nivbloc .niv-t{display:flex;align-items:center;gap:8px;margin:0 0 6px;font-size:15px;font-weight:700}
+.nivbloc .def{color:var(--doux)}
+.nivbloc .t{margin:12px 0 2px;font-weight:700}
+.nivbloc .m{display:block;color:var(--doux2)}
+.nivbloc>.lnk.discret{display:inline-flex;align-items:center;min-height:44px}
+.lnk.discret{font-size:14px}
+.srcch{margin-top:6px}
+.srcch>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer;list-style:none}
+.srcch>summary::-webkit-details-marker{display:none}
+.srcch>summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.srcch .chev{flex:none;transition:transform .15s}
+.srcch[open] .chev{transform:rotate(90deg)}
+.srcch-c{padding-top:10px;border-top:1px solid var(--trait)}
+.srcch-c p{margin:0 0 8px}
+.srcch dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0 0 12px}
+.srcch dt{font-weight:600}
+.srcch dd{margin:0;overflow-wrap:anywhere}
+.srcch ul{margin:0 0 12px;padding:0;list-style:none}
+.srcch li{padding:8px 0;border-top:1px solid var(--trait)}
+.srcch-c>.lnk{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:420px){.nivbloc{padding:10px 12px}.srcch dl{grid-template-columns:1fr;gap:2px}.srcch dd{margin-bottom:6px}}
+@media (prefers-reduced-motion:reduce){.srcch .chev{transition:none}}
+@media print{.srcch>.srcch-c{display:block}.srcch>summary{display:none}.srcch::details-content{content-visibility:visible}}
 /* Photos des candidats et logos des partis (maquette V3) */
 .photo{flex:none;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:52px;height:52px;border-radius:50%;object-fit:cover;background:#EEF0F3;color:#3B4656;font-weight:700;font-size:17px;border:2px solid var(--pc,#D5DBE3)}
 .photo.s{width:48px;height:48px;font-size:16px;border-width:1.5px}
@@ -305,8 +323,7 @@ details.niv{margin:6px 0 8px}
 .js .mbtn[aria-expanded=false]+.mdet{display:none}
 .mdet p{margin:0 0 8px}
 .mdet .tag{font-size:13px}
-.mdet .chiffre{color:var(--texte);font-weight:600}
-.mdet details.niv{margin:0 0 8px}
+.mdet .chiffre,.mesure .chiffre{color:var(--texte);font-weight:600}
 .msource{overflow-wrap:anywhere}
 .mdates{display:block;color:var(--doux2)}
 .ext{margin-left:4px;vertical-align:-1px}

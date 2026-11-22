@@ -2,7 +2,7 @@
 
 Thème : Écologie et énergie
 Candidat : Raphaël Glucksmann (Place publique)
-Date de mise à jour : 2026-11-09
+Date de mise à jour : 2026-11-20
 Niveau de confiance des sources : Bon
 Fichier généré par 05_site/build.mjs.
 
@@ -14,3 +14,6 @@ Fichier généré par 05_site/build.mjs.
 2. Il propose de conserver le nucléaire tout en développant les énergies renouvelables.
    Chiffrage : Mesure non chiffrée par le parti
    Source : LCP, dernier débat de la primaire socialiste sur BFMTV, 2026-10-04, https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat (consulté le 2026-11-09)
+3. Investir 200 milliards d'euros d'argent public sur cinq ans pour sortir des énergies fossiles.
+   Chiffrage : 200 milliards d'euros sur cinq ans, dont 50 milliards par une contribution exceptionnelle sur les plus hauts patrimoines
+   Source : Révolution écologique : les premiers 100 jours (livret de campagne, première partie), 2026-11-09, https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf (consulté le 2026-11-20)

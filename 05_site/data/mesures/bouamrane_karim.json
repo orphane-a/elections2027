@@ -1,6 +1,6 @@
 {
   "id": "bouamrane_karim",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -25,7 +25,14 @@
         "source": { "titre": "Le manifeste de Karim Bouamrane", "url": "https://www.karimbouamrane2027.org/manifeste.html", "date": null, "type": "site", "consulte": "2026-11-09" }
       }
     ],
-    "pouvoir_achat": [],
+    "pouvoir_achat": [
+      {
+        "texte": "Baisser la CSG pour permettre des hausses de salaires.",
+        "sous_theme": "Salaires",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio, Karim Bouamrane : « Il faut arrêter de regarder Mélenchon comme le Superman de la gauche »", "url": "https://www.sudradio.fr/linvite-politique/karim-bouamrane-il-faut-arreter-de-regarder-melenchon-comme-le-superman-de-la-gauche", "date": "2026-11-09", "type": "declaration", "consulte": "2026-11-20" }
+      }
+    ],
     "travail": [
       {
         "texte": "Faire en sorte que travailler « paye ».",

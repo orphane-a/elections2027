@@ -1,6 +1,6 @@
 # 👥 Candidats déclarés à la présidentielle 2027
 
-Ordre alphabétique, aucun classement. Vérifié le 2026-11-16 (recherche web, détail et sources dans chaque fiche).
+Ordre alphabétique, aucun classement. Vérifié le 2026-11-20 (recherche web, détail et sources dans chaque fiche).
 
 ⚠️ Une candidature n'est officielle qu'après validation des 500 parrainages par le Conseil constitutionnel (échéance 12 mars 2027). La liste évolue : à revérifier avant chaque publication.
 
@@ -43,4 +43,5 @@ Rohou Erwan : Mouvement écologiste indépendant : Annoncé, à vérifier
 Roussel Fabien : Parti communiste français : Déclaré
 Ruffin François : Debout ! : Déclaré, à vérifier
 Tondelier Marine : Les Écologistes : Désignée
+Villepin Dominique (de) : La France humaniste : Déclaré
 Zemmour Éric : Reconquête : Déclaré

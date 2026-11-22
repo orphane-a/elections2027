@@ -1,7 +1,7 @@
-# 🛒 Pouvoir d'achat : synthèse comparée
+# 💶 Pouvoir d'achat : synthèse comparée
 
 Thème : Pouvoir d'achat
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -37,7 +37,7 @@ Non communiqué.
 
 ## Karim Bouamrane (Parti socialiste (mouvement La France humaine et forte))
 
-Non communiqué.
+1. Baisser la CSG pour permettre des hausses de salaires. (Mesure non chiffrée par le parti) Source : Sud Radio, Karim Bouamrane : « Il faut arrêter de regarder Mélenchon comme le Superman de la gauche », 2026-11-09, https://www.sudradio.fr/linvite-politique/karim-bouamrane-il-faut-arreter-de-regarder-melenchon-comme-le-superman-de-la-gauche (consulté le 2026-11-20)
 
 ## Juan Branco (Les Ruches (mouvement citoyen))
 
@@ -54,6 +54,12 @@ Non communiqué.
 1. Baisser les impôts. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 2. Taxer à 100 % les commandes passées hors du territoire. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 3. Relever le seuil des droits de succession et réduire ces droits. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+
+## Dominique de Villepin (La France humaniste)
+
+1. Transférer des cotisations sociales non contributives vers la CSG pour augmenter les salaires nets. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 106, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-12.html (consulté le 2026-11-20)
+2. Proposer un prix de l'électricité avantageux aux ménages et aux entreprises grâce à des contrats pour différence. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 116, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-12.html (consulté le 2026-11-20)
+3. Mettre un million de petites voitures électriques à disposition en leasing social. (Mesure non chiffrée par le parti) Source : Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 114, s.d., https://parti-humaniste.fr/programme/reussir-a-nouveau/chapitre-12.html (consulté le 2026-11-20)
 
 ## Nicolas Dupont-Aignan (Debout la France)
 
@@ -155,6 +161,7 @@ Non communiqué.
 
 1. Il propose de supprimer les certificats d'économies d'énergie, une charge qu'il estime à 15 centimes par litre de carburant. (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
 2. Il propose d'exonérer de cotisations le temps de travail supplémentaire : à partir de la 36e heure, le salaire brut égale le net. (Mesure non chiffrée par le parti) Source : Public Sénat, conférence de presse de Bruno Retailleau au siège de LR, 2026-09-15, https://www.publicsenat.fr/actualites/politique/essence-energie-logement-travail-bruno-retailleau-promet-daugmenter-le-pouvoir-dachat-des-francais-sans-un-euro-de-dette-en-plus (consulté le 2026-11-09)
+3. Rendre environ 500 euros par an aux salariés au salaire médian en baissant les cotisations sur le travail. (Mesure non chiffrée par le parti) Source : Avec Retailleau, Le projet, Travail, mesure 1, s.d., https://www.avecretailleau.fr/projet/theme/travail (consulté le 2026-11-20)
 
 ## Teddy Riner (Sans parti)
 
@@ -183,4 +190,6 @@ Non communiqué.
 
 ## Éric Zemmour (Reconquête)
 
-Non communiqué.
+1. Supprimer la CSG sur les revenus du travail pour augmenter de 10 % le salaire net. (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 4, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)
+2. Baisser de 40 centimes par litre les taxes sur les carburants. (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 4, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)
+3. Supprimer les droits de succession et l'impôt sur la fortune. (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 4, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)

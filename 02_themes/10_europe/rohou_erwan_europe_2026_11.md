@@ -2,10 +2,12 @@
 
 Thème : Europe et international
 Candidat : Erwan Rohou (Mouvement écologiste indépendant)
-Date de mise à jour : 2026-11-16
+Date de mise à jour : 2026-11-20
 Niveau de confiance des sources : Moyen
 Fichier généré par 05_site/build.mjs.
 
 ## Mesures clefs
 
-Non communiqué.
+1. Donner à l'Europe les moyens d'assurer sa sécurité et de réduire ses dépendances.
+   Chiffrage : Mesure non chiffrée par le parti
+   Source : MEI, Projet politique pour 2027, chapitre 9, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-20)

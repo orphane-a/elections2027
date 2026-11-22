@@ -1,6 +1,6 @@
 {
   "id": "philippe_edouard",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -109,6 +109,18 @@
         "sous_theme": "Accession à la propriété",
         "chiffrage": null,
         "source": { "titre": "Avec Édouard 2027, Pour une France plus attentive à ses enfants", "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants", "date": null, "type": "site", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Construire 4 millions de logements supplémentaires en dix ans.",
+        "sous_theme": "Construction",
+        "chiffrage": null,
+        "source": { "titre": "Batiweb (avec AFP), reprise de l'entretien d'Édouard Philippe au Parisien", "url": "https://www.batiweb.com/actualites/construction/edouard-philippe-construction-4-millions-logements-49623", "date": "2026-11-15", "type": "presse", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Suspendre pendant le quinquennat l'interdiction de louer les passoires thermiques (logements très mal isolés).",
+        "sous_theme": "Location",
+        "chiffrage": null,
+        "source": { "titre": "France 24 (AFP), Édouard Philippe veut mettre en pause l'interdiction de location des passoires thermiques", "url": "https://www.france24.com/fr/info-en-continu/20261119-%C3%A9douard-philippe-veut-mettre-en-pause-l-interdiction-de-location-des-passoires-thermiques", "date": "2026-11-19", "type": "presse", "consulte": "2026-11-20" }
       }
     ],
     "securite": [

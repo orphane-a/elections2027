@@ -1,6 +1,6 @@
 {
   "id": "glucksmann_raphael",
-  "date_verif": "2026-11-09",
+  "date_verif": "2026-11-20",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -35,6 +35,12 @@
         "sous_theme": "Énergie",
         "chiffrage": null,
         "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Investir 200 milliards d'euros d'argent public sur cinq ans pour sortir des énergies fossiles.",
+        "sous_theme": "Énergie",
+        "chiffrage": "200 milliards d'euros sur cinq ans, dont 50 milliards par une contribution exceptionnelle sur les plus hauts patrimoines",
+        "source": { "titre": "Révolution écologique : les premiers 100 jours (livret de campagne, première partie)", "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf", "date": "2026-11-09", "type": "programme", "consulte": "2026-11-20" }
       }
     ],
     "pouvoir_achat": [
@@ -85,13 +91,38 @@
         "source": { "titre": "Place publique, « Raphaël Glucksmann - Sa lettre aux Français »", "url": "https://place-publique.eu/posts/2fgDdljEIy36rgxBjRyiQZ/raphael-glucksmann-sa-lettre-aux-francais", "date": "2026-08-25", "type": "site", "consulte": "2026-11-09" }
       }
     ],
-    "logement": [],
+    "logement": [
+      {
+        "texte": "Loger en trois semaines les 3 000 enfants qui dorment dans la rue.",
+        "sous_theme": "Sans-abrisme",
+        "chiffrage": null,
+        "source": { "titre": "LCP, ce qu'il faut retenir du débat présidentiel sur LCI", "url": "https://lcp.fr/actualites/logement-associations-jeunesse-ce-qu-il-faut-retenir-du-debat-presidentiel-sur-lci", "date": "2026-11-17", "type": "presse", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "S'inspirer du modèle finlandais du « logement d'abord » : fournir un logement durable aux personnes sans domicile.",
+        "sous_theme": "Sans-abrisme",
+        "chiffrage": null,
+        "source": { "titre": "Sud Radio (AFP), la France peut-elle s'inspirer du modèle finlandais contre le sans-abrisme vanté par Glucksmann ?", "url": "https://www.sudradio.fr/societe/verification-la-france-peut-elle-sinspirer-du-modele-finlandais-contre-le-sans-abrisme-vante-par-glucksmann", "date": "2026-11-17", "type": "presse", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Installer 1 million de pompes à chaleur louées 1 euro par jour, en priorité dans les logements chauffés au fioul ou au gaz.",
+        "sous_theme": "Rénovation énergétique",
+        "chiffrage": null,
+        "source": { "titre": "Révolution écologique : les premiers 100 jours (livret de campagne, première partie)", "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf", "date": "2026-11-09", "type": "programme", "consulte": "2026-11-20" }
+      }
+    ],
     "securite": [
       {
         "texte": "Il propose de faire adopter la proposition de loi intégrale transpartisane contre les violences sexistes et sexuelles faites aux femmes et aux enfants.",
         "sous_theme": "Violences sexuelles",
         "chiffrage": null,
         "source": { "titre": "LCP, meeting de lancement de campagne à Aubervilliers", "url": "https://lcp.fr/actualites/gagner-en-2027-raphael-glucksmann-lance-sa-campagne-et-veut-ramener-la-gauche-au-pouvoir", "date": "2026-06-14", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Consacrer 1 milliard d'euros à la sécurité civile dès juin 2027 contre les canicules et les incendies, avec un fonds d'indemnisation des sinistrés.",
+        "sous_theme": "Sécurité civile",
+        "chiffrage": "1 milliard d'euros dès juin 2027",
+        "source": { "titre": "Révolution écologique : les premiers 100 jours (livret de campagne, première partie)", "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf", "date": "2026-11-09", "type": "programme", "consulte": "2026-11-20" }
       }
     ],
     "immigration": [
@@ -108,7 +139,14 @@
         "source": { "titre": "LCP, dernier débat de la primaire socialiste sur BFMTV", "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat", "date": "2026-10-04", "type": "presse", "consulte": "2026-11-09" }
       }
     ],
-    "institutions": [],
+    "institutions": [
+      {
+        "texte": "Inscrire dans l'article 1 de la Constitution que la République est écologique, et déclarer l'état d'urgence écologique.",
+        "sous_theme": "Constitution",
+        "chiffrage": null,
+        "source": { "titre": "Révolution écologique : les premiers 100 jours (livret de campagne, première partie)", "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_100_jours_revolution_ecologique_accessible.pdf", "date": "2026-11-09", "type": "programme", "consulte": "2026-11-20" }
+      }
+    ],
     "europe": [
       {
         "texte": "Il propose de renforcer l'aide à l'Ukraine en la finançant par la saisie des avoirs publics russes gelés en Europe.",
