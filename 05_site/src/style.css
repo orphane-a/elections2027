@@ -173,6 +173,12 @@ dl.glo dd{margin:2px 0 0;font-size:14px;color:var(--doux)}
 .page-texte .deux h2{margin:0;font-weight:600;font-size:24px}
 .page-texte .deux .d p:first-child{margin-top:0}
 .page-texte .d{max-width:66ch}
+.page-texte .d p.lead{margin:0;font-size:18px;line-height:1.5;color:var(--texte)}
+.page-texte .d p.plus{margin:10px 0 0;font-size:15px;color:var(--doux)}
+.page-texte ul.points{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--doux)}
+.page-texte ul.points li{display:flex;gap:10px;align-items:flex-start}
+.page-texte ul.points svg{flex:none;margin-top:3px;color:var(--texte)}
+@media (max-width:640px){footer.pied .liens{flex-direction:column;gap:0}.page-texte .d p.lead{font-size:17px}}
 table.liste{width:100%;border-collapse:collapse;font-size:15px}
 table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--trait);vertical-align:top}
 /* Sur téléphone, un tableau « empile » devient une suite de petites fiches : une ligne = une fiche, chaque case porte son titre */

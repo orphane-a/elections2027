@@ -1,0 +1,6 @@
+# Mesure d'audience de la PROD (ticket 95), installé par deploy/deployer.sh dans /etc/cron.d/elections2027-visites.
+# Chaque nuit à 2h : totaux anonymes de la veille dans stats/, puis suppression des journaux bruts
+# de plus de 7 jours et des totaux de plus de 25 mois. Node tourne dans un conteneur jetable, sans réseau.
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+0 2 * * * root docker run --rm --network none -v /srv/elections2027-prod/logs:/logs -v /srv/elections2027-prod/stats:/stats -v /srv/elections2027-prod/outils:/outils:ro node:22-alpine node /outils/agreger.mjs --journaux /logs --stats /stats >> /srv/elections2027-prod/agreger.log 2>&1

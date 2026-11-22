@@ -3,6 +3,8 @@
 #   www.demandez-le-programme.fr et l'ancienne adresse elections2027.orphane.fr
 # Certificats Let's Encrypt créés et renouvelés automatiquement par Traefik (certresolver letsencrypt).
 # Sur le serveur : /srv/elections2027-prod (docker-compose.yml, nginx.conf, site/)
+# Mesure d'audience (ticket 95) : journaux Nginx dans logs/ (gardés 7 jours au plus),
+# totaux anonymes dans stats/ (calculés chaque nuit par outils/agreger.mjs, voir visites.cron).
 services:
   site:
     image: nginx:1.29-alpine
@@ -11,6 +13,7 @@ services:
     volumes:
       - ./site:/usr/share/nginx/html:ro
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./logs:/var/log/nginx/visites
     networks:
       - coolify
     labels:

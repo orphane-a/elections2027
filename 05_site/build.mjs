@@ -206,6 +206,8 @@ function phraseNouveaute(n, classeLien = '') {
 const MSG_VIDE = 'Aucun nouveau candidat ni nouveau programme lors de la dernière mise à jour.';
 const MSG_ERREUR = "Les nouveautés ne peuvent pas s'afficher pour le moment. Elles restent consultables sur la page des mises à jour.";
 const MSG_AUCUNE_MAJ = "La première mise à jour automatique n'a pas encore eu lieu.";
+// Coche des listes de points (page Qui sommes nous, section Vos données : ticket 95)
+const SVG_COCHE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>';
 const SVG_CLOCHE = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>';
 function cloche() {
   const derniere = JOURNAL.ok ? JOURNAL.entrees[0] : null;
@@ -263,7 +265,7 @@ ${cloche()}
 ${corps}
 </main>
 <footer class="pied">
-<p>Ce site ne recommande aucun vote. Il n'utilise aucun cookie. Dernière vérification de toutes les fiches : ${dateFr(DERNIERE_VERIF)}.</p>
+<p>Ce site ne recommande aucun vote. Aucun cookie, aucun service tiers : les visites sont comptées de façon anonyme par notre serveur. Dernière vérification de toutes les fiches : ${dateFr(DERNIERE_VERIF)}.</p>
 <div class="liens"><a class="lnk" href="methode.html">Méthode complète</a><a class="lnk" href="panel-sources.html">Panel de sources</a><a class="lnk" href="qui-sommes-nous.html">Qui sommes nous ?</a><a class="lnk" href="nouveautes.html">Mises à jour</a><a class="lnk" href="signaler.html">Signaler une erreur</a><a class="lnk" href="historique.html">Historique des corrections</a></div>
 </footer>
 </div>
@@ -688,7 +690,11 @@ function pagesTexte() {
       ['equipe', 'Qui porte le projet', `<p>Ce site est mené à titre individuel, par une seule personne. Aucun parti, aucun candidat, aucun média n'est derrière le projet.</p><p class="small">[Nom et parcours de la porteuse du projet : à compléter avant la mise en ligne publique.]</p>`],
       ['financement', 'Financement', `<p>Aucun financement d'un parti, d'un candidat ou d'une campagne.</p><p class="small">[Mode de financement : à compléter avant la mise en ligne publique.]</p>`],
       ['limites', 'Ce que nous ne faisons pas', `<p>Pas de recommandation de vote, pas de test d'affinité, pas de commentaires ni de forum. Nous ne produisons pas nos propres estimations économiques (nous comparons les chiffres annoncés aux travaux d'institutions indépendantes, voir le <a class="lnk" href="panel-sources.html">panel de sources</a>) et nous ne couvrons que les mesures clefs, avec un lien vers le programme complet.</p>`],
-      ['donnees', 'Vos données', `<p>Pas de compte, pas de publicité, pas de cookie. Les polices de caractères sont hébergées sur notre serveur : votre navigateur ne contacte aucun service tiers en consultant le site.</p>`],
+      ['donnees', 'Vos données', `<p class="lead">Pas de cookie, pas de publicité, aucun service tiers.</p><p class="plus">Pour compter les visites, notre serveur garde 7 jours l'adresse de connexion et le type de navigateur, puis n'en conserve que des totaux anonymes.</p><ul class="points">${[
+        "Aucun script de mesure dans les pages : votre navigateur n'envoie rien de plus qu'une simple consultation.",
+        'Les totaux (nombre de visites par jour et par page) sont gardés 25 mois au plus et ne sont pas publiés.',
+        "Si votre navigateur demande à ne pas être suivi, votre visite n'est pas comptée.",
+      ].map((t) => `<li>${SVG_COCHE}<span>${t}</span></li>`).join('')}</ul><p class="plus">Les polices de caractères sont hébergées sur notre serveur.</p>`],
       ['contact', 'Nous contacter', `<p>Pour signaler une erreur ou nous écrire : <a class="lnk" href="signaler.html">page de signalement</a>. Nous répondons sous 72 heures.</p>`],
     ]);
   pageTexte('signaler.html', 'Signaler une erreur', "Signaler une erreur sur le site Programmes 2027.", '#FFE6BF',
