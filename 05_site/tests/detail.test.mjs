@@ -35,6 +35,7 @@ function generer(modifier = () => {}, ...options) {
   fs.copyFileSync(path.join(SITE, 'build.mjs'), path.join(dossier, 'build.mjs'));
   fs.cpSync(path.join(SITE, 'data'), path.join(dossier, 'data'), { recursive: true });
   fs.cpSync(path.join(SITE, 'src'), path.join(dossier, 'src'), { recursive: true });
+  fs.cpSync(path.join(SITE, 'maj'), path.join(dossier, 'maj'), { recursive: true });
   fs.symlinkSync(path.join(SITE, 'node_modules'), path.join(dossier, 'node_modules'), 'junction');
   modifier(path.join(dossier, 'data'));
   const sortie = execFileSync(process.execPath, ['build.mjs', '--sans-md', ...options], { cwd: dossier, encoding: 'utf8', stdio: 'pipe' });

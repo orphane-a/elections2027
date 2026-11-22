@@ -173,8 +173,8 @@
     if (date) ecrire(date);
     // La pastille est cachée, pas retirée : un clic tombé sur elle reste un clic dans la cloche
     if (pastille) { pastille.hidden = true; pastille = null; btn.setAttribute('aria-label', 'Nouveautés'); }
-    // Une seule fenêtre ouverte à la fois : on referme les étiquettes de niveau
-    document.querySelectorAll('details.niv[open], details.burger[open]').forEach(function (d) { d.open = false; });
+    // Une seule fenêtre ouverte à la fois : on referme le menu mobile
+    document.querySelectorAll('details.burger[open]').forEach(function (d) { d.open = false; });
     pop.focus();
   };
   var fermer = function (rendreFocus) {

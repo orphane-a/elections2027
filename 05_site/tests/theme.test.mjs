@@ -169,7 +169,8 @@ test('deux colonnes : la coupure est fixée à la génération, une seule carte 
 
 test('les icônes de la page thème sont en SVG ; les seuls emojis sont ceux des liens, masqués aux lecteurs d\'écran', () => {
   const html = base.page('sante');
-  const sansEmojisDecoratifs = html.replace(/<span class="emo" aria-hidden="true">[^<]+<\/span>/g, '');
+  // Emojis décoratifs masqués aux lecteurs d'écran : liens de thèmes (.emo) et icônes de la cloche des nouveautés (.ico, ticket 90)
+  const sansEmojisDecoratifs = html.replace(/<span class="(?:emo|ico)" aria-hidden="true">[^<]+<\/span>/g, '');
   assert.equal(/\p{Extended_Pictographic}/u.test(sansEmojisDecoratifs.replace(/[©®™]/g, '')), false);
   assert.match(html, /<span class="th-logo" aria-hidden="true"><svg/);
 });
