@@ -337,6 +337,7 @@ table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px
 #attente h2 .nb{font-family:var(--corps);font-size:14px;font-weight:400;letter-spacing:0;color:var(--doux2)}
 .att-intro{margin:0 0 12px;max-width:70ch;font-size:14px;color:var(--doux2)}
 .att-liste{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.att-liste li{scroll-margin-top:16px}
 .att-liste a{display:flex;align-items:center;gap:10px;min-height:56px;height:100%;padding:8px 12px;background:#fff;border:1px solid var(--trait);border-radius:10px;text-decoration:none;color:var(--texte)}
 .att-liste a:hover{border-color:var(--texte)}
 .att-txt{min-width:0}
