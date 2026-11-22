@@ -1,6 +1,8 @@
 # Pipeline lancé par le kanban Spec to prod, jamais à la main.
-# Préprod : publie la branche du ticket avec 05_site/deploy/deployer.sh preprod.
+# Préprod : fusionne main dans la branche du ticket et pousse la branche à jour, puis la publie
+#   avec 05_site/deploy/deployer.sh preprod. La préprod teste ainsi exactement ce qui partira en prod.
 # Prod : fusionne la branche du ticket dans main, puis publie avec deployer.sh prod --oui.
+# Un conflit avec main est signalé au kanban comme tel : en préprod, Relancer renvoie le ticket au dev.
 # Dans les deux cas, le pipeline attend que version.txt affiche le bon commit, puis prévient le kanban.
 #
 # Réglages du dépôt (Settings, Secrets and variables, Actions) :
@@ -100,7 +102,14 @@ jobs:
       - name: Publier la préprod
         if: inputs.environnement == 'preprod'
         run: |
-          git checkout --detach "origin/$BRANCHE"
+          git checkout -B "$BRANCHE" "origin/$BRANCHE"
+          if ! git merge --no-edit origin/main -m "Met à jour $BRANCHE avec main (ticket $TICKET)"; then
+            git diff --name-only --diff-filter=U
+            git merge --abort
+            echo "CONFLIT=1" >> "$GITHUB_ENV"
+            exit 1
+          fi
+          git push origin "HEAD:refs/heads/$BRANCHE"
           echo "VERSION=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
           cd 05_site
           npm ci
@@ -118,7 +127,12 @@ jobs:
         run: |
           node "$OUTIL" signaler ETAPE_DEPLOIEMENT '{"etapes":{"fusion":"en_cours","envoi":"en_attente","verification":"en_attente"}}'
           git checkout main
-          git merge --no-ff "origin/$BRANCHE" -m "Fusionne $BRANCHE (ticket $TICKET)"
+          if ! git merge --no-ff "origin/$BRANCHE" -m "Fusionne $BRANCHE (ticket $TICKET)"; then
+            git diff --name-only --diff-filter=U
+            git merge --abort
+            echo "CONFLIT=1" >> "$GITHUB_ENV"
+            exit 1
+          fi
           git push origin main
           echo "VERSION=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
           node "$OUTIL" signaler ETAPE_DEPLOIEMENT '{"etapes":{"fusion":"vert","envoi":"en_cours","verification":"en_attente"}}'
@@ -141,8 +155,14 @@ jobs:
       - name: Signaler l'échec au kanban
         if: failure()
         run: |
-          MOTIF="Le pipeline $ENVIRONNEMENT a échoué. Détail : $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          node "$OUTIL" signaler ECHEC "$(node -e 'console.log(JSON.stringify({ motif: process.argv[1] }))' "$MOTIF")"
+          DETAIL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          if [ "${CONFLIT:-}" = 1 ]; then
+            MOTIF="La branche du ticket est en conflit avec la branche principale. Détail : $DETAIL"
+            node "$OUTIL" signaler ECHEC "$(node -e 'console.log(JSON.stringify({ motif: process.argv[1], conflit: true }))' "$MOTIF")"
+          else
+            MOTIF="Le pipeline $ENVIRONNEMENT a échoué. Détail : $DETAIL"
+            node "$OUTIL" signaler ECHEC "$(node -e 'console.log(JSON.stringify({ motif: process.argv[1] }))' "$MOTIF")"
+          fi
 
       - name: Effacer la clé SSH
         if: always()
