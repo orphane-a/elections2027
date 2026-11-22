@@ -185,11 +185,14 @@ test('aucun comportement au survol pour l’étiquette dans app.js', () => {
   assert.doesNotMatch(css, /\.srcch[^{]*:hover|\.nivbloc[^{]*:hover/);
 });
 
-test('page candidat : même bloc statique, sans details.niv', () => {
+// Ticket 98 : sur la page candidat, l'étiquette est une ligne discrète repliable (details.niv), toujours sans survol.
+test('page candidat : étiquette en une ligne details.niv, détail derrière le même clic, sans bloc statique', () => {
   const html = base.page(`candidat-${cible.cid}`);
-  assert.doesNotMatch(html, /details class="niv"/);
-  assert.ok(html.includes('<div class="nivbloc">'));
-  assert.ok(decoder(html).includes(`${NIVEAUX.non_evaluable[0]}</span></p>\n<p class="def">${NIVEAUX.non_evaluable[1]}</p>`));
+  assert.doesNotMatch(html, /<div class="nivbloc">/);
+  assert.match(html, /<details class="niv"><summary>/);
+  assert.doesNotMatch(html, /<details class="niv" open/);
+  assert.ok(decoder(html).includes(`<span class="niv-lib">${NIVEAUX.non_evaluable[0]}</span>`));
+  assert.ok(decoder(html).includes(`<div class="niv-c"><p class="def">${NIVEAUX.non_evaluable[1]}</p><p class="t">Pourquoi ce niveau</p>`));
   assert.ok(html.includes('Chiffrage annoncé : '));
 });
 

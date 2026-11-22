@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette du ticket 98 : page candidat retravaillée</title>
+<style>
+:root{
+  --fond:#F7F6FC; --carte:#FFFFFF; --texte:#14202E; --doux:#3B4656; --doux2:#4A5666;
+  --trait:#D5DBE3; --accent:#3A35C8; --gris:#EEF0F3; --ambre:#FFF1CC; --ambre-texte:#4A3000;
+  --rouge:#B3261E; --rouge-fond:#FDECEA; --vert:#1E6B3A; --vert-fond:#E6F4EA;
+  --titre:system-ui,-apple-system,"Segoe UI",sans-serif; --corps:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#E4E3EE;color:var(--texte);font-family:var(--corps);font-size:16px;line-height:1.55}
+a{color:inherit}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.lnk{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+h1,h2,h3{font-family:var(--titre);letter-spacing:-.02em}
+.small{font-size:14px;color:var(--doux2)}
+code{background:var(--gris);padding:1px 6px;border-radius:6px;font-size:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+
+/* Cadre de la maquette */
+.doc{max-width:1320px;margin:0 auto;padding:32px 20px 80px}
+.doc>header h1{margin:0 0 6px;font-size:30px}
+.doc>header p{margin:0 0 8px;max-width:84ch;color:var(--doux)}
+.sommaire{margin:14px 0 0;padding:14px 18px 14px 38px;background:#fff;border:1px solid #C9C8D8;border-radius:12px;max-width:84ch;font-size:15px}
+.sommaire li{margin:3px 0}
+.ecran{margin-top:56px}
+.ecran>h2{margin:0 0 4px;font-size:22px}
+.ecran>p.note{margin:0 0 14px;max-width:84ch;color:var(--doux);font-size:15px}
+.cadre{background:var(--fond);border:1px solid #C9C8D8;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(20,32,46,.06)}
+.barre{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;border-bottom:1px solid var(--trait);font-size:13px;color:var(--doux2)}
+.barre i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--trait)}
+.barre span{margin-left:8px;padding:2px 10px;background:var(--gris);border-radius:999px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cote{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.cote>div{flex:1 1 380px;min-width:0}
+.cote.tel-l>.cadre{flex:none}
+.cote>.tel-seul{flex:0 0 375px}
+.etiq{display:inline-block;margin:0 0 8px;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600}
+.etiq.avant{background:var(--rouge-fond);color:var(--rouge)}
+.etiq.apres{background:var(--vert-fond);color:var(--vert)}
+.pad{padding:18px}
+.blanc{background:#fff}
+.md{padding:22px 26px;background:#fff;border:1px solid #C9C8D8;border-radius:14px;font-size:15px}
+.md h3{margin:18px 0 6px;font-size:18px}.md h3:first-child{margin-top:0}
+.md p{margin:0 0 8px;max-width:90ch}
+.md li{margin:4px 0}
+
+/* Site (repris de 05_site/src/style.css) */
+.wrap{padding:0 clamp(16px,4vw,48px)}
+.preprod{background:var(--ambre);color:var(--ambre-texte);font-size:14px;text-align:center;padding:6px 16px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 24px;padding:8px 0;border-bottom:1px solid var(--trait)}
+.logo{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:700;font-size:20px;text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;gap:0 20px;font-size:15px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.nav a[aria-current=page]{font-weight:700;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.burger{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;font:600 15px var(--corps);color:var(--texte)}
+.deux{display:flex;flex-wrap:wrap;gap:12px 48px;padding:32px 0;border-top:1px solid var(--trait);margin-top:32px}
+.deux>h2{flex:1 1 220px;margin:0;font-weight:600;font-size:22px}
+.deux>.d{flex:999 1 520px;min-width:0}
+
+/* Bandeau d'identité (inchangé) */
+.cbandeau{margin:20px 0 0;padding:clamp(20px,4vw,40px);background:#fff;border:1px solid var(--trait);border-top:8px solid;border-radius:24px}
+.cbandeau .ariane{margin:0 0 14px;font-size:15px;color:var(--doux)}
+.cbandeau h1{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin:0;font-size:clamp(32px,5vw,56px);line-height:1.05}
+.photo{display:inline-flex;align-items:center;justify-content:center;flex:none;width:96px;height:96px;background:var(--gris);color:var(--doux);border:4px solid;border-radius:50%;font-size:32px;font-weight:700}
+.cbandeau .sous{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:18px 0 0;font-size:17px}
+.logo-parti{display:inline-flex;align-items:center;justify-content:center;min-width:52px;height:34px;padding:0 8px;color:#fff;border-radius:8px;font-size:14px;font-weight:700}
+.cbandeau .meta{margin:10px 0 0;max-width:90ch;color:var(--doux);font-size:15px}
+
+/* Sommaire des thèmes (nouveau) */
+.somm{padding:20px 0 4px}
+.somm-t{margin:0 0 8px;font-size:15px;font-weight:600;color:var(--doux)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;background:var(--bg,#fff);border:1px solid rgba(20,32,46,.08);border-radius:999px;font-size:15px;text-decoration:none;color:var(--texte)}
+.chip-nc{color:var(--doux)}
+.tsel-bloc{padding:16px 0 4px}
+.tsel summary{display:flex;align-items:center;gap:12px;min-height:52px;padding:0 16px;background:#fff;border:1.5px solid var(--texte);border-radius:12px;font:700 16px var(--corps)}
+.tsel summary .chev{margin-left:auto}
+.tsel[open] summary .chev{transform:rotate(180deg)}
+.tsel ul{list-style:none;margin:8px 0 0;padding:8px;display:flex;flex-direction:column;gap:6px;background:#fff;border:1.5px solid var(--texte);border-radius:14px;box-shadow:0 8px 24px rgba(20,32,46,.18)}
+.tsel li .chip{display:flex;min-height:48px;border-radius:10px;font-size:16px;font-weight:600;white-space:normal}
+
+/* Blocs thème (nouveau) */
+.grille{display:grid;grid-template-columns:1fr;gap:20px;align-items:start;padding:20px 0 8px}
+@media (min-width:900px){.cadre:not(.tel) .grille{grid-template-columns:1fr 1fr}}
+.tb{background:#fff;border:1px solid rgba(20,32,46,.12);border-radius:18px;overflow:hidden;scroll-margin-top:16px}
+.tb-tete{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;padding:12px 18px}
+.tb-tete h2{display:flex;align-items:center;gap:12px;margin:0;font-size:21px;font-weight:650;line-height:1.2}
+.tb-tete .emo{display:flex;align-items:center;justify-content:center;flex:none;width:38px;height:38px;background:#fff;border-radius:50%;font-size:20px;line-height:1}
+.tb-tete .cmp{display:inline-flex;align-items:center;min-height:44px;font-size:15px;color:var(--texte)}
+.tb-corps{padding:4px 18px 8px}
+.mes-l{list-style:none;margin:0;padding:0}
+.mes{padding:16px 0 12px;border-top:1px solid var(--trait)}
+.mes:first-child{border-top:0}
+.mes p{margin:0}
+.mt,.mt0{font-size:18px;font-weight:600;line-height:1.4;color:var(--texte);max-width:62ch}
+.mt0{font-weight:400;font-size:16px;margin:0 0 8px}
+.chiffre{margin-top:6px!important;font-size:15px;font-weight:500;color:var(--texte)}
+.msrc{margin-top:2px!important;font-size:14px;color:var(--doux2);overflow-wrap:anywhere}
+.nc{margin:16px 0 12px;font-size:16px;color:var(--doux)}
+
+/* Étiquette discrète (nouveau) */
+.niv{margin-top:4px}
+.niv>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-size:14px;color:var(--doux2);border-radius:6px}
+.niv>summary .niv-ic{flex:none}
+.niv>summary .chev{flex:none;transition:transform .15s}
+.niv[open]>summary .chev{transform:rotate(180deg)}
+.niv>summary>span:not(.sr){text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px}
+.niv-c{margin:2px 0 8px;padding:12px 14px;background:var(--fond);border-radius:10px;font-size:14px;line-height:1.5;color:var(--doux)}
+.niv-c p{margin:0 0 6px}
+.niv-c .t{margin:10px 0 2px;font-weight:700;color:var(--texte)}
+.niv-c>.lnk{display:inline-flex;align-items:center;min-height:44px}
+.srcch>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.srcch[open] .chev{transform:rotate(90deg)}
+.srcch-c{padding-top:10px;border-top:1px solid var(--trait)}
+.srcch dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0 0 10px}
+.srcch dt{font-weight:600;color:var(--texte)}
+.srcch dd{margin:0}
+.srcch .m{color:var(--doux2)}
+.suite{margin:4px 0 0;font-size:14px;color:var(--doux2)}
+
+/* Avant (ancienne étiquette) */
+.nivbloc{margin:0 0 10px;padding:12px 14px;background:#fff;border:1.5px solid var(--texte);border-radius:10px;font-size:14px}
+.nivbloc p{margin:0}
+.nivbloc .niv-t{display:flex;align-items:center;gap:8px;margin:0 0 6px;font-size:15px;font-weight:700}
+.nivbloc>.lnk{display:inline-flex;align-items:center;min-height:44px}
+
+/* Téléphone */
+.tel{width:375px;max-width:100%}
+.tel .wrap{padding:0 16px}
+.tel .cbandeau{padding:20px;border-radius:18px}
+.tel .cbandeau h1{font-size:28px}
+.tel .photo{width:64px;height:64px;font-size:22px}
+.tel .tb-tete{flex-direction:column;align-items:flex-start;padding:12px 16px 4px}
+.tel .tb-tete h2{font-size:19px}
+.tel .tb-corps{padding:0 16px 6px}
+.tel .mt{font-size:17px}
+
+</style>
+</head>
+<body>
+<div class="doc">
+<header>
+<h1>Ticket 98 : page candidat plus simple à lire</h1>
+<p>La mesure devient l'information principale. L'étiquette de chiffrage tient sur une ligne discrète, dépliable au clic ou au clavier. Chaque thème a son bloc, avec l'emoji et la couleur de la page d'accueil. Même gabarit pour tous les candidats.</p>
+<p>Données réelles du dépôt au 20 novembre 2026. Les détails des étiquettes s'ouvrent vraiment (éléments <code>details</code> et <code>summary</code>, sans script).</p>
+<ol class="sommaire">
+<li><a class="lnk" href="#e1">Avant et après, une mesure</a></li>
+<li><a class="lnk" href="#e2">Page complète sur ordinateur, cas nominal (succès)</a></li>
+<li><a class="lnk" href="#e3">Étiquette dépliée : non chiffrée et chiffrée</a></li>
+<li><a class="lnk" href="#e4">Page sur téléphone, 375 pixels</a></li>
+<li><a class="lnk" href="#e5">Thème vide (cas d'erreur 1)</a></li>
+<li><a class="lnk" href="#e6">Candidat sans aucune mesure, état vide (cas d'erreur 2)</a></li>
+<li><a class="lnk" href="#e7">Niveau invalide ou non relu (cas d'erreur 3)</a></li>
+<li><a class="lnk" href="#e8">Chargement, impression et notes pour le développement</a></li>
+</ol>
+</header>
+
+<section class="ecran" id="e1"><h2>1. Avant et après, une mesure</h2>
+<p class="note">Avant, l'étiquette (cadre noir, titre en gras, définition) prend plus de place que la mesure. Après, la mesure passe en 18 px et en gras, l'étiquette tient sur une ligne grise de 14 px.</p>
+<div class="cote"><div><span class="etiq avant">Avant</span><div class="cadre"><div class="site pad"><div class="avant-mes"><p class="mt0">Planifier la construction de 500 000 logements par an avec les régions et les communes.</p>
+<div class="nivbloc"><p class="niv-t"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span></p><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div>
+<a class="lnk" href="#" style="font-size:14px">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 107</a></div></div></div></div>
+<div><span class="etiq apres">Après</span><div class="cadre"><div class="site pad blanc"><ul class="mes-l"><li class="mes"><p class="mt">Planifier la construction de 500 000 logements par an avec les régions et les communes.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 107</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div></div></div></div></section>
+
+<section class="ecran" id="e2"><h2>2. Page complète sur ordinateur, cas nominal</h2>
+<p class="note">Dominique de Villepin, 30 mesures sur 10 thèmes. Sommaire sous le bandeau, puis 10 blocs en grille de deux colonnes au delà de 900 px, dans l'ordre des thèmes. En tête coloré, corps blanc.</p>
+<div class="cadre"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-de_villepin_dominique.html</span></div><div class="site"><div class="preprod">Version de préproduction, en cours de relecture : les contenus peuvent encore contenir des erreurs.</div>
+<div class="wrap"><header class="top"><a class="logo" href="#"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Programmes 2027</a><nav class="nav" aria-label="Navigation principale"><a href="#">Thèmes</a><a href="#">Méthode</a><a href="#" aria-current="page">Candidats</a><a href="#">Qui sommes nous ?</a><a href="#">Signaler une erreur</a></nav></header>
+<section class="cbandeau" style="border-top-color:#7A3E14">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › <a class="lnk" href="#">Candidats</a> › Dominique de Villepin</p>
+<h1><span class="photo" style="border-color:#7A3E14" aria-hidden="true">DV</span>Dominique de Villepin</h1>
+<p class="sous"><span class="logo-parti" style="background:#7A3E14" aria-hidden="true">LFH</span><span>La France humaniste · Sans groupe à l'Assemblée (mouvement créé en juin 2025, sans député identifié à l'Assemblée nationale)</span></p>
+<p class="meta">Statut : Déclaré, déclaration le 20 novembre 2026. Candidature annoncée le 20 novembre 2026 lors d'une conférence de presse à Paris (Maison de l'Amérique latine). Son équipe annonce environ 300 promesses de parrainage sur les 500 nécessaires.</p>
+<p class="meta">Programme : <a class="lnk" href="#">Réussir à nouveau : le programme de Dominique de Villepin pour 2027 (258 propositions)</a>, 20 novembre 2026 · <a class="lnk" href="#">Site de campagne</a></p>
+<p class="meta">Dernière vérification : 20 novembre 2026. Niveau de confiance des sources : Bon.</p></section>
+<nav class="somm" aria-label="Thèmes de cette fiche"><p class="somm-t">Ses propositions, thème par thème</p><div class="chips"><a class="chip" href="#theme-education" style="--bg:#E3E1FB"><span aria-hidden="true">🎓</span>Éducation</a><a class="chip" href="#theme-ecologie" style="--bg:#D5F0E5"><span aria-hidden="true">🌿</span>Écologie et énergie</a><a class="chip" href="#theme-pouvoir_achat" style="--bg:#FFE6BF"><span aria-hidden="true">💶</span>Pouvoir d'achat</a><a class="chip" href="#theme-travail" style="--bg:#D8E7FA"><span aria-hidden="true">💼</span>Travail et emploi</a><a class="chip" href="#theme-sante" style="--bg:#FBDCE5"><span aria-hidden="true">❤️</span>Santé</a><a class="chip" href="#theme-logement" style="--bg:#FAEDB8"><span aria-hidden="true">🏠</span>Logement</a><a class="chip" href="#theme-securite" style="--bg:#DDE3EE"><span aria-hidden="true">⚖️</span>Sécurité et justice</a><a class="chip" href="#theme-immigration" style="--bg:#D3EDF1"><span aria-hidden="true">🌍</span>Immigration et intégration</a><a class="chip" href="#theme-institutions" style="--bg:#EADDF6"><span aria-hidden="true">🏛️</span>Institutions et démocratie</a><a class="chip" href="#theme-europe" style="--bg:#FFDACB"><span aria-hidden="true">⭐</span>Europe et international</a></div></nav>
+<div class="grille"><section class="tb" id="theme-education" aria-labelledby="h-dv-education">
+<div class="tb-tete" style="background:#E3E1FB"><h2 id="h-dv-education"><span class="emo" aria-hidden="true">🎓</span>Éducation</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Revaloriser d'au moins 10 % les métiers pédagogiques et organiser une conférence sociale de ces métiers.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 189</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Ouvrir dès le bac des cursus de présélection des enseignants, réservés aux étudiants boursiers.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 197</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Équilibrer savoirs théoriques et pratiques, avec 100 heures de pratique artistique par an.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 199</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-ecologie" aria-labelledby="h-dv-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-dv-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Réduire de moitié l'usage des produits phytosanitaires d'ici 2030 et restaurer haies et mares.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 219</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Appliquer l'objectif « zéro artificialisation nette » des sols, avec une mise en œuvre solidaire.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 221</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer une stratégie nationale de transformation agricole, avec des moyens supplémentaires chaque année.</p>
+<p class="chiffre">Chiffrage annoncé : 1,5 milliard d'euros supplémentaires par an</p>
+<details class="niv"><summary><span class="sr">Niveau du chiffre : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p><p class="t">Pourquoi ce niveau</p><p>Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c"><dl><dt>Chiffre annoncé</dt><dd>1,5 milliard d'euros supplémentaires par an</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+<p class="m">Dernière vérification : 20 novembre 2026</p><a class="lnk" href="#">Méthode et panel de sources</a></div></details></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 222</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-pouvoir_achat" aria-labelledby="h-dv-pouvoir_achat">
+<div class="tb-tete" style="background:#FFE6BF"><h2 id="h-dv-pouvoir_achat"><span class="emo" aria-hidden="true">💶</span>Pouvoir d'achat</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Transférer des cotisations sociales non contributives vers la CSG pour augmenter les salaires nets.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 106</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Proposer un prix de l'électricité avantageux aux ménages et aux entreprises grâce à des contrats pour différence.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 116</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Mettre un million de petites voitures électriques à disposition en leasing social.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 114</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-travail" aria-labelledby="h-dv-travail">
+<div class="tb-tete" style="background:#D8E7FA"><h2 id="h-dv-travail"><span class="emo" aria-hidden="true">💼</span>Travail et emploi</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Réserver 30 % des sièges des conseils d'administration aux salariés dans les entreprises de plus de 1 000 salariés.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 16, proposition 155</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Fixer l'objectif de zéro accident du travail mortel en 2032.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 16, proposition 157</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer un système de retraite à trois étages obligatoires.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 16, proposition 162</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-sante" aria-labelledby="h-dv-sante">
+<div class="tb-tete" style="background:#FBDCE5"><h2 id="h-dv-sante"><span class="emo" aria-hidden="true">❤️</span>Santé</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Plafonner le reste à charge des patients en fonction de leurs revenus.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 126</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Faciliter l'accès de chacun à un soignant.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 122</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Donner aux établissements de santé des budgets pluriannuels et plus de souplesse.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 128</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-logement" aria-labelledby="h-dv-logement">
+<div class="tb-tete" style="background:#FAEDB8"><h2 id="h-dv-logement"><span class="emo" aria-hidden="true">🏠</span>Logement</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Planifier la construction de 500 000 logements par an avec les régions et les communes.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 107</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer une Banque publique du logement.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 110</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Instaurer une garantie locative universelle.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 111</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-securite" aria-labelledby="h-dv-securite">
+<div class="tb-tete" style="background:#DDE3EE"><h2 id="h-dv-securite"><span class="emo" aria-hidden="true">⚖️</span>Sécurité et justice</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Créer une agence de renseignement contre le narcotrafic, sur le modèle de la DEA américaine.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 7, proposition 067</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer un parquet national dédié aux violences faites aux femmes et aux enfants.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 7, proposition 069</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer 15 000 places de prise en charge pour les primo-délinquants.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 7, proposition 072</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-immigration" aria-labelledby="h-dv-immigration">
+<div class="tb-tete" style="background:#D3EDF1"><h2 id="h-dv-immigration"><span class="emo" aria-hidden="true">🌍</span>Immigration et intégration</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Mener une diplomatie migratoire pour augmenter les réadmissions des personnes visées par une obligation de quitter le territoire (OQTF).</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 6, proposition 053</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Rendre obligatoire un enregistrement biométrique des étrangers sans titre de séjour.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 6, proposition 055</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer une autorité indépendante de l'information sur les migrations.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 6, proposition 057</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-institutions" aria-labelledby="h-dv-institutions">
+<div class="tb-tete" style="background:#EADDF6"><h2 id="h-dv-institutions"><span class="emo" aria-hidden="true">🏛️</span>Institutions et démocratie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Créer un référendum d'initiative citoyenne.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 8, proposition 074</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Abaisser le droit de vote à 16 ans, avec un temps d'apprentissage civique.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 8, proposition 075</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Poser le principe d'une obligation de vote, sans sanction.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 8, proposition 076</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-europe" aria-labelledby="h-dv-europe">
+<div class="tb-tete" style="background:#FFDACB"><h2 id="h-dv-europe"><span class="emo" aria-hidden="true">⭐</span>Europe et international</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Proposer un pacte de souveraineté européen et un conseil de sécurité européen restreint.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 10, proposition 087</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Réformer l'OTAN avec un pilier de défense européen.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 10, proposition 088</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Étendre progressivement la taxe carbone aux frontières de l'Union européenne.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 10, proposition 090</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section></div>
+
+<section class="deux"><h2>Sources de cette fiche</h2><div class="d"><p class="small">Liste inchangée : titre, date de publication et date de consultation de chaque source, puis crédits de la photo et du logo.</p></div></section>
+</div></div></div></section>
+
+<section class="ecran" id="e3"><h2>3. Étiquette dépliée</h2>
+<p class="note">Un clic, Entrée ou Espace sur la ligne de l'étiquette déplie le détail juste dessous. Aucun effet au survol. À gauche une mesure non chiffrée, à droite une mesure chiffrée (niveau, pourquoi ce niveau, sources du chiffrage).</p>
+<div class="cote"><div><div class="cadre"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-de_villepin_dominique.html#theme-education</span></div><div class="site"><div class="pad"><section class="tb" id="theme-education" aria-labelledby="h-o1-education">
+<div class="tb-tete" style="background:#E3E1FB"><h2 id="h-o1-education"><span class="emo" aria-hidden="true">🎓</span>Éducation</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Revaloriser d'au moins 10 % les métiers pédagogiques et organiser une conférence sociale de ces métiers.</p>
+
+<details class="niv" open><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 189</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Ouvrir dès le bac des cursus de présélection des enseignants, réservés aux étudiants boursiers.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 197</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Équilibrer savoirs théoriques et pratiques, avec 100 heures de pratique artistique par an.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 199</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section></div></div></div></div>
+<div><div class="cadre"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-de_villepin_dominique.html#theme-ecologie</span></div><div class="site"><div class="pad"><section class="tb" id="theme-ecologie" aria-labelledby="h-o2-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-o2-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Réduire de moitié l'usage des produits phytosanitaires d'ici 2030 et restaurer haies et mares.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 219</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Appliquer l'objectif « zéro artificialisation nette » des sols, avec une mise en œuvre solidaire.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 221</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer une stratégie nationale de transformation agricole, avec des moyens supplémentaires chaque année.</p>
+<p class="chiffre">Chiffrage annoncé : 1,5 milliard d'euros supplémentaires par an</p>
+<details class="niv" open><summary><span class="sr">Niveau du chiffre : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p><p class="t">Pourquoi ce niveau</p><p>Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch" open><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c"><dl><dt>Chiffre annoncé</dt><dd>1,5 milliard d'euros supplémentaires par an</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+<p class="m">Dernière vérification : 20 novembre 2026</p><a class="lnk" href="#">Méthode et panel de sources</a></div></details></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 222</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section></div></div></div></div></div></section>
+
+<section class="ecran" id="e4"><h2>4. Page sur téléphone, 375 pixels</h2>
+<p class="note">Une seule colonne, pas de défilement horizontal. Le sommaire devient un menu « Aller à un thème », comme le menu des thèmes des pages thème. Le lien « Comparer sur ce thème » passe sous le nom du thème. Toutes les zones cliquables font au moins 44 px de haut.</p>
+<div class="cote tel-l"><div class="cadre tel"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-de_villepin_dominique.html</span></div><div class="site"><div class="preprod">Version de préproduction, en cours de relecture : les contenus peuvent encore contenir des erreurs.</div>
+<div class="wrap"><header class="top"><a class="logo" href="#"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Programmes 2027</a><button class="burger" type="button">Menu</button></header>
+<section class="cbandeau" style="border-top-color:#7A3E14">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › <a class="lnk" href="#">Candidats</a> › Dominique de Villepin</p>
+<h1><span class="photo" style="border-color:#7A3E14" aria-hidden="true">DV</span>Dominique de Villepin</h1>
+<p class="sous"><span class="logo-parti" style="background:#7A3E14" aria-hidden="true">LFH</span><span>La France humaniste · Sans groupe à l'Assemblée (mouvement créé en juin 2025, sans député identifié à l'Assemblée nationale)</span></p>
+
+<p class="meta">Dernière vérification : 20 novembre 2026. Niveau de confiance des sources : Bon.</p></section>
+<div class="tsel-bloc"><details class="tsel"><summary>Aller à un thème<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary><nav aria-label="Thèmes de cette fiche"><ul><li><a class="chip" href="#theme-education" style="--bg:#E3E1FB"><span aria-hidden="true">🎓</span>Éducation</a></li><li><a class="chip" href="#theme-ecologie" style="--bg:#D5F0E5"><span aria-hidden="true">🌿</span>Écologie et énergie</a></li><li><a class="chip" href="#theme-pouvoir_achat" style="--bg:#FFE6BF"><span aria-hidden="true">💶</span>Pouvoir d'achat</a></li><li><a class="chip" href="#theme-travail" style="--bg:#D8E7FA"><span aria-hidden="true">💼</span>Travail et emploi</a></li><li><a class="chip" href="#theme-sante" style="--bg:#FBDCE5"><span aria-hidden="true">❤️</span>Santé</a></li><li><a class="chip" href="#theme-logement" style="--bg:#FAEDB8"><span aria-hidden="true">🏠</span>Logement</a></li><li><a class="chip" href="#theme-securite" style="--bg:#DDE3EE"><span aria-hidden="true">⚖️</span>Sécurité et justice</a></li><li><a class="chip" href="#theme-immigration" style="--bg:#D3EDF1"><span aria-hidden="true">🌍</span>Immigration et intégration</a></li><li><a class="chip" href="#theme-institutions" style="--bg:#EADDF6"><span aria-hidden="true">🏛️</span>Institutions et démocratie</a></li><li><a class="chip" href="#theme-europe" style="--bg:#FFDACB"><span aria-hidden="true">⭐</span>Europe et international</a></li></ul></nav></details></div>
+<div class="grille"><section class="tb" id="theme-education" aria-labelledby="h-dvm-education">
+<div class="tb-tete" style="background:#E3E1FB"><h2 id="h-dvm-education"><span class="emo" aria-hidden="true">🎓</span>Éducation</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Revaloriser d'au moins 10 % les métiers pédagogiques et organiser une conférence sociale de ces métiers.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 189</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Ouvrir dès le bac des cursus de présélection des enseignants, réservés aux étudiants boursiers.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 197</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Équilibrer savoirs théoriques et pratiques, avec 100 heures de pratique artistique par an.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 20, proposition 199</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-ecologie" aria-labelledby="h-dvm-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-dvm-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Réduire de moitié l'usage des produits phytosanitaires d'ici 2030 et restaurer haies et mares.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 219</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Appliquer l'objectif « zéro artificialisation nette » des sols, avec une mise en œuvre solidaire.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 221</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Créer une stratégie nationale de transformation agricole, avec des moyens supplémentaires chaque année.</p>
+<p class="chiffre">Chiffrage annoncé : 1,5 milliard d'euros supplémentaires par an</p>
+<details class="niv"><summary><span class="sr">Niveau du chiffre : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p><p class="t">Pourquoi ce niveau</p><p>Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c"><dl><dt>Chiffre annoncé</dt><dd>1,5 milliard d'euros supplémentaires par an</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+<p class="m">Dernière vérification : 20 novembre 2026</p><a class="lnk" href="#">Méthode et panel de sources</a></div></details></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 222</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-pouvoir_achat" aria-labelledby="h-dvm-pouvoir_achat">
+<div class="tb-tete" style="background:#FFE6BF"><h2 id="h-dvm-pouvoir_achat"><span class="emo" aria-hidden="true">💶</span>Pouvoir d'achat</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Transférer des cotisations sociales non contributives vers la CSG pour augmenter les salaires nets.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 106</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Proposer un prix de l'électricité avantageux aux ménages et aux entreprises grâce à des contrats pour différence.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 116</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Mettre un million de petites voitures électriques à disposition en leasing social.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 12, proposition 114</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section></div>
+<p class="suite">Les 7 autres thèmes suivent, dans le même ordre et avec le même gabarit.</p>
+
+</div></div></div>
+<div class="cadre tel"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-de_villepin_dominique.html#theme-sante</span></div><div class="site"><div class="wrap"><div class="tsel-bloc"><details class="tsel" open><summary>Aller à un thème<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary><nav aria-label="Thèmes de cette fiche (exemple ouvert)"><ul><li><a class="chip" href="#" style="--bg:#E3E1FB"><span aria-hidden="true">🎓</span>Éducation</a></li><li><a class="chip" href="#" style="--bg:#D5F0E5"><span aria-hidden="true">🌿</span>Écologie et énergie</a></li><li><a class="chip" href="#" style="--bg:#FFE6BF"><span aria-hidden="true">💶</span>Pouvoir d'achat</a></li><li><a class="chip" href="#" style="--bg:#D8E7FA"><span aria-hidden="true">💼</span>Travail et emploi</a></li><li><a class="chip" href="#" style="--bg:#FBDCE5"><span aria-hidden="true">❤️</span>Santé</a></li><li><a class="chip" href="#" style="--bg:#FAEDB8"><span aria-hidden="true">🏠</span>Logement</a></li><li><a class="chip" href="#" style="--bg:#DDE3EE"><span aria-hidden="true">⚖️</span>Sécurité et justice</a></li><li><a class="chip" href="#" style="--bg:#D3EDF1"><span aria-hidden="true">🌍</span>Immigration et intégration</a></li><li><a class="chip" href="#" style="--bg:#EADDF6"><span aria-hidden="true">🏛️</span>Institutions et démocratie</a></li><li><a class="chip" href="#" style="--bg:#FFDACB"><span aria-hidden="true">⭐</span>Europe et international</a></li></ul></nav></details></div>
+<div class="grille"><section class="tb" id="theme-sante" aria-labelledby="h-tm-sante">
+<div class="tb-tete" style="background:#FBDCE5"><h2 id="h-tm-sante"><span class="emo" aria-hidden="true">❤️</span>Santé</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Plafonner le reste à charge des patients en fonction de leurs revenus.</p>
+
+<details class="niv" open><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 126</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Faciliter l'accès de chacun à un soignant.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 122</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li>
+<li class="mes"><p class="mt">Donner aux établissements de santé des budgets pluriannuels et plus de souplesse.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 13, proposition 128</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section></div></div></div></div></div></section>
+
+<section class="ecran" id="e5"><h2>5. Thème vide</h2>
+<p class="note">Xavier Bertrand n'a qu'une mesure publiée, sur le travail. Les 9 autres blocs restent présents, avec les mêmes repères, et affichent seulement « Non communiqué. ». Le sommaire l'indique en texte simple, sans grisé ni mise en valeur.</p>
+<div class="cadre"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-bertrand_xavier.html</span></div><div class="site"><div class="preprod">Version de préproduction, en cours de relecture : les contenus peuvent encore contenir des erreurs.</div>
+<div class="wrap"><header class="top"><a class="logo" href="#"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Programmes 2027</a><nav class="nav" aria-label="Navigation principale"><a href="#">Thèmes</a><a href="#">Méthode</a><a href="#" aria-current="page">Candidats</a><a href="#">Qui sommes nous ?</a><a href="#">Signaler une erreur</a></nav></header>
+<section class="cbandeau" style="border-top-color:#1F5C7A">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › <a class="lnk" href="#">Candidats</a> › Xavier Bertrand</p>
+<h1><span class="photo" style="border-color:#1F5C7A" aria-hidden="true">XB</span>Xavier Bertrand</h1>
+<p class="sous"><span class="logo-parti" style="background:#1F5C7A" aria-hidden="true">NF</span><span>Nous France · Sans groupe à l'Assemblée (Nous France n'a pas de groupe à l'Assemblée nationale)</span></p>
+<p class="meta">Statut : Intention annoncée.</p>
+<p class="meta">Programme 2027 pas encore publié.</p>
+<p class="meta">Dernière vérification : 20 novembre 2026. Niveau de confiance des sources : Moyen.</p></section>
+<nav class="somm" aria-label="Thèmes de cette fiche"><p class="somm-t">Ses propositions, thème par thème</p><div class="chips"><a class="chip" href="#theme-education" style="--bg:#E3E1FB"><span aria-hidden="true">🎓</span>Éducation<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-ecologie" style="--bg:#D5F0E5"><span aria-hidden="true">🌿</span>Écologie et énergie<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-pouvoir_achat" style="--bg:#FFE6BF"><span aria-hidden="true">💶</span>Pouvoir d'achat<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-travail" style="--bg:#D8E7FA"><span aria-hidden="true">💼</span>Travail et emploi</a><a class="chip" href="#theme-sante" style="--bg:#FBDCE5"><span aria-hidden="true">❤️</span>Santé<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-logement" style="--bg:#FAEDB8"><span aria-hidden="true">🏠</span>Logement<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-securite" style="--bg:#DDE3EE"><span aria-hidden="true">⚖️</span>Sécurité et justice<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-immigration" style="--bg:#D3EDF1"><span aria-hidden="true">🌍</span>Immigration et intégration<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-institutions" style="--bg:#EADDF6"><span aria-hidden="true">🏛️</span>Institutions et démocratie<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-europe" style="--bg:#FFDACB"><span aria-hidden="true">⭐</span>Europe et international<span class="chip-nc">, non communiqué</span></a></div></nav>
+<div class="grille"><section class="tb" id="theme-education" aria-labelledby="h-xb-education">
+<div class="tb-tete" style="background:#E3E1FB"><h2 id="h-xb-education"><span class="emo" aria-hidden="true">🎓</span>Éducation</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-ecologie" aria-labelledby="h-xb-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-xb-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-pouvoir_achat" aria-labelledby="h-xb-pouvoir_achat">
+<div class="tb-tete" style="background:#FFE6BF"><h2 id="h-xb-pouvoir_achat"><span class="emo" aria-hidden="true">💶</span>Pouvoir d'achat</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-travail" aria-labelledby="h-xb-travail">
+<div class="tb-tete" style="background:#D8E7FA"><h2 id="h-xb-travail"><span class="emo" aria-hidden="true">💼</span>Travail et emploi</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Il défend la retraite par capitalisation.</p>
+
+<details class="niv"><summary><span class="sr">Chiffrage : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/><text x="10" y="16.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="currentColor">?</text></svg><span>Mesure non chiffrée par le parti</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Le candidat ne donne pas le coût de cette mesure. Il n'y a donc pas de chiffre à comparer aux estimations des institutions. Nous l'indiquons sans commentaire.</p><a class="lnk" href="#">Notre méthode</a></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">LCP, entretien de Xavier Bertrand au Figaro</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, publiée le 3 août 2026</p></li></ul></div>
+</section>
+<section class="tb" id="theme-sante" aria-labelledby="h-xb-sante">
+<div class="tb-tete" style="background:#FBDCE5"><h2 id="h-xb-sante"><span class="emo" aria-hidden="true">❤️</span>Santé</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-logement" aria-labelledby="h-xb-logement">
+<div class="tb-tete" style="background:#FAEDB8"><h2 id="h-xb-logement"><span class="emo" aria-hidden="true">🏠</span>Logement</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section></div>
+<p class="suite">Les 4 autres thèmes suivent, dans le même ordre et avec le même gabarit.</p>
+
+</div></div></div></section>
+
+<section class="ecran" id="e6"><h2>6. Candidat sans aucune mesure</h2>
+<p class="note">Exemple générique, sans programme publié. Les 10 blocs sont tous là et affichent « Non communiqué. ». La page ne casse pas et garde la même structure que les autres.</p>
+<div class="cote"><div><div class="cadre"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-prenom_nom.html</span></div><div class="site"><div class="preprod">Version de préproduction, en cours de relecture : les contenus peuvent encore contenir des erreurs.</div>
+<div class="wrap"><header class="top"><a class="logo" href="#"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Programmes 2027</a><nav class="nav" aria-label="Navigation principale"><a href="#">Thèmes</a><a href="#">Méthode</a><a href="#" aria-current="page">Candidats</a><a href="#">Qui sommes nous ?</a><a href="#">Signaler une erreur</a></nav></header>
+<section class="cbandeau" style="border-top-color:#5F6B7A">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › <a class="lnk" href="#">Candidats</a> › Prénom Nom</p>
+<h1><span class="photo" style="border-color:#5F6B7A" aria-hidden="true">PN</span>Prénom Nom</h1>
+<p class="sous"><span class="logo-parti" style="background:#5F6B7A" aria-hidden="true">PRT</span><span>Nom du parti · Sans groupe à l'Assemblée</span></p>
+
+<p class="meta">Dernière vérification : 20 novembre 2026. Niveau de confiance des sources : Bon.</p></section>
+<nav class="somm" aria-label="Thèmes de cette fiche"><p class="somm-t">Ses propositions, thème par thème</p><div class="chips"><a class="chip" href="#theme-education" style="--bg:#E3E1FB"><span aria-hidden="true">🎓</span>Éducation<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-ecologie" style="--bg:#D5F0E5"><span aria-hidden="true">🌿</span>Écologie et énergie<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-pouvoir_achat" style="--bg:#FFE6BF"><span aria-hidden="true">💶</span>Pouvoir d'achat<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-travail" style="--bg:#D8E7FA"><span aria-hidden="true">💼</span>Travail et emploi<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-sante" style="--bg:#FBDCE5"><span aria-hidden="true">❤️</span>Santé<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-logement" style="--bg:#FAEDB8"><span aria-hidden="true">🏠</span>Logement<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-securite" style="--bg:#DDE3EE"><span aria-hidden="true">⚖️</span>Sécurité et justice<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-immigration" style="--bg:#D3EDF1"><span aria-hidden="true">🌍</span>Immigration et intégration<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-institutions" style="--bg:#EADDF6"><span aria-hidden="true">🏛️</span>Institutions et démocratie<span class="chip-nc">, non communiqué</span></a><a class="chip" href="#theme-europe" style="--bg:#FFDACB"><span aria-hidden="true">⭐</span>Europe et international<span class="chip-nc">, non communiqué</span></a></div></nav>
+<div class="grille"><section class="tb" id="theme-education" aria-labelledby="h-vd-education">
+<div class="tb-tete" style="background:#E3E1FB"><h2 id="h-vd-education"><span class="emo" aria-hidden="true">🎓</span>Éducation</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-ecologie" aria-labelledby="h-vd-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-vd-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-pouvoir_achat" aria-labelledby="h-vd-pouvoir_achat">
+<div class="tb-tete" style="background:#FFE6BF"><h2 id="h-vd-pouvoir_achat"><span class="emo" aria-hidden="true">💶</span>Pouvoir d'achat</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-travail" aria-labelledby="h-vd-travail">
+<div class="tb-tete" style="background:#D8E7FA"><h2 id="h-vd-travail"><span class="emo" aria-hidden="true">💼</span>Travail et emploi</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section></div>
+<p class="suite">Les 6 autres thèmes suivent, dans le même ordre et avec le même gabarit.</p>
+
+</div></div></div></div>
+<div class="tel-seul"><div class="cadre tel"><div class="barre"><i></i><i></i><i></i><span>candidat-prenom_nom.html</span></div><div class="site"><div class="preprod">Version de préproduction, en cours de relecture : les contenus peuvent encore contenir des erreurs.</div>
+<div class="wrap"><header class="top"><a class="logo" href="#"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="11" rx="2" fill="#3A35C8"/><rect x="1.75" y="16.75" width="24.5" height="9.5" rx="2" fill="none" stroke="#3A35C8" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Programmes 2027</a><button class="burger" type="button">Menu</button></header>
+<section class="cbandeau" style="border-top-color:#5F6B7A">
+<p class="ariane"><a class="lnk" href="#">Accueil</a> › <a class="lnk" href="#">Candidats</a> › Prénom Nom</p>
+<h1><span class="photo" style="border-color:#5F6B7A" aria-hidden="true">PN</span>Prénom Nom</h1>
+<p class="sous"><span class="logo-parti" style="background:#5F6B7A" aria-hidden="true">PRT</span><span>Nom du parti · Sans groupe à l'Assemblée</span></p>
+
+<p class="meta">Dernière vérification : 20 novembre 2026. Niveau de confiance des sources : Bon.</p></section>
+<div class="tsel-bloc"><details class="tsel"><summary>Aller à un thème<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary><nav aria-label="Thèmes de cette fiche"><ul><li><a class="chip" href="#theme-education" style="--bg:#E3E1FB"><span aria-hidden="true">🎓</span>Éducation<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-ecologie" style="--bg:#D5F0E5"><span aria-hidden="true">🌿</span>Écologie et énergie<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-pouvoir_achat" style="--bg:#FFE6BF"><span aria-hidden="true">💶</span>Pouvoir d'achat<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-travail" style="--bg:#D8E7FA"><span aria-hidden="true">💼</span>Travail et emploi<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-sante" style="--bg:#FBDCE5"><span aria-hidden="true">❤️</span>Santé<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-logement" style="--bg:#FAEDB8"><span aria-hidden="true">🏠</span>Logement<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-securite" style="--bg:#DDE3EE"><span aria-hidden="true">⚖️</span>Sécurité et justice<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-immigration" style="--bg:#D3EDF1"><span aria-hidden="true">🌍</span>Immigration et intégration<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-institutions" style="--bg:#EADDF6"><span aria-hidden="true">🏛️</span>Institutions et démocratie<span class="chip-nc">, non communiqué</span></a></li><li><a class="chip" href="#theme-europe" style="--bg:#FFDACB"><span aria-hidden="true">⭐</span>Europe et international<span class="chip-nc">, non communiqué</span></a></li></ul></nav></details></div>
+<div class="grille"><section class="tb" id="theme-education" aria-labelledby="h-vdm-education">
+<div class="tb-tete" style="background:#E3E1FB"><h2 id="h-vdm-education"><span class="emo" aria-hidden="true">🎓</span>Éducation</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-ecologie" aria-labelledby="h-vdm-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-vdm-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section>
+<section class="tb" id="theme-pouvoir_achat" aria-labelledby="h-vdm-pouvoir_achat">
+<div class="tb-tete" style="background:#FFE6BF"><h2 id="h-vdm-pouvoir_achat"><span class="emo" aria-hidden="true">💶</span>Pouvoir d'achat</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><p class="nc">Non communiqué.</p></div>
+</section></div>
+<p class="suite">Les 7 autres thèmes suivent, dans le même ordre et avec le même gabarit.</p>
+
+</div></div></div></div></div></section>
+
+<section class="ecran" id="e7"><h2>7. Niveau invalide ou non relu</h2>
+<p class="note">Si le niveau saisi est inconnu, ou pas encore relu en prod, le site affiche « Mesure chiffrée non évaluable », comme aujourd'hui, avec la même ligne discrète. Rien ne signale l'erreur au visiteur : elle part dans les contrôles de génération.</p>
+<div class="cadre"><div class="barre"><i></i><i></i><i></i><span>preprod.demandez-le-programme.fr/candidat-de_villepin_dominique.html#theme-ecologie</span></div><div class="site"><div class="pad"><section class="tb" id="theme-ecologie" aria-labelledby="h-inv-ecologie">
+<div class="tb-tete" style="background:#D5F0E5"><h2 id="h-inv-ecologie"><span class="emo" aria-hidden="true">🌿</span>Écologie et énergie</h2><a class="lnk cmp" href="#">Comparer sur ce thème</a></div>
+<div class="tb-corps"><ul class="mes-l"><li class="mes"><p class="mt">Créer une stratégie nationale de transformation agricole, avec des moyens supplémentaires chaque année.</p>
+<p class="chiffre">Chiffrage annoncé : 1,5 milliard d'euros supplémentaires par an</p>
+<details class="niv"><summary><span class="sr">Niveau du chiffre : </span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 2.5"/></svg><span>Mesure chiffrée non évaluable</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="niv-c"><p>Moins de deux sources indépendantes se prononcent, ou la mesure est trop floue pour être chiffrée. Nous ne forçons jamais un niveau.</p><p class="t">Pourquoi ce niveau</p><p>Nous n'avons pas encore relevé deux estimations indépendantes de ce chiffre dans les travaux des institutions du panel. Nous ne forçons pas de niveau.</p>
+<details class="srcch"><summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg>Voir les sources du chiffrage</summary>
+<div class="srcch-c"><dl><dt>Chiffre annoncé</dt><dd>1,5 milliard d'euros supplémentaires par an</dd><dt>Estimations des sources</dt><dd>Aucune comparaison possible pour l'instant</dd></dl>
+<p class="m">Dernière vérification : 20 novembre 2026</p><a class="lnk" href="#">Méthode et panel de sources</a></div></details></div></details>
+<p class="msrc">Source : <a class="lnk" href="#">Réussir à nouveau, programme de Dominique de Villepin, chapitre 22, proposition 222</a><span class="sr"> (s'ouvre dans un nouvel onglet)</span>, consultée le 20 novembre 2026</p></li></ul></div>
+</section></div></div></div></section>
+
+<section class="ecran" id="e8"><h2>8. Chargement, impression et notes pour le développement</h2>
+<div class="md">
+<h3>Chargement</h3><p>La page est générée à l'avance (site statique) : il n'y a pas d'état de chargement. Le détail des étiquettes est déjà dans la page, il s'ouvre sans attente et sans réseau. Sans JavaScript, tout fonctionne.</p>
+<h3>Impression</h3><p>Le sommaire est masqué (<code>noprint</code>). Les détails des étiquettes sont dépliés à l'impression, pour toutes les mesures, et le chevron est masqué. Les blocs passent en une colonne et ne se coupent pas entre deux pages.</p>
+<h3>Repères pour le code</h3>
+<ul>
+<li>Bloc : <code>section.tb#theme-&lt;slug&gt;</code>, en tête <code>.tb-tete</code> avec <code>background:t.bg</code>, <code>h2</code> avec emoji en <code>aria-hidden</code>, lien « Comparer sur ce thème » vers <code>&lt;slug&gt;.html#cand-&lt;id&gt;</code>.</li>
+<li>Mesure : <code>p.mt</code> en 18 px, graisse 600, couleur texte. Chiffrage annoncé en 15 px, graisse 500. Source en 14 px avec sa date (publiée le, sinon consultée le).</li>
+<li>Étiquette : <code>details.niv</code> avec <code>summary</code> en 14 px, couleur <code>#4A5666</code> (contraste 7,3 pour 1 sur blanc), icône de 20 px en <code>currentColor</code>, chevron, hauteur minimale 44 px. Préfixe caché « Chiffrage : » ou « Niveau du chiffre : » conservé. Plus de <code>div.nivbloc</code> sur la page candidat.</li>
+<li>Thème vide : <code>p.nc</code> « Non communiqué. » en 16 px, couleur <code>#3B4656</code>.</li>
+<li>Grille : <code>display:grid</code>, une colonne, deux colonnes au delà de 900 px, alignées en haut.</li>
+</ul></div></section>
+</div>
+</body>
+</html>

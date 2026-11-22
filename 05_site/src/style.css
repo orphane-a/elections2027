@@ -337,6 +337,7 @@ table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px
 #attente h2 .nb{font-family:var(--corps);font-size:14px;font-weight:400;letter-spacing:0;color:var(--doux2)}
 .att-intro{margin:0 0 12px;max-width:70ch;font-size:14px;color:var(--doux2)}
 .att-liste{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.att-liste li{scroll-margin-top:16px}
 .att-liste a{display:flex;align-items:center;gap:10px;min-height:56px;height:100%;padding:8px 12px;background:#fff;border:1px solid var(--trait);border-radius:10px;text-decoration:none;color:var(--texte)}
 .att-liste a:hover{border-color:var(--texte)}
 .att-txt{min-width:0}
@@ -510,3 +511,58 @@ table.liste th,table.liste td{text-align:left;padding:10px 8px;border-bottom:1px
   .top .logo span{font-size:16px}
 }
 @media print{.cloche{display:none!important}}
+/* Page candidat (ticket 98) : un bloc par thème, la mesure d'abord, l'étiquette en une ligne discrète */
+.page-cand{padding-bottom:8px}
+.somm{padding:20px 0 4px}
+.somm-t{margin:0 0 8px;font-size:15px;font-weight:600;color:var(--doux)}
+.somm .chips{padding:0}
+.page-cand .chip{color:var(--texte)}
+.chip-nc{color:#3B4656;font-weight:400}
+.page-cand .tsel li a{white-space:normal}
+.page-cand .tsel summary{background:#fff;border:1.5px solid var(--texte)}
+.grille-tb{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start;padding:20px 0 8px}
+@media (min-width:900px){.grille-tb{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tb{min-width:0;background:#fff;border:1px solid rgba(20,32,46,.12);border-radius:18px;overflow:hidden;scroll-margin-top:16px}
+.tb-tete{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;padding:12px 18px}
+.tb-tete h2{display:flex;align-items:center;gap:12px;margin:0;font-size:21px;font-weight:600;line-height:1.2}
+.tb-tete .emo{display:flex;align-items:center;justify-content:center;flex:none;width:38px;height:38px;background:#fff;border-radius:50%;font-size:20px;line-height:1}
+.tb-tete .cmp{display:inline-flex;align-items:center;min-height:44px;font-size:15px;color:var(--texte)}
+.tb-corps{padding:4px 18px 8px}
+.mes-l{list-style:none;margin:0;padding:0}
+.mes-l .mes{padding:16px 0 12px;border-top:1px solid var(--trait)}
+.mes-l .mes:first-child{border-top:0}
+.mes-l .mes>p{margin:0}
+.mes-l .mt{font-size:18px;font-weight:600;line-height:1.4;color:var(--texte);overflow-wrap:anywhere}
+.mes-l .chiffre{margin-top:6px;font-size:15px;font-weight:500;color:var(--texte)}
+.mes-l .msrc{margin-top:2px;font-size:14px;color:var(--doux2);overflow-wrap:anywhere}
+.tb .nc{margin:16px 0 12px;font-size:16px;color:#3B4656}
+.mes-l .niv{margin-top:4px}
+.mes-l .niv>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-size:14px;color:#4A5666;border-radius:6px;cursor:pointer;list-style:none}
+.mes-l .niv>summary::-webkit-details-marker{display:none}
+.mes-l .niv>summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.mes-l .niv .niv-ic{flex:none}
+.mes-l .niv-lib{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px}
+.mes-l .niv>summary .chev{flex:none;transition:transform .15s}
+.mes-l .niv[open]>summary .chev{transform:rotate(180deg)}
+.niv-c{margin:2px 0 8px;padding:12px 14px;background:#F7F6FC;border-radius:10px;font-size:14px;line-height:1.5;color:var(--doux);overflow-wrap:anywhere}
+.niv-c p{margin:0 0 6px}
+.niv-c .t{margin:10px 0 2px;font-weight:700;color:var(--texte)}
+.niv-c>.lnk{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:640px){
+  .page-cand .somm{display:none}
+  .page-cand .tsel-bloc{display:block}
+  .tb-tete{flex-direction:column;align-items:flex-start;padding:12px 16px 4px}
+  .tb-tete h2{font-size:19px}
+  .tb-corps{padding:0 16px 6px}
+  .mes-l .mt{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){.mes-l .niv>summary .chev{transition:none}}
+@media print{
+  .page-cand .somm,.page-cand .tsel-bloc{display:none!important}
+  .grille-tb{grid-template-columns:1fr}
+  .tb{break-inside:avoid-page}
+  .mes-l .niv>.niv-c{display:block}
+  .mes-l .niv::details-content{content-visibility:visible}
+  .mes-l .niv>summary .chev{display:none}
+  .tb-tete,.chip{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}

@@ -157,7 +157,11 @@ function etiquette(x, cid, slug) {
 <p class="niv-t"><span class="sr">Niveau du chiffre : </span>${iconeNiveau(v.niveau)}<span>${n.titre}</span></p>
 <p class="def">${n.def}</p>
 <p class="t">Pourquoi ce niveau</p><p class="raison">${esc(v.raison)}</p>
-<details class="srcch"><summary>${CHEVRON}Voir les sources du chiffrage</summary>
+${sourcesChiffrage(v)}
+</div>`;
+}
+// Lien repliable « Voir les sources du chiffrage » : chiffre annoncé, estimations, sources, date de vérification.
+const sourcesChiffrage = (v) => `<details class="srcch"><summary>${CHEVRON}Voir les sources du chiffrage</summary>
 <div class="srcch-c">
 <dl><dt>Chiffre annoncé</dt><dd>${esc(v.chiffre)}</dd><dt>Estimations des sources</dt><dd>${esc(v.estimations)}</dd></dl>
 ${v.sources.length ? `<p class="t">Sources</p><ul>${v.sources.map(ligneSource).join('')}</ul>` : ''}
@@ -165,8 +169,22 @@ ${v.divergentes.length ? `<p class="t">Sources qui ne vont pas dans le même sen
 ${v.autres.length ? `<p class="t">Autres avis</p><p class="m">Think tanks qui assument une orientation : affichés pour information, ils ne comptent pas pour le niveau.</p><ul>${v.autres.map(ligneSource).join('')}</ul>` : ''}
 ${v.brouillon ? '<p><span class="badge-verif" style="margin:0">À relire</span></p>' : ''}<p class="m">Dernière vérification : ${dateFr(v.date)}</p>
 <a class="lnk discret" href="panel-sources.html">Méthode et panel de sources</a>
-</div></details>
-</div>`;
+</div></details>`;
+// Page candidat (ticket 98) : étiquette réduite à une ligne discrète (icône et intitulé), sous la mesure.
+// Tout le détail (définition, « Pourquoi ce niveau », sources) est derrière le même clic, pour tous les niveaux.
+// Élément natif details et summary : clic, Entrée ou Espace, aucun survol, fonctionne sans JavaScript.
+const iconeNiveauDiscret = (k) => `<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="niv-ic"><rect x="3" y="5" width="14" height="14" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"${NIVEAUX[k].pointille ? ' stroke-dasharray="3 2.5"' : ''}/>${(NIVEAUX[k].svg || '').replace(/#14202E/g, 'currentColor')}</svg>`;
+const CHEVRON_BAS = '<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>';
+function etiquetteDiscrete(x, cid, slug) {
+  const v = viabilite(x, cid, slug);
+  const k = v ? v.niveau : 'non_chiffree';
+  const n = NIVEAUX[k];
+  const contenu = v
+    ? `<p class="def">${n.def}</p><p class="t">Pourquoi ce niveau</p><p class="raison">${esc(v.raison)}</p>
+${sourcesChiffrage(v)}`
+    : `<p class="def">${n.def}</p><a class="lnk discret" href="methode.html#chiffrage">Notre méthode</a>`;
+  return `<details class="niv"><summary><span class="sr">${v ? 'Niveau du chiffre : ' : 'Chiffrage : '}</span>${iconeNiveauDiscret(k)}<span class="niv-lib">${n.titre}</span>${CHEVRON_BAS}</summary>
+<div class="niv-c">${contenu}</div></details>`;
 }
 
 // Couleur et logo fixes par parti : teintes réparties à l'angle d'or, même luminosité pour tous (aucun classement)
@@ -567,7 +585,7 @@ function ficheTheme(t) {
   const attente = enAttente.length ? `<section id="attente" class="sect" aria-labelledby="att-t">
 <h2 id="att-t">${svg(I.horloge, { t: 20, trait: '#4A5666', ep: 1.9 })}Pas encore de proposition publiée sur ce thème <span class="nb">${pluriel(enAttente.length, 'candidat')}</span></h2>
 <p class="att-intro">Non communiqué : aucune proposition publiée et datée trouvée. Ils apparaîtront dans « Programmes 2027 » dès qu'ils publieront. Ordre alphabétique.</p>
-<ul class="att-liste">${enAttente.map((c) => `<li><a href="candidat-${esc(c.id)}.html">${photo(c, 'xs')}<span class="att-txt"><span class="an">${esc(nomComplet(c))}</span><span class="ap">${esc(c.parti || 'Sans parti')}</span><span class="ap">Non communiqué, vérifié le ${dateFr(mesures[c.id]?.date_verif || verif)}</span></span></a></li>`).join('')}</ul>
+<ul class="att-liste">${enAttente.map((c) => `<li id="cand-${esc(c.id)}"><a href="candidat-${esc(c.id)}.html">${photo(c, 'xs')}<span class="att-txt"><span class="an">${esc(nomComplet(c))}</span><span class="ap">${esc(c.parti || 'Sans parti')}</span><span class="ap">Non communiqué, vérifié le ${dateFr(mesures[c.id]?.date_verif || verif)}</span></span></a></li>`).join('')}</ul>
 </section>` : '';
   const posPresentes = POSITIONS.filter((p) => votes.some((v) => Object.values(v.positions || {}).some((x) => clePosition(x) === p.cle)));
   const bilan = votes.length
@@ -639,11 +657,26 @@ function pageCandidats() {
   });
   for (const c of candidats) {
     const m = mesures[c.id];
+    // Un bloc par thème, dans l'ordre de THEMES, même structure pour tous les candidats (règle de neutralité).
+    const liste = (t) => (m?.themes?.[t.slug] || []).slice(0, 3);
     const blocs = THEMES.map((t) => {
-      const l = m?.themes?.[t.slug] || [];
-      return `<section class="deux"><div class="g"><h2 style="margin:0;font-size:22px;font-weight:600"><span aria-hidden="true">${t.emoji} </span>${esc(t.nom)}</h2><p class="small" style="margin:4px 0 0"><a class="lnk" href="${t.slug}.html#cand-${esc(c.id)}">Comparer sur ce thème</a></p></div>
-<div class="d">${l.length ? l.slice(0, 3).map((x) => `<div class="mesure"><p class="mt">${esc(x.texte)}</p>${x.chiffrage && /\d/.test(x.chiffrage) ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>` : ''}${etiquette(x, c.id, t.slug)}<a class="lnk" href="${url(x.source?.url)}"${ext} style="font-size:14px">${esc(x.source?.titre)}${x.source?.date ? `, ${dateFr(x.source.date)}` : ''}</a></div>`).join('') : '<p class="vide" style="border:0;padding:0">Non communiqué.</p>'}</div></section>`;
+      const l = liste(t);
+      const mes = l.map((x) => {
+        const s = x.source || {};
+        const quand = s.date ? `, publiée le ${dateFr(s.date)}` : s.consulte ? `, consultée le ${dateFr(s.consulte)}` : '';
+        return `<li class="mes"><p class="mt">${esc(x.texte)}</p>
+${x.chiffrage && /\d/.test(x.chiffrage) ? `<p class="chiffre">Chiffrage annoncé : ${esc(x.chiffrage)}</p>\n` : ''}${etiquetteDiscrete(x, c.id, t.slug)}
+<p class="msrc">Source : <a class="lnk" href="${url(s.url)}"${ext}>${esc(s.titre || 'Source')}</a>${NOUVEL_ONGLET}${quand}</p></li>`;
+      }).join('\n');
+      return `<section class="tb" id="theme-${t.slug}" aria-labelledby="h-${t.slug}">
+<div class="tb-tete" style="background:${t.bg}"><h2 id="h-${t.slug}"><span class="emo" aria-hidden="true">${t.emoji}</span>${esc(t.nom)}</h2><a class="lnk cmp" href="${t.slug}.html#cand-${esc(c.id)}">Comparer sur ce thème</a></div>
+<div class="tb-corps">${l.length ? `<ul class="mes-l">${mes}</ul>` : '<p class="nc">Non communiqué.</p>'}</div>
+</section>`;
     }).join('\n');
+    // Sommaire : un lien par thème, sans compteur de mesures. Thème vide : suffixe neutre, ni grisé ni caché.
+    const lienSomm = (t) => `<a class="chip" href="#theme-${t.slug}" style="--bg:${t.bg}">${emoNav(t)}${esc(t.nom)}${liste(t).length ? '' : '<span class="chip-nc">, non communiqué</span>'}</a>`;
+    const sommaire = `<nav class="somm noprint" aria-labelledby="somm-t"><p class="somm-t" id="somm-t">Ses propositions, thème par thème</p><div class="chips">${THEMES.map(lienSomm).join('')}</div></nav>
+<div class="tsel-bloc noprint"><details class="tsel"><summary style="--bg:#fff">Aller à un thème${CHEVRON_BAS}</summary><nav aria-label="Thèmes de cette fiche (menu mobile)"><ul>${THEMES.map((t) => `<li>${lienSomm(t)}</li>`).join('')}</ul></nav></details></div>`;
     page({
       fichier: `candidat-${c.id}.html`, titre: `${nomComplet(c)} : propositions 2027`, courant: 'candidats.html',
       description: `Propositions de ${nomComplet(c)} (${c.parti || 'sans parti'}) pour la présidentielle 2027, thème par thème, avec les sources.`,
@@ -655,7 +688,12 @@ function pageCandidats() {
 ${c.a_verifier ? '<p><span class="badge-verif">Candidature à confirmer : une seule source ou des sources divergentes</span></p>' : ''}
 <p class="meta">${c.programme?.url ? `Programme : <a class="lnk" href="${url(c.programme.url)}"${ext}>${esc(c.programme.titre)}</a>${c.programme.date ? `, ${dateFr(c.programme.date)}` : ''}` : 'Programme 2027 pas encore publié.'}${c.site_campagne ? ` · <a class="lnk" href="${url(c.site_campagne)}"${ext}>Site de campagne</a>` : ''}</p>
 <p class="meta">Dernière vérification : ${dateFr(m?.date_verif || c.date_maj)}. Niveau de confiance des sources : ${esc(c.confiance || 'non évalué')}.</p></div>
+<div class="page-cand">
+${sommaire}
+<div class="grille-tb">
 ${blocs}
+</div>
+</div>
 <section class="deux"><div class="g"><h2 style="margin:0;font-size:22px;font-weight:600">Sources de cette fiche</h2></div><div class="d"><ul class="plus">${(c.sources || []).map((s) => `<li><a class="lnk" href="${url(s.url)}"${ext}>${esc(s.titre)}</a><span class="m">${s.date ? `Publié le ${dateFr(s.date)}. ` : ''}Consulté le ${dateFr(s.consulte || c.date_maj)}</span></li>`).join('')}</ul>
 <p class="small">${IMAGES.photos[c.id] ? `Photo : ${credit(IMAGES.photos[c.id])}. ` : 'Photo : aucune photo sous licence libre trouvée à ce jour. '}${logoDe(c) ? `Logo : ${credit(IMAGES.logos[logoDe(c)])}.` : 'Logo : aucun logo sous licence libre trouvé à ce jour, le repère du site (sigle et couleur) est affiché.'}</p></div></section>`,
     });

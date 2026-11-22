@@ -169,7 +169,8 @@ test('deux colonnes : la coupure est fixée à la génération, une seule carte 
 
 test('les icônes de la page thème sont en SVG ; les seuls emojis sont ceux des liens, masqués aux lecteurs d\'écran', () => {
   const html = base.page('sante');
-  const sansEmojisDecoratifs = html.replace(/<span class="emo" aria-hidden="true">[^<]+<\/span>/g, '');
+  // Emojis décoratifs masqués aux lecteurs d'écran : liens de thèmes (.emo) et icônes de la cloche des nouveautés (.ico, ticket 90)
+  const sansEmojisDecoratifs = html.replace(/<span class="(?:emo|ico)" aria-hidden="true">[^<]+<\/span>/g, '');
   assert.equal(/\p{Extended_Pictographic}/u.test(sansEmojisDecoratifs.replace(/[©®™]/g, '')), false);
   assert.match(html, /<span class="th-logo" aria-hidden="true"><svg/);
 });
@@ -279,7 +280,7 @@ test('une seule série d\'emojis de thèmes sur tout le site (accueil, page Thè
     for (const ancien of ['🌱', '🛒', '🏥', '🛡️', '🇪🇺']) assert.equal(html.includes(ancien), false, `${f} : ${ancien}`);
   }
   const fiche = lirePage(`candidat-${candidats[0].id}.html`);
-  for (const e of Object.values(EMOJIS)) assert.ok(fiche.includes(`<span aria-hidden="true">${e} </span>`), `fiche candidat : ${e}`);
+  for (const [s, e] of Object.entries(EMOJIS)) assert.ok(fiche.includes(`<h2 id="h-${s}"><span class="emo" aria-hidden="true">${e}</span>`), `fiche candidat : ${e}`);
 });
 
 test('thème actif : sa couleur légèrement foncée et un encadrement épais, jamais le fond bleu foncé', () => {
