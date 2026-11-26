@@ -7,7 +7,7 @@ Statut : Déclaré. A annoncé « Je serai candidat » sur BFMTV le 17 septembre
 À vérifier : non
 Site de campagne : https://www.ericzemmour.fr/
 Programme officiel (lien et date) : pas encore publié
-Mesures retenues par thème : Éducation 3, Écologie 0, Pouvoir d'achat 3, Travail 1, Santé 1, Logement 1, Sécurité 3, Immigration 3, Institutions 0, Europe 0 (détail dans 02_themes et 05_site/data/mesures/zemmour_eric.json)
+Mesures retenues par thème : Éducation 3, Écologie 0, Pouvoir d'achat 3, Travail 2, Santé 2, Logement 1, Sécurité 3, Immigration 3, Institutions 1, Europe 0 (détail dans 02_themes et 05_site/data/mesures/zemmour_eric.json)
 Niveau de confiance des sources : Moyen
 Sources de cette fiche :
 1. LCP, Éric Zemmour officialise sa candidature (17 septembre 2026) https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871, consulté le 9 novembre 2026
@@ -15,4 +15,4 @@ Sources de cette fiche :
 1. LCP, liste des candidats déjà en lice (14 octobre 2026) https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373, consulté le 9 novembre 2026
 1. Reconquête, site officiel (consultation « Le programme pour la France » en cours) (9 novembre 2026) https://www.parti-reconquete.fr/, consulté le 9 novembre 2026
 1. LCP, Présidentielle 2027 : la liste des candidats déclarés et potentiels (10 novembre 2026) https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932, consulté le 16 novembre 2026
-Dernière mise à jour : 2026-11-20
+Dernière mise à jour : 2026-11-26

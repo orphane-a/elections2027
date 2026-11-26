@@ -1,6 +1,6 @@
 {
   "id": "zemmour_eric",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -50,6 +50,12 @@
         "sous_theme": "Emploi",
         "chiffrage": null,
         "source": { "titre": "Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026)", "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027", "date": "2026-09-18", "type": "presse", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Limiter la durée pendant laquelle une personne peut toucher le RSA.",
+        "sous_theme": "Minima sociaux",
+        "chiffrage": null,
+        "source": { "titre": "Var Actu, Éric Zemmour à Toulon : les annonces à retenir de son premier meeting pour 2027 (meeting du 21 novembre 2026)", "url": "https://www.varactu.fr/eric-zemmour-a-toulon-les-annonces-a-retenir-de-son-premier-meeting-pour-2027/", "date": "2026-11-22", "type": "presse", "consulte": "2026-11-26" }
       }
     ],
     "sante": [
@@ -58,6 +64,12 @@
         "sous_theme": "Accès aux soins",
         "chiffrage": null,
         "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 2", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Agir contre les déserts médicaux et rendre le pouvoir aux soignants à l'hôpital.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "ericzemmour.fr, Nos priorités", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-26" }
       }
     ],
     "logement": [
@@ -108,7 +120,14 @@
         "source": { "titre": "Éric Zemmour, Nos priorités pour les Français, priorité 2", "url": "https://www.ericzemmour.fr/priorites", "date": null, "type": "site", "consulte": "2026-11-20" }
       }
     ],
-    "institutions": [],
+    "institutions": [
+      {
+        "texte": "Supprimer l'Arcom (régulateur de l'audiovisuel et du numérique) et privatiser l'audiovisuel public.",
+        "sous_theme": "Médias",
+        "chiffrage": null,
+        "source": { "titre": "Var Actu, Éric Zemmour à Toulon : les annonces à retenir de son premier meeting pour 2027 (meeting du 21 novembre 2026)", "url": "https://www.varactu.fr/eric-zemmour-a-toulon-les-annonces-a-retenir-de-son-premier-meeting-pour-2027/", "date": "2026-11-22", "type": "presse", "consulte": "2026-11-26" }
+      }
+    ],
     "europe": []
   }
 }

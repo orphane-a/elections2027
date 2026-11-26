@@ -1,6 +1,6 @@
 {
   "id": "kazib_anasse",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": true,
   "themes": {
     "education": [
@@ -15,6 +15,12 @@
         "sous_theme": "École",
         "chiffrage": null,
         "source": { "titre": "anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Créer dans les lieux d'études et de travail des commissions contre les violences sexistes et sexuelles, indépendantes des directions.",
+        "sous_theme": "Violences sexistes et sexuelles",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-26" }
       }
     ],
     "ecologie": [
@@ -23,6 +29,12 @@
         "sous_theme": "Pollution",
         "chiffrage": null,
         "source": { "titre": "anasse2027.fr, Programme, partie « Face au capitalisme, un horizon communiste »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Planifier la production de façon démocratique, selon les besoins et dans le respect de l'environnement.",
+        "sous_theme": "Planification",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-26" }
       }
     ],
     "pouvoir_achat": [
@@ -129,6 +141,12 @@
         "sous_theme": "Défense",
         "chiffrage": null,
         "source": { "titre": "anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme »", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Soutenir la libération de la Palestine et de la Kanaky et l'autodétermination des peuples.",
+        "sous_theme": "International",
+        "chiffrage": null,
+        "source": { "titre": "anasse2027.fr, Programme", "url": "https://anasse2027.fr/programme", "date": null, "type": "programme", "consulte": "2026-11-26" }
       }
     ]
   }

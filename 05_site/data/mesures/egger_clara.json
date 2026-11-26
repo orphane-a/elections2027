@@ -1,6 +1,6 @@
 {
   "id": "egger_clara",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": true,
   "themes": {
     "education": [
@@ -76,6 +76,12 @@
         "sous_theme": "Transparence",
         "chiffrage": null,
         "source": { "titre": "Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF)", "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf", "date": null, "type": "programme", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Soumettre à référendum les décisions de santé les plus importantes, notamment l'investissement dans le système de santé.",
+        "sous_theme": "Démocratie sanitaire",
+        "chiffrage": null,
+        "source": { "titre": "Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF)", "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf", "date": null, "type": "programme", "consulte": "2026-11-26" }
       }
     ],
     "logement": [],
@@ -111,6 +117,12 @@
         "sous_theme": "Référendum",
         "chiffrage": null,
         "source": { "titre": "Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF)", "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf", "date": null, "type": "programme", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Définir explicitement les priorités du droit d'asile, sous le contrôle des Français, qui peuvent proposer de modifier la loi.",
+        "sous_theme": "Asile",
+        "chiffrage": null,
+        "source": { "titre": "Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF)", "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf", "date": null, "type": "programme", "consulte": "2026-11-26" }
       }
     ],
     "institutions": [

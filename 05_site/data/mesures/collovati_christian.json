@@ -1,6 +1,6 @@
 {
   "id": "collovati_christian",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": false,
   "themes": {
     "education": [
@@ -8,37 +8,19 @@
         "texte": "Interdire le téléphone portable dans tout l'établissement scolaire, avec des contrôles des sacs au hasard.",
         "sous_theme": "Discipline",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Exclure 10 jours en cas de mauvais comportement et instaurer des retenues le samedi.",
         "sous_theme": "Discipline",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "En primaire, faire une dictée et 30 minutes de sport chaque jour.",
         "sous_theme": "Programmes",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "ecologie": [
@@ -46,37 +28,19 @@
         "texte": "Maintenir le nucléaire et développer la géothermie avec des pompes à chaleur.",
         "sous_theme": "Énergie",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer les subventions aux éoliennes.",
         "sous_theme": "Énergie",
         "chiffrage": "Économie annoncée : 10 Md€ (tableau « Budget » du site du candidat)",
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Dessaler l'eau de mer, réutiliser les eaux usées et utiliser l'eau de pluie dans les constructions neuves.",
         "sous_theme": "Eau",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "pouvoir_achat": [
@@ -84,37 +48,19 @@
         "texte": "Baisser les impôts.",
         "sous_theme": "Fiscalité",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Taxer à 100 % les commandes passées hors du territoire.",
         "sous_theme": "Commerce",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Relever le seuil des droits de succession et réduire ces droits.",
         "sous_theme": "Succession",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "travail": [
@@ -122,37 +68,19 @@
         "texte": "Revenir à 39 heures de travail par semaine.",
         "sous_theme": "Temps de travail",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer l'âge légal de départ et exiger 172 trimestres pour une retraite à taux plein, avec une pension réduite en cas de départ plus tôt.",
         "sous_theme": "Retraites",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Exonérer de cotisations les retraités qui continuent de travailler.",
         "sous_theme": "Cumul emploi-retraite",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "sante": [
@@ -160,25 +88,19 @@
         "texte": "Supprimer l'aide médicale d'État (AME, soins des étrangers sans titre de séjour).",
         "sous_theme": "Accès aux soins",
         "chiffrage": "Économie annoncée : 1,2 Md€ (tableau « Budget » du site du candidat)",
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Facturer au prix réel l'accouchement et l'hospitalisation aux personnes sans nationalité française.",
         "sous_theme": "Financement",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
+      },
+      {
+        "texte": "Classer les médecins diplômés pour choisir leur lieu d'exercice, notamment dans les déserts médicaux, ou leur faire rembourser leur scolarité.",
+        "sous_theme": "Accès aux soins",
+        "chiffrage": null,
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-26" }
       }
     ],
     "logement": [
@@ -186,37 +108,19 @@
         "texte": "Baisser les loyers de 30 %.",
         "sous_theme": "Loyers",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer la loi SRU (quota de logements sociaux par commune) et privilégier la rénovation aux constructions neuves.",
         "sous_theme": "Construction",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer l'ANAH (agence qui finance la rénovation des logements).",
         "sous_theme": "Aides",
         "chiffrage": "Économie annoncée : 6 Md€ (tableau « Budget » du site du candidat)",
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "securite": [
@@ -224,37 +128,19 @@
         "texte": "Décréter un état d'urgence de 6 mois avec un couvre-feu de 22 h à 6 h.",
         "sous_theme": "Ordre public",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer le juge d'application des peines et remplacer la peine maximale par un barème de peines.",
         "sous_theme": "Justice",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Organiser un référendum sur la peine de mort.",
         "sous_theme": "Justice",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "immigration": [
@@ -262,37 +148,19 @@
         "texte": "Supprimer le droit d'asile et le regroupement familial.",
         "sous_theme": "Asile",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Suspendre pendant 6 mois les visas pour les pays hors Union européenne, sauf pour les étudiants.",
         "sous_theme": "Visas",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Expulser les étrangers en situation irrégulière et les détenus étrangers.",
         "sous_theme": "Éloignement",
         "chiffrage": "Économie annoncée : 40 Md€ liés à l'immigration illégale (tableau « Budget » du site du candidat)",
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "institutions": [
@@ -300,37 +168,19 @@
         "texte": "Élire un député et un sénateur par département.",
         "sous_theme": "Parlement",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer les avantages de retraite des parlementaires.",
         "sous_theme": "Élus",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Supprimer ou réduire les agences de l'État.",
         "sous_theme": "Administration",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ],
     "europe": [
@@ -338,37 +188,19 @@
         "texte": "Suspendre les traités et décisions de l'Union européenne jusqu'à fin 2027.",
         "sous_theme": "Traités",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Sortir du marché européen de l'électricité.",
         "sous_theme": "Énergie",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       },
       {
         "texte": "Suspendre l'accord commercial avec le Mercosur.",
         "sous_theme": "Commerce",
         "chiffrage": null,
-        "source": {
-          "titre": "Christian Collovati, site « Le Peuple français 2027 »",
-          "url": "https://www.xn--lepeuplefranais2027-hyb.fr/",
-          "date": null,
-          "type": "site",
-          "consulte": "2026-11-16"
-        }
+        "source": { "titre": "Christian Collovati, site « Le Peuple français 2027 »", "url": "https://www.xn--lepeuplefranais2027-hyb.fr/", "date": null, "type": "site", "consulte": "2026-11-16" }
       }
     ]
   }

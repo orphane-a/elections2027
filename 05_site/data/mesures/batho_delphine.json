@@ -1,6 +1,6 @@
 {
   "id": "batho_delphine",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": true,
   "themes": {
     "education": [
@@ -31,7 +31,14 @@
         "source": { "titre": "Site de campagne, priorité « La sécurité climatique et la paix »", "url": "https://www.delphinebatho.fr/priorites/la-securite-climatique-et-la-paix/", "date": "2026-11-03", "type": "site", "consulte": "2026-11-09" }
       }
     ],
-    "pouvoir_achat": [],
+    "pouvoir_achat": [
+      {
+        "texte": "Interdire le Black Friday, présenté comme une pratique commerciale agressive et trompeuse, et revenir aux seules soldes légales.",
+        "sous_theme": "Consommation",
+        "chiffrage": null,
+        "source": { "titre": "delphinebatho.fr, « Interdire le Black Friday et ses arnaques »", "url": "https://www.delphinebatho.fr/interdire-le-black-friday-et-ses-arnaques/", "date": "2026-11-22", "type": "site", "consulte": "2026-11-26" }
+      }
+    ],
     "travail": [],
     "sante": [
       {

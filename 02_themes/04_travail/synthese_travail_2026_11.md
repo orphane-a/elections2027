@@ -1,7 +1,7 @@
 # 💼 Travail et emploi : synthèse comparée
 
 Thème : Travail et emploi
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -180,7 +180,9 @@ Non communiqué.
 
 ## Erwan Rohou (Mouvement écologiste indépendant)
 
-Non communiqué.
+1. Valoriser les métiers manuels et techniques : artisanat, production, réparation et entretien. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 06, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-26)
+2. Développer la formation tout au long de la vie pour permettre les reconversions. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 06, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-26)
+3. Préserver le système de retraite par répartition, fondé sur la solidarité entre générations. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 08, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-26)
 
 ## Fabien Roussel (Parti communiste français)
 
@@ -203,3 +205,4 @@ Non communiqué.
 ## Éric Zemmour (Reconquête)
 
 1. Investir dans l'automatisation et la robotique pour remplacer la main-d'œuvre immigrée dans certains métiers. (Mesure non chiffrée par le parti) Source : Public Sénat, interview d'Éric Zemmour sur BFMTV (17 septembre 2026), 2026-09-18, https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027 (consulté le 2026-11-09)
+2. Limiter la durée pendant laquelle une personne peut toucher le RSA. (Mesure non chiffrée par le parti) Source : Var Actu, Éric Zemmour à Toulon : les annonces à retenir de son premier meeting pour 2027 (meeting du 21 novembre 2026), 2026-11-22, https://www.varactu.fr/eric-zemmour-a-toulon-les-annonces-a-retenir-de-son-premier-meeting-pour-2027/ (consulté le 2026-11-26)

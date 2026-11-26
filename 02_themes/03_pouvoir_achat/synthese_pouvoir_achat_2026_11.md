@@ -1,7 +1,7 @@
 # 💶 Pouvoir d'achat : synthèse comparée
 
 Thème : Pouvoir d'achat
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -21,7 +21,7 @@ Non communiqué.
 
 ## Delphine Batho (Génération écologie)
 
-Non communiqué.
+1. Interdire le Black Friday, présenté comme une pratique commerciale agressive et trompeuse, et revenir aux seules soldes légales. (Mesure non chiffrée par le parti) Source : delphinebatho.fr, « Interdire le Black Friday et ses arnaques », 2026-11-22, https://www.delphinebatho.fr/interdire-le-black-friday-et-ses-arnaques/ (consulté le 2026-11-26)
 
 ## Olivier Becht (Le Projet France (mouvement politique), sans parti)
 
@@ -152,6 +152,7 @@ Non communiqué.
 
 1. Il propose de quitter le marché européen de l'électricité pour revenir à des règles nationales et baisser les tarifs. (Mesure non chiffrée par le parti) Source : Les Patriotes, projet patriote édition 2026-2027, page 3, s.d., https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf (consulté le 2026-11-09)
 2. Il propose de moins taxer les petits héritages et d'alléger les impôts des classes moyennes et des indépendants. (Mesure non chiffrée par le parti) Source : Les Patriotes, projet patriote édition 2026-2027, page 15, s.d., https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf (consulté le 2026-11-09)
+3. Encadrer plus strictement les prix des produits de première nécessité dans les Outre-mer. (Mesure non chiffrée par le parti) Source : Les Patriotes, projet patriote édition 2026-2027, section Outre-mer, s.d., https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf (consulté le 2026-11-26)
 
 ## Natacha Polony (Sans parti (campagne « Natacha Polony 2027 », démarche « Nous sommes la France »))
 

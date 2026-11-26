@@ -1,7 +1,7 @@
 # ⚖️ Sécurité et justice : synthèse comparée
 
 Thème : Sécurité et justice
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -180,7 +180,7 @@ Non communiqué.
 
 ## Fabien Roussel (Parti communiste français)
 
-Non communiqué.
+1. Créer 60 000 postes de policiers, gendarmes et douaniers de proximité, notamment contre le narcotrafic. (Coût annoncé : 1 Md€ pour l'ensemble du plan sécurité.) Source : franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »), 2026-11-12, https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html (consulté le 2026-11-26)
 
 ## François Ruffin (Debout !)
 

@@ -1,7 +1,7 @@
 # 🏠 Logement : synthèse comparée
 
 Thème : Logement
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)

@@ -14,3 +14,6 @@ Fichier généré par 05_site/build.mjs.
 2. Conditionner le remboursement public des soins en clinique privée à leur participation à la permanence des soins.
    Chiffrage : Mesure non chiffrée par le parti
    Source : Programme des Écologistes (juillet 2026), chapitre 30, 2026-07-01, https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf (consulté le 2026-11-09)
+3. Autoriser le diagnostic préimplantatoire des aneuploïdies (analyse des chromosomes de l'embryon) dans des indications médicales ciblées.
+   Chiffrage : Mesure non chiffrée par le parti
+   Source : Livret « Prendre soin de notre santé reproductive », 10 mesures phares, s.d., https://marinetondelier.fr/s/Livret-sante-reproductive.pdf (consulté le 2026-11-26)

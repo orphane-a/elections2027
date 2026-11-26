@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-11-26",
+    "nouveautes": [
+      {
+        "type": "candidat_retire",
+        "candidat": "ruffin_francois",
+        "phrase": "François Ruffin (Debout !) a retiré sa candidature.",
+        "source": {
+          "titre": "LCP, François Ruffin se retire de la présidentielle 2027 sans soutenir aucun des candidats de gauche encore en lice",
+          "url": "https://lcp.fr/actualites/francois-ruffin-se-retire-de-la-presidentielle-2027-sans-soutenir-aucun-des-candidats-de",
+          "date": "2026-11-21"
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "nouveautes": [
       {

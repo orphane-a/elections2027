@@ -1,7 +1,7 @@
 # ⭐ Europe et international : synthèse comparée
 
 Thème : Europe et international
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -87,6 +87,7 @@ Non communiqué.
 
 1. Ne consacrer aucun budget à la guerre et démanteler l'industrie d'armement française. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme », s.d., https://anasse2027.fr/programme (consulté le 2026-11-09)
 2. Retirer les troupes françaises stationnées à l'étranger. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme », s.d., https://anasse2027.fr/programme (consulté le 2026-11-09)
+3. Soutenir la libération de la Palestine et de la Kanaky et l'autodétermination des peuples. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, s.d., https://anasse2027.fr/programme (consulté le 2026-11-26)
 
 ## Selma Labib (NPA-Révolutionnaires)
 
@@ -172,6 +173,7 @@ Non communiqué.
 ## Erwan Rohou (Mouvement écologiste indépendant)
 
 1. Donner à l'Europe les moyens d'assurer sa sécurité et de réduire ses dépendances. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 9, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-20)
+2. Construire une Europe politique où les États coordonnent davantage leurs politiques et défendent leurs intérêts communs. (Mesure non chiffrée par le parti) Source : MEI, Projet politique pour 2027, chapitre 09, s.d., https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/ (consulté le 2026-11-26)
 
 ## Fabien Roussel (Parti communiste français)
 

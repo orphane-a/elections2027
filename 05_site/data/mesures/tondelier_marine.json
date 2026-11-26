@@ -95,6 +95,12 @@
         "sous_theme": "Hôpital et cliniques",
         "chiffrage": null,
         "source": { "titre": "Programme des Écologistes (juillet 2026), chapitre 30", "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf", "date": "2026-07-01", "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Autoriser le diagnostic préimplantatoire des aneuploïdies (analyse des chromosomes de l'embryon) dans des indications médicales ciblées.",
+        "sous_theme": "Santé reproductive",
+        "chiffrage": null,
+        "source": { "titre": "Livret « Prendre soin de notre santé reproductive », 10 mesures phares", "url": "https://marinetondelier.fr/s/Livret-sante-reproductive.pdf", "date": null, "type": "site", "consulte": "2026-11-26" }
       }
     ],
     "logement": [

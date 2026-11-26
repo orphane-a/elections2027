@@ -1,7 +1,7 @@
 # 🎓 Éducation : synthèse comparée
 
 Thème : Éducation
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -86,6 +86,7 @@ Non communiqué.
 
 1. Verser aux étudiants un revenu égal au SMIC, financé par le patronat. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, partie « Vivre, et plus survivre », s.d., https://anasse2027.fr/programme (consulté le 2026-11-09)
 2. S'opposer au Service national universel (SNU) et à la présence de l'armée dans les écoles et les universités. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, partie « Contre la militarisation et l'impérialisme », s.d., https://anasse2027.fr/programme (consulté le 2026-11-09)
+3. Créer dans les lieux d'études et de travail des commissions contre les violences sexistes et sexuelles, indépendantes des directions. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, s.d., https://anasse2027.fr/programme (consulté le 2026-11-26)
 
 ## Selma Labib (NPA-Révolutionnaires)
 
@@ -177,7 +178,9 @@ Non communiqué.
 
 ## Fabien Roussel (Parti communiste français)
 
-Non communiqué.
+1. Abroger Parcoursup et la réforme du bac de 2019, et supprimer le contrôle continu au bac. (Mesure non chiffrée par le parti) Source : franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »), 2026-11-12, https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html (consulté le 2026-11-26)
+2. Recruter 90 000 enseignants. (Mesure non chiffrée par le parti) Source : franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »), 2026-11-12, https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html (consulté le 2026-11-26)
+3. Demander davantage de mixité sociale aux écoles privées. (Mesure non chiffrée par le parti) Source : franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »), 2026-11-12, https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html (consulté le 2026-11-26)
 
 ## François Ruffin (Debout !)
 

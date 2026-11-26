@@ -1,7 +1,7 @@
 # 🌿 Écologie et énergie : synthèse comparée
 
 Thème : Écologie et énergie
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -89,6 +89,7 @@ Non communiqué.
 ## Anasse Kazib (Révolution permanente)
 
 1. Créer des comités de travailleurs, de scientifiques et de riverains pour coordonner la dépollution des sols et de l'eau. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, partie « Face au capitalisme, un horizon communiste », s.d., https://anasse2027.fr/programme (consulté le 2026-11-09)
+2. Planifier la production de façon démocratique, selon les besoins et dans le respect de l'environnement. (Mesure non chiffrée par le parti) Source : anasse2027.fr, Programme, s.d., https://anasse2027.fr/programme (consulté le 2026-11-26)
 
 ## Selma Labib (NPA-Révolutionnaires)
 

@@ -2,7 +2,7 @@
 
 Thème : Sécurité et justice
 Candidat : Clara Egger (Solution démocratique)
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Niveau de confiance des sources : Moyen
 Fichier généré par 05_site/build.mjs.
 

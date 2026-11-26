@@ -6,9 +6,9 @@
   "parti_sigle": "DEBOUT",
   "groupe_an": "ECO",
   "groupe_an_note": "Debout ! n'a pas de groupe propre : François Ruffin, député de la Somme, siège dans le groupe Écologiste et social.",
-  "statut": "Déclaré",
-  "statut_detail": "Sources divergentes : LCP (14 octobre 2026) décrit une candidature conditionnée à l'absence de primaire de la gauche non mélenchoniste ; Public Sénat indique qu'il maintient sa candidature avec ou sans primaire. Son site de campagne « Nous Président ! » publie des cahiers de programme jusqu'au 28 octobre 2026. Date de déclaration non trouvée dans une source primaire.",
-  "a_verifier": true,
+  "statut": "Retiré",
+  "statut_detail": "A retiré sa candidature le 21 novembre 2026 par un communiqué, sans appeler à soutenir un autre candidat. Il indique poursuivre son action avec son mouvement Debout !.",
+  "a_verifier": false,
   "date_declaration": null,
   "site_campagne": "https://nouspresident.fr/",
   "programme": {
@@ -18,10 +18,11 @@
     "type": "page web"
   },
   "sources": [
+    { "titre": "LCP, François Ruffin se retire de la présidentielle 2027 sans soutenir aucun des candidats de gauche encore en lice", "url": "https://lcp.fr/actualites/francois-ruffin-se-retire-de-la-presidentielle-2027-sans-soutenir-aucun-des-candidats-de", "date": "2026-11-21", "consulte": "2026-11-26" },
     { "titre": "LCP, liste des candidats déjà en lice", "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373", "date": "2026-10-14", "consulte": "2026-11-09" },
     { "titre": "Public Sénat, le dernier décompte des candidats", "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart", "date": "2026-09-18", "consulte": "2026-11-09" },
     { "titre": "Site de campagne « Nous Président ! », page Notre programme", "url": "https://nouspresident.fr/notre-programme/", "date": "2026-10-12", "consulte": "2026-11-09" }
   ],
   "confiance": "Moyen",
-  "date_maj": "2026-11-20"
+  "date_maj": "2026-11-26"
 }

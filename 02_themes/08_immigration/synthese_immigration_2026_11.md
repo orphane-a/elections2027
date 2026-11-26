@@ -1,7 +1,7 @@
 # 🌍 Immigration et intégration : synthèse comparée
 
 Thème : Immigration et intégration
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -76,6 +76,7 @@ Non communiqué.
 
 1. Dresser dès la première année un bilan des politiques migratoires des trente dernières années. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 2. Soumettre à référendum les décisions migratoires les plus importantes si suffisamment de Français le demandent. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+3. Définir explicitement les priorités du droit d'asile, sous le contrôle des Français, qui peuvent proposer de modifier la loi. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-26)
 
 ## Raphaël Glucksmann (Place publique)
 

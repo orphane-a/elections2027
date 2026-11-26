@@ -1,7 +1,7 @@
 # ❤️ Santé : synthèse comparée
 
 Thème : Santé
-Date de mise à jour : 2026-11-20
+Date de mise à jour : 2026-11-26
 Fichier généré par 05_site/build.mjs à partir de 05_site/data. Ne pas modifier à la main : modifier les JSON.
 
 ## Nathalie Arthaud (Lutte ouvrière)
@@ -55,6 +55,7 @@ Non communiqué.
 
 1. Supprimer l'aide médicale d'État (AME, soins des étrangers sans titre de séjour). (Économie annoncée : 1,2 Md€ (tableau « Budget » du site du candidat)) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
 2. Facturer au prix réel l'accouchement et l'hospitalisation aux personnes sans nationalité française. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-16)
+3. Classer les médecins diplômés pour choisir leur lieu d'exercice, notamment dans les déserts médicaux, ou leur faire rembourser leur scolarité. (Mesure non chiffrée par le parti) Source : Christian Collovati, site « Le Peuple français 2027 », s.d., https://www.xn--lepeuplefranais2027-hyb.fr/ (consulté le 2026-11-26)
 
 ## Dominique de Villepin (La France humaniste)
 
@@ -75,6 +76,7 @@ Non communiqué.
 
 1. Publier un bilan régulier du système de santé : accès aux soins, prévention, délais, répartition des soignants. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
 2. Expliquer publiquement les décisions sanitaires, surtout en crise, et rendre accessibles leurs fondements scientifiques. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-20)
+3. Soumettre à référendum les décisions de santé les plus importantes, notamment l'investissement dans le système de santé. (Mesure non chiffrée par le parti) Source : Programme de Solution Démocratique à l'élection présidentielle 2027 (PDF), s.d., https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf (consulté le 2026-11-26)
 
 ## Raphaël Glucksmann (Place publique)
 
@@ -183,7 +185,9 @@ Non communiqué.
 
 1. Créer 2 000 centres de santé d'ici 2030, notamment dans les zones rurales et les quartiers prioritaires. (Mesure non chiffrée par le parti) Source : Programme des Écologistes (juillet 2026), chapitre 30 « Rendre accessible une offre de soin de qualité », 2026-07-01, https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf (consulté le 2026-11-09)
 2. Conditionner le remboursement public des soins en clinique privée à leur participation à la permanence des soins. (Mesure non chiffrée par le parti) Source : Programme des Écologistes (juillet 2026), chapitre 30, 2026-07-01, https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf (consulté le 2026-11-09)
+3. Autoriser le diagnostic préimplantatoire des aneuploïdies (analyse des chromosomes de l'embryon) dans des indications médicales ciblées. (Mesure non chiffrée par le parti) Source : Livret « Prendre soin de notre santé reproductive », 10 mesures phares, s.d., https://marinetondelier.fr/s/Livret-sante-reproductive.pdf (consulté le 2026-11-26)
 
 ## Éric Zemmour (Reconquête)
 
 1. Supprimer l'aide médicale d'État (AME, soins des étrangers sans papiers). (Mesure non chiffrée par le parti) Source : Éric Zemmour, Nos priorités pour les Français, priorité 2, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-20)
+2. Agir contre les déserts médicaux et rendre le pouvoir aux soignants à l'hôpital. (Mesure non chiffrée par le parti) Source : ericzemmour.fr, Nos priorités, s.d., https://www.ericzemmour.fr/priorites (consulté le 2026-11-26)

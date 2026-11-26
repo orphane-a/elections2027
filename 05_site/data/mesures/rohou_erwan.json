@@ -1,6 +1,6 @@
 {
   "id": "rohou_erwan",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": false,
   "themes": {
     "education": [],
@@ -25,7 +25,26 @@
       }
     ],
     "pouvoir_achat": [],
-    "travail": [],
+    "travail": [
+      {
+        "texte": "Valoriser les métiers manuels et techniques : artisanat, production, réparation et entretien.",
+        "sous_theme": "Métiers manuels",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 06", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "site", "consulte": "2026-11-26" }
+      },
+      {
+        "texte": "Développer la formation tout au long de la vie pour permettre les reconversions.",
+        "sous_theme": "Formation",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 06", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "site", "consulte": "2026-11-26" }
+      },
+      {
+        "texte": "Préserver le système de retraite par répartition, fondé sur la solidarité entre générations.",
+        "sous_theme": "Retraites",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 08", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "site", "consulte": "2026-11-26" }
+      }
+    ],
     "sante": [],
     "logement": [],
     "securite": [],
@@ -56,6 +75,12 @@
         "sous_theme": "Défense",
         "chiffrage": null,
         "source": { "titre": "MEI, Projet politique pour 2027, chapitre 9", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "programme", "consulte": "2026-11-20" }
+      },
+      {
+        "texte": "Construire une Europe politique où les États coordonnent davantage leurs politiques et défendent leurs intérêts communs.",
+        "sous_theme": "Union européenne",
+        "chiffrage": null,
+        "source": { "titre": "MEI, Projet politique pour 2027, chapitre 09", "url": "https://les-ecologistes-mei.org/projet-politique-du-mei-pour-2027/", "date": null, "type": "site", "consulte": "2026-11-26" }
       }
     ]
   }

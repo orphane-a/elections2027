@@ -1,9 +1,28 @@
 {
   "id": "roussel_fabien",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": false,
   "themes": {
-    "education": [],
+    "education": [
+      {
+        "texte": "Abroger Parcoursup et la réforme du bac de 2019, et supprimer le contrôle continu au bac.",
+        "sous_theme": "Lycée et orientation",
+        "chiffrage": null,
+        "source": { "titre": "franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »)", "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html", "date": "2026-11-12", "type": "declaration", "consulte": "2026-11-26" }
+      },
+      {
+        "texte": "Recruter 90 000 enseignants.",
+        "sous_theme": "Enseignants",
+        "chiffrage": null,
+        "source": { "titre": "franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »)", "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html", "date": "2026-11-12", "type": "declaration", "consulte": "2026-11-26" }
+      },
+      {
+        "texte": "Demander davantage de mixité sociale aux écoles privées.",
+        "sous_theme": "École",
+        "chiffrage": null,
+        "source": { "titre": "franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »)", "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html", "date": "2026-11-12", "type": "declaration", "consulte": "2026-11-26" }
+      }
+    ],
     "ecologie": [
       {
         "texte": "Installer 2 millions de pompes à chaleur par an dans les logements.",
@@ -85,7 +104,14 @@
         "source": { "titre": "Journal de l'Agence, propositions de septembre 2026", "url": "https://www.journaldelagence.com/1414457-presidentielle-2027-les-propositions-de-fabien-roussel-pour-relancer-le-logement", "date": "2026-10-28", "type": "presse", "consulte": "2026-11-09" }
       }
     ],
-    "securite": [],
+    "securite": [
+      {
+        "texte": "Créer 60 000 postes de policiers, gendarmes et douaniers de proximité, notamment contre le narcotrafic.",
+        "sous_theme": "Police de proximité",
+        "chiffrage": "Coût annoncé : 1 Md€ pour l'ensemble du plan sécurité.",
+        "source": { "titre": "franceinfo, Fabien Roussel propose la mise en place de 60 000 « policiers, gendarmes et douaniers » de proximité (opération « Nos services publics »)", "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-fabien-roussel-propose-la-mise-en-place-de-60-000-policiers-gendarmes-et-douaniers-de-proximite_8279156.html", "date": "2026-11-12", "type": "declaration", "consulte": "2026-11-26" }
+      }
+    ],
     "immigration": [],
     "institutions": [
       {

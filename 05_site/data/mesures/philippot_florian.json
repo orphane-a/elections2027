@@ -1,6 +1,6 @@
 {
   "id": "philippot_florian",
-  "date_verif": "2026-11-20",
+  "date_verif": "2026-11-26",
   "programme_publie": true,
   "themes": {
     "education": [
@@ -55,6 +55,12 @@
         "sous_theme": "Fiscalité",
         "chiffrage": null,
         "source": { "titre": "Les Patriotes, projet patriote édition 2026-2027, page 15", "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf", "date": null, "type": "programme", "consulte": "2026-11-09" }
+      },
+      {
+        "texte": "Encadrer plus strictement les prix des produits de première nécessité dans les Outre-mer.",
+        "sous_theme": "Vie chère outre-mer",
+        "chiffrage": null,
+        "source": { "titre": "Les Patriotes, projet patriote édition 2026-2027, section Outre-mer", "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf", "date": null, "type": "programme", "consulte": "2026-11-26" }
       }
     ],
     "travail": [
